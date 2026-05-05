@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="60">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>Paper Book — 2026-05-06</title>
+<style>
+  /* ── Reset + base ─────────────────────────────────────────── */
+  :root {
+    color-scheme: light;
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-2: #f9fafb;
+    --border: #e5e7eb;
+    --border-soft: #f3f4f6;
+    --text: #0f172a;
+    --text-muted: #6b7280;
+    --text-subtle: #9ca3af;
+    --pos: #047857;
+    --pos-bg: #d1fae5;
+    --neg: #b91c1c;
+    --neg-bg: #fee2e2;
+    --warn-bg: #fef3c7;
+    --warn-fg: #78350f;
+    --info-bg: #dbeafe;
+    --info-fg: #1e3a8a;
+    --accent-bg: #e0e7ff;
+    --accent-fg: #3730a3;
+    --close-bg: #ede9fe;
+    --close-fg: #5b21b6;
+    --neutral-bg: #e5e7eb;
+    --neutral-fg: #374151;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 14px; font-weight: 600; margin: 0 0 12px; color: var(--text); }
+  .meta { color: var(--text-muted); font-size: 12px; margin-bottom: 16px; }
+  .pos { color: var(--pos); }
+  .neg { color: var(--neg); }
+  .muted { color: var(--text-muted); font-weight: 400; }
+
+  /* ── Panels ───────────────────────────────────────────────── */
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .empty {
+    color: var(--text-muted); font-size: 13px;
+    padding: 16px; text-align: center;
+    background: var(--surface-2); border-radius: 8px;
+  }
+
+  /* ── Hero ─────────────────────────────────────────────────── */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .hero-stat {
+    background: var(--surface-2);
+    border-radius: 10px;
+    padding: 14px 16px;
+    min-height: 92px;
+  }
+  .hero-stat .label {
+    color: var(--text-muted); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;
+  }
+  .hero-stat .value {
+    font-size: 24px; font-weight: 700; margin-top: 4px;
+    font-variant-numeric: tabular-nums; letter-spacing: -0.01em;
+  }
+  .hero-stat .sub {
+    font-size: 12px; margin-top: 4px; color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-stat .sub.pos { color: var(--pos); font-weight: 600; }
+  .hero-stat .sub.neg { color: var(--neg); font-weight: 600; }
+
+  /* ── Tables (desktop) ─────────────────────────────────────── */
+  table.responsive {
+    width: 100%; border-collapse: collapse; font-size: 13px;
+  }
+  table.responsive th {
+    text-align: left; padding: 9px 10px; background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+    font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--neutral-fg); position: sticky; top: 0;
+  }
+  table.responsive td {
+    padding: 10px; border-bottom: 1px solid var(--border-soft);
+    vertical-align: middle;
+  }
+  table.responsive td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  table.responsive th.num { text-align: right; }
+  table.responsive tbody tr:hover td { background: #fafbfc; }
+  table.responsive tbody tr:last-child td { border-bottom: none; }
+
+  /* ── Ticker + company name cell ───────────────────────────── */
+  .ticker-cell {
+    display: flex; flex-direction: column; gap: 2px;
+    line-height: 1.25;
+  }
+  .ticker-cell strong {
+    font-weight: 700; font-size: 13px; letter-spacing: 0.01em;
+  }
+  .ticker-cell .company-name {
+    color: var(--text-muted); font-size: 11px; font-weight: 400;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    max-width: 200px;
+  }
+
+  /* ── Pills ────────────────────────────────────────────────── */
+  .pill, .kind-pill, .verdict-pill {
+    display: inline-block; padding: 3px 9px; border-radius: 999px;
+    font-size: 11px; font-weight: 600; line-height: 1.4;
+    white-space: nowrap;
+  }
+  .pill-long  { background: var(--pos-bg); color: var(--pos); }
+  .pill-short { background: var(--neg-bg); color: var(--neg); }
+  .kind-pill        { border-radius: 6px; text-transform: uppercase; letter-spacing: 0.04em; font-size: 10.5px; }
+  .kind-fill        { background: var(--info-bg);    color: var(--info-fg); }
+  .kind-close       { background: var(--close-bg);   color: var(--close-fg); }
+  .kind-mtm         { background: var(--warn-bg);    color: var(--warn-fg); }
+  .kind-analyze     { background: var(--accent-bg);  color: var(--accent-fg); }
+  .verdict-pill     { border-radius: 6px; }
+  .verdict-approve  { background: var(--pos-bg);     color: var(--pos); }
+  .verdict-mod      { background: var(--warn-bg);    color: var(--warn-fg); }
+  .verdict-defer    { background: var(--neutral-bg); color: var(--neutral-fg); }
+  .verdict-reject   { background: var(--neg-bg);     color: var(--neg); }
+
+  /* ── Footer (collapsed) ───────────────────────────────────── */
+  .footer-panels h2 { color: var(--text-muted); }
+  details summary {
+    cursor: pointer; padding: 8px 12px; color: var(--text-muted);
+    font-size: 13px; font-weight: 500;
+    border-radius: 8px; background: var(--surface);
+    border: 1px solid var(--border); list-style: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: "▸ "; color: var(--text-subtle); }
+  details[open] summary::before { content: "▾ "; }
+
+  /* ── Tablet (≤ 1024px): tighter hero ───────────────────────── */
+  @media (max-width: 1024px) {
+    .hero-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-stat .value { font-size: 22px; }
+  }
+
+  /* ── Mobile (≤ 640px): hero 2x2, tables → cards ────────────── */
+  @media (max-width: 640px) {
+    body { padding: 12px; font-size: 15px; }
+    .panel { padding: 14px; border-radius: 10px; }
+    h1 { font-size: 20px; }
+    h2 { font-size: 13px; }
+
+    .hero-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .hero-stat { padding: 12px; min-height: 80px; }
+    .hero-stat .value { font-size: 18px; }
+    .hero-stat .sub { font-size: 11px; }
+
+    /* Transform every responsive table into a stack of cards */
+    table.responsive { display: block; font-size: 14px; }
+    table.responsive thead { display: none; }
+    table.responsive tbody { display: block; }
+    table.responsive tr {
+      display: block; background: var(--surface-2);
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: 12px; margin-bottom: 10px;
+      overflow-wrap: anywhere; word-break: break-word;
+    }
+    table.responsive tr:last-child { margin-bottom: 0; }
+    table.responsive td {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 4px 12px; flex-wrap: wrap;
+      padding: 6px 0; border-bottom: 1px dashed var(--border);
+      text-align: right;
+      overflow-wrap: anywhere; word-break: break-word; min-width: 0;
+    }
+    table.responsive td:last-child { border-bottom: none; }
+    table.responsive td.num { text-align: right; }
+    table.responsive td::before {
+      content: attr(data-label); color: var(--text-muted);
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
+      font-weight: 600; text-align: left; margin-right: 12px;
+      flex-shrink: 0;
+    }
+    /* Prose-style cells (long text): stack label-above-value, full-width left-aligned */
+    table.responsive td[data-label="Skip reason"],
+    table.responsive td[data-label="Detail"],
+    table.responsive td[data-label="Event"],
+    table.responsive td[data-label="Setup"] {
+      flex-direction: column; align-items: flex-start;
+      text-align: left;
+    }
+    table.responsive td[data-label="Skip reason"]::before,
+    table.responsive td[data-label="Detail"]::before,
+    table.responsive td[data-label="Event"]::before,
+    table.responsive td[data-label="Setup"]::before {
+      margin-bottom: 3px; margin-right: 0;
+    }
+    /* The first cell (Ticker) becomes a card header — no label, no border. */
+    table.responsive td:first-child {
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid var(--border); padding-bottom: 10px;
+      margin-bottom: 6px; font-size: 16px;
+    }
+    table.responsive td:first-child::before { display: none; }
+    /* Ticker + company name on mobile: bigger ticker, two-line block on the left */
+    table.responsive td:first-child .ticker-cell {
+      flex: 1; min-width: 0;
+    }
+    table.responsive td:first-child .ticker-cell strong {
+      font-size: 17px;
+    }
+    table.responsive td:first-child .ticker-cell .company-name {
+      font-size: 12px; max-width: none; white-space: normal;
+    }
+    /* For positions and pending: 2nd cell (direction pill) joins header */
+    table.positions-table td:nth-child(2),
+    table.pending-table td:nth-child(2) {
+      border-bottom: 1px solid var(--border); padding-bottom: 8px;
+      margin-bottom: 6px;
+    }
+    table.positions-table td:nth-child(2)::before,
+    table.pending-table td:nth-child(2)::before {
+      content: ""; margin-right: 0;
+    }
+    /* Color-code position cards by P&L using a left border accent */
+    table.positions-table tr { border-left: 3px solid var(--border); }
+    /* (color set inline via class name on tr — see _render_open_positions_html) */
+    table.positions-table tr.pos-pos { border-left-color: var(--pos); }
+    table.positions-table tr.pos-neg { border-left-color: var(--neg); }
+
+    /* Hide redundant inline distance text on mobile (it's noisy in cards) */
+    .mobile-hide { display: none; }
+
+    /* Equity curve taller on mobile so it's actually readable */
+    #equityChart { height: 200px !important; }
+  }
+
+  /* ── Tiny phones (≤ 380px): tighter still ──────────────────── */
+  @media (max-width: 380px) {
+    .hero-stat .value { font-size: 16px; }
+    .hero-stat .label { font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Paper Book</h1>
+<div class="meta">As of <strong>2026-05-06</strong>
+  · rendered 2026-05-06 15:58:08
+  · starting NAV $1,000,000</div>
+
+<!-- HERO ROW -->
+<div class="panel">
+  <div class="hero-grid">
+    <div class="hero-stat">
+      <div class="label">NAV</div>
+      <div class="value">$1,000,409</div>
+      <div class="sub ">$+0 (+0.00%) today</div>
+    </div>
+    <div class="hero-stat">
+      <div class="label">Inception P&amp;L</div>
+      <div class="value pos">$+409</div>
+      <div class="sub pos">+0.04%</div>
+    </div>
+    <div class="hero-stat">
+      <div class="label">Cash</div>
+      <div class="value">$780,000</div>
+      <div class="sub">77.97% of NAV</div>
+    </div>
+    <div class="hero-stat">
+      <div class="label">Deployed</div>
+      <div class="value">22.03%</div>
+      <div class="sub">3 open positions</div>
+    </div>
+  </div>
+</div>
+
+<!-- OPEN POSITIONS -->
+<div class="panel">
+  <h2>Open Positions (3)</h2>
+  
+    <table class="responsive positions-table">
+      <thead>
+        <tr>
+          <th>Ticker</th><th>Dir</th><th>Entered</th><th>Held</th>
+          <th>Entry $</th><th>Now $</th><th>Pos $</th>
+          <th>Unrealized $</th><th>Unrealized %</th>
+          <th>Stop (dist)</th><th>Target 1 (dist)</th><th>Target 2 (dist)</th>
+          <th>Max-hold</th><th>Setup</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="">
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>MSFT</strong>
+              <span class="company-name">Microsoft</span>
+            </div>
+          </td>
+          <td data-label="Direction"><span class="pill pill-long">LONG</span></td>
+          <td class="num" data-label="Entered">2026-05-04</td>
+          <td class="num" data-label="Held">2d</td>
+          <td class="num" data-label="Entry $">$411.55</td>
+          <td class="num" data-label="Now $">—</td>
+          <td class="num" data-label="Position $">—</td>
+          <td class="num " data-label="Unrealized $"><strong>—</strong></td>
+          <td class="num " data-label="Unrealized %"><strong>—</strong></td>
+          <td class="num" data-label="Stop">$356.28 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Target 1">$450.64 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Target 2">$466.64 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Max-hold">58d</td>
+          <td data-label="Setup">mean_reversion</td>
+        </tr>
+        <tr class="">
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>ASML</strong>
+              <span class="company-name">ASML Holding</span>
+            </div>
+          </td>
+          <td data-label="Direction"><span class="pill pill-long">LONG</span></td>
+          <td class="num" data-label="Entered">2026-05-04</td>
+          <td class="num" data-label="Held">2d</td>
+          <td class="num" data-label="Entry $">$1,402.35</td>
+          <td class="num" data-label="Now $">—</td>
+          <td class="num" data-label="Position $">—</td>
+          <td class="num " data-label="Unrealized $"><strong>—</strong></td>
+          <td class="num " data-label="Unrealized %"><strong>—</strong></td>
+          <td class="num" data-label="Stop">$1,270.00 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Target 1">$1,547.22 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Target 2">$1,659.00 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Max-hold">58d</td>
+          <td data-label="Setup">uptrend_pullback</td>
+        </tr>
+        <tr class="">
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>JPM</strong>
+              <span class="company-name">JPMorgan Chase</span>
+            </div>
+          </td>
+          <td data-label="Direction"><span class="pill pill-long">LONG</span></td>
+          <td class="num" data-label="Entered">2026-05-04</td>
+          <td class="num" data-label="Held">2d</td>
+          <td class="num" data-label="Entry $">$310.62</td>
+          <td class="num" data-label="Now $">—</td>
+          <td class="num" data-label="Position $">—</td>
+          <td class="num " data-label="Unrealized $"><strong>—</strong></td>
+          <td class="num " data-label="Unrealized %"><strong>—</strong></td>
+          <td class="num" data-label="Stop">$293.00 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Target 1">$319.89 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Target 2">$337.25 <span class="muted mobile-hide">(—)</span></td>
+          <td class="num" data-label="Max-hold">58d</td>
+          <td data-label="Setup">pullback_to_sma50</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<!-- TODAY'S ACTIVITY -->
+<div class="panel">
+  <h2>Today's Activity</h2>
+  
+    <table class="responsive activity-table">
+      <thead><tr><th>Kind</th><th>Event</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="Kind"><span class="kind-pill kind-mtm">MTM</span></td>
+          <td data-label="Event">MTM mark: NAV $1,000,409</td>
+          <td class="muted" data-label="Detail">daily return +0.00% · positions value $220,409</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<!-- PENDING ORDERS -->
+<div class="panel">
+  <h2>Pending Orders (0)</h2>
+  <div class="empty">No pending orders.</div>
+</div>
+
+<!-- RECENT DECISIONS -->
+<div class="panel">
+  <h2>Recent Decisions — last 14 days (20)</h2>
+  
+    <table class="responsive decisions-table">
+      <thead><tr><th>Ticker</th><th>Verdict</th><th>Date</th><th>Setup</th><th>Skip reason</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>WDC</strong>
+              <span class="company-name">Western Digital</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-05</td>
+          <td data-label="Setup">breakout</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>STX</strong>
+              <span class="company-name">Seagate Technology Holdings</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-reject">REJECT</span></td>
+          <td class="num" data-label="Date">2026-05-05</td>
+          <td data-label="Setup">avoid</td>
+          <td class="muted" data-label="Skip reason">reject</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>SNDK</strong>
+              <span class="company-name">Sandisk</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-05</td>
+          <td data-label="Setup">mean_reversion</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>ON</strong>
+              <span class="company-name">ON Semiconductor</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-05</td>
+          <td data-label="Setup">breakout</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>INTC</strong>
+              <span class="company-name">Intel</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-05</td>
+          <td data-label="Setup">mean_reversion</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>INTC</strong>
+              <span class="company-name">Intel</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-04</td>
+          <td data-label="Setup">breakout</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>GME</strong>
+              <span class="company-name">GameStop</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-04</td>
+          <td data-label="Setup">pullback-to-support</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>AMD</strong>
+              <span class="company-name">Advanced Micro Devices</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-04</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>XOM</strong>
+              <span class="company-name">Exxon Mobil</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">range_breakout_above_sma50</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>SOFI</strong>
+              <span class="company-name">SoFi Technologies</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>NVO</strong>
+              <span class="company-name">Novo Nordisk A/S</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">mean_reversion</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>NVDA</strong>
+              <span class="company-name">NVIDIA</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>MCD</strong>
+              <span class="company-name">McDonald&#x27;s</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>IONQ</strong>
+              <span class="company-name">IonQ</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">momentum_pullback</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>GS</strong>
+              <span class="company-name">Goldman Sachs Group</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill ">—</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">unparseable_decision</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>AAPL</strong>
+              <span class="company-name">Apple</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-03</td>
+          <td data-label="Setup">support_hold</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>NVO</strong>
+              <span class="company-name">Novo Nordisk A/S</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
+          <td class="num" data-label="Date">2026-05-02</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">defer</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>NVDA</strong>
+              <span class="company-name">NVIDIA</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
+          <td class="num" data-label="Date">2026-05-02</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>LLY</strong>
+              <span class="company-name">Eli Lilly</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-approve">APPROVE</span></td>
+          <td class="num" data-label="Date">2026-05-02</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">missing_required_fields:intended_size_pct_nav,stop,target_1,direction</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">
+            <div class="ticker-cell">
+              <strong>NVDA</strong>
+              <span class="company-name">NVIDIA</span>
+            </div>
+          </td>
+          <td data-label="Verdict"><span class="verdict-pill verdict-approve">APPROVE</span></td>
+          <td class="num" data-label="Date">2026-05-01</td>
+          <td data-label="Setup">—</td>
+          <td class="muted" data-label="Skip reason">missing_required_fields:intended_size_pct_nav,stop,target_1,direction</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<!-- FOOTER PANELS — equity curve + stats grid + closed trades -->
+<details class="footer-panels">
+<summary>Equity curve, lifetime stats, and closed trades</summary>
+
+<div class="panel" style="margin-top:14px;">
+  <h2>Equity curve</h2>
+  <canvas id="equityChart" height="100"></canvas>
+</div>
+
+<div class="panel">
+  <h2>Lifetime stats</h2>
+  <div class="hero-grid">
+    <div class="hero-stat"><div class="label">Total return</div><div class="value">+0.04%</div></div>
+    <div class="hero-stat"><div class="label">Sharpe</div><div class="value">-2.15</div></div>
+    <div class="hero-stat"><div class="label">Max DD</div><div class="value neg">0.00%</div></div>
+    <div class="hero-stat"><div class="label">Hit rate</div><div class="value">0%</div></div>
+    <div class="hero-stat"><div class="label">Profit factor</div><div class="value">—</div></div>
+    <div class="hero-stat"><div class="label">Closed trades</div><div class="value">0</div></div>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Recent closed trades</h2>
+  <div id="tradesGrid"></div>
+</div>
+
+</details>
+
+</div><!-- /.wrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js"></script>
+<script>
+const NAV_LABELS = ["2026-05-04", "2026-05-04", "2026-05-04", "2026-05-05", "2026-05-05", "2026-05-05", "2026-05-05", "2026-05-06"];
+const NAV_VALUES = [998338.97, 998338.97, 998338.97, 998338.97, 1000408.93, 1000408.93, 1000408.93, 1000408.93];
+const SPY_VALUES = [null, null, null, null, null, null, null, null];
+const TRADES     = [];
+
+document.querySelector('details.footer-panels').addEventListener('toggle', function(e) {
+  if (!e.target.open) return;
+  if (window.__chartRendered) return;
+  window.__chartRendered = true;
+  if (NAV_LABELS.length > 0) {
+    new Chart(document.getElementById('equityChart'), {
+      type: 'line',
+      data: { labels: NAV_LABELS, datasets: [
+        { label: 'Paper NAV', data: NAV_VALUES, borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.08)', fill: true, tension: 0.2, pointRadius: 1.5 },
+        { label: 'SPY (norm.)', data: SPY_VALUES, borderColor: '#9ca3af', borderDash: [4,4], pointRadius: 0, tension: 0.2, fill: false },
+      ]},
+      options: { responsive: true,
+        plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } },
+        scales: { y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } } }
+      }
+    });
+  }
+  if (TRADES.length > 0) {
+    new gridjs.Grid({
+      columns: ['Trade ID', 'Ticker', 'Entry', 'Exit', 'Hold (d)', 'Return %', 'PnL $', 'Reason', 'Conv', 'Setup'],
+      data: TRADES, sort: true, search: true,
+      pagination: { enabled: true, limit: 25 },
+    }).render(document.getElementById('tradesGrid'));
+  } else {
+    document.getElementById('tradesGrid').innerHTML = '<div class="empty">No closed trades yet.</div>';
+  }
+});
+</script>
+</body></html>
