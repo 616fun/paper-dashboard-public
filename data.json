@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "rendered_at_utc": "2026-05-07T21:17:39Z",
+  "as_of": "2026-05-07",
+  "starting_nav": 1000000.0,
+  "hero": {
+    "as_of": "2026-05-07",
+    "current": 1001917.02,
+    "starting": 1000000.0,
+    "cash": 799307.91,
+    "day_pnl": -3908.5400000000373,
+    "day_pct": -0.3885902442169035,
+    "incep_pnl": 1917.0200000000186,
+    "incep_pct": 0.19170200000000187,
+    "deployed_pct": 20.222144744082694,
+    "open_count": 3
+  },
+  "positions": [
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "direction": "LONG",
+      "entry_date": "2026-05-04",
+      "days_held": 3,
+      "entry_price": 411.55,
+      "last_price": 420.7699890136719,
+      "position_value": 35784.08917667542,
+      "cost_basis": 35000.0,
+      "unrealized": 784.0891766754212,
+      "unrealized_pct": 2.2402547905012034,
+      "stop": 356.28,
+      "stop_dist_pct": -15.326660811728296,
+      "target_1": 450.64,
+      "t1_dist_pct": 7.0988929263578155,
+      "target_2": 466.64,
+      "t2_dist_pct": 10.901445488983692,
+      "max_hold": "2026-07-03",
+      "days_to_max": 57,
+      "setup_type": "mean_reversion",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding",
+      "direction": "LONG",
+      "entry_date": "2026-05-04",
+      "days_held": 3,
+      "entry_price": 1402.35,
+      "last_price": 1516.5999755859375,
+      "position_value": 18925.651095336914,
+      "cost_basis": 35000.0,
+      "unrealized": -16074.348904663086,
+      "unrealized_pct": -45.92671115618025,
+      "stop": 1402.35,
+      "stop_dist_pct": -7.533296678433427,
+      "target_1": 1547.22,
+      "t1_dist_pct": 2.018991487998178,
+      "target_2": 1659.0,
+      "t2_dist_pct": 9.38942547187147,
+      "max_hold": "2026-07-03",
+      "days_to_max": 57,
+      "setup_type": "uptrend_pullback",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "JPM",
+      "company": "JPMorgan Chase",
+      "direction": "LONG",
+      "entry_date": "2026-05-04",
+      "days_held": 3,
+      "entry_price": 310.62,
+      "last_price": 306.2699890136719,
+      "position_value": 147899.37029864502,
+      "cost_basis": 150000.0,
+      "unrealized": -2100.6297013549774,
+      "unrealized_pct": -1.4004198009033182,
+      "stop": 293.0,
+      "stop_dist_pct": -4.332774835826146,
+      "target_1": 319.89,
+      "t1_dist_pct": 4.4470602654183375,
+      "target_2": 337.25,
+      "t2_dist_pct": 10.115261729070419,
+      "max_hold": "2026-07-03",
+      "days_to_max": 57,
+      "setup_type": "pullback_to_sma50",
+      "sector": "Financial Services"
+    }
+  ],
+  "events": [
+    {
+      "kind": "CLOSE",
+      "label": "Partial close ASML \u2014 TARGET_1",
+      "detail": "12.48 shares @ $1,547.22 (entry $1,402.35) \u00b7 P&L $+1,808 (+10.33%) \u00b7 held 3d \u00b7 remainder still open",
+      "ts": "2026-05-07"
+    },
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,001,917",
+      "detail": "daily return -0.39% \u00b7 positions value $202,609",
+      "ts": "2026-05-07"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "INTC (DEFER) \u00b7 SNDK (DEFER) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 STRL (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
+      "ts": ""
+    }
+  ],
+  "decisions": [
+    {
+      "date": "2026-05-07",
+      "ticker": "STRL",
+      "company": "Sterling Infrastructure",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-07",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-07",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-07",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "mean_reversion",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-07",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "WDC",
+      "company": "Western Digital",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "STX",
+      "company": "Seagate Technology Holdings",
+      "verdict": "REJECT",
+      "setup": "avoid",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "mean_reversion",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "ON",
+      "company": "ON Semiconductor",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-04",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-04",
+      "ticker": "GME",
+      "company": "GameStop",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "pullback-to-support",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-04",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "XOM",
+      "company": "Exxon Mobil",
+      "verdict": "DEFER",
+      "setup": "range_breakout_above_sma50",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "SOFI",
+      "company": "SoFi Technologies",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "NVO",
+      "company": "Novo Nordisk A/S",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "MCD",
+      "company": "McDonald's",
+      "verdict": "DEFER",
+      "setup": "\u2014",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "IONQ",
+      "company": "IonQ",
+      "verdict": "DEFER",
+      "setup": "momentum_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "GS",
+      "company": "Goldman Sachs Group",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-05-03",
+      "ticker": "AAPL",
+      "company": "Apple",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "support_hold",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-02",
+      "ticker": "NVO",
+      "company": "Novo Nordisk A/S",
+      "verdict": "DEFER",
+      "setup": "\u2014",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-02",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-02",
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "verdict": "APPROVE",
+      "setup": "\u2014",
+      "reason": "missing_required_fields:intended_size_pct_nav,stop,target_1,direction"
+    },
+    {
+      "date": "2026-05-01",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "verdict": "APPROVE",
+      "setup": "\u2014",
+      "reason": "missing_required_fields:intended_size_pct_nav,stop,target_1,direction"
+    }
+  ],
+  "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$142.00\u2013$152.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-07",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-07.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "STRL",
+      "company": "Sterling Infrastructure",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$749.00\u2013$819.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-07",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/STRL/2026-05/STRL-decision-2026-05-07.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$112.99\u2013$123.99",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-07",
+      "setup": "mean_reversion",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-07.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$775.00\u2013$1,025.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-05",
+      "setup": "mean_reversion",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/SNDK/2026-05/SNDK-decision-2026-05-05.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "WDC",
+      "company": "Western Digital",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-05",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/WDC/2026-05/WDC-decision-2026-05-05.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "ON",
+      "company": "ON Semiconductor",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$2,026.00\u2013$2.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-05",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/ON/2026-05/ON-decision-2026-05-05.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "GME",
+      "company": "GameStop",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-04",
+      "setup": "pullback-to-support",
+      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/GME/2026-05/GME-decision-2026-05-04.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-04",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/AMD/2026-05/AMD-decision-2026-05-04.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "AAPL",
+      "company": "Apple",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 254.9,
+      "target_1": 288.35,
+      "target_2": 300.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-03",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/AAPL/2026-05/AAPL-decision-2026-05-03.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SOFI",
+      "company": "SoFi Technologies",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-03",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/SOFI/2026-05/SOFI-decision-2026-05-03.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-03",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/NVDA/2026-05/NVDA-decision-2026-05-03.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-02",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/NVDA/2026-05/NVDA-decision-2026-05-02.md"
+    }
+  ],
+  "closed_stats": {
+    "total_realized": 1807.85,
+    "today_realized": 1807.85,
+    "trade_count": 1,
+    "today_count": 1,
+    "win_count": 1,
+    "loss_count": 0,
+    "flat_count": 0,
+    "win_rate": 1.0,
+    "avg_hold_days": 3.0,
+    "nav_impact_pct": 0.180785,
+    "today_nav_impact_pct": 0.180785,
+    "by_reason": {
+      "target_1": 1
+    },
+    "rows": [
+      {
+        "trade_id": "ASML-2026-05-04-001",
+        "ticker": "ASML",
+        "company": "ASML Holding",
+        "direction": "LONG",
+        "entry_date": "2026-05-04",
+        "exit_date": "2026-05-07",
+        "entry_price": 1402.35,
+        "exit_price": 1547.22,
+        "shares_closed": 12.4791,
+        "exit_reason": "target_1",
+        "hold_days": 3,
+        "pnl": 1807.85,
+        "pnl_pct": 10.33,
+        "setup_type": "uptrend_pullback",
+        "is_partial": true
+      }
+    ]
+  },
+  "nav_history": [
+    {
+      "date": "2026-05-04",
+      "nav": 998338.97
+    },
+    {
+      "date": "2026-05-04",
+      "nav": 998338.97
+    },
+    {
+      "date": "2026-05-04",
+      "nav": 998338.97
+    },
+    {
+      "date": "2026-05-05",
+      "nav": 998338.97
+    },
+    {
+      "date": "2026-05-05",
+      "nav": 1000408.93
+    },
+    {
+      "date": "2026-05-05",
+      "nav": 1000408.93
+    },
+    {
+      "date": "2026-05-05",
+      "nav": 1000408.93
+    },
+    {
+      "date": "2026-05-06",
+      "nav": 1000408.93
+    },
+    {
+      "date": "2026-05-06",
+      "nav": 1005825.56
+    },
+    {
+      "date": "2026-05-07",
+      "nav": 1005825.56
+    },
+    {
+      "date": "2026-05-07",
+      "nav": 1001917.02
+    }
+  ],
+  "spy_aligned": [
+    {
+      "date": "2026-05-04",
+      "nav_equiv": 1000000.0
+    },
+    {
+      "date": "2026-05-05",
+      "nav_equiv": 1008022.19
+    },
+    {
+      "date": "2026-05-06",
+      "nav_equiv": 1022033.13
+    },
+    {
+      "date": "2026-05-07",
+      "nav_equiv": 1018899.47
+    }
+  ],
+  "lifetime_stats": {
+    "total_return_pct": 0.19,
+    "sharpe": -0.02,
+    "max_dd_pct": -0.39,
+    "hit_rate": 1.0,
+    "profit_factor": Infinity,
+    "trade_count": 1
+  }
+}

@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="60">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0f172a">
-<title>Paper Book — 2026-05-07</title>
+<title>Paper Book</title>
 <style>
   /* ── Reset + base ─────────────────────────────────────────── */
   :root {
@@ -31,33 +30,28 @@
     --close-fg: #5b21b6;
     --neutral-bg: #e5e7eb;
     --neutral-fg: #374151;
+    --primary: #2563eb;
   }
   * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    margin: 0;
-    padding: 16px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 14px;
-    line-height: 1.45;
+    margin: 0; padding: 16px;
+    background: var(--bg); color: var(--text);
+    font-size: 14px; line-height: 1.45;
     -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 1280px; margin: 0 auto; }
   h1 { font-size: 22px; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
   h2 { font-size: 14px; font-weight: 600; margin: 0 0 12px; color: var(--text); }
-  .meta { color: var(--text-muted); font-size: 12px; margin-bottom: 16px; }
+  .meta { color: var(--text-muted); font-size: 12px; margin-bottom: 12px; }
+  .panel-help { color: var(--text-muted); font-size: 12px; margin: -4px 0 12px; line-height: 1.5; }
   .pos { color: var(--pos); }
   .neg { color: var(--neg); }
   .muted { color: var(--text-muted); font-weight: 400; }
 
-  /* ── Panels ───────────────────────────────────────────────── */
   .panel {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 18px;
-    margin-bottom: 14px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px; margin-bottom: 14px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.03);
   }
   .empty {
@@ -66,17 +60,44 @@
     background: var(--surface-2); border-radius: 8px;
   }
 
-  /* ── Hero ─────────────────────────────────────────────────── */
+  /* ── Tabs (pure-CSS) ──────────────────────────────────────── */
+  .tab-radio { display: none; }
+  .tab-bar {
+    display: flex; gap: 4px; margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  .tab-label {
+    cursor: pointer; padding: 10px 16px;
+    color: var(--text-muted); font-size: 13.5px; font-weight: 500;
+    border-bottom: 2px solid transparent; white-space: nowrap;
+    transition: color 0.12s, border-color 0.12s;
+  }
+  .tab-label:hover { color: var(--text); }
+  .tab-count {
+    display: inline-block; margin-left: 6px;
+    background: var(--surface-2); color: var(--text-muted);
+    border-radius: 999px; padding: 1px 8px; font-size: 11px; font-weight: 600;
+  }
+  .tab-pane { display: none; }
+  #tab-today:checked     ~ .tab-pane.tab-pane-today,
+  #tab-positions:checked ~ .tab-pane.tab-pane-positions,
+  #tab-watchlist:checked ~ .tab-pane.tab-pane-watchlist,
+  #tab-history:checked   ~ .tab-pane.tab-pane-history { display: block; }
+  #tab-today:checked     ~ .tab-bar label[for="tab-today"],
+  #tab-positions:checked ~ .tab-bar label[for="tab-positions"],
+  #tab-watchlist:checked ~ .tab-bar label[for="tab-watchlist"],
+  #tab-history:checked   ~ .tab-bar label[for="tab-history"] {
+    color: var(--text); border-bottom-color: var(--primary); font-weight: 600;
+  }
+
+  /* ── Hero stat cards ──────────────────────────────────────── */
   .hero-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
   }
   .hero-stat {
-    background: var(--surface-2);
-    border-radius: 10px;
-    padding: 14px 16px;
-    min-height: 92px;
+    background: var(--surface-2); border-radius: 10px;
+    padding: 14px 16px; min-height: 92px;
   }
   .hero-stat .label {
     color: var(--text-muted); font-size: 11px;
@@ -94,15 +115,13 @@
   .hero-stat .sub.neg { color: var(--neg); font-weight: 600; }
 
   /* ── Tables (desktop) ─────────────────────────────────────── */
-  table.responsive {
-    width: 100%; border-collapse: collapse; font-size: 13px;
-  }
+  table.responsive { width: 100%; border-collapse: collapse; font-size: 13px; }
   table.responsive th {
     text-align: left; padding: 9px 10px; background: var(--surface-2);
     border-bottom: 1px solid var(--border);
     font-weight: 600; font-size: 11px;
     text-transform: uppercase; letter-spacing: 0.05em;
-    color: var(--neutral-fg); position: sticky; top: 0;
+    color: var(--neutral-fg);
   }
   table.responsive td {
     padding: 10px; border-bottom: 1px solid var(--border-soft);
@@ -114,24 +133,17 @@
   table.responsive tbody tr:last-child td { border-bottom: none; }
 
   /* ── Ticker + company name cell ───────────────────────────── */
-  .ticker-cell {
-    display: flex; flex-direction: column; gap: 2px;
-    line-height: 1.25;
-  }
-  .ticker-cell strong {
-    font-weight: 700; font-size: 13px; letter-spacing: 0.01em;
-  }
+  .ticker-cell { display: flex; flex-direction: column; gap: 2px; line-height: 1.25; }
+  .ticker-cell strong { font-weight: 700; font-size: 13px; letter-spacing: 0.01em; }
   .ticker-cell .company-name {
     color: var(--text-muted); font-size: 11px; font-weight: 400;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    max-width: 200px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;
   }
 
   /* ── Pills ────────────────────────────────────────────────── */
   .pill, .kind-pill, .verdict-pill {
     display: inline-block; padding: 3px 9px; border-radius: 999px;
-    font-size: 11px; font-weight: 600; line-height: 1.4;
-    white-space: nowrap;
+    font-size: 11px; font-weight: 600; line-height: 1.4; white-space: nowrap;
   }
   .pill-long  { background: var(--pos-bg); color: var(--pos); }
   .pill-short { background: var(--neg-bg); color: var(--neg); }
@@ -146,8 +158,70 @@
   .verdict-defer    { background: var(--neutral-bg); color: var(--neutral-fg); }
   .verdict-reject   { background: var(--neg-bg);     color: var(--neg); }
 
+  /* ── Trade History exit-reason pills ──────────────────────── */
+  .exit-pill {
+    display: inline-block; padding: 2px 8px; border-radius: 6px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.04em; white-space: nowrap;
+  }
+  .exit-target_1, .exit-target_2 { background: var(--pos-bg); color: var(--pos); }
+  .exit-stop                     { background: var(--neg-bg); color: var(--neg); }
+  .exit-max_hold                 { background: var(--warn-bg); color: var(--warn-fg); }
+  .exit-manual                   { background: var(--neutral-bg); color: var(--neutral-fg); }
+
+  .badge-partial {
+    display: inline-block; padding: 1px 6px; border-radius: 4px;
+    font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em;
+    background: var(--warn-bg); color: var(--warn-fg);
+    margin-left: 6px; vertical-align: middle;
+  }
+
+  /* ── Realized P&L panel additions ─────────────────────────── */
+  .reason-pills { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; font-weight: 600; }
+  .reason-pill {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 2px 10px; font-size: 11.5px;
+    font-weight: 500; color: var(--neutral-fg); white-space: nowrap;
+  }
+  .today-realized-callout {
+    margin-top: 14px; padding: 12px 16px; border-radius: 8px;
+    background: var(--surface-2); border-left: 4px solid var(--text-muted);
+    font-size: 13.5px;
+  }
+  .today-realized-callout.pos { border-left-color: var(--pos); color: var(--pos); }
+  .today-realized-callout.neg { border-left-color: var(--neg); color: var(--neg); }
+  .today-realized-callout strong { color: var(--text); margin-right: 6px; }
+
+  /* ── Watch List cards ─────────────────────────────────────── */
+  .watch-list { display: flex; flex-direction: column; gap: 12px; }
+  .watch-card {
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px;
+  }
+  .watch-card-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap; gap: 8px;
+    border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 10px;
+  }
+  .watch-card-pills { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .watch-size {
+    font-size: 11.5px; font-weight: 600; color: var(--neutral-fg);
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 2px 8px;
+  }
+  .watch-entry-zone, .watch-levels, .watch-mods {
+    margin: 6px 0; font-size: 13.5px; line-height: 1.55;
+  }
+  .watch-entry-zone strong { color: var(--text); font-size: 14.5px; }
+  .watch-levels { font-variant-numeric: tabular-nums; }
+  .watch-mods {
+    font-size: 13px; color: var(--text); padding: 8px 12px;
+    background: var(--surface); border-radius: 6px; border-left: 3px solid var(--accent-fg);
+    font-style: italic;
+  }
+  .watch-card-meta { font-size: 11.5px; margin-top: 8px; }
+
   /* ── Footer (collapsed) ───────────────────────────────────── */
-  .footer-panels h2 { color: var(--text-muted); }
   details summary {
     cursor: pointer; padding: 8px 12px; color: var(--text-muted);
     font-size: 13px; font-weight: 500;
@@ -155,16 +229,14 @@
     border: 1px solid var(--border); list-style: none;
   }
   details summary::-webkit-details-marker { display: none; }
-  details summary::before { content: "▸ "; color: var(--text-subtle); }
-  details[open] summary::before { content: "▾ "; }
 
-  /* ── Tablet (≤ 1024px): tighter hero ───────────────────────── */
+  /* ── Tablet (≤1024px): hero 2x2 ───────────────────────────── */
   @media (max-width: 1024px) {
     .hero-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-stat .value { font-size: 22px; }
   }
 
-  /* ── Mobile (≤ 640px): hero 2x2, tables → cards ────────────── */
+  /* ── Mobile (≤640px): hero 2x2, tables → cards ────────────── */
   @media (max-width: 640px) {
     body { padding: 12px; font-size: 15px; }
     .panel { padding: 14px; border-radius: 10px; }
@@ -176,7 +248,6 @@
     .hero-stat .value { font-size: 18px; }
     .hero-stat .sub { font-size: 11px; }
 
-    /* Transform every responsive table into a stack of cards */
     table.responsive { display: block; font-size: 14px; }
     table.responsive thead { display: none; }
     table.responsive tbody { display: block; }
@@ -191,24 +262,20 @@
       display: flex; justify-content: space-between; align-items: flex-start;
       gap: 4px 12px; flex-wrap: wrap;
       padding: 6px 0; border-bottom: 1px dashed var(--border);
-      text-align: right;
-      overflow-wrap: anywhere; word-break: break-word; min-width: 0;
+      text-align: right; overflow-wrap: anywhere; word-break: break-word; min-width: 0;
     }
     table.responsive td:last-child { border-bottom: none; }
     table.responsive td.num { text-align: right; }
     table.responsive td::before {
       content: attr(data-label); color: var(--text-muted);
       font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
-      font-weight: 600; text-align: left; margin-right: 12px;
-      flex-shrink: 0;
+      font-weight: 600; text-align: left; margin-right: 12px; flex-shrink: 0;
     }
-    /* Prose-style cells (long text): stack label-above-value, full-width left-aligned */
     table.responsive td[data-label="Skip reason"],
     table.responsive td[data-label="Detail"],
     table.responsive td[data-label="Event"],
     table.responsive td[data-label="Setup"] {
-      flex-direction: column; align-items: flex-start;
-      text-align: left;
+      flex-direction: column; align-items: flex-start; text-align: left;
     }
     table.responsive td[data-label="Skip reason"]::before,
     table.responsive td[data-label="Detail"]::before,
@@ -216,572 +283,410 @@
     table.responsive td[data-label="Setup"]::before {
       margin-bottom: 3px; margin-right: 0;
     }
-    /* The first cell (Ticker) becomes a card header — no label, no border. */
     table.responsive td:first-child {
       display: flex; justify-content: space-between; align-items: center;
       border-bottom: 1px solid var(--border); padding-bottom: 10px;
       margin-bottom: 6px; font-size: 16px;
     }
     table.responsive td:first-child::before { display: none; }
-    /* Ticker + company name on mobile: bigger ticker, two-line block on the left */
-    table.responsive td:first-child .ticker-cell {
-      flex: 1; min-width: 0;
-    }
-    table.responsive td:first-child .ticker-cell strong {
-      font-size: 17px;
-    }
+    table.responsive td:first-child .ticker-cell { flex: 1; min-width: 0; }
+    table.responsive td:first-child .ticker-cell strong { font-size: 17px; }
     table.responsive td:first-child .ticker-cell .company-name {
       font-size: 12px; max-width: none; white-space: normal;
     }
-    /* For positions and pending: 2nd cell (direction pill) joins header */
-    table.positions-table td:nth-child(2),
-    table.pending-table td:nth-child(2) {
-      border-bottom: 1px solid var(--border); padding-bottom: 8px;
-      margin-bottom: 6px;
-    }
-    table.positions-table td:nth-child(2)::before,
-    table.pending-table td:nth-child(2)::before {
-      content: ""; margin-right: 0;
-    }
-    /* Color-code position cards by P&L using a left border accent */
     table.positions-table tr { border-left: 3px solid var(--border); }
-    /* (color set inline via class name on tr — see _render_open_positions_html) */
     table.positions-table tr.pos-pos { border-left-color: var(--pos); }
     table.positions-table tr.pos-neg { border-left-color: var(--neg); }
-
-    /* Hide redundant inline distance text on mobile (it's noisy in cards) */
     .mobile-hide { display: none; }
-
-    /* Equity curve taller on mobile so it's actually readable */
     #equityChart { height: 200px !important; }
-  }
-
-  /* ── Tiny phones (≤ 380px): tighter still ──────────────────── */
-  @media (max-width: 380px) {
-    .hero-stat .value { font-size: 16px; }
-    .hero-stat .label { font-size: 10px; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>Paper Book</h1>
-<div class="meta">As of <strong>2026-05-07</strong>
-  · rendered 2026-05-07 16:53:07
-  · starting NAV $1,000,000</div>
 
-<!-- HERO ROW -->
-<div class="panel">
-  <div class="hero-grid">
-    <div class="hero-stat">
-      <div class="label">NAV</div>
-      <div class="value">$1,001,917</div>
-      <div class="sub neg">$-3,909 (-0.39%) today</div>
-    </div>
-    <div class="hero-stat">
-      <div class="label">Inception P&amp;L</div>
-      <div class="value pos">$+1,917</div>
-      <div class="sub pos">+0.19%</div>
-    </div>
-    <div class="hero-stat">
-      <div class="label">Cash</div>
-      <div class="value">$799,308</div>
-      <div class="sub">79.78% of NAV</div>
-    </div>
-    <div class="hero-stat">
-      <div class="label">Deployed</div>
-      <div class="value">20.22%</div>
-      <div class="sub">3 open positions</div>
-    </div>
+  <h1>Paper Book</h1>
+  <div class="meta">
+    As of <strong id="as-of">—</strong>
+    · rendered <span id="rendered-at">—</span>
+    · starting NAV <span id="starting-nav">—</span>
+    · auto-refreshes every 60s
   </div>
-</div>
 
-<!-- OPEN POSITIONS -->
-<div class="panel">
-  <h2>Open Positions (3)</h2>
-  
-    <table class="responsive positions-table">
-      <thead>
-        <tr>
-          <th>Ticker</th><th>Dir</th><th>Entered</th><th>Held</th>
-          <th>Entry $</th><th>Now $</th><th>Pos $</th>
-          <th>Unrealized $</th><th>Unrealized %</th>
-          <th>Stop (dist)</th><th>Target 1 (dist)</th><th>Target 2 (dist)</th>
-          <th>Max-hold</th><th>Setup</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="pos-pos">
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>MSFT</strong>
-              <span class="company-name">Microsoft</span>
-            </div>
-          </td>
-          <td data-label="Direction"><span class="pill pill-long">LONG</span></td>
-          <td class="num" data-label="Entered">2026-05-04</td>
-          <td class="num" data-label="Held">3d</td>
-          <td class="num" data-label="Entry $">$411.55</td>
-          <td class="num" data-label="Now $">$420.77</td>
-          <td class="num" data-label="Position $">$35,784</td>
-          <td class="num pos" data-label="Unrealized $"><strong>$+784</strong></td>
-          <td class="num pos" data-label="Unrealized %"><strong>+2.24%</strong></td>
-          <td class="num" data-label="Stop">$356.28 <span class="muted mobile-hide">(-15.33%)</span></td>
-          <td class="num" data-label="Target 1">$450.64 <span class="muted mobile-hide">(+7.10%)</span></td>
-          <td class="num" data-label="Target 2">$466.64 <span class="muted mobile-hide">(+10.90%)</span></td>
-          <td class="num" data-label="Max-hold">57d</td>
-          <td data-label="Setup">mean_reversion</td>
-        </tr>
-        <tr class="pos-neg">
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>ASML</strong>
-              <span class="company-name">ASML Holding</span>
-            </div>
-          </td>
-          <td data-label="Direction"><span class="pill pill-long">LONG</span></td>
-          <td class="num" data-label="Entered">2026-05-04</td>
-          <td class="num" data-label="Held">3d</td>
-          <td class="num" data-label="Entry $">$1,402.35</td>
-          <td class="num" data-label="Now $">$1,516.60</td>
-          <td class="num" data-label="Position $">$18,926</td>
-          <td class="num neg" data-label="Unrealized $"><strong>$-16,074</strong></td>
-          <td class="num neg" data-label="Unrealized %"><strong>-45.93%</strong></td>
-          <td class="num" data-label="Stop">$1,402.35 <span class="muted mobile-hide">(-7.53%)</span></td>
-          <td class="num" data-label="Target 1">$1,547.22 <span class="muted mobile-hide">(+2.02%)</span></td>
-          <td class="num" data-label="Target 2">$1,659.00 <span class="muted mobile-hide">(+9.39%)</span></td>
-          <td class="num" data-label="Max-hold">57d</td>
-          <td data-label="Setup">uptrend_pullback</td>
-        </tr>
-        <tr class="pos-neg">
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>JPM</strong>
-              <span class="company-name">JPMorgan Chase</span>
-            </div>
-          </td>
-          <td data-label="Direction"><span class="pill pill-long">LONG</span></td>
-          <td class="num" data-label="Entered">2026-05-04</td>
-          <td class="num" data-label="Held">3d</td>
-          <td class="num" data-label="Entry $">$310.62</td>
-          <td class="num" data-label="Now $">$306.27</td>
-          <td class="num" data-label="Position $">$147,899</td>
-          <td class="num neg" data-label="Unrealized $"><strong>$-2,101</strong></td>
-          <td class="num neg" data-label="Unrealized %"><strong>-1.40%</strong></td>
-          <td class="num" data-label="Stop">$293.00 <span class="muted mobile-hide">(-4.33%)</span></td>
-          <td class="num" data-label="Target 1">$319.89 <span class="muted mobile-hide">(+4.45%)</span></td>
-          <td class="num" data-label="Target 2">$337.25 <span class="muted mobile-hide">(+10.12%)</span></td>
-          <td class="num" data-label="Max-hold">57d</td>
-          <td data-label="Setup">pullback_to_sma50</td>
-        </tr></tbody>
-    </table>
-</div>
+  <input type="radio" name="tab" id="tab-today" class="tab-radio" checked>
+  <input type="radio" name="tab" id="tab-positions" class="tab-radio">
+  <input type="radio" name="tab" id="tab-watchlist" class="tab-radio">
+  <input type="radio" name="tab" id="tab-history" class="tab-radio">
 
-<!-- TODAY'S ACTIVITY -->
-<div class="panel">
-  <h2>Today's Activity</h2>
-  
-    <table class="responsive activity-table">
-      <thead><tr><th>Kind</th><th>Event</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr>
-          <td data-label="Kind"><span class="kind-pill kind-close">CLOSE</span></td>
-          <td data-label="Event">Closed ASML (target_1)</td>
-          <td class="muted" data-label="Detail">P&amp;L $+1,808 (+10.33%) · held 3d</td>
-        </tr>
-        <tr>
-          <td data-label="Kind"><span class="kind-pill kind-mtm">MTM</span></td>
-          <td data-label="Event">MTM mark: NAV $1,001,917</td>
-          <td class="muted" data-label="Detail">daily return -0.39% · positions value $202,609</td>
-        </tr>
-        <tr>
-          <td data-label="Kind"><span class="kind-pill kind-analyze">ANALYZE</span></td>
-          <td data-label="Event">Autopilot analyzed 5 ticker(s)</td>
-          <td class="muted" data-label="Detail">INTC (DEFER) · SNDK (DEFER) · DOCN (APPROVE WITH MODIFICATIONS) · STRL (APPROVE WITH MODIFICATIONS) · FLEX (APPROVE WITH MODIFICATIONS)</td>
-        </tr></tbody>
-    </table>
-</div>
+  <nav class="tab-bar" role="tablist">
+    <label for="tab-today"     class="tab-label">Today</label>
+    <label for="tab-positions" class="tab-label">Positions <span class="tab-count" id="positions-count">0</span></label>
+    <label for="tab-watchlist" class="tab-label">Watch List <span class="tab-count" id="watchlist-count">0</span></label>
+    <label for="tab-history"   class="tab-label">History <span class="tab-count" id="history-count">0</span></label>
+  </nav>
 
-<!-- PENDING ORDERS -->
-<div class="panel">
-  <h2>Pending Orders (0)</h2>
-  <div class="empty">No pending orders.</div>
-</div>
+  <!-- TODAY TAB -->
+  <section class="tab-pane tab-pane-today">
+    <div class="panel"><div id="hero-mount"></div></div>
+    <div class="panel"><h2>Realized P&amp;L</h2><div id="realized-mount"></div></div>
+    <div class="panel"><h2>Today's Activity</h2><div id="today-mount"></div></div>
+  </section>
 
-<!-- RECENT DECISIONS -->
-<div class="panel">
-  <h2>Recent Decisions — last 14 days (25)</h2>
-  
-    <table class="responsive decisions-table">
-      <thead><tr><th>Ticker</th><th>Verdict</th><th>Date</th><th>Setup</th><th>Skip reason</th></tr></thead>
-      <tbody>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>STRL</strong>
-              <span class="company-name">Sterling Infrastructure</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-07</td>
-          <td data-label="Setup">breakout</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>SNDK</strong>
-              <span class="company-name">Sandisk</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-07</td>
-          <td data-label="Setup">mean_reversion</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>INTC</strong>
-              <span class="company-name">Intel</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-07</td>
-          <td data-label="Setup">mean_reversion</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>FLEX</strong>
-              <span class="company-name">Flex</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-07</td>
-          <td data-label="Setup">mean_reversion</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>DOCN</strong>
-              <span class="company-name">DigitalOcean Holdings</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-07</td>
-          <td data-label="Setup">breakout</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>WDC</strong>
-              <span class="company-name">Western Digital</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-05</td>
-          <td data-label="Setup">breakout</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>STX</strong>
-              <span class="company-name">Seagate Technology Holdings</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-reject">REJECT</span></td>
-          <td class="num" data-label="Date">2026-05-05</td>
-          <td data-label="Setup">avoid</td>
-          <td class="muted" data-label="Skip reason">reject</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>SNDK</strong>
-              <span class="company-name">Sandisk</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-05</td>
-          <td data-label="Setup">mean_reversion</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>ON</strong>
-              <span class="company-name">ON Semiconductor</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-05</td>
-          <td data-label="Setup">breakout</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>INTC</strong>
-              <span class="company-name">Intel</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-05</td>
-          <td data-label="Setup">mean_reversion</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>INTC</strong>
-              <span class="company-name">Intel</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-04</td>
-          <td data-label="Setup">breakout</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>GME</strong>
-              <span class="company-name">GameStop</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-04</td>
-          <td data-label="Setup">pullback-to-support</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>AMD</strong>
-              <span class="company-name">Advanced Micro Devices</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-04</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>XOM</strong>
-              <span class="company-name">Exxon Mobil</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">range_breakout_above_sma50</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>SOFI</strong>
-              <span class="company-name">SoFi Technologies</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>NVO</strong>
-              <span class="company-name">Novo Nordisk A/S</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">mean_reversion</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>NVDA</strong>
-              <span class="company-name">NVIDIA</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>MCD</strong>
-              <span class="company-name">McDonald&#x27;s</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>IONQ</strong>
-              <span class="company-name">IonQ</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">momentum_pullback</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>GS</strong>
-              <span class="company-name">Goldman Sachs Group</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill ">—</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">unparseable_decision</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>AAPL</strong>
-              <span class="company-name">Apple</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-03</td>
-          <td data-label="Setup">support_hold</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>NVO</strong>
-              <span class="company-name">Novo Nordisk A/S</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-defer">DEFER</span></td>
-          <td class="num" data-label="Date">2026-05-02</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">defer</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>NVDA</strong>
-              <span class="company-name">NVIDIA</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-mod">APPROVE WITH MODIFICATIONS</span></td>
-          <td class="num" data-label="Date">2026-05-02</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">approve_with_modifications_not_auto_filled</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>LLY</strong>
-              <span class="company-name">Eli Lilly</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-approve">APPROVE</span></td>
-          <td class="num" data-label="Date">2026-05-02</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">missing_required_fields:intended_size_pct_nav,stop,target_1,direction</td>
-        </tr>
-        <tr>
-          <td data-label="Ticker">
-            <div class="ticker-cell">
-              <strong>NVDA</strong>
-              <span class="company-name">NVIDIA</span>
-            </div>
-          </td>
-          <td data-label="Verdict"><span class="verdict-pill verdict-approve">APPROVE</span></td>
-          <td class="num" data-label="Date">2026-05-01</td>
-          <td data-label="Setup">—</td>
-          <td class="muted" data-label="Skip reason">missing_required_fields:intended_size_pct_nav,stop,target_1,direction</td>
-        </tr></tbody>
-    </table>
-</div>
+  <!-- POSITIONS TAB -->
+  <section class="tab-pane tab-pane-positions">
+    <div class="panel">
+      <h2>Open Positions <span class="tab-count" id="positions-count-2">0</span></h2>
+      <div id="positions-mount"></div>
+    </div>
+  </section>
 
-<!-- FOOTER PANELS — equity curve + stats grid + closed trades -->
-<details class="footer-panels">
-<summary>Equity curve, lifetime stats, and closed trades</summary>
+  <!-- WATCH LIST TAB -->
+  <section class="tab-pane tab-pane-watchlist">
+    <div class="panel">
+      <h2>Watch List <span class="tab-count" id="watchlist-count-2">0</span></h2>
+      <div class="panel-help">Queued orders awaiting fill, plus PM-suggested entries from the last 7 days. Entry zones, stops, targets, and modification notes pulled from each decision document where available.</div>
+      <div id="watchlist-mount"></div>
+    </div>
+    <div class="panel">
+      <h2>Recent Decisions — last 14 days <span class="tab-count" id="decisions-count">0</span></h2>
+      <div class="panel-help">Compact log of every decision the autopilot logged but didn't auto-fill.</div>
+      <div id="decisions-mount"></div>
+    </div>
+  </section>
 
-<div class="panel" style="margin-top:14px;">
-  <h2>Equity curve</h2>
-  <canvas id="equityChart" height="100"></canvas>
-</div>
-
-<div class="panel">
-  <h2>Lifetime stats</h2>
-  <div class="hero-grid">
-    <div class="hero-stat"><div class="label">Total return</div><div class="value">+0.19%</div></div>
-    <div class="hero-stat"><div class="label">Sharpe</div><div class="value">-0.02</div></div>
-    <div class="hero-stat"><div class="label">Max DD</div><div class="value neg">-0.39%</div></div>
-    <div class="hero-stat"><div class="label">Hit rate</div><div class="value">100%</div></div>
-    <div class="hero-stat"><div class="label">Profit factor</div><div class="value">inf</div></div>
-    <div class="hero-stat"><div class="label">Closed trades</div><div class="value">1</div></div>
-  </div>
-</div>
-
-<div class="panel">
-  <h2>Recent closed trades</h2>
-  <div id="tradesGrid"></div>
-</div>
-
-</details>
+  <!-- HISTORY TAB -->
+  <section class="tab-pane tab-pane-history">
+    <div class="panel">
+      <h2>Trade History <span class="tab-count" id="history-count-2">0</span></h2>
+      <div id="history-mount"></div>
+    </div>
+    <div class="panel">
+      <h2>Equity Curve</h2>
+      <canvas id="equityChart" height="100"></canvas>
+    </div>
+    <div class="panel">
+      <h2>Lifetime Stats</h2>
+      <div id="lifetime-mount"></div>
+    </div>
+  </section>
 
 </div><!-- /.wrap -->
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js"></script>
 <script>
-const NAV_LABELS = ["2026-05-04", "2026-05-04", "2026-05-04", "2026-05-05", "2026-05-05", "2026-05-05", "2026-05-05", "2026-05-06", "2026-05-06", "2026-05-07", "2026-05-07"];
-const NAV_VALUES = [998338.97, 998338.97, 998338.97, 998338.97, 1000408.93, 1000408.93, 1000408.93, 1000408.93, 1005825.56, 1005825.56, 1001917.02];
-const SPY_VALUES = [1000000.0, 1000000.0, 1000000.0, 1008022.19, 1008022.19, 1008022.19, 1008022.19, 1022033.13, 1022033.13, 1018899.47, 1018899.47];
-const TRADES     = [["ASML-2026-05-04-001", "ASML", "2026-05-04", "2026-05-07", 3, 10.33, 1807.85, "target_1", "", "uptrend_pullback"]];
+// ── Formatters ──────────────────────────────────────────────────
+const fmtMoney = (v, signed) => {
+  if (v == null) return "—";
+  const abs = Math.abs(v);
+  const s = '$' + abs.toLocaleString('en-US', {maximumFractionDigits: 0});
+  if (!signed) return v < 0 ? '-' + s : s;
+  return (v >= 0 ? '+' : '-') + s;
+};
+const fmtPrice = (v) => v == null ? "—" : '$' + v.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const fmtPct = (v, signed = true) => {
+  if (v == null) return "—";
+  const sign = signed ? (v >= 0 ? '+' : '') : '';
+  return sign + v.toFixed(2) + '%';
+};
+const pnlClass = (v) => v == null || Math.abs(v) < 1e-9 ? "" : (v > 0 ? "pos" : "neg");
+const esc = (s) => String(s ?? "").replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 
-document.querySelector('details.footer-panels').addEventListener('toggle', function(e) {
-  if (!e.target.open) return;
-  if (window.__chartRendered) return;
-  window.__chartRendered = true;
-  if (NAV_LABELS.length > 0) {
-    new Chart(document.getElementById('equityChart'), {
-      type: 'line',
-      data: { labels: NAV_LABELS, datasets: [
-        { label: 'Paper NAV', data: NAV_VALUES, borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.08)', fill: true, tension: 0.2, pointRadius: 1.5 },
-        { label: 'SPY (norm.)', data: SPY_VALUES, borderColor: '#9ca3af', borderDash: [4,4], pointRadius: 0, tension: 0.2, fill: false },
-      ]},
-      options: { responsive: true,
-        plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } },
-        scales: { y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } } }
-      }
-    });
+// ── Renderers ──────────────────────────────────────────────────
+function renderHero(h) {
+  const dayCls = pnlClass(h.day_pnl);
+  const incepCls = pnlClass(h.incep_pnl);
+  return `
+    <div class="hero-grid">
+      <div class="hero-stat">
+        <div class="label">NAV</div>
+        <div class="value">${fmtMoney(h.current)}</div>
+        <div class="sub ${dayCls}">${fmtMoney(h.day_pnl, true)} (${fmtPct(h.day_pct)}) today</div>
+      </div>
+      <div class="hero-stat">
+        <div class="label">Inception P&amp;L</div>
+        <div class="value ${incepCls}">${fmtMoney(h.incep_pnl, true)}</div>
+        <div class="sub ${incepCls}">${fmtPct(h.incep_pct)}</div>
+      </div>
+      <div class="hero-stat">
+        <div class="label">Cash</div>
+        <div class="value">${fmtMoney(h.cash)}</div>
+        <div class="sub">${fmtPct(100.0 - h.deployed_pct, false)} of NAV</div>
+      </div>
+      <div class="hero-stat">
+        <div class="label">Deployed</div>
+        <div class="value">${fmtPct(h.deployed_pct, false)}</div>
+        <div class="sub">${h.open_count} open position${h.open_count !== 1 ? 's' : ''}</div>
+      </div>
+    </div>`;
+}
+
+function renderRealized(s) {
+  if (s.trade_count === 0) {
+    return '<div class="empty">No closed trades yet — realized P&amp;L will appear once any position hits target, stop, or max-hold.</div>';
   }
-  if (TRADES.length > 0) {
-    new gridjs.Grid({
-      columns: ['Trade ID', 'Ticker', 'Entry', 'Exit', 'Hold (d)', 'Return %', 'PnL $', 'Reason', 'Conv', 'Setup'],
-      data: TRADES, sort: true, search: true,
-      pagination: { enabled: true, limit: 25 },
-    }).render(document.getElementById('tradesGrid'));
-  } else {
-    document.getElementById('tradesGrid').innerHTML = '<div class="empty">No closed trades yet.</div>';
+  const totalCls = pnlClass(s.total_realized);
+  const todayCls = pnlClass(s.today_realized);
+  const reasonPills = Object.entries(s.by_reason || {})
+    .sort((a,b) => b[1] - a[1])
+    .map(([k,v]) => `<span class="reason-pill">${esc(k)}: ${v}</span>`).join(' ') || '—';
+  let todayCallout = '';
+  if (s.today_count > 0) {
+    todayCallout = `<div class="today-realized-callout ${todayCls}">
+      <strong>Today:</strong> ${s.today_count} close${s.today_count !== 1 ? 's' : ''} · ${fmtMoney(s.today_realized, true)} (${fmtPct(s.today_nav_impact_pct)} of starting NAV)
+    </div>`;
   }
-});
+  return `
+    <div class="hero-grid">
+      <div class="hero-stat">
+        <div class="label">Realized P&amp;L (Inception)</div>
+        <div class="value ${totalCls}">${fmtMoney(s.total_realized, true)}</div>
+        <div class="sub ${totalCls}">${fmtPct(s.nav_impact_pct)} of starting NAV</div>
+      </div>
+      <div class="hero-stat">
+        <div class="label">Closed Trades</div>
+        <div class="value">${s.trade_count}</div>
+        <div class="sub">${s.win_count} W · ${s.loss_count} L · ${s.flat_count} flat</div>
+      </div>
+      <div class="hero-stat">
+        <div class="label">Win Rate</div>
+        <div class="value">${(s.win_rate * 100).toFixed(0)}%</div>
+        <div class="sub">avg hold ${s.avg_hold_days.toFixed(1)}d</div>
+      </div>
+      <div class="hero-stat">
+        <div class="label">Exit Reasons</div>
+        <div class="value reason-pills">${reasonPills}</div>
+      </div>
+    </div>
+    ${todayCallout}`;
+}
+
+function renderToday(events) {
+  if (!events.length) return '<div class="empty">No activity today yet.</div>';
+  const kindClass = {FILL:'kind-fill', CLOSE:'kind-close', MTM:'kind-mtm', ANALYZE:'kind-analyze'};
+  const rows = events.map(e => `
+    <tr>
+      <td data-label="Kind"><span class="kind-pill ${kindClass[e.kind] || ''}">${esc(e.kind)}</span></td>
+      <td data-label="Event">${esc(e.label)}</td>
+      <td class="muted" data-label="Detail">${esc(e.detail)}</td>
+    </tr>`).join('');
+  return `<table class="responsive"><thead><tr><th>Kind</th><th>Event</th><th>Detail</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function renderPositions(positions) {
+  if (!positions.length) return '<div class="empty">No open positions.</div>';
+  const rows = positions.map(p => {
+    const cls = pnlClass(p.unrealized);
+    const rowCls = cls === 'pos' ? 'pos-pos' : (cls === 'neg' ? 'pos-neg' : '');
+    return `
+    <tr class="${rowCls}">
+      <td data-label="Ticker">
+        <div class="ticker-cell">
+          <strong>${esc(p.ticker)}</strong>
+          <span class="company-name">${esc(p.company || '')}</span>
+        </div>
+      </td>
+      <td data-label="Direction"><span class="pill ${p.direction === 'LONG' ? 'pill-long' : 'pill-short'}">${esc(p.direction)}</span></td>
+      <td class="num" data-label="Entered">${esc(p.entry_date)}</td>
+      <td class="num" data-label="Held">${p.days_held != null ? p.days_held + 'd' : '—'}</td>
+      <td class="num" data-label="Entry $">${fmtPrice(p.entry_price)}</td>
+      <td class="num" data-label="Now $">${fmtPrice(p.last_price)}</td>
+      <td class="num" data-label="Position $">${fmtMoney(p.position_value)}</td>
+      <td class="num ${cls}" data-label="Unrealized $"><strong>${fmtMoney(p.unrealized, true)}</strong></td>
+      <td class="num ${cls}" data-label="Unrealized %"><strong>${fmtPct(p.unrealized_pct)}</strong></td>
+      <td class="num" data-label="Stop">${fmtPrice(p.stop)} <span class="muted mobile-hide">(${fmtPct(p.stop_dist_pct)})</span></td>
+      <td class="num" data-label="Target 1">${fmtPrice(p.target_1)} <span class="muted mobile-hide">(${fmtPct(p.t1_dist_pct)})</span></td>
+      <td class="num" data-label="Target 2">${fmtPrice(p.target_2)} <span class="muted mobile-hide">(${fmtPct(p.t2_dist_pct)})</span></td>
+      <td class="num" data-label="Max-hold">${p.days_to_max != null ? p.days_to_max + 'd' : '—'}</td>
+      <td data-label="Setup">${esc(p.setup_type)}</td>
+    </tr>`;
+  }).join('');
+  return `<table class="responsive positions-table">
+    <thead><tr>
+      <th>Ticker</th><th>Dir</th><th>Entered</th><th>Held</th>
+      <th>Entry $</th><th>Now $</th><th>Pos $</th>
+      <th>Unrealized $</th><th>Unrealized %</th>
+      <th>Stop (dist)</th><th>Target 1 (dist)</th><th>Target 2 (dist)</th>
+      <th>Max-hold</th><th>Setup</th>
+    </tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function renderWatchList(items) {
+  if (!items.length) return '<div class="empty">No queued orders or PM-suggested entries in the last 7 days.</div>';
+  const cards = items.map(it => {
+    const kindCls = it.kind === 'QUEUED' ? 'kind-fill' : 'kind-analyze';
+    const sizeHtml = it.size_pct ? `<span class="watch-size">${it.size_pct.toFixed(1)}% size</span>` : '';
+    const entryZoneHtml = it.entry_zone ? `<div class="watch-entry-zone"><span class="muted">PM entry zone:</span> <strong>${esc(it.entry_zone)}</strong></div>` : '';
+    const modsHtml = it.modifications ? `<div class="watch-mods"><span class="muted">PM notes:</span> ${esc(it.modifications)}</div>` : '';
+    const levels = [];
+    if (it.stop != null) levels.push(`<span class="muted">Stop</span> ${fmtPrice(it.stop)}`);
+    if (it.target_1 != null) levels.push(`<span class="muted">T1</span> ${fmtPrice(it.target_1)}`);
+    if (it.target_2 != null) levels.push(`<span class="muted">T2</span> ${fmtPrice(it.target_2)}`);
+    const levelsHtml = levels.length
+      ? `<div class="watch-levels">${levels.join(' · ')}</div>`
+      : '<div class="watch-levels muted">No explicit stop/targets — see PM notes</div>';
+    let verdictCls = '';
+    const v = (it.verdict || '').toUpperCase();
+    if (v.startsWith('APPROVE WITH')) verdictCls = 'verdict-mod';
+    else if (v === 'APPROVE')         verdictCls = 'verdict-approve';
+    return `
+      <div class="watch-card">
+        <div class="watch-card-header">
+          <div class="ticker-cell">
+            <strong>${esc(it.ticker)}</strong>
+            <span class="company-name">${esc(it.company || '')}</span>
+          </div>
+          <div class="watch-card-pills">
+            <span class="kind-pill ${kindCls}">${esc(it.kind)}</span>
+            <span class="verdict-pill ${verdictCls}">${esc(it.verdict)}</span>
+            <span class="pill ${it.direction === 'LONG' ? 'pill-long' : 'pill-short'}">${esc(it.direction)}</span>
+            ${sizeHtml}
+          </div>
+        </div>
+        ${entryZoneHtml}${levelsHtml}${modsHtml}
+        <div class="watch-card-meta muted">${esc(it.setup)} · logged ${esc(it.logged_date)}</div>
+      </div>`;
+  }).join('');
+  return `<div class="watch-list">${cards}</div>`;
+}
+
+function renderDecisions(decisions) {
+  if (!decisions.length) return '<div class="empty">No autopilot decisions in the last 14 days.</div>';
+  const rows = decisions.map(d => {
+    const v = (d.verdict || '').toUpperCase();
+    let cls = '';
+    if (v.startsWith('APPROVE WITH')) cls = 'verdict-mod';
+    else if (v === 'APPROVE')         cls = 'verdict-approve';
+    else if (v === 'DEFER')           cls = 'verdict-defer';
+    else if (v === 'REJECT')          cls = 'verdict-reject';
+    return `
+      <tr>
+        <td data-label="Ticker">
+          <div class="ticker-cell">
+            <strong>${esc(d.ticker)}</strong>
+            <span class="company-name">${esc(d.company || '')}</span>
+          </div>
+        </td>
+        <td data-label="Verdict"><span class="verdict-pill ${cls}">${esc(d.verdict)}</span></td>
+        <td class="num" data-label="Date">${esc(d.date)}</td>
+        <td data-label="Setup">${esc(d.setup)}</td>
+        <td class="muted" data-label="Skip reason">${esc(d.reason)}</td>
+      </tr>`;
+  }).join('');
+  return `<table class="responsive">
+    <thead><tr><th>Ticker</th><th>Verdict</th><th>Date</th><th>Setup</th><th>Skip reason</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+}
+
+function renderHistory(rows) {
+  if (!rows.length) return '<div class="empty">No trade history yet.</div>';
+  const body = rows.map(r => {
+    const cls = pnlClass(r.pnl);
+    const partialBadge = r.is_partial ? ' <span class="badge-partial">PARTIAL</span>' : '';
+    const reasonStr = (r.exit_reason || '').replace(/_/g, ' ');
+    return `
+      <tr>
+        <td data-label="Exit date" class="num">${esc(r.exit_date || '—')}</td>
+        <td data-label="Ticker">
+          <div class="ticker-cell">
+            <strong>${esc(r.ticker)}${partialBadge}</strong>
+            <span class="company-name">${esc(r.company || '')}</span>
+          </div>
+        </td>
+        <td data-label="Direction"><span class="pill ${r.direction === 'LONG' ? 'pill-long' : 'pill-short'}">${esc(r.direction)}</span></td>
+        <td data-label="Entry" class="num">${fmtPrice(r.entry_price)} <span class="muted mobile-hide">on ${esc(r.entry_date || '—')}</span></td>
+        <td data-label="Exit" class="num">${fmtPrice(r.exit_price)}</td>
+        <td data-label="Shares" class="num">${r.shares_closed.toFixed(4)}</td>
+        <td data-label="Held" class="num">${r.hold_days != null ? r.hold_days + 'd' : '—'}</td>
+        <td data-label="Reason"><span class="exit-pill exit-${esc(r.exit_reason)}">${esc(reasonStr)}</span></td>
+        <td data-label="P&L $" class="num ${cls}"><strong>${fmtMoney(r.pnl, true)}</strong></td>
+        <td data-label="P&L %" class="num ${cls}"><strong>${fmtPct(r.pnl_pct)}</strong></td>
+        <td data-label="Setup">${esc(r.setup_type)}</td>
+      </tr>`;
+  }).join('');
+  return `<table class="responsive">
+    <thead><tr>
+      <th>Exit Date</th><th>Ticker</th><th>Dir</th>
+      <th class="num">Entry</th><th class="num">Exit</th><th class="num">Shares</th><th class="num">Held</th>
+      <th>Reason</th><th class="num">P&amp;L $</th><th class="num">P&amp;L %</th><th>Setup</th>
+    </tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function renderLifetime(s) {
+  return `
+    <div class="hero-grid">
+      <div class="hero-stat"><div class="label">Total return</div><div class="value">${fmtPct(s.total_return_pct)}</div></div>
+      <div class="hero-stat"><div class="label">Sharpe</div><div class="value">${s.sharpe ?? '—'}</div></div>
+      <div class="hero-stat"><div class="label">Max DD</div><div class="value neg">${s.max_dd_pct.toFixed(2)}%</div></div>
+      <div class="hero-stat"><div class="label">Hit rate</div><div class="value">${(s.hit_rate * 100).toFixed(0)}%</div></div>
+      <div class="hero-stat"><div class="label">Profit factor</div><div class="value">${s.profit_factor ?? '—'}</div></div>
+      <div class="hero-stat"><div class="label">Closed trades</div><div class="value">${s.trade_count}</div></div>
+    </div>`;
+}
+
+let chart = null;
+function renderEquityCurve(navHistory, spyAligned) {
+  const ctx = document.getElementById('equityChart');
+  if (!ctx || !navHistory.length) return;
+  const labels = navHistory.map(r => r.date);
+  const navs = navHistory.map(r => r.nav);
+  const spyByDate = {};
+  spyAligned.forEach(s => { spyByDate[s.date] = s.nav_equiv; });
+  const spy = labels.map(d => spyByDate[d] ?? null);
+  if (chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets: [
+      { label: 'Paper NAV', data: navs, borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.08)', fill: true, tension: 0.2, pointRadius: 1.5 },
+      { label: 'SPY (norm.)', data: spy, borderColor: '#9ca3af', borderDash: [4,4], pointRadius: 0, tension: 0.2, fill: false }
+    ]},
+    options: { responsive: true,
+      plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } },
+      scales: { y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } } }
+    }
+  });
+}
+
+// ── Polling loop ──────────────────────────────────────────────
+async function loadAndRender() {
+  try {
+    const res = await fetch(`data.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const d = await res.json();
+
+    // Header / meta
+    document.getElementById('as-of').textContent = d.as_of || '—';
+    document.getElementById('starting-nav').textContent = fmtMoney(d.starting_nav);
+    const renderedDate = new Date(d.rendered_at_utc);
+    document.getElementById('rendered-at').textContent = renderedDate.toLocaleString();
+
+    // Tab counts
+    document.getElementById('positions-count').textContent = d.hero.open_count;
+    document.getElementById('positions-count-2').textContent = d.hero.open_count;
+    document.getElementById('watchlist-count').textContent = d.watch_list.length;
+    document.getElementById('watchlist-count-2').textContent = d.watch_list.length;
+    document.getElementById('history-count').textContent = d.closed_stats.trade_count;
+    document.getElementById('history-count-2').textContent = d.closed_stats.trade_count;
+    document.getElementById('decisions-count').textContent = d.decisions.length;
+
+    // Panels
+    document.getElementById('hero-mount').innerHTML       = renderHero(d.hero);
+    document.getElementById('realized-mount').innerHTML   = renderRealized(d.closed_stats);
+    document.getElementById('today-mount').innerHTML      = renderToday(d.events);
+    document.getElementById('positions-mount').innerHTML  = renderPositions(d.positions);
+    document.getElementById('watchlist-mount').innerHTML  = renderWatchList(d.watch_list);
+    document.getElementById('decisions-mount').innerHTML  = renderDecisions(d.decisions);
+    document.getElementById('history-mount').innerHTML    = renderHistory(d.closed_stats.rows);
+    document.getElementById('lifetime-mount').innerHTML   = renderLifetime(d.lifetime_stats);
+
+    // Equity curve — render once per data update (Chart.js handles redraws)
+    renderEquityCurve(d.nav_history, d.spy_aligned);
+  } catch (err) {
+    console.error('[paper-dashboard] load failed', err);
+    document.getElementById('rendered-at').textContent = 'load failed: ' + err.message;
+  }
+}
+
+loadAndRender();
+setInterval(loadAndRender, 60000);
 </script>
 </body></html>
