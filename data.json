@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-08T19:55:10Z",
+  "rendered_at_utc": "2026-05-08T20:30:18Z",
   "as_of": "2026-05-08",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-05-08",
-    "current": 1001917.02,
+    "current": 1000363.98,
     "starting": 1000000.0,
     "cash": 799307.91,
-    "day_pnl": 0.0,
-    "day_pct": 0.0,
-    "incep_pnl": 1917.0200000000186,
-    "incep_pct": 0.19170200000000187,
-    "deployed_pct": 20.222144744082694,
+    "day_pnl": -1553.0400000000373,
+    "day_pct": -0.15500684877077317,
+    "incep_pnl": 363.9799999999814,
+    "incep_pct": 0.03639799999999814,
+    "deployed_pct": 20.09829162381476,
     "open_count": 3
   },
   "positions": [
@@ -23,17 +23,17 @@
       "entry_date": "2026-05-04",
       "days_held": 4,
       "entry_price": 411.55,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 415.1199951171875,
+      "position_value": 35303.58940074463,
       "cost_basis": 35000.0,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 303.58940074463317,
+      "unrealized_pct": 0.8673982878418091,
       "stop": 356.28,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -14.174213675392128,
       "target_1": 450.64,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 8.556563234875078,
       "target_2": 466.64,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 12.410870468493934,
       "max_hold": "2026-07-03",
       "days_to_max": 56,
       "setup_type": "mean_reversion",
@@ -46,17 +46,17 @@
       "entry_date": "2026-05-04",
       "days_held": 4,
       "entry_price": 1402.35,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 1592.02001953125,
+      "position_value": 19866.817823730467,
       "cost_basis": 35000.0,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -15133.182176269533,
+      "unrealized_pct": -43.23766336077009,
       "stop": 1402.35,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -11.913796133486814,
       "target_1": 1547.22,
-      "t1_dist_pct": null,
+      "t1_dist_pct": -2.814036191858992,
       "target_2": 1659.0,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 4.207232299030474,
       "max_hold": "2026-07-03",
       "days_to_max": 56,
       "setup_type": "uptrend_pullback",
@@ -69,17 +69,17 @@
       "entry_date": "2026-05-04",
       "days_held": 4,
       "entry_price": 310.62,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 302.1000061035156,
+      "position_value": 145885.66386741944,
       "cost_basis": 150000.0,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -4114.33613258056,
+      "unrealized_pct": -2.7428907550537067,
       "stop": 293.0,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -3.0122495596367105,
       "target_1": 319.89,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 5.8887764108116425,
       "target_2": 337.25,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 11.635217870349896,
       "max_hold": "2026-07-03",
       "days_to_max": 56,
       "setup_type": "pullback_to_sma50",
@@ -89,8 +89,8 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,001,917",
-      "detail": "daily return +0.00% \u00b7 positions value $202,609",
+      "label": "MTM mark: NAV $1,000,364",
+      "detail": "daily return -0.15% \u00b7 positions value $201,056",
       "ts": "2026-05-08"
     },
     {
@@ -707,13 +707,38 @@
     {
       "date": "2026-05-08",
       "nav": 1001917.02
+    },
+    {
+      "date": "2026-05-08",
+      "nav": 1000363.98
     }
   ],
-  "spy_aligned": [],
+  "spy_aligned": [
+    {
+      "date": "2026-05-04",
+      "nav_equiv": 1000000.0
+    },
+    {
+      "date": "2026-05-05",
+      "nav_equiv": 1008022.19
+    },
+    {
+      "date": "2026-05-06",
+      "nav_equiv": 1022033.13
+    },
+    {
+      "date": "2026-05-07",
+      "nav_equiv": 1018899.47
+    },
+    {
+      "date": "2026-05-08",
+      "nav_equiv": 1027311.58
+    }
+  ],
   "lifetime_stats": {
-    "total_return_pct": 0.19,
-    "sharpe": -0.13,
-    "max_dd_pct": -0.39,
+    "total_return_pct": 0.04,
+    "sharpe": -1.16,
+    "max_dd_pct": -0.54,
     "hit_rate": 1.0,
     "profit_factor": null,
     "trade_count": 1
