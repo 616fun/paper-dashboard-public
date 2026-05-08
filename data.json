@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-07T21:28:08Z",
-  "as_of": "2026-05-07",
+  "rendered_at_utc": "2026-05-08T11:44:40Z",
+  "as_of": "2026-05-08",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-05-07",
+    "as_of": "2026-05-08",
     "current": 1001917.02,
     "starting": 1000000.0,
     "cash": 799307.91,
-    "day_pnl": -3908.5400000000373,
-    "day_pct": -0.3885902442169035,
+    "day_pnl": 0.0,
+    "day_pct": 0.0,
     "incep_pnl": 1917.0200000000186,
     "incep_pct": 0.19170200000000187,
     "deployed_pct": 20.222144744082694,
@@ -21,7 +21,7 @@
       "company": "Microsoft",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 3,
+      "days_held": 4,
       "entry_price": 411.55,
       "last_price": 420.7699890136719,
       "position_value": 35784.08917667542,
@@ -35,7 +35,7 @@
       "target_2": 466.64,
       "t2_dist_pct": 10.901445488983692,
       "max_hold": "2026-07-03",
-      "days_to_max": 57,
+      "days_to_max": 56,
       "setup_type": "mean_reversion",
       "sector": "Technology"
     },
@@ -44,7 +44,7 @@
       "company": "ASML Holding",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 3,
+      "days_held": 4,
       "entry_price": 1402.35,
       "last_price": 1516.5999755859375,
       "position_value": 18925.651095336914,
@@ -58,7 +58,7 @@
       "target_2": 1659.0,
       "t2_dist_pct": 9.38942547187147,
       "max_hold": "2026-07-03",
-      "days_to_max": 57,
+      "days_to_max": 56,
       "setup_type": "uptrend_pullback",
       "sector": "Technology"
     },
@@ -67,7 +67,7 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 3,
+      "days_held": 4,
       "entry_price": 310.62,
       "last_price": 306.2699890136719,
       "position_value": 147899.37029864502,
@@ -81,32 +81,66 @@
       "target_2": 337.25,
       "t2_dist_pct": 10.115261729070419,
       "max_hold": "2026-07-03",
-      "days_to_max": 57,
+      "days_to_max": 56,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Partial close ASML \u2014 TARGET_1",
-      "detail": "12.48 shares @ $1,547.22 (entry $1,402.35) \u00b7 P&L $+1,808 (+10.33%) \u00b7 held 3d \u00b7 remainder still open",
-      "ts": "2026-05-07"
-    },
-    {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,001,917",
-      "detail": "daily return -0.39% \u00b7 positions value $202,609",
-      "ts": "2026-05-07"
+      "detail": "daily return +0.00% \u00b7 positions value $202,609",
+      "ts": "2026-05-08"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "INTC (DEFER) \u00b7 SNDK (DEFER) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 STRL (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
+      "detail": "INTC (DEFER) \u00b7 DDOG (APPROVE WITH MODIFICATIONS) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 SITM (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-05-08",
+      "ticker": "SITM",
+      "company": "SiTime",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "mean_reversion",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
     {
       "date": "2026-05-07",
       "ticker": "STRL",
@@ -130,6 +164,14 @@
       "verdict": "DEFER",
       "setup": "mean_reversion",
       "reason": "defer"
+    },
+    {
+      "date": "2026-05-07",
+      "ticker": "GLW",
+      "company": "Corning",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "mean_reversion",
+      "reason": "approve_with_modifications_not_auto_filled"
     },
     {
       "date": "2026-05-07",
@@ -311,6 +353,70 @@
   "watch_list": [
     {
       "kind": "PM SUGGESTED",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-08",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DDOG/2026-05/DDOG-decision-2026-05-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$84.77\u2013$123.39",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-08",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SITM",
+      "company": "SiTime",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-08",
+      "setup": "mean_reversion",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/SITM/2026-05/SITM-decision-2026-05-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$122.23\u2013$130.81",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-08",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
       "verdict": "APPROVE WITH MODIFICATIONS",
@@ -356,6 +462,22 @@
       "logged_date": "2026-05-07",
       "setup": "mean_reversion",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-07.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "GLW",
+      "company": "Corning",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-07",
+      "setup": "mean_reversion",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/GLW/2026-05/GLW-decision-2026-05-07.md"
     },
     {
       "kind": "PM SUGGESTED",
@@ -504,16 +626,16 @@
   ],
   "closed_stats": {
     "total_realized": 1807.85,
-    "today_realized": 1807.85,
+    "today_realized": 0.0,
     "trade_count": 1,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 1,
     "loss_count": 0,
     "flat_count": 0,
     "win_rate": 1.0,
     "avg_hold_days": 3.0,
     "nav_impact_pct": 0.180785,
-    "today_nav_impact_pct": 0.180785,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_1": 1
     },
@@ -581,6 +703,10 @@
     {
       "date": "2026-05-07",
       "nav": 1001917.02
+    },
+    {
+      "date": "2026-05-08",
+      "nav": 1001917.02
     }
   ],
   "spy_aligned": [
@@ -603,7 +729,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 0.19,
-    "sharpe": -0.02,
+    "sharpe": -0.13,
     "max_dd_pct": -0.39,
     "hit_rate": 1.0,
     "profit_factor": null,
