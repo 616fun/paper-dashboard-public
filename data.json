@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-11T20:30:16Z",
-  "as_of": "2026-05-11",
+  "rendered_at_utc": "2026-05-12T13:31:17Z",
+  "as_of": "2026-05-12",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-05-11",
+    "as_of": "2026-05-12",
     "current": 998813.59,
     "starting": 1000000.0,
     "cash": 799307.91,
-    "day_pnl": -1550.390000000014,
-    "day_pct": -0.15498258943709808,
+    "day_pnl": 0.0,
+    "day_pct": 0.0,
     "incep_pnl": -1186.4100000000326,
     "incep_pct": -0.11864100000000327,
     "deployed_pct": 19.974265668531796,
@@ -21,21 +21,21 @@
       "company": "Microsoft",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 7,
+      "days_held": 8,
       "entry_price": 411.55,
-      "last_price": 412.6600036621094,
-      "position_value": 35094.38114944153,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 35000.0,
-      "unrealized": 94.38114944152767,
-      "unrealized_pct": 0.26966042697579334,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 356.28,
-      "stop_dist_pct": -13.662580129348804,
+      "stop_dist_pct": null,
       "target_1": 450.64,
-      "t1_dist_pct": 9.203701837067072,
+      "t1_dist_pct": null,
       "target_2": 466.64,
-      "t2_dist_pct": 13.080985765242719,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
-      "days_to_max": 53,
+      "days_to_max": 52,
       "setup_type": "mean_reversion",
       "sector": "Technology"
     },
@@ -44,21 +44,21 @@
       "company": "ASML Holding",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 7,
+      "days_held": 8,
       "entry_price": 1402.35,
-      "last_price": 1565.81005859375,
-      "position_value": 19539.743721191404,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 35000.0,
-      "unrealized": -15460.256278808596,
-      "unrealized_pct": -44.17216079659599,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 1402.35,
-      "stop_dist_pct": -10.43932868463964,
+      "stop_dist_pct": null,
       "target_1": 1547.22,
-      "t1_dist_pct": -1.1872486379635123,
+      "t1_dist_pct": null,
       "target_2": 1659.0,
-      "t2_dist_pct": 5.951548266968194,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
-      "days_to_max": 53,
+      "days_to_max": 52,
       "setup_type": "uptrend_pullback",
       "sector": "Technology"
     },
@@ -67,21 +67,21 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 7,
+      "days_held": 8,
       "entry_price": 310.62,
-      "last_price": 300.0,
-      "position_value": 144871.56,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 150000.0,
-      "unrealized": -5128.440000000002,
-      "unrealized_pct": -3.4189600000000016,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 293.0,
-      "stop_dist_pct": -2.3333333333333335,
+      "stop_dist_pct": null,
       "target_1": 319.89,
-      "t1_dist_pct": 6.6299999999999955,
+      "t1_dist_pct": null,
       "target_2": 337.25,
-      "t2_dist_pct": 12.416666666666666,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
-      "days_to_max": 53,
+      "days_to_max": 52,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     }
@@ -90,17 +90,57 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $998,814",
-      "detail": "daily return -0.30% \u00b7 positions value $199,506",
-      "ts": "2026-05-11"
+      "detail": "daily return +0.00% \u00b7 positions value $199,506",
+      "ts": "2026-05-12"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "INTC (REJECT) \u00b7 SNDK (REJECT) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 SITM (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
+      "detail": "INTC (REJECT) \u00b7 SNDK (REJECT) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 SITM (REJECT) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-05-12",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "SITM",
+      "company": "SiTime",
+      "verdict": "REJECT",
+      "setup": "avoid",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "REJECT",
+      "setup": "\u2014",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "mean_reversion",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
     {
       "date": "2026-05-11",
       "ticker": "SNDK",
@@ -115,6 +155,14 @@
       "company": "SiTime",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-11",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "wait-for-pullback-swing-long",
       "reason": "approve_with_modifications_not_auto_filled"
     },
     {
@@ -403,6 +451,38 @@
       "target_2": null,
       "entry_zone": null,
       "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-12",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-12.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-12",
+      "setup": "mean_reversion",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-12.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
       "logged_date": "2026-05-11",
       "setup": "\u2014",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-11.md"
@@ -438,6 +518,22 @@
       "logged_date": "2026-05-11",
       "setup": "\u2014",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-11.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$699.00\u2013$720.00",
+      "modifications": "APPROVE WITH MODIFICATIONS \u2014 LONG at 7.0% NAV, wait-for-pullback entry zone $699\u2013$720.",
+      "logged_date": "2026-05-11",
+      "setup": "wait-for-pullback-swing-long",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/MU/2026-05/MU-decision-2026-05-11.md"
     },
     {
       "kind": "PM SUGGESTED",
@@ -614,38 +710,6 @@
       "logged_date": "2026-05-05",
       "setup": "breakout",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/ON/2026-05/ON-decision-2026-05-05.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "GME",
-      "company": "GameStop",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-05-04",
-      "setup": "pullback-to-support",
-      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/GME/2026-05/GME-decision-2026-05-04.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "AMD",
-      "company": "Advanced Micro Devices",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-05-04",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/adoring-vigilant-allen/mnt/tradingagents-cowork/reports/AMD/2026-05/AMD-decision-2026-05-04.md"
     }
   ],
   "closed_stats": {
@@ -743,37 +807,16 @@
     {
       "date": "2026-05-11",
       "nav": 998813.59
+    },
+    {
+      "date": "2026-05-12",
+      "nav": 998813.59
     }
   ],
-  "spy_aligned": [
-    {
-      "date": "2026-05-04",
-      "nav_equiv": 1000000.0
-    },
-    {
-      "date": "2026-05-05",
-      "nav_equiv": 1008022.19
-    },
-    {
-      "date": "2026-05-06",
-      "nav_equiv": 1022033.13
-    },
-    {
-      "date": "2026-05-07",
-      "nav_equiv": 1018899.47
-    },
-    {
-      "date": "2026-05-08",
-      "nav_equiv": 1027311.58
-    },
-    {
-      "date": "2026-05-11",
-      "nav_equiv": 1029651.37
-    }
-  ],
+  "spy_aligned": [],
   "lifetime_stats": {
     "total_return_pct": -0.12,
-    "sharpe": -1.95,
+    "sharpe": -1.98,
     "max_dd_pct": -0.7,
     "hit_rate": 1.0,
     "profit_factor": null,
