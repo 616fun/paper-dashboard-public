@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-12T20:30:16Z",
-  "as_of": "2026-05-12",
+  "rendered_at_utc": "2026-05-13T11:49:33Z",
+  "as_of": "2026-05-13",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-05-12",
+    "as_of": "2026-05-13",
     "current": 1000194.37,
     "starting": 1000000.0,
     "cash": 799307.91,
-    "day_pnl": 1380.780000000028,
-    "day_pct": 0.13824201170510986,
+    "day_pnl": 0.0,
+    "day_pct": 0.0,
     "incep_pnl": 194.36999999999534,
     "incep_pct": 0.019436999999999535,
     "deployed_pct": 20.08474212867245,
@@ -21,7 +21,7 @@
       "company": "Microsoft",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 8,
+      "days_held": 9,
       "entry_price": 411.55,
       "last_price": 407.7699890136719,
       "position_value": 34678.51327667542,
@@ -35,7 +35,7 @@
       "target_2": 466.64,
       "t2_dist_pct": 14.437063190629825,
       "max_hold": "2026-07-03",
-      "days_to_max": 52,
+      "days_to_max": 51,
       "setup_type": "mean_reversion",
       "sector": "Technology"
     },
@@ -44,7 +44,7 @@
       "company": "ASML Holding",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 8,
+      "days_held": 9,
       "entry_price": 1402.35,
       "last_price": 1520.93994140625,
       "position_value": 18979.809528808593,
@@ -58,7 +58,7 @@
       "target_2": 1659.0,
       "t2_dist_pct": 9.077285357244328,
       "max_hold": "2026-07-03",
-      "days_to_max": 52,
+      "days_to_max": 51,
       "setup_type": "uptrend_pullback",
       "sector": "Technology"
     },
@@ -67,7 +67,7 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 8,
+      "days_held": 9,
       "entry_price": 310.62,
       "last_price": 304.8800048828125,
       "position_value": 147228.13973393553,
@@ -81,7 +81,7 @@
       "target_2": 337.25,
       "t2_dist_pct": 10.617290277737183,
       "max_hold": "2026-07-03",
-      "days_to_max": 52,
+      "days_to_max": 51,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     }
@@ -90,17 +90,57 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,000,194",
-      "detail": "daily return +0.14% \u00b7 positions value $200,886",
-      "ts": "2026-05-12"
+      "detail": "daily return +0.00% \u00b7 positions value $200,886",
+      "ts": "2026-05-13"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "INTC (REJECT) \u00b7 SNDK (REJECT) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 SITM (REJECT) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
+      "detail": "INTC (APPROVE WITH MODIFICATIONS) \u00b7 MU (REJECT) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 SITM (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-05-13",
+      "ticker": "SITM",
+      "company": "SiTime",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-13",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-05-13",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-13",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-13",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
     {
       "date": "2026-05-12",
       "ticker": "SNDK",
@@ -108,6 +148,14 @@
       "verdict": "REJECT",
       "setup": "breakout",
       "reason": "reject"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "SLB",
+      "company": "SLB",
+      "verdict": "\u2014",
+      "setup": "pullback-to-50d-SMA long",
+      "reason": "unparseable_decision"
     },
     {
       "date": "2026-05-12",
@@ -441,6 +489,70 @@
   "watch_list": [
     {
       "kind": "PM SUGGESTED",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-13",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/INTC/2026-05/INTC-decision-2026-05-13.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-13",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-13.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SITM",
+      "company": "SiTime",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": "$800.00\u2013$832.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-13",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/SITM/2026-05/SITM-decision-2026-05-13.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-13",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-13.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
       "verdict": "APPROVE WITH MODIFICATIONS",
@@ -662,54 +774,6 @@
       "logged_date": "2026-05-07",
       "setup": "mean_reversion",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/GLW/2026-05/GLW-decision-2026-05-07.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": "$775.00\u2013$1,025.00",
-      "modifications": "APPROVE WITH MODIFICATIONS",
-      "logged_date": "2026-05-05",
-      "setup": "mean_reversion",
-      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/SNDK/2026-05/SNDK-decision-2026-05-05.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "WDC",
-      "company": "Western Digital",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
-      "logged_date": "2026-05-05",
-      "setup": "breakout",
-      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/WDC/2026-05/WDC-decision-2026-05-05.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "ON",
-      "company": "ON Semiconductor",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": "$2,026.00\u2013$2.00",
-      "modifications": "APPROVE WITH MODIFICATIONS",
-      "logged_date": "2026-05-05",
-      "setup": "breakout",
-      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/ON/2026-05/ON-decision-2026-05-05.md"
     }
   ],
   "closed_stats": {
@@ -815,6 +879,10 @@
     {
       "date": "2026-05-12",
       "nav": 1000194.37
+    },
+    {
+      "date": "2026-05-13",
+      "nav": 1000194.37
     }
   ],
   "spy_aligned": [
@@ -849,7 +917,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 0.02,
-    "sharpe": -1.32,
+    "sharpe": -1.37,
     "max_dd_pct": -0.7,
     "hit_rate": 1.0,
     "profit_factor": null,
