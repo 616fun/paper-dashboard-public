@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-13T20:30:15Z",
-  "as_of": "2026-05-13",
+  "rendered_at_utc": "2026-05-14T12:13:34Z",
+  "as_of": "2026-05-14",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-05-13",
+    "as_of": "2026-05-14",
     "current": 998497.53,
     "starting": 1000000.0,
     "cash": 799307.91,
-    "day_pnl": -1696.8399999999674,
-    "day_pct": -0.16965102493028103,
+    "day_pnl": 0.0,
+    "day_pct": 0.0,
     "incep_pnl": -1502.469999999972,
     "incep_pct": -0.15024699999999722,
     "deployed_pct": 19.94893467588247,
@@ -21,7 +21,7 @@
       "company": "Microsoft",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 9,
+      "days_held": 10,
       "entry_price": 411.55,
       "last_price": 405.2099914550781,
       "position_value": 34460.8000763031,
@@ -35,7 +35,7 @@
       "target_2": 466.64,
       "t2_dist_pct": 15.16004290129456,
       "max_hold": "2026-07-03",
-      "days_to_max": 51,
+      "days_to_max": 50,
       "setup_type": "mean_reversion",
       "sector": "Technology"
     },
@@ -44,7 +44,7 @@
       "company": "ASML Holding",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 9,
+      "days_held": 10,
       "entry_price": 1402.35,
       "last_price": 1581.5799560546875,
       "position_value": 19736.536271606445,
@@ -58,7 +58,7 @@
       "target_2": 1659.0,
       "t2_dist_pct": 4.89510780968923,
       "max_hold": "2026-07-03",
-      "days_to_max": 51,
+      "days_to_max": 50,
       "setup_type": "uptrend_pullback",
       "sector": "Technology"
     },
@@ -67,7 +67,7 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 9,
+      "days_held": 10,
       "entry_price": 310.62,
       "last_price": 300.25,
       "position_value": 144992.2863,
@@ -81,7 +81,7 @@
       "target_2": 337.25,
       "t2_dist_pct": 12.323064113238967,
       "max_hold": "2026-07-03",
-      "days_to_max": 51,
+      "days_to_max": 50,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     }
@@ -90,17 +90,57 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $998,498",
-      "detail": "daily return -0.17% \u00b7 positions value $199,190",
-      "ts": "2026-05-13"
+      "detail": "daily return +0.00% \u00b7 positions value $199,190",
+      "ts": "2026-05-14"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "INTC (APPROVE WITH MODIFICATIONS) \u00b7 MU (REJECT) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 SITM (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
+      "detail": "INTC (APPROVE WITH MODIFICATIONS) \u00b7 MU (REJECT) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 STRL (APPROVE WITH MODIFICATIONS) \u00b7 FLEX (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-05-14",
+      "ticker": "STRL",
+      "company": "Sterling Infrastructure",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "support_hold",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-14",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-05-14",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-14",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
+    {
+      "date": "2026-05-14",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "approve_with_modifications_not_auto_filled"
+    },
     {
       "date": "2026-05-13",
       "ticker": "SITM",
@@ -487,6 +527,70 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "INTC",
+      "company": "Intel",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 107.0,
+      "target_1": 132.75,
+      "target_2": 134.16,
+      "entry_zone": "$120.00\u2013$126.38",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-14",
+      "setup": "\u2014",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/INTC/2026-05/INTC-decision-2026-05-14.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-14",
+      "setup": "\u2014",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-14.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "STRL",
+      "company": "Sterling Infrastructure",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 380.18,
+      "target_1": 888.95,
+      "target_2": 967.54,
+      "entry_zone": "$497.00\u2013$693.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-14",
+      "setup": "support_hold",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/STRL/2026-05/STRL-decision-2026-05-14.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "FLEX",
+      "company": "Flex",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 65.41,
+      "target_1": 147.34,
+      "target_2": 152.98,
+      "entry_zone": "$174.00\u2013$180.00",
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-05-14",
+      "setup": "breakout",
+      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/FLEX/2026-05/FLEX-decision-2026-05-14.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "INTC",
@@ -887,6 +991,10 @@
     {
       "date": "2026-05-13",
       "nav": 998497.53
+    },
+    {
+      "date": "2026-05-14",
+      "nav": 998497.53
     }
   ],
   "spy_aligned": [
@@ -925,7 +1033,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": -0.15,
-    "sharpe": -2.12,
+    "sharpe": -2.15,
     "max_dd_pct": -0.73,
     "hit_rate": 1.0,
     "profit_factor": null,
