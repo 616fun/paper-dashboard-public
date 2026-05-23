@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-23T20:08:33Z",
+  "rendered_at_utc": "2026-05-23T22:28:08Z",
   "as_of": "2026-05-22",
   "starting_nav": 1000000.0,
   "hero": {
@@ -518,7 +518,7 @@
       "target_1": 129.44,
       "target_2": 134.86,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-05-23",
       "setup": "breakout",
       "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/INTC/2026-05/INTC-decision-2026-05-22.md"
@@ -534,7 +534,7 @@
       "target_1": 225.0,
       "target_2": 250.0,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-05-23",
       "setup": "breakout",
       "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/DDOG/2026-05/DDOG-decision-2026-05-22.md"
@@ -550,7 +550,7 @@
       "target_1": 1600.0,
       "target_2": 2000.0,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-05-23",
       "setup": "support_hold",
       "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/SNDK/2026-05/SNDK-decision-2026-05-22.md"
@@ -565,8 +565,8 @@
       "stop": 140.0,
       "target_1": 165.99,
       "target_2": 177.0,
-      "entry_zone": "$150.00\u2013$158.00",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-05-23",
       "setup": "support_hold",
       "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-22.md"
@@ -582,7 +582,7 @@
       "target_1": 481.41,
       "target_2": 505.24,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-05-23",
       "setup": "breakout",
       "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/AMD/2026-05/AMD-decision-2026-05-22.md"
