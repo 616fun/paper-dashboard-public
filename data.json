@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-05-26T22:37:43Z",
+  "rendered_at_utc": "2026-05-26T23:30:11Z",
   "as_of": "2026-05-26",
   "starting_nav": 1000000.0,
   "hero": {
@@ -564,8 +564,8 @@
       "stop": 200.0,
       "target_1": 225.0,
       "target_2": 250.0,
-      "entry_zone": "$215.00\u2013$222.00",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-05-26",
       "setup": "momentum_continuation",
       "decision_doc": "/sessions/adoring-epic-mccarthy/mnt/tradingagents-cowork/reports/DDOG/2026-05/DDOG-decision-2026-05-26.md"
@@ -596,8 +596,8 @@
       "stop": 303.0,
       "target_1": 507.0,
       "target_2": 530.0,
-      "entry_zone": "$400.00\u2013$433.00",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-05-26",
       "setup": "\u2014",
       "decision_doc": "/sessions/adoring-epic-mccarthy/mnt/tradingagents-cowork/reports/AMD/2026-05/AMD-decision-2026-05-26.md"
