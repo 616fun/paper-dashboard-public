@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-02T20:36:46Z",
+  "rendered_at_utc": "2026-06-02T23:02:17Z",
   "as_of": "2026-06-02",
   "starting_nav": 1000000.0,
   "hero": {
@@ -23,17 +23,17 @@
       "entry_date": "2026-05-04",
       "days_held": 29,
       "entry_price": 411.55,
-      "last_price": 441.30999755859375,
-      "position_value": 18765.42784718628,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 35000.0,
-      "unrealized": 1265.4575921862815,
-      "unrealized_pct": 7.231198532035914,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 411.55,
-      "stop_dist_pct": -6.743558433579887,
+      "stop_dist_pct": null,
       "target_1": 450.64,
-      "t1_dist_pct": 2.1141606791193235,
+      "t1_dist_pct": null,
       "target_2": 466.64,
-      "t2_dist_pct": 5.739730026860112,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
       "days_to_max": 31,
       "setup_type": "mean_reversion",
@@ -46,17 +46,17 @@
       "entry_date": "2026-05-04",
       "days_held": 29,
       "entry_price": 310.62,
-      "last_price": 300.9599914550781,
-      "position_value": 145335.1448656128,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 150000.0,
-      "unrealized": -4664.868358387204,
-      "unrealized_pct": -3.1099119647549642,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 293.0,
-      "stop_dist_pct": -2.6448669860047658,
+      "stop_dist_pct": null,
       "target_1": 319.89,
-      "t1_dist_pct": 6.289875426098751,
+      "t1_dist_pct": null,
       "target_2": 337.25,
-      "t2_dist_pct": 12.058083989658337,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
       "days_to_max": 31,
       "setup_type": "pullback_to_sma50",
@@ -69,17 +69,17 @@
       "entry_date": "2026-05-04",
       "days_held": 29,
       "entry_price": 199.5,
-      "last_price": 222.82000732421875,
-      "position_value": 16816.06997875366,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 30112.25,
-      "unrealized": 1759.9446287536612,
-      "unrealized_pct": 11.689226728931699,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 199.5,
-      "stop_dist_pct": -10.465849814952435,
+      "stop_dist_pct": null,
       "target_1": 216.0,
-      "t1_dist_pct": -3.0607697244597794,
+      "t1_dist_pct": null,
       "target_2": 240.0,
-      "t2_dist_pct": 7.710255861711357,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
       "days_to_max": 31,
       "setup_type": "\u2014",
@@ -92,17 +92,17 @@
       "entry_date": "2026-05-04",
       "days_held": 29,
       "entry_price": 16.47,
-      "last_price": 17.739999771118164,
-      "position_value": 32937.20119504356,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 61158.47,
-      "unrealized": 2357.9615850435657,
-      "unrealized_pct": 7.71098828851345,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 16.47,
-      "stop_dist_pct": -7.158961598104442,
+      "stop_dist_pct": null,
       "target_1": 17.6,
-      "t1_dist_pct": -0.7891757211073424,
+      "t1_dist_pct": null,
       "target_2": 21.7,
-      "t2_dist_pct": 22.322436752952864,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-03",
       "days_to_max": 31,
       "setup_type": "\u2014",
@@ -115,17 +115,17 @@
       "entry_date": "2026-05-14",
       "days_held": 19,
       "entry_price": 825.55,
-      "last_price": 701.0800170898438,
-      "position_value": 17312.4699420166,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 20386.16,
-      "unrealized": -3073.6617579833983,
-      "unrealized_pct": -15.077219176325633,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 650.0,
-      "stop_dist_pct": -7.285904011624085,
+      "stop_dist_pct": null,
       "target_1": 864.75,
-      "t1_dist_pct": 23.345406932227803,
+      "t1_dist_pct": null,
       "target_2": 901.81,
-      "t2_dist_pct": 28.631536774272735,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-13",
       "days_to_max": 41,
       "setup_type": "breakout",
@@ -138,17 +138,17 @@
       "entry_date": "2026-05-26",
       "days_held": 7,
       "entry_price": 122.11,
-      "last_price": 107.93000030517578,
-      "position_value": 17764.673642230224,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 20098.62,
-      "unrealized": -2333.948541769776,
-      "unrealized_pct": -11.612480300404735,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 100.0,
-      "stop_dist_pct": -7.347355028957132,
+      "stop_dist_pct": null,
       "target_1": 129.44,
-      "t1_dist_pct": 19.929583650517884,
+      "t1_dist_pct": null,
       "target_2": 134.86,
-      "t2_dist_pct": 24.951357007948424,
+      "t2_dist_pct": null,
       "max_hold": "2026-07-25",
       "days_to_max": 53,
       "setup_type": "breakout",
@@ -1213,92 +1213,7 @@
       "nav": 1012892.99
     }
   ],
-  "spy_aligned": [
-    {
-      "date": "2026-05-04",
-      "nav_equiv": 1000000.0
-    },
-    {
-      "date": "2026-05-05",
-      "nav_equiv": 1008022.19
-    },
-    {
-      "date": "2026-05-06",
-      "nav_equiv": 1022033.13
-    },
-    {
-      "date": "2026-05-07",
-      "nav_equiv": 1018899.47
-    },
-    {
-      "date": "2026-05-08",
-      "nav_equiv": 1027311.58
-    },
-    {
-      "date": "2026-05-11",
-      "nav_equiv": 1029651.37
-    },
-    {
-      "date": "2026-05-12",
-      "nav_equiv": 1028091.51
-    },
-    {
-      "date": "2026-05-13",
-      "nav_equiv": 1033843.52
-    },
-    {
-      "date": "2026-05-14",
-      "nav_equiv": 1042004.95
-    },
-    {
-      "date": "2026-05-15",
-      "nav_equiv": 1029470.3
-    },
-    {
-      "date": "2026-05-18",
-      "nav_equiv": 1028746.14
-    },
-    {
-      "date": "2026-05-19",
-      "nav_equiv": 1021893.8
-    },
-    {
-      "date": "2026-05-20",
-      "nav_equiv": 1032367.22
-    },
-    {
-      "date": "2026-05-21",
-      "nav_equiv": 1034414.51
-    },
-    {
-      "date": "2026-05-22",
-      "nav_equiv": 1038481.36
-    },
-    {
-      "date": "2026-05-26",
-      "nav_equiv": 1045375.44
-    },
-    {
-      "date": "2026-05-27",
-      "nav_equiv": 1045194.37
-    },
-    {
-      "date": "2026-05-28",
-      "nav_equiv": 1050960.24
-    },
-    {
-      "date": "2026-05-29",
-      "nav_equiv": 1053578.6
-    },
-    {
-      "date": "2026-06-01",
-      "nav_equiv": 1056447.64
-    },
-    {
-      "date": "2026-06-02",
-      "nav_equiv": 1057882.2
-    }
-  ],
+  "spy_aligned": [],
   "lifetime_stats": {
     "total_return_pct": 1.29,
     "sharpe": -3.26,
