@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-02T23:02:17Z",
-  "as_of": "2026-06-02",
+  "rendered_at_utc": "2026-06-04T10:25:09Z",
+  "as_of": "2026-06-03",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-06-02",
-    "current": 1012892.99,
+    "as_of": "2026-06-03",
+    "current": 1010743.68,
     "starting": 1000000.0,
     "cash": 763962.0,
-    "day_pnl": 1047.9499999999534,
-    "day_pct": 0.10356823017089191,
-    "incep_pnl": 12892.98999999999,
-    "incep_pct": 1.289298999999999,
-    "deployed_pct": 24.576237811656686,
+    "day_pnl": -2149.3099999999395,
+    "day_pct": -0.21219516979774336,
+    "incep_pnl": 10743.680000000051,
+    "incep_pct": 1.074368000000005,
+    "deployed_pct": 24.415851900256257,
     "open_count": 6
   },
   "positions": [
@@ -21,21 +21,21 @@
       "company": "Microsoft",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 29,
+      "days_held": 31,
       "entry_price": 411.55,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 427.3399963378906,
+      "position_value": 18171.39405827942,
       "cost_basis": 35000.0,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 671.4238032794201,
+      "unrealized_pct": 3.8367139686285148,
       "stop": 411.55,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -3.6949493314933544,
       "target_1": 450.64,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 5.452333940604622,
       "target_2": 466.64,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 9.196425328518865,
       "max_hold": "2026-07-03",
-      "days_to_max": 31,
+      "days_to_max": 29,
       "setup_type": "mean_reversion",
       "sector": "Technology"
     },
@@ -44,21 +44,21 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 29,
+      "days_held": 31,
       "entry_price": 310.62,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 300.8500061035156,
+      "position_value": 145282.03236741942,
       "cost_basis": 150000.0,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -4717.980856580572,
+      "unrealized_pct": -3.145320293762278,
       "stop": 293.0,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -2.6092757002685976,
       "target_1": 319.89,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 6.328733092972959,
       "target_2": 337.25,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 12.099050409844422,
       "max_hold": "2026-07-03",
-      "days_to_max": 31,
+      "days_to_max": 29,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     },
@@ -67,21 +67,21 @@
       "company": "NVIDIA",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 29,
+      "days_held": 31,
       "entry_price": 199.5,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 214.75,
+      "position_value": 16207.032175,
       "cost_basis": 30112.25,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 1150.906825,
+      "unrealized_pct": 7.644110275689223,
       "stop": 199.5,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -7.1012805587892895,
       "target_1": 216.0,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 0.5820721769499418,
       "target_2": 240.0,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 11.757857974388825,
       "max_hold": "2026-07-03",
-      "days_to_max": 31,
+      "days_to_max": 29,
       "setup_type": "\u2014",
       "sector": "Technology"
     },
@@ -90,21 +90,21 @@
       "company": "SoFi Technologies",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 29,
+      "days_held": 31,
       "entry_price": 16.47,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 16.68000030517578,
+      "position_value": 30969.13940660858,
       "cost_basis": 61158.47,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 389.89979660858444,
+      "unrealized_pct": 1.275047390259762,
       "stop": 16.47,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -1.2589946123119649,
       "target_1": 17.6,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 5.515585599472354,
       "target_2": 21.7,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 30.095920881167604,
       "max_hold": "2026-07-03",
-      "days_to_max": 31,
+      "days_to_max": 29,
       "setup_type": "\u2014",
       "sector": "Financial Services"
     },
@@ -113,21 +113,21 @@
       "company": "SiTime",
       "direction": "LONG",
       "entry_date": "2026-05-14",
-      "days_held": 19,
+      "days_held": 21,
       "entry_price": 825.55,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 712.75,
+      "position_value": 17600.6485,
       "cost_basis": 20386.16,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -2785.4831999999988,
+      "unrealized_pct": -13.663618193931315,
       "stop": 650.0,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -8.803928446159242,
       "target_1": 864.75,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 21.3258505787443,
       "target_2": 901.81,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 26.525429673798662,
       "max_hold": "2026-07-13",
-      "days_to_max": 41,
+      "days_to_max": 39,
       "setup_type": "breakout",
       "sector": "Technology"
     },
@@ -136,52 +136,90 @@
       "company": "Intel",
       "direction": "LONG",
       "entry_date": "2026-05-26",
-      "days_held": 7,
+      "days_held": 9,
       "entry_price": 122.11,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 112.70999908447266,
+      "position_value": 18551.434673309326,
       "cost_basis": 20098.62,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -1547.1875106906737,
+      "unrealized_pct": -7.697977983398037,
       "stop": 100.0,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -11.276727165037864,
       "target_1": 129.44,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 14.843404357574986,
       "target_2": 134.86,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 19.65220574522995,
       "max_hold": "2026-07-25",
-      "days_to_max": 53,
+      "days_to_max": 51,
       "setup_type": "breakout",
       "sector": "Technology"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Closed WDC \u2014 TARGET_2",
-      "detail": "16.20 shares @ $570.00 (entry $472.00) \u00b7 P&L $+1,587 (+20.76%) \u00b7 held 27d",
-      "ts": "2026-06-02"
-    },
-    {
-      "kind": "CLOSE",
-      "label": "Closed ASML \u2014 TARGET_2",
-      "detail": "12.48 shares @ $1,659.00 (entry $1,402.35) \u00b7 P&L $+3,203 (+18.30%) \u00b7 held 29d",
-      "ts": "2026-06-02"
-    },
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,012,893",
-      "detail": "daily return +0.10% \u00b7 positions value $248,931",
-      "ts": "2026-06-02"
-    },
-    {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "MU (\u2014) \u00b7 DDOG (REJECT) \u00b7 SNDK (\u2014)",
+      "label": "Autopilot analyzed 2 ticker(s)",
+      "detail": "SNDK (\u2014) \u00b7 DOCN (\u2014)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-06-04",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-06-04",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "\u2014",
+      "setup": "momentum_continuation",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-06-03",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-06-03",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-06-03",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-06-03",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "\u2014",
+      "setup": "momentum_continuation",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-06-03",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "REJECT",
+      "setup": "\u2014",
+      "reason": "reject"
+    },
     {
       "date": "2026-06-02",
       "ticker": "SNDK",
@@ -352,6 +390,70 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.0,
+      "stop": 971.0,
+      "target_1": 1089.0,
+      "target_2": 1093.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-04",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/peaceful-bold-franklin/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-04.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.0,
+      "stop": 145.96,
+      "target_1": 275.25,
+      "target_2": 278.71,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-04",
+      "setup": "momentum_breakout",
+      "decision_doc": "/sessions/peaceful-bold-franklin/mnt/tradingagents-cowork/reports/DDOG/2026-06/DDOG-decision-2026-06-04.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.6,
+      "stop": 158.0,
+      "target_1": 449.32,
+      "target_2": 469.47,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-04",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/peaceful-bold-franklin/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-04.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 5.0,
+      "stop": 390.0,
+      "target_1": 469.47,
+      "target_2": 500.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-03",
+      "setup": "momentum_continuation",
+      "decision_doc": "/sessions/great-bold-wozniak/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-03.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "DOCN",
@@ -691,16 +793,16 @@
   ],
   "closed_stats": {
     "total_realized": 17582.14,
-    "today_realized": 4790.01,
+    "today_realized": 0.0,
     "trade_count": 21,
-    "today_count": 2,
+    "today_count": 0,
     "win_count": 17,
     "loss_count": 2,
     "flat_count": 2,
     "win_rate": 0.8947368421052632,
     "avg_hold_days": 13.380952380952381,
     "nav_impact_pct": 1.758214,
-    "today_nav_impact_pct": 0.479001,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_2": 7,
       "target_1": 12,
@@ -1211,12 +1313,105 @@
     {
       "date": "2026-06-02",
       "nav": 1012892.99
+    },
+    {
+      "date": "2026-06-03",
+      "nav": 1010743.68
     }
   ],
-  "spy_aligned": [],
+  "spy_aligned": [
+    {
+      "date": "2026-05-04",
+      "nav_equiv": 1000000.0
+    },
+    {
+      "date": "2026-05-05",
+      "nav_equiv": 1008022.19
+    },
+    {
+      "date": "2026-05-06",
+      "nav_equiv": 1022033.13
+    },
+    {
+      "date": "2026-05-07",
+      "nav_equiv": 1018899.47
+    },
+    {
+      "date": "2026-05-08",
+      "nav_equiv": 1027311.58
+    },
+    {
+      "date": "2026-05-11",
+      "nav_equiv": 1029651.37
+    },
+    {
+      "date": "2026-05-12",
+      "nav_equiv": 1028091.51
+    },
+    {
+      "date": "2026-05-13",
+      "nav_equiv": 1033843.52
+    },
+    {
+      "date": "2026-05-14",
+      "nav_equiv": 1042004.95
+    },
+    {
+      "date": "2026-05-15",
+      "nav_equiv": 1029470.3
+    },
+    {
+      "date": "2026-05-18",
+      "nav_equiv": 1028746.14
+    },
+    {
+      "date": "2026-05-19",
+      "nav_equiv": 1021893.8
+    },
+    {
+      "date": "2026-05-20",
+      "nav_equiv": 1032367.22
+    },
+    {
+      "date": "2026-05-21",
+      "nav_equiv": 1034414.51
+    },
+    {
+      "date": "2026-05-22",
+      "nav_equiv": 1038481.36
+    },
+    {
+      "date": "2026-05-26",
+      "nav_equiv": 1045375.44
+    },
+    {
+      "date": "2026-05-27",
+      "nav_equiv": 1045194.37
+    },
+    {
+      "date": "2026-05-28",
+      "nav_equiv": 1050960.24
+    },
+    {
+      "date": "2026-05-29",
+      "nav_equiv": 1053578.6
+    },
+    {
+      "date": "2026-06-01",
+      "nav_equiv": 1056447.64
+    },
+    {
+      "date": "2026-06-02",
+      "nav_equiv": 1057882.2
+    },
+    {
+      "date": "2026-06-03",
+      "nav_equiv": 1050458.88
+    }
+  ],
   "lifetime_stats": {
-    "total_return_pct": 1.29,
-    "sharpe": -3.26,
+    "total_return_pct": 1.07,
+    "sharpe": -3.3,
     "max_dd_pct": -1.0,
     "hit_rate": 0.8095,
     "profit_factor": 17.97,
