@@ -1,48 +1,25 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-08T13:37:30Z",
+  "rendered_at_utc": "2026-06-08T20:21:12Z",
   "as_of": "2026-06-08",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-06-08",
-    "current": 1009607.89,
+    "current": 1010534.29,
     "starting": 1000000.0,
-    "cash": 827051.78,
-    "day_pnl": -1485.420000000042,
-    "day_pct": -0.14691225679260422,
-    "incep_pnl": 9607.890000000014,
-    "incep_pct": 0.9607890000000014,
-    "deployed_pct": 18.081882264212492,
-    "open_count": 3,
-    "cash_interest": 2355.95,
+    "cash": 844551.75,
+    "day_pnl": -559.0200000000186,
+    "day_pct": -0.0552886656919942,
+    "incep_pnl": 10534.290000000037,
+    "incep_pct": 1.0534290000000037,
+    "deployed_pct": 16.42522590698036,
+    "open_count": 2,
+    "cash_interest": 2357.46,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 545.83,
-    "total_incl_cash": 1011963.84
+    "cash_interest_month": 547.34,
+    "total_incl_cash": 1012891.75
   },
   "positions": [
-    {
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "direction": "LONG",
-      "entry_date": "2026-05-04",
-      "days_held": 35,
-      "entry_price": 411.55,
-      "last_price": 412.4750061035156,
-      "position_value": 17539.303457034304,
-      "cost_basis": 35000.0,
-      "unrealized": 39.33320203430412,
-      "unrealized_pct": 0.22476153651213235,
-      "stop": 411.55,
-      "stop_dist_pct": -0.22425749192751623,
-      "target_1": 450.64,
-      "t1_dist_pct": 9.252680364081597,
-      "target_2": 466.64,
-      "t2_dist_pct": 13.131703277771695,
-      "max_hold": "2026-07-03",
-      "days_to_max": 25,
-      "setup_type": "mean_reversion",
-      "sector": "Technology"
-    },
     {
       "ticker": "JPM",
       "company": "JPMorgan Chase",
@@ -50,17 +27,17 @@
       "entry_date": "2026-05-04",
       "days_held": 35,
       "entry_price": 310.62,
-      "last_price": 313.7900085449219,
-      "position_value": 151530.8268343872,
+      "last_price": 311.1099853515625,
+      "position_value": 150236.62969819334,
       "cost_basis": 150000.0,
-      "unrealized": 1530.8136103872093,
-      "unrealized_pct": 1.0205423169537957,
+      "unrealized": 236.61647419334622,
+      "unrealized_pct": 0.1577443022221598,
       "stop": 293.0,
-      "stop_dist_pct": -6.625452684528545,
+      "stop_dist_pct": -5.821087783825948,
       "target_1": 319.89,
-      "t1_dist_pct": 1.9439724940142071,
+      "t1_dist_pct": 2.822157777583332,
       "target_2": 337.25,
-      "t2_dist_pct": 7.476334751340438,
+      "t2_dist_pct": 8.402177968958018,
       "max_hold": "2026-07-03",
       "days_to_max": 25,
       "setup_type": "pullback_to_sma50",
@@ -73,17 +50,17 @@
       "entry_date": "2026-05-04",
       "days_held": 35,
       "entry_price": 199.5,
-      "last_price": 208.52000427246094,
-      "position_value": 15736.858758439637,
+      "last_price": 208.63999938964844,
+      "position_value": 15745.914705937195,
       "cost_basis": 30112.25,
-      "unrealized": 680.7334084396371,
-      "unrealized_pct": 4.5213053997297985,
+      "unrealized": 689.7893559371951,
+      "unrealized_pct": 4.5814533281445815,
       "stop": 199.5,
-      "stop_dist_pct": -4.3257261114741885,
+      "stop_dist_pct": -4.380751254019565,
       "target_1": 216.0,
-      "t1_dist_pct": 3.587183759005389,
+      "t1_dist_pct": 3.527607664820922,
       "target_2": 240.0,
-      "t2_dist_pct": 15.096870843339321,
+      "t2_dist_pct": 15.030675183134356,
       "max_hold": "2026-07-03",
       "days_to_max": 25,
       "setup_type": "\u2014",
@@ -92,9 +69,15 @@
   ],
   "events": [
     {
+      "kind": "CLOSE",
+      "label": "Closed MSFT \u2014 STOP_HIT",
+      "detail": "42.52 shares @ $411.55 (entry $411.55) \u00b7 P&L $+0 (+0.00%) \u00b7 held 35d",
+      "ts": "2026-06-08"
+    },
+    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,009,608",
-      "detail": "daily return +0.00% \u00b7 positions value $182,556",
+      "label": "MTM mark: NAV $1,010,534",
+      "detail": "daily return +0.09% \u00b7 positions value $165,983",
       "ts": "2026-06-08"
     },
     {
@@ -991,22 +974,39 @@
   "closed_stats": {
     "total_realized": 9607.930000000002,
     "today_realized": 0.0,
-    "trade_count": 24,
-    "today_count": 0,
+    "trade_count": 25,
+    "today_count": 1,
     "win_count": 17,
     "loss_count": 4,
-    "flat_count": 3,
+    "flat_count": 4,
     "win_rate": 0.8095238095238095,
-    "avg_hold_days": 14.375,
+    "avg_hold_days": 15.2,
     "nav_impact_pct": 0.9607930000000002,
     "today_nav_impact_pct": 0.0,
     "by_reason": {
-      "stop_hit": 4,
+      "stop_hit": 5,
       "target_2": 7,
       "target_1": 12,
       "gap_through_stop": 1
     },
     "rows": [
+      {
+        "trade_id": "MSFT-2026-05-04-001",
+        "ticker": "MSFT",
+        "company": "Microsoft",
+        "direction": "LONG",
+        "entry_date": "2026-05-04",
+        "exit_date": "2026-06-08",
+        "entry_price": 411.55,
+        "exit_price": 411.55,
+        "shares_closed": 42.5221,
+        "exit_reason": "stop_hit",
+        "hold_days": 35,
+        "pnl": 0.0,
+        "pnl_pct": 0.0,
+        "setup_type": "mean_reversion",
+        "is_partial": false
+      },
       {
         "trade_id": "SOFI-2026-05-04-001",
         "ticker": "SOFI",
@@ -1581,6 +1581,10 @@
     {
       "date": "2026-06-08",
       "nav": 1009607.89
+    },
+    {
+      "date": "2026-06-08",
+      "nav": 1010534.29
     }
   ],
   "spy_aligned": [
@@ -1682,15 +1686,15 @@
     },
     {
       "date": "2026-06-08",
-      "nav_equiv": 1033244.66
+      "nav_equiv": 1029539.92
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.96,
-    "sharpe": -3.17,
+    "total_return_pct": 1.05,
+    "sharpe": -3.11,
     "max_dd_pct": -1.0,
-    "hit_rate": 0.7083,
+    "hit_rate": 0.68,
     "profit_factor": 2.07,
-    "trade_count": 24
+    "trade_count": 25
   }
 }
