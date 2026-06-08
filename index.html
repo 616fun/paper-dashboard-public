@@ -413,6 +413,11 @@ function renderHero(h) {
         <div class="sub">${fmtPct(100.0 - h.deployed_pct, false)} of NAV</div>
       </div>
       <div class="hero-stat">
+        <div class="label">Cash Yield (SPAXX)</div>
+        <div class="value pos">${fmtMoney(h.cash_interest ?? 0)}</div>
+        <div class="sub">${fmtPct((h.cash_yield_annual ?? 0) * 100, false)} 7-day · paid monthly · separate from book P&amp;L</div>
+      </div>
+      <div class="hero-stat">
         <div class="label">Deployed</div>
         <div class="value">${fmtPct(h.deployed_pct, false)}</div>
         <div class="sub">${h.open_count} open position${h.open_count !== 1 ? 's' : ''}</div>
