@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-08T12:30:11Z",
+  "rendered_at_utc": "2026-06-08T13:23:15Z",
   "as_of": "2026-06-08",
   "starting_nav": 1000000.0,
   "hero": {
@@ -13,7 +13,11 @@
     "incep_pnl": 9607.890000000014,
     "incep_pct": 0.9607890000000014,
     "deployed_pct": 18.081882264212492,
-    "open_count": 3
+    "open_count": 3,
+    "cash_interest": 2355.95,
+    "cash_yield_annual": 0.031453,
+    "cash_interest_month": 545.83,
+    "total_incl_cash": 1011963.84
   },
   "positions": [
     {
@@ -90,7 +94,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,009,608",
-      "detail": "daily return -0.15% \u00b7 positions value $182,556",
+      "detail": "daily return +0.00% \u00b7 positions value $182,556",
       "ts": "2026-06-08"
     },
     {
@@ -1573,6 +1577,10 @@
     {
       "date": "2026-06-08",
       "nav": 1009607.89
+    },
+    {
+      "date": "2026-06-08",
+      "nav": 1009607.89
     }
   ],
   "spy_aligned": [
@@ -1675,7 +1683,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 0.96,
-    "sharpe": -3.21,
+    "sharpe": -3.17,
     "max_dd_pct": -1.0,
     "hit_rate": 0.7083,
     "profit_factor": 2.07,
