@@ -362,6 +362,7 @@
     </div>
     <div class="panel">
       <h2>Equity Curve</h2>
+      <div class="panel-help">Trading NAV (excludes SPAXX cash yield) vs SPY — isolates stock selection from the cash carry. Headline NAV above includes cash yield.</div>
       <canvas id="equityChart" height="100"></canvas>
     </div>
     <div class="panel">
@@ -394,18 +395,23 @@ const esc = (s) => String(s ?? "").replace(/&/g,'&amp;').replace(/</g,'&lt;').re
 // ── Renderers ──────────────────────────────────────────────────
 function renderHero(h) {
   const dayCls = pnlClass(h.day_pnl);
-  const incepCls = pnlClass(h.incep_pnl);
+  const totalNav   = (h.total_incl_cash != null) ? h.total_incl_cash : h.current;
+  const tradingPnl = h.incep_pnl;
+  const cashPnl    = h.cash_interest ?? 0;
+  const totalPnl   = tradingPnl + cashPnl;
+  const totalPnlCls = pnlClass(totalPnl);
+  const totalPnlPct = h.starting ? (totalPnl / h.starting * 100) : 0;
   return `
     <div class="hero-grid">
       <div class="hero-stat">
-        <div class="label">NAV</div>
-        <div class="value">${fmtMoney(h.current)}</div>
-        <div class="sub ${dayCls}">${fmtMoney(h.day_pnl, true)} (${fmtPct(h.day_pct)}) today</div>
+        <div class="label">NAV (Total)</div>
+        <div class="value">${fmtMoney(totalNav)}</div>
+        <div class="sub ${dayCls}">${fmtMoney(h.day_pnl, true)} (${fmtPct(h.day_pct)}) today · incl. cash yield</div>
       </div>
       <div class="hero-stat">
         <div class="label">Inception P&amp;L</div>
-        <div class="value ${incepCls}">${fmtMoney(h.incep_pnl, true)}</div>
-        <div class="sub ${incepCls}">${fmtPct(h.incep_pct)}</div>
+        <div class="value ${totalPnlCls}">${fmtMoney(totalPnl, true)}</div>
+        <div class="sub">${fmtPct(totalPnlPct)} · ${fmtMoney(tradingPnl, true)} book · ${fmtMoney(cashPnl, true)} cash</div>
       </div>
       <div class="hero-stat">
         <div class="label">Cash</div>
@@ -414,8 +420,8 @@ function renderHero(h) {
       </div>
       <div class="hero-stat">
         <div class="label">Cash Yield (SPAXX)</div>
-        <div class="value pos">${fmtMoney(h.cash_interest ?? 0)}</div>
-        <div class="sub">${fmtPct((h.cash_yield_annual ?? 0) * 100, false)} 7-day · paid monthly · separate from book P&amp;L</div>
+        <div class="value pos">${fmtMoney(cashPnl)}</div>
+        <div class="sub">${fmtPct((h.cash_yield_annual ?? 0) * 100, false)} 7-day · in NAV · excl. from SPY</div>
       </div>
       <div class="hero-stat">
         <div class="label">Deployed</div>
@@ -641,7 +647,7 @@ function renderEquityCurve(navHistory, spyAligned) {
   chart = new Chart(ctx, {
     type: 'line',
     data: { labels, datasets: [
-      { label: 'Paper NAV', data: navs, borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.08)', fill: true, tension: 0.2, pointRadius: 1.5 },
+      { label: 'Paper NAV (ex-cash)', data: navs, borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.08)', fill: true, tension: 0.2, pointRadius: 1.5 },
       { label: 'SPY (norm.)', data: spy, borderColor: '#9ca3af', borderDash: [4,4], pointRadius: 0, tension: 0.2, fill: false }
     ]},
     options: { responsive: true,
