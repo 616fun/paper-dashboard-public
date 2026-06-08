@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-05T20:35:26Z",
-  "as_of": "2026-06-05",
+  "rendered_at_utc": "2026-06-08T12:30:11Z",
+  "as_of": "2026-06-08",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-06-05",
-    "current": 1011093.31,
+    "as_of": "2026-06-08",
+    "current": 1009607.89,
     "starting": 1000000.0,
     "cash": 827051.78,
-    "day_pnl": -5401.089999999967,
-    "day_pct": -0.5313447865526821,
-    "incep_pnl": 11093.310000000056,
-    "incep_pct": 1.1093310000000056,
-    "deployed_pct": 18.20223001970016,
+    "day_pnl": -1485.420000000042,
+    "day_pct": -0.14691225679260422,
+    "incep_pnl": 9607.890000000014,
+    "incep_pct": 0.9607890000000014,
+    "deployed_pct": 18.081882264212492,
     "open_count": 3
   },
   "positions": [
@@ -21,7 +21,7 @@
       "company": "Microsoft",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 32,
+      "days_held": 35,
       "entry_price": 411.55,
       "last_price": 416.6700134277344,
       "position_value": 17717.683977975466,
@@ -35,7 +35,7 @@
       "target_2": 466.64,
       "t2_dist_pct": 11.992700449256642,
       "max_hold": "2026-07-03",
-      "days_to_max": 28,
+      "days_to_max": 25,
       "setup_type": "mean_reversion",
       "sector": "Technology"
     },
@@ -44,7 +44,7 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 32,
+      "days_held": 35,
       "entry_price": 310.62,
       "last_price": 312.3699951171875,
       "position_value": 150845.09496606444,
@@ -58,7 +58,7 @@
       "target_2": 337.25,
       "t2_dist_pct": 7.9649150916299165,
       "max_hold": "2026-07-03",
-      "days_to_max": 28,
+      "days_to_max": 25,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     },
@@ -67,7 +67,7 @@
       "company": "NVIDIA",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 32,
+      "days_held": 35,
       "entry_price": 199.5,
       "last_price": 205.10000610351562,
       "position_value": 15478.753890628053,
@@ -81,51 +81,89 @@
       "target_2": 240.0,
       "t2_dist_pct": 17.01608623008527,
       "max_hold": "2026-07-03",
-      "days_to_max": 28,
+      "days_to_max": 25,
       "setup_type": "\u2014",
       "sector": "Technology"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Closed SOFI \u2014 STOP_HIT",
-      "detail": "1856.66 shares @ $16.47 (entry $16.47) \u00b7 P&L $+0 (+0.00%) \u00b7 held 32d",
-      "ts": "2026-06-05"
-    },
-    {
-      "kind": "CLOSE",
-      "label": "Closed SITM \u2014 STOP_HIT",
-      "detail": "24.69 shares @ $650.00 (entry $825.55) \u00b7 P&L $-4,335 (-21.26%) \u00b7 held 22d",
-      "ts": "2026-06-05"
-    },
-    {
-      "kind": "CLOSE",
-      "label": "Closed INTC \u2014 STOP_HIT",
-      "detail": "164.59 shares @ $100.00 (entry $122.11) \u00b7 P&L $-3,639 (-18.11%) \u00b7 held 10d",
-      "ts": "2026-06-05"
-    },
-    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,011,093",
-      "detail": "daily return -0.53% \u00b7 positions value $184,042",
-      "ts": "2026-06-05"
+      "label": "MTM mark: NAV $1,009,608",
+      "detail": "daily return -0.15% \u00b7 positions value $182,556",
+      "ts": "2026-06-08"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "MU (DEFER) \u00b7 DDOG (DEFER) \u00b7 SNDK (\u2014) \u00b7 DOCN (\u2014)",
+      "label": "Autopilot analyzed 7 ticker(s)",
+      "detail": "MU (DEFER) \u00b7 DDOG (DEFER) \u00b7 SNDK (APPROVE WITH MODIFICATIONS) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 HPE (APPROVE WITH MODIFICATIONS) \u00b7 FTNT (DEFER) \u00b7 HUM (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
     {
+      "date": "2026-06-08",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "pullback",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-08",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "DEFER",
+      "setup": "pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-06-08",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "momentum_pullback",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-08",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "extended_breakout_buy",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-08",
+      "ticker": "FTNT",
+      "company": "Fortinet",
+      "verdict": "DEFER",
+      "setup": "momentum_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-06-08",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "momentum_continuation",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-08",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
       "date": "2026-06-05",
       "ticker": "SNDK",
       "company": "Sandisk",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-05",
@@ -139,9 +177,9 @@
       "date": "2026-06-05",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
-      "verdict": "\u2014",
+      "verdict": "DEFER",
       "setup": "breakout_extended",
-      "reason": "unparseable_decision"
+      "reason": "defer"
     },
     {
       "date": "2026-06-05",
@@ -155,49 +193,49 @@
       "date": "2026-06-04",
       "ticker": "SNDK",
       "company": "Sandisk",
-      "verdict": "\u2014",
+      "verdict": "REJECT",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "reject"
     },
     {
       "date": "2026-06-04",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "momentum_continuation",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-03",
       "ticker": "SNDK",
       "company": "Sandisk",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-03",
       "ticker": "MU",
       "company": "Micron Technology",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-03",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-03",
       "ticker": "DELL",
       "company": "Dell Technologies",
-      "verdict": "\u2014",
+      "verdict": "APPROVE",
       "setup": "momentum_continuation",
-      "reason": "unparseable_decision"
+      "reason": "approve_missed_by_parser_bug"
     },
     {
       "date": "2026-06-03",
@@ -211,17 +249,17 @@
       "date": "2026-06-02",
       "ticker": "SNDK",
       "company": "Sandisk",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-02",
       "ticker": "MU",
       "company": "Micron Technology",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-02",
@@ -235,25 +273,25 @@
       "date": "2026-06-01",
       "ticker": "SNDK",
       "company": "Sandisk",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-01",
       "ticker": "MU",
       "company": "Micron Technology",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "extended_breakout_chase",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-06-01",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
-      "verdict": "\u2014",
+      "verdict": "APPROVE",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "approve_missed_by_parser_bug"
     },
     {
       "date": "2026-06-01",
@@ -283,9 +321,9 @@
       "date": "2026-05-29",
       "ticker": "DELL",
       "company": "Dell Technologies",
-      "verdict": "\u2014",
+      "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "awm_no_executable_params"
     },
     {
       "date": "2026-05-29",
@@ -315,9 +353,9 @@
       "date": "2026-05-28",
       "ticker": "DELL",
       "company": "Dell Technologies",
-      "verdict": "\u2014",
+      "verdict": "DEFER",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "defer"
     },
     {
       "date": "2026-05-27",
@@ -331,17 +369,17 @@
       "date": "2026-05-27",
       "ticker": "DELL",
       "company": "Dell Technologies",
-      "verdict": "\u2014",
+      "verdict": "DEFER",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "defer"
     },
     {
       "date": "2026-05-27",
       "ticker": "AMD",
       "company": "Advanced Micro Devices",
-      "verdict": "\u2014",
+      "verdict": "DEFER",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "defer"
     },
     {
       "date": "2026-05-26",
@@ -355,9 +393,9 @@
       "date": "2026-05-26",
       "ticker": "DELL",
       "company": "Dell Technologies",
-      "verdict": "\u2014",
+      "verdict": "DEFER",
       "setup": "\u2014",
-      "reason": "unparseable_decision"
+      "reason": "defer"
     },
     {
       "date": "2026-05-25",
@@ -366,17 +404,89 @@
       "verdict": "APPROVE",
       "setup": "\u2014",
       "reason": "missing_required_fields:intended_size_pct_nav,stop,target_1,direction"
-    },
-    {
-      "date": "2026-05-23",
-      "ticker": "NOW",
-      "company": "ServiceNow",
-      "verdict": "\u2014",
-      "setup": "\u2014",
-      "reason": "unparseable_decision"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 5.0,
+      "stop": 360.0,
+      "target_1": 454.22,
+      "target_2": 469.47,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-08",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/nice-vibrant-mccarthy/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 1400.0,
+      "target_1": 1861.0,
+      "target_2": 2200.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-08",
+      "setup": "pullback",
+      "decision_doc": "/sessions/nice-vibrant-mccarthy/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 157.15,
+      "target_1": 184.46,
+      "target_2": 200.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-08",
+      "setup": "momentum_continuation",
+      "decision_doc": "/sessions/nice-vibrant-mccarthy/mnt/tradingagents-cowork/reports/DOCN/2026-06/DOCN-decision-2026-06-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 41.6,
+      "target_1": 54.0,
+      "target_2": 64.25,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-08",
+      "setup": "extended_breakout_buy",
+      "decision_doc": "/sessions/nice-vibrant-mccarthy/mnt/tradingagents-cowork/reports/HPE/2026-06/HPE-decision-2026-06-08.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 308.0,
+      "target_1": 360.0,
+      "target_2": 378.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-08",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/nice-vibrant-mccarthy/mnt/tradingagents-cowork/reports/HUM/2026-06/HUM-decision-2026-06-08.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "DELL",
@@ -392,6 +502,22 @@
       "logged_date": "2026-06-05",
       "setup": "momentum_breakout",
       "decision_doc": "/sessions/loving-quirky-hopper/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-05.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-05",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/loving-quirky-hopper/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-05.md"
     },
     {
       "kind": "QUEUED",
@@ -442,6 +568,22 @@
       "decision_doc": "/sessions/peaceful-bold-franklin/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-04.md"
     },
     {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 160.68,
+      "target_1": 188.0,
+      "target_2": 205.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-04",
+      "setup": "momentum_continuation",
+      "decision_doc": "/sessions/peaceful-bold-franklin/mnt/tradingagents-cowork/reports/DOCN/2026-06/DOCN-decision-2026-06-04.md"
+    },
+    {
       "kind": "QUEUED",
       "ticker": "DELL",
       "company": "Dell Technologies",
@@ -456,6 +598,54 @@
       "logged_date": "2026-06-03",
       "setup": "momentum_continuation",
       "decision_doc": "/sessions/great-bold-wozniak/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-03.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-03",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/great-bold-wozniak/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-03.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-03",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/great-bold-wozniak/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-03.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-03",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/great-bold-wozniak/mnt/tradingagents-cowork/reports/DOCN/2026-06/DOCN-decision-2026-06-03.md"
     },
     {
       "kind": "QUEUED",
@@ -490,6 +680,38 @@
       "decision_doc": "/sessions/loving-tender-lamport/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-02.md"
     },
     {
+      "kind": "PM SUGGESTED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-02",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/loving-tender-lamport/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-02.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-02",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/loving-tender-lamport/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-02.md"
+    },
+    {
       "kind": "QUEUED",
       "ticker": "DELL",
       "company": "Dell Technologies",
@@ -506,6 +728,38 @@
       "decision_doc": "/sessions/charming-zen-turing/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-01.md"
     },
     {
+      "kind": "PM SUGGESTED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-01",
+      "setup": "extended_breakout_chase",
+      "decision_doc": "/sessions/charming-zen-turing/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-01.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": null,
+      "target_1": null,
+      "target_2": null,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-01",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/charming-zen-turing/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-01.md"
+    },
+    {
       "kind": "QUEUED",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
@@ -520,38 +774,6 @@
       "logged_date": "2026-05-29",
       "setup": "support_hold",
       "decision_doc": "/sessions/intelligent-amazing-brahmagupta/mnt/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-29.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-05-29",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/intelligent-amazing-brahmagupta/mnt/tradingagents-cowork/reports/MU/2026-05/MU-decision-2026-05-29.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-05-29",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/intelligent-amazing-brahmagupta/mnt/tradingagents-cowork/reports/SNDK/2026-05/SNDK-decision-2026-05-29.md"
     },
     {
       "kind": "QUEUED",
@@ -764,16 +986,16 @@
   ],
   "closed_stats": {
     "total_realized": 9607.930000000002,
-    "today_realized": -7974.209999999999,
+    "today_realized": 0.0,
     "trade_count": 24,
-    "today_count": 3,
+    "today_count": 0,
     "win_count": 17,
     "loss_count": 4,
     "flat_count": 3,
     "win_rate": 0.8095238095238095,
     "avg_hold_days": 14.375,
     "nav_impact_pct": 0.9607930000000002,
-    "today_nav_impact_pct": -0.7974209999999999,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "stop_hit": 4,
       "target_2": 7,
@@ -1347,6 +1569,10 @@
     {
       "date": "2026-06-05",
       "nav": 1011093.31
+    },
+    {
+      "date": "2026-06-08",
+      "nav": 1009607.89
     }
   ],
   "spy_aligned": [
@@ -1448,8 +1674,8 @@
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.11,
-    "sharpe": -3.19,
+    "total_return_pct": 0.96,
+    "sharpe": -3.21,
     "max_dd_pct": -1.0,
     "hit_rate": 0.7083,
     "profit_factor": 2.07,
