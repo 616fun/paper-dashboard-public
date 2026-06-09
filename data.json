@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-08T20:35:44Z",
-  "as_of": "2026-06-08",
+  "rendered_at_utc": "2026-06-09T20:35:46Z",
+  "as_of": "2026-06-09",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-06-08",
-    "current": 1010534.29,
+    "as_of": "2026-06-09",
+    "current": 1010612.34,
     "starting": 1000000.0,
-    "cash": 844551.75,
-    "day_pnl": -559.0200000000186,
-    "day_pct": -0.0552886656919942,
-    "incep_pnl": 10534.290000000037,
-    "incep_pct": 1.0534290000000037,
-    "deployed_pct": 16.42522590698036,
-    "open_count": 2,
-    "cash_interest": 2357.46,
+    "cash": 859607.88,
+    "day_pnl": 78.04999999993015,
+    "day_pct": 0.007723636968314074,
+    "incep_pnl": 10612.339999999967,
+    "incep_pct": 1.0612339999999967,
+    "deployed_pct": 14.94187771346627,
+    "open_count": 1,
+    "cash_interest": 2431.53,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 547.34,
-    "total_incl_cash": 1012891.75
+    "cash_interest_month": 621.41,
+    "total_incl_cash": 1013043.87
   },
   "positions": [
     {
@@ -25,69 +25,78 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 35,
+      "days_held": 36,
       "entry_price": 310.62,
-      "last_price": 311.1099853515625,
-      "position_value": 150236.62969819334,
+      "last_price": 312.70001220703125,
+      "position_value": 151004.46193483885,
       "cost_basis": 150000.0,
-      "unrealized": 236.61647419334622,
-      "unrealized_pct": 0.1577443022221598,
+      "unrealized": 1004.4487108388566,
+      "unrealized_pct": 0.6696324148577775,
       "stop": 293.0,
-      "stop_dist_pct": -5.821087783825948,
+      "stop_dist_pct": -6.299971678283255,
       "target_1": 319.89,
-      "t1_dist_pct": 2.822157777583332,
+      "t1_dist_pct": 2.299324436293407,
       "target_2": 337.25,
-      "t2_dist_pct": 8.402177968958018,
+      "t2_dist_pct": 7.850971165525503,
       "max_hold": "2026-07-03",
-      "days_to_max": 25,
+      "days_to_max": 24,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "direction": "LONG",
-      "entry_date": "2026-05-04",
-      "days_held": 35,
-      "entry_price": 199.5,
-      "last_price": 208.63999938964844,
-      "position_value": 15745.914705937195,
-      "cost_basis": 30112.25,
-      "unrealized": 689.7893559371951,
-      "unrealized_pct": 4.5814533281445815,
-      "stop": 199.5,
-      "stop_dist_pct": -4.380751254019565,
-      "target_1": 216.0,
-      "t1_dist_pct": 3.527607664820922,
-      "target_2": 240.0,
-      "t2_dist_pct": 15.030675183134356,
-      "max_hold": "2026-07-03",
-      "days_to_max": 25,
-      "setup_type": "\u2014",
-      "sector": "Technology"
     }
   ],
   "events": [
     {
       "kind": "CLOSE",
-      "label": "Closed MSFT \u2014 STOP_HIT",
-      "detail": "42.52 shares @ $411.55 (entry $411.55) \u00b7 P&L $+0 (+0.00%) \u00b7 held 35d",
-      "ts": "2026-06-08"
+      "label": "Closed NVDA \u2014 STOP_HIT",
+      "detail": "75.47 shares @ $199.50 (entry $199.50) \u00b7 P&L $+0 (+0.00%) \u00b7 held 36d",
+      "ts": "2026-06-09"
     },
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,010,534",
-      "detail": "daily return +0.00% \u00b7 positions value $165,983",
-      "ts": "2026-06-08"
+      "label": "MTM mark: NAV $1,010,612",
+      "detail": "daily return +0.01% \u00b7 positions value $151,004",
+      "ts": "2026-06-09"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 7 ticker(s)",
-      "detail": "MU (DEFER) \u00b7 DDOG (DEFER) \u00b7 SNDK (APPROVE WITH MODIFICATIONS) \u00b7 DOCN (APPROVE WITH MODIFICATIONS) \u00b7 HPE (APPROVE WITH MODIFICATIONS) \u00b7 FTNT (DEFER) \u00b7 HUM (APPROVE WITH MODIFICATIONS)",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "DOCN (DEFER) \u00b7 HPE (APPROVE WITH MODIFICATIONS) \u00b7 FTNT (DEFER) \u00b7 HUM (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-06-09",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "momentum_pullback",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-09",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "extended_breakout_buy",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-09",
+      "ticker": "FTNT",
+      "company": "Fortinet",
+      "verdict": "DEFER",
+      "setup": "momentum_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-06-09",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "DEFER",
+      "setup": "momentum_continuation",
+      "reason": "defer"
+    },
     {
       "date": "2026-06-08",
       "ticker": "SNDK",
@@ -383,17 +392,57 @@
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
-    },
-    {
-      "date": "2026-05-25",
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "verdict": "APPROVE",
-      "setup": "\u2014",
-      "reason": "missing_required_fields:intended_size_pct_nav,stop,target_1,direction"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 5.0,
+      "stop": 360.0,
+      "target_1": 454.22,
+      "target_2": 469.47,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-09",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/modest-epic-euler/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-09.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 41.6,
+      "target_1": 54.0,
+      "target_2": 64.25,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-09",
+      "setup": "extended_breakout_buy",
+      "decision_doc": "/sessions/modest-epic-euler/mnt/tradingagents-cowork/reports/HPE/2026-06/HPE-decision-2026-06-09.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 311.0,
+      "target_1": 370.0,
+      "target_2": 385.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-09",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/modest-epic-euler/mnt/tradingagents-cowork/reports/HUM/2026-06/HUM-decision-2026-06-09.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "DELL",
@@ -715,38 +764,6 @@
       "decision_doc": "/sessions/charming-zen-turing/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-01.md"
     },
     {
-      "kind": "PM SUGGESTED",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-01",
-      "setup": "extended_breakout_chase",
-      "decision_doc": "/sessions/charming-zen-turing/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-01.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-01",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/charming-zen-turing/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-01.md"
-    },
-    {
       "kind": "QUEUED",
       "ticker": "DOCN",
       "company": "DigitalOcean Holdings",
@@ -974,22 +991,39 @@
   "closed_stats": {
     "total_realized": 9607.930000000002,
     "today_realized": 0.0,
-    "trade_count": 25,
+    "trade_count": 26,
     "today_count": 1,
     "win_count": 17,
     "loss_count": 4,
-    "flat_count": 4,
+    "flat_count": 5,
     "win_rate": 0.8095238095238095,
-    "avg_hold_days": 15.2,
+    "avg_hold_days": 16.0,
     "nav_impact_pct": 0.9607930000000002,
     "today_nav_impact_pct": 0.0,
     "by_reason": {
-      "stop_hit": 5,
+      "stop_hit": 6,
       "target_2": 7,
       "target_1": 12,
       "gap_through_stop": 1
     },
     "rows": [
+      {
+        "trade_id": "NVDA-2026-05-04-001",
+        "ticker": "NVDA",
+        "company": "NVIDIA",
+        "direction": "LONG",
+        "entry_date": "2026-05-04",
+        "exit_date": "2026-06-09",
+        "entry_price": 199.5,
+        "exit_price": 199.5,
+        "shares_closed": 75.4693,
+        "exit_reason": "stop_hit",
+        "hold_days": 36,
+        "pnl": 0.0,
+        "pnl_pct": 0.0,
+        "setup_type": "\u2014",
+        "is_partial": false
+      },
       {
         "trade_id": "MSFT-2026-05-04-001",
         "ticker": "MSFT",
@@ -1589,6 +1623,10 @@
     {
       "date": "2026-06-08",
       "nav": 1010534.29
+    },
+    {
+      "date": "2026-06-09",
+      "nav": 1010612.34
     }
   ],
   "spy_aligned": [
@@ -1691,14 +1729,18 @@
     {
       "date": "2026-06-08",
       "nav_equiv": 1029539.92
+    },
+    {
+      "date": "2026-06-09",
+      "nav_equiv": 1026517.71
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.05,
-    "sharpe": -3.08,
+    "total_return_pct": 1.06,
+    "sharpe": -3.04,
     "max_dd_pct": -1.0,
-    "hit_rate": 0.68,
+    "hit_rate": 0.6538,
     "profit_factor": 2.07,
-    "trade_count": 25
+    "trade_count": 26
   }
 }
