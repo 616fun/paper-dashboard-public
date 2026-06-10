@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-09T20:35:46Z",
-  "as_of": "2026-06-09",
+  "rendered_at_utc": "2026-06-10T20:35:52Z",
+  "as_of": "2026-06-10",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-06-09",
-    "current": 1010612.34,
+    "as_of": "2026-06-10",
+    "current": 1008893.2,
     "starting": 1000000.0,
     "cash": 859607.88,
-    "day_pnl": 78.04999999993015,
-    "day_pct": 0.007723636968314074,
-    "incep_pnl": 10612.339999999967,
-    "incep_pct": 1.0612339999999967,
-    "deployed_pct": 14.94187771346627,
+    "day_pnl": -1719.140000000014,
+    "day_pct": -0.17010874812789384,
+    "incep_pnl": 8893.199999999953,
+    "incep_pct": 0.8893199999999953,
+    "deployed_pct": 14.79693985448608,
     "open_count": 1,
-    "cash_interest": 2431.53,
+    "cash_interest": 2505.6,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 621.41,
-    "total_incl_cash": 1013043.87
+    "cash_interest_month": 695.48,
+    "total_incl_cash": 1011398.7999999999
   },
   "positions": [
     {
@@ -25,46 +25,72 @@
       "company": "JPMorgan Chase",
       "direction": "LONG",
       "entry_date": "2026-05-04",
-      "days_held": 36,
+      "days_held": 37,
       "entry_price": 310.62,
-      "last_price": 312.70001220703125,
-      "position_value": 151004.46193483885,
+      "last_price": 309.1400146484375,
+      "position_value": 149285.32060180663,
       "cost_basis": 150000.0,
-      "unrealized": 1004.4487108388566,
-      "unrealized_pct": 0.6696324148577775,
+      "unrealized": -714.6926221933682,
+      "unrealized_pct": -0.4764617061240481,
       "stop": 293.0,
-      "stop_dist_pct": -6.299971678283255,
+      "stop_dist_pct": -5.220939989535928,
       "target_1": 319.89,
-      "t1_dist_pct": 2.299324436293407,
+      "t1_dist_pct": 3.477383982072869,
       "target_2": 337.25,
-      "t2_dist_pct": 7.850971165525503,
+      "t2_dist_pct": 9.092962418187742,
       "max_hold": "2026-07-03",
-      "days_to_max": 24,
+      "days_to_max": 23,
       "setup_type": "pullback_to_sma50",
       "sector": "Financial Services"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Closed NVDA \u2014 STOP_HIT",
-      "detail": "75.47 shares @ $199.50 (entry $199.50) \u00b7 P&L $+0 (+0.00%) \u00b7 held 36d",
-      "ts": "2026-06-09"
-    },
-    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,010,612",
-      "detail": "daily return +0.01% \u00b7 positions value $151,004",
-      "ts": "2026-06-09"
+      "label": "MTM mark: NAV $1,008,893",
+      "detail": "daily return -0.17% \u00b7 positions value $149,285",
+      "ts": "2026-06-10"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "DOCN (DEFER) \u00b7 HPE (APPROVE WITH MODIFICATIONS) \u00b7 FTNT (DEFER) \u00b7 HUM (APPROVE WITH MODIFICATIONS)",
+      "detail": "MU (DEFER) \u00b7 DOCN (DEFER) \u00b7 HPE (APPROVE WITH MODIFICATIONS) \u00b7 HUM (APPROVE WITH MODIFICATIONS)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-06-10",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "DEFER",
+      "setup": "pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "momentum_pullback",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "extended_breakout_buy",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "DEFER",
+      "setup": "momentum_continuation",
+      "reason": "defer"
+    },
     {
       "date": "2026-06-09",
       "ticker": "HUM",
@@ -376,25 +402,57 @@
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
-    },
-    {
-      "date": "2026-05-26",
-      "ticker": "INTC",
-      "company": "Intel",
-      "verdict": "DEFER",
-      "setup": "trend_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-05-26",
-      "ticker": "DELL",
-      "company": "Dell Technologies",
-      "verdict": "DEFER",
-      "setup": "\u2014",
-      "reason": "defer"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 4.0,
+      "stop": 360.0,
+      "target_1": 420.0,
+      "target_2": 454.22,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-10",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/beautiful-vigilant-hawking/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-10.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 41.6,
+      "target_1": 54.0,
+      "target_2": 64.25,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-10",
+      "setup": "extended_breakout_buy",
+      "decision_doc": "/sessions/beautiful-vigilant-hawking/mnt/tradingagents-cowork/reports/HPE/2026-06/HPE-decision-2026-06-10.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 311.0,
+      "target_1": 370.0,
+      "target_2": 385.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-10",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/beautiful-vigilant-hawking/mnt/tradingagents-cowork/reports/HUM/2026-06/HUM-decision-2026-06-10.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "DELL",
@@ -716,38 +774,6 @@
       "decision_doc": "/sessions/loving-tender-lamport/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-02.md"
     },
     {
-      "kind": "PM SUGGESTED",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-02",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/loving-tender-lamport/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-02.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": null,
-      "target_1": null,
-      "target_2": null,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-02",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/loving-tender-lamport/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-02.md"
-    },
-    {
       "kind": "QUEUED",
       "ticker": "DELL",
       "company": "Dell Technologies",
@@ -992,7 +1018,7 @@
     "total_realized": 9607.930000000002,
     "today_realized": 0.0,
     "trade_count": 26,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 17,
     "loss_count": 4,
     "flat_count": 5,
@@ -1627,6 +1653,10 @@
     {
       "date": "2026-06-09",
       "nav": 1010612.34
+    },
+    {
+      "date": "2026-06-10",
+      "nav": 1008893.2
     }
   ],
   "spy_aligned": [
@@ -1733,11 +1763,15 @@
     {
       "date": "2026-06-09",
       "nav_equiv": 1026517.71
+    },
+    {
+      "date": "2026-06-10",
+      "nav_equiv": 1010334.09
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.06,
-    "sharpe": -3.04,
+    "total_return_pct": 0.89,
+    "sharpe": -3.07,
     "max_dd_pct": -1.0,
     "hit_rate": 0.6538,
     "profit_factor": 2.07,
