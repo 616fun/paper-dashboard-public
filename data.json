@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-30T15:06:28Z",
-  "as_of": "2026-06-29",
+  "rendered_at_utc": "2026-06-30T20:36:23Z",
+  "as_of": "2026-06-30",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-06-29",
-    "current": 1016400.08,
+    "as_of": "2026-06-30",
+    "current": 1019094.67,
     "starting": 1000000.0,
-    "cash": 906803.51,
-    "day_pnl": 2669.469999999972,
-    "day_pct": 0.2633313006105214,
-    "incep_pnl": 16400.079999999958,
-    "incep_pct": 1.640007999999996,
-    "deployed_pct": 10.782817923430304,
-    "open_count": 4,
-    "cash_interest": 3698.98,
+    "cash": 920872.91,
+    "day_pnl": 2694.590000000084,
+    "day_pct": 0.2651111558354151,
+    "incep_pnl": 19094.670000000042,
+    "incep_pct": 1.9094670000000042,
+    "deployed_pct": 9.638138917947634,
+    "open_count": 3,
+    "cash_interest": 3778.33,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 2072.48,
-    "total_incl_cash": 1020099.0599999999
+    "cash_interest_month": 2151.83,
+    "total_incl_cash": 1022873.0
   },
   "positions": [
     {
@@ -27,17 +27,17 @@
       "entry_date": "2026-05-19",
       "days_held": 42,
       "entry_price": 746.47,
-      "last_price": 835.2849731445312,
-      "position_value": 10455.596122839355,
+      "last_price": 839.3599853515625,
+      "position_value": 10506.604680639648,
       "cost_basis": 18687.78,
-      "unrealized": 1111.732544839355,
-      "unrealized_pct": 11.897996321959516,
+      "unrealized": 1162.7411026396476,
+      "unrealized_pct": 12.443900672707867,
       "stop": 746.47,
-      "stop_dist_pct": -10.63289488019598,
+      "stop_dist_pct": -11.066763602348267,
       "target_1": 893.13,
-      "t1_dist_pct": 6.925184663349581,
+      "t1_dist_pct": 6.406073149402773,
       "target_2": 1021.99,
-      "t2_dist_pct": 22.35225496187189,
+      "t2_dist_pct": 21.758246501582235,
       "max_hold": "2026-07-18",
       "days_to_max": 18,
       "setup_type": "breakout",
@@ -50,44 +50,21 @@
       "entry_date": "2026-06-05",
       "days_held": 25,
       "entry_price": 237.4,
-      "last_price": 255.57000732421875,
-      "position_value": 23847.97853644409,
+      "last_price": 260.3599853515625,
+      "position_value": 24294.945277111816,
       "cost_basis": 22152.48,
-      "unrealized": 1695.4960764440912,
-      "unrealized_pct": 7.65375203210562,
+      "unrealized": 2142.4628171118165,
+      "unrealized_pct": 9.671434436209985,
       "stop": 145.96,
-      "stop_dist_pct": -42.88844707241658,
+      "stop_dist_pct": -43.939158007360035,
       "target_1": 275.25,
-      "t1_dist_pct": 7.70043123675894,
+      "t1_dist_pct": 5.719010403358106,
       "target_2": 278.71,
-      "t2_dist_pct": 9.054267720243713,
+      "t2_dist_pct": 7.047939653115115,
       "max_hold": "2026-08-04",
       "days_to_max": 35,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
-    },
-    {
-      "ticker": "HUM",
-      "company": "Humana",
-      "direction": "LONG",
-      "entry_date": "2026-06-23",
-      "days_held": 7,
-      "entry_price": 361.9,
-      "last_price": 395.5199890136719,
-      "position_value": 14012.007546789551,
-      "cost_basis": 25641.88,
-      "unrealized": 1191.0486267895521,
-      "unrealized_pct": 9.289856041357258,
-      "stop": 361.9,
-      "stop_dist_pct": -8.500199723789374,
-      "target_1": 380.86,
-      "t1_dist_pct": -3.706510270247078,
-      "target_2": 397.14,
-      "t2_dist_pct": 0.40959016771011103,
-      "max_hold": "2026-08-22",
-      "days_to_max": 53,
-      "setup_type": "breakout",
-      "sector": "Healthcare"
     },
     {
       "ticker": "FLEX",
@@ -96,17 +73,17 @@
       "entry_date": "2026-06-24",
       "days_held": 6,
       "entry_price": 151.79,
-      "last_price": 164.0800018310547,
-      "position_value": 64206.75261251678,
+      "last_price": 162.07000732421875,
+      "position_value": 63420.21422506714,
       "cost_basis": 59397.5,
-      "unrealized": 4809.246089516782,
-      "unrealized_pct": 8.096713769717823,
+      "unrealized": 4022.7077020671422,
+      "unrealized_pct": 6.772519483641057,
       "stop": 135.67,
-      "stop_dist_pct": -17.314725447350444,
+      "stop_dist_pct": -16.289261511172715,
       "target_1": 175.95,
-      "t1_dist_pct": 7.234274766261442,
+      "t1_dist_pct": 8.564195747837852,
       "target_2": 196.09,
-      "t2_dist_pct": 19.508774873067395,
+      "t2_dist_pct": 20.990924377343145,
       "max_hold": "2026-08-23",
       "days_to_max": 54,
       "setup_type": "breakout",
@@ -114,6 +91,18 @@
     }
   ],
   "events": [
+    {
+      "kind": "CLOSE",
+      "label": "Closed HUM \u2014 TARGET_2",
+      "detail": "35.43 shares @ $397.14 (entry $361.90) \u00b7 P&L $+1,248 (+9.74%) \u00b7 held 7d",
+      "ts": "2026-06-30"
+    },
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,019,095",
+      "detail": "daily return +0.27% \u00b7 positions value $98,222",
+      "ts": "2026-06-30"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 4 ticker(s)",
@@ -1174,24 +1163,41 @@
     }
   ],
   "closed_stats": {
-    "total_realized": 10518.399999999998,
-    "today_realized": 0.0,
-    "trade_count": 64,
-    "today_count": 0,
-    "win_count": 31,
+    "total_realized": 11766.840000000004,
+    "today_realized": 1248.44,
+    "trade_count": 65,
+    "today_count": 1,
+    "win_count": 32,
     "loss_count": 22,
     "flat_count": 11,
-    "win_rate": 0.5849056603773585,
-    "avg_hold_days": 8.09375,
-    "nav_impact_pct": 1.0518399999999997,
-    "today_nav_impact_pct": 0.0,
+    "win_rate": 0.5925925925925926,
+    "avg_hold_days": 8.076923076923077,
+    "nav_impact_pct": 1.1766840000000005,
+    "today_nav_impact_pct": 0.124844,
     "by_reason": {
+      "target_2": 10,
       "gap_through_stop": 11,
       "target_1": 27,
-      "stop_hit": 17,
-      "target_2": 9
+      "stop_hit": 17
     },
     "rows": [
+      {
+        "trade_id": "HUM-2026-06-23-001",
+        "ticker": "HUM",
+        "company": "Humana",
+        "direction": "LONG",
+        "entry_date": "2026-06-23",
+        "exit_date": "2026-06-30",
+        "entry_price": 361.9,
+        "exit_price": 397.14,
+        "shares_closed": 35.4268,
+        "exit_reason": "target_2",
+        "hold_days": 7,
+        "pnl": 1248.44,
+        "pnl_pct": 9.74,
+        "setup_type": "breakout",
+        "is_partial": false
+      },
       {
         "trade_id": "WDC-2026-06-26-001",
         "ticker": "WDC",
@@ -2438,6 +2444,10 @@
     {
       "date": "2026-06-29",
       "nav": 1016400.08
+    },
+    {
+      "date": "2026-06-30",
+      "nav": 1019094.67
     }
   ],
   "spy_aligned": [
@@ -2596,6 +2606,10 @@
     {
       "date": "2026-06-29",
       "nav_equiv": 1032019.04
+    },
+    {
+      "date": "2026-06-30",
+      "nav_equiv": 1040055.17
     }
   ],
   "benchmarks": [
@@ -2762,7 +2776,7 @@
         },
         {
           "date": "2026-06-30",
-          "return_pct": 3.8895
+          "return_pct": 4.2735
         }
       ]
     },
@@ -2929,7 +2943,7 @@
         },
         {
           "date": "2026-06-30",
-          "return_pct": 8.9205
+          "return_pct": 9.5603
         }
       ]
     },
@@ -3096,7 +3110,7 @@
         },
         {
           "date": "2026-06-30",
-          "return_pct": 6.9588
+          "return_pct": 7.0562
         }
       ]
     },
@@ -3263,7 +3277,7 @@
         },
         {
           "date": "2026-06-30",
-          "return_pct": 3.6854
+          "return_pct": 3.8908
         }
       ]
     }
@@ -3424,14 +3438,18 @@
     {
       "date": "2026-06-29",
       "return_pct": 1.64
+    },
+    {
+      "date": "2026-06-30",
+      "return_pct": 1.9095
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.64,
-    "sharpe": -14.94,
+    "total_return_pct": 1.91,
+    "sharpe": -14.53,
     "max_dd_pct": -2.82,
-    "hit_rate": 0.4844,
-    "profit_factor": 1.25,
-    "trade_count": 64
+    "hit_rate": 0.4923,
+    "profit_factor": 1.28,
+    "trade_count": 65
   }
 }
