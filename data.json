@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-06-30T20:36:23Z",
-  "as_of": "2026-06-30",
+  "rendered_at_utc": "2026-07-01T20:36:39Z",
+  "as_of": "2026-07-01",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-06-30",
-    "current": 1019094.67,
+    "as_of": "2026-07-01",
+    "current": 1007880.74,
     "starting": 1000000.0,
-    "cash": 920872.91,
-    "day_pnl": 2694.590000000084,
-    "day_pct": 0.2651111558354151,
-    "incep_pnl": 19094.670000000042,
-    "incep_pct": 1.9094670000000042,
-    "deployed_pct": 9.638138917947634,
-    "open_count": 3,
-    "cash_interest": 3778.33,
+    "cash": 889023.28,
+    "day_pnl": -11213.930000000051,
+    "day_pct": -1.1003815769147385,
+    "incep_pnl": 7880.739999999991,
+    "incep_pct": 0.788073999999999,
+    "deployed_pct": 11.792809931063864,
+    "open_count": 5,
+    "cash_interest": 3854.94,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 2151.83,
-    "total_incl_cash": 1022873.0
+    "cash_interest_month": 76.61,
+    "total_incl_cash": 1011735.6799999999
   },
   "positions": [
     {
@@ -25,21 +25,21 @@
       "company": "Sterling Infrastructure",
       "direction": "LONG",
       "entry_date": "2026-05-19",
-      "days_held": 42,
+      "days_held": 43,
       "entry_price": 746.47,
-      "last_price": 839.3599853515625,
-      "position_value": 10506.604680639648,
+      "last_price": 776.5499877929688,
+      "position_value": 9720.386817199707,
       "cost_basis": 18687.78,
-      "unrealized": 1162.7411026396476,
-      "unrealized_pct": 12.443900672707867,
+      "unrealized": 376.52323919970695,
+      "unrealized_pct": 4.029631169768208,
       "stop": 746.47,
-      "stop_dist_pct": -11.066763602348267,
+      "stop_dist_pct": -3.873541725041938,
       "target_1": 893.13,
-      "t1_dist_pct": 6.406073149402773,
+      "t1_dist_pct": 15.012557342040925,
       "target_2": 1021.99,
-      "t2_dist_pct": 21.758246501582235,
+      "t2_dist_pct": 31.606466559171015,
       "max_hold": "2026-07-18",
-      "days_to_max": 18,
+      "days_to_max": 17,
       "setup_type": "breakout",
       "sector": "Industrials"
     },
@@ -48,21 +48,21 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 25,
+      "days_held": 26,
       "entry_price": 237.4,
-      "last_price": 260.3599853515625,
-      "position_value": 24294.945277111816,
+      "last_price": 264.4800109863281,
+      "position_value": 24679.396817166136,
       "cost_basis": 22152.48,
-      "unrealized": 2142.4628171118165,
-      "unrealized_pct": 9.671434436209985,
+      "unrealized": 2526.914357166137,
+      "unrealized_pct": 11.406912799632737,
       "stop": 145.96,
-      "stop_dist_pct": -43.939158007360035,
+      "stop_dist_pct": -44.81246448241218,
       "target_1": 275.25,
-      "t1_dist_pct": 5.719010403358106,
+      "t1_dist_pct": 4.072137237709285,
       "target_2": 278.71,
-      "t2_dist_pct": 7.047939653115115,
+      "t2_dist_pct": 5.380364648581118,
       "max_hold": "2026-08-04",
-      "days_to_max": 35,
+      "days_to_max": 34,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -71,46 +71,132 @@
       "company": "Flex",
       "direction": "LONG",
       "entry_date": "2026-06-24",
-      "days_held": 6,
+      "days_held": 7,
       "entry_price": 151.79,
-      "last_price": 162.07000732421875,
-      "position_value": 63420.21422506714,
+      "last_price": 153.52999877929688,
+      "position_value": 60078.39188332214,
       "cost_basis": 59397.5,
-      "unrealized": 4022.7077020671422,
-      "unrealized_pct": 6.772519483641057,
+      "unrealized": 680.8853603221432,
+      "unrealized_pct": 1.1463197702726624,
       "stop": 135.67,
-      "stop_dist_pct": -16.289261511172715,
+      "stop_dist_pct": -11.632904918452498,
       "target_1": 175.95,
-      "t1_dist_pct": 8.564195747837852,
+      "t1_dist_pct": 14.603010095071006,
       "target_2": 196.09,
-      "t2_dist_pct": 20.990924377343145,
+      "t2_dist_pct": 27.72096760183277,
       "max_hold": "2026-08-23",
-      "days_to_max": 54,
+      "days_to_max": 53,
       "setup_type": "breakout",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "direction": "LONG",
+      "entry_date": "2026-06-30",
+      "days_held": 1,
+      "entry_price": 2109.73,
+      "last_price": 2032.219970703125,
+      "position_value": 14724.856241723634,
+      "cost_basis": 15286.42,
+      "unrealized": -561.6144192763677,
+      "unrealized_pct": -3.673931228018517,
+      "stop": 1880.0,
+      "stop_dist_pct": -7.490329437637532,
+      "target_1": 2150.0,
+      "t1_dist_pct": 5.795633887808141,
+      "target_2": 2354.0,
+      "t2_dist_pct": 15.833917289255982,
+      "max_hold": "2026-08-29",
+      "days_to_max": 59,
+      "setup_type": "pullback_to_support",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "STX",
+      "company": "Seagate Technology Holdings",
+      "direction": "LONG",
+      "entry_date": "2026-06-30",
+      "days_held": 1,
+      "entry_price": 967.96,
+      "last_price": 915.1900024414062,
+      "position_value": 9654.430854754639,
+      "cost_basis": 10211.11,
+      "unrealized": -556.6759812453602,
+      "unrealized_pct": -5.451671304454073,
+      "stop": 810.0,
+      "stop_dist_pct": -11.493788411236594,
+      "target_1": 1000.0,
+      "t1_dist_pct": 9.26692788736223,
+      "target_2": 1120.0,
+      "t2_dist_pct": 22.3789592338457,
+      "max_hold": "2026-08-29",
+      "days_to_max": 59,
+      "setup_type": "pullback_to_support",
       "sector": "Technology"
     }
   ],
   "events": [
     {
       "kind": "CLOSE",
-      "label": "Closed HUM \u2014 TARGET_2",
-      "detail": "35.43 shares @ $397.14 (entry $361.90) \u00b7 P&L $+1,248 (+9.74%) \u00b7 held 7d",
-      "ts": "2026-06-30"
+      "label": "Closed MU \u2014 STOP_HIT",
+      "detail": "62.44 shares @ $1,043.00 (entry $1,144.73) \u00b7 P&L $-6,352 (-8.89%) \u00b7 held 1d",
+      "ts": "2026-07-01"
     },
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,019,095",
-      "detail": "daily return +0.27% \u00b7 positions value $98,222",
-      "ts": "2026-06-30"
+      "label": "MTM mark: NAV $1,007,881",
+      "detail": "daily return -1.30% \u00b7 positions value $118,857",
+      "ts": "2026-07-01"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "CAG (DEFER) \u00b7 MU (APPROVE WITH MODIFICATIONS) \u00b7 AMAT (DEFER) \u00b7 OC (DEFER)",
+      "label": "Autopilot analyzed 7 ticker(s)",
+      "detail": "CAG (DEFER) \u00b7 MU (APPROVE WITH MODIFICATIONS) \u00b7 AMAT (DEFER) \u00b7 SNDK (DEFER) \u00b7 OC (DEFER) \u00b7 SNDK (FILL) \u00b7 MU (FILL)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-07-01",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "DEFER",
+      "setup": "breakout_retest_resuming",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "OC",
+      "company": "Owens Corning",
+      "verdict": "DEFER",
+      "setup": "event_driven_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "uptrend_pullback_toward_ath",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "CAG",
+      "company": "Conagra Brands",
+      "verdict": "DEFER",
+      "setup": "failed_bounce_watch_for_base",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_chase",
+      "reason": "defer"
+    },
     {
       "date": "2026-06-30",
       "ticker": "OC",
@@ -366,33 +452,41 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "breakout",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-06-16",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "support_hold",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-06-16",
-      "ticker": "HUM",
-      "company": "Humana",
-      "verdict": "DEFER",
-      "setup": "avoid",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-06-16",
-      "ticker": "DOCN",
-      "company": "DigitalOcean Holdings",
-      "verdict": "DEFER",
-      "setup": "breakout",
-      "reason": "defer"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 3.58,
+      "stop": 1045.0,
+      "target_1": 1255.0,
+      "target_2": 1454.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-01",
+      "setup": "uptrend_pullback_toward_ath",
+      "decision_doc": "/sessions/charming-eager-heisenberg/mnt/tradingagents-cowork/reports/MU/2026-07/MU-decision-2026-07-01.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 1045.0,
+      "target_1": 1255.0,
+      "target_2": 1454.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-01",
+      "setup": "uptrend_pullback_toward_ath",
+      "decision_doc": "/sessions/charming-eager-heisenberg/mnt/tradingagents-cowork/reports/MU/2026-07/MU-decision-2026-07-01.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "SNDK",
@@ -440,54 +534,6 @@
       "logged_date": "2026-06-30",
       "setup": "post_earnings_breakout_pullback_entry",
       "decision_doc": "/sessions/great-bold-edison/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-30.md"
-    },
-    {
-      "kind": "QUEUED",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "APPROVE",
-      "direction": "LONG",
-      "size_pct": 1.5,
-      "stop": 1880.0,
-      "target_1": 2150.0,
-      "target_2": 2354.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-29",
-      "setup": "pullback_to_support",
-      "decision_doc": "/sessions/charming-cool-hamilton/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-29.md"
-    },
-    {
-      "kind": "QUEUED",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": 7.0,
-      "stop": 1043.0,
-      "target_1": 1255.0,
-      "target_2": 1350.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-29",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "decision_doc": "/sessions/charming-cool-hamilton/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-29.md"
-    },
-    {
-      "kind": "QUEUED",
-      "ticker": "STX",
-      "company": "Seagate Technology Holdings",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": 1.0,
-      "stop": 810.0,
-      "target_1": 1000.0,
-      "target_2": 1120.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-29",
-      "setup": "pullback_to_support",
-      "decision_doc": "/sessions/charming-cool-hamilton/mnt/tradingagents-cowork/reports/STX/2026-06/STX-decision-2026-06-29.md"
     },
     {
       "kind": "PM SUGGESTED",
@@ -792,38 +838,6 @@
       "logged_date": "2026-06-23",
       "setup": "TREND_CONTINUATION",
       "decision_doc": "/sessions/beautiful-bold-feynman/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-23.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 1043.19,
-      "target_1": 1300.0,
-      "target_2": 1500.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-23",
-      "setup": "breakout_continuation",
-      "decision_doc": "/sessions/beautiful-bold-feynman/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-23.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 2000.0,
-      "target_1": 2354.0,
-      "target_2": 2700.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-06-23",
-      "setup": "breakout_extended",
-      "decision_doc": "/sessions/beautiful-bold-feynman/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-23.md"
     },
     {
       "kind": "QUEUED",
@@ -1163,24 +1177,41 @@
     }
   ],
   "closed_stats": {
-    "total_realized": 11766.840000000004,
-    "today_realized": 1248.44,
-    "trade_count": 65,
+    "total_realized": 5414.750000000007,
+    "today_realized": -6352.09,
+    "trade_count": 66,
     "today_count": 1,
     "win_count": 32,
-    "loss_count": 22,
+    "loss_count": 23,
     "flat_count": 11,
-    "win_rate": 0.5925925925925926,
-    "avg_hold_days": 8.076923076923077,
-    "nav_impact_pct": 1.1766840000000005,
-    "today_nav_impact_pct": 0.124844,
+    "win_rate": 0.5818181818181818,
+    "avg_hold_days": 7.96969696969697,
+    "nav_impact_pct": 0.5414750000000007,
+    "today_nav_impact_pct": -0.635209,
     "by_reason": {
+      "stop_hit": 18,
       "target_2": 10,
       "gap_through_stop": 11,
-      "target_1": 27,
-      "stop_hit": 17
+      "target_1": 27
     },
     "rows": [
+      {
+        "trade_id": "MU-2026-06-30-001",
+        "ticker": "MU",
+        "company": "Micron Technology",
+        "direction": "LONG",
+        "entry_date": "2026-06-30",
+        "exit_date": "2026-07-01",
+        "entry_price": 1144.73,
+        "exit_price": 1043.0,
+        "shares_closed": 62.4407,
+        "exit_reason": "stop_hit",
+        "hold_days": 1,
+        "pnl": -6352.09,
+        "pnl_pct": -8.89,
+        "setup_type": "post_earnings_breakout_pullback_entry",
+        "is_partial": false
+      },
       {
         "trade_id": "HUM-2026-06-23-001",
         "ticker": "HUM",
@@ -2448,6 +2479,10 @@
     {
       "date": "2026-06-30",
       "nav": 1019094.67
+    },
+    {
+      "date": "2026-07-01",
+      "nav": 1007880.74
     }
   ],
   "spy_aligned": [
@@ -2610,6 +2645,10 @@
     {
       "date": "2026-06-30",
       "nav_equiv": 1040055.17
+    },
+    {
+      "date": "2026-07-01",
+      "nav_equiv": 1038648.49
     }
   ],
   "benchmarks": [
@@ -2777,6 +2816,10 @@
         {
           "date": "2026-06-30",
           "return_pct": 4.2735
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 4.1324
         }
       ]
     },
@@ -2944,6 +2987,10 @@
         {
           "date": "2026-06-30",
           "return_pct": 9.5603
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 7.8895
         }
       ]
     },
@@ -3111,6 +3158,10 @@
         {
           "date": "2026-06-30",
           "return_pct": 7.0562
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 7.0583
         }
       ]
     },
@@ -3278,6 +3329,10 @@
         {
           "date": "2026-06-30",
           "return_pct": 3.8908
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 3.3339
         }
       ]
     }
@@ -3442,14 +3497,18 @@
     {
       "date": "2026-06-30",
       "return_pct": 1.9095
+    },
+    {
+      "date": "2026-07-01",
+      "return_pct": 0.7881
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.91,
-    "sharpe": -14.53,
+    "total_return_pct": 0.79,
+    "sharpe": -14.48,
     "max_dd_pct": -2.82,
-    "hit_rate": 0.4923,
-    "profit_factor": 1.28,
-    "trade_count": 65
+    "hit_rate": 0.4848,
+    "profit_factor": 1.11,
+    "trade_count": 66
   }
 }
