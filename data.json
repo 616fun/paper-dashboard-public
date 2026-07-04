@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-04T14:36:01Z",
+  "rendered_at_utc": "2026-07-04T14:45:31Z",
   "as_of": "2026-07-02",
   "starting_nav": 1000000.0,
   "hero": {
@@ -550,6 +550,38 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 1.5,
+      "stop": 935.0,
+      "target_1": 1120.0,
+      "target_2": 1145.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-26",
+      "setup": "momentum_continuation",
+      "decision_doc": "/sessions/inspiring-quirky-lamport/mnt/tradingagents-cowork/reports/STX/2026-06/STX-decision-2026-06-26.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 1110.0,
+      "target_1": 1255.0,
+      "target_2": 1350.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-26",
+      "setup": "post_earnings_breakout_continuation",
+      "decision_doc": "/sessions/inspiring-quirky-lamport/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-26.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "STX",
+      "company": "Seagate Technology Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
       "stop": 935.0,
       "target_1": 1120.0,
       "target_2": 1145.0,
@@ -2525,6 +2557,878 @@
     {
       "date": "2026-07-02",
       "nav_equiv": 1037283.63
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "sp500",
+      "label": "S&P 500 (SPY)",
+      "color": "#9ca3af",
+      "series": [
+        {
+          "date": "2026-05-04",
+          "return_pct": 0.0
+        },
+        {
+          "date": "2026-05-05",
+          "return_pct": 0.8022
+        },
+        {
+          "date": "2026-05-06",
+          "return_pct": 2.2033
+        },
+        {
+          "date": "2026-05-07",
+          "return_pct": 1.8899
+        },
+        {
+          "date": "2026-05-08",
+          "return_pct": 2.7312
+        },
+        {
+          "date": "2026-05-11",
+          "return_pct": 2.9651
+        },
+        {
+          "date": "2026-05-12",
+          "return_pct": 2.8092
+        },
+        {
+          "date": "2026-05-13",
+          "return_pct": 3.3844
+        },
+        {
+          "date": "2026-05-14",
+          "return_pct": 4.2005
+        },
+        {
+          "date": "2026-05-15",
+          "return_pct": 2.947
+        },
+        {
+          "date": "2026-05-18",
+          "return_pct": 2.8746
+        },
+        {
+          "date": "2026-05-19",
+          "return_pct": 2.1894
+        },
+        {
+          "date": "2026-05-20",
+          "return_pct": 3.2367
+        },
+        {
+          "date": "2026-05-21",
+          "return_pct": 3.4415
+        },
+        {
+          "date": "2026-05-22",
+          "return_pct": 3.8481
+        },
+        {
+          "date": "2026-05-26",
+          "return_pct": 4.5375
+        },
+        {
+          "date": "2026-05-27",
+          "return_pct": 4.5194
+        },
+        {
+          "date": "2026-05-28",
+          "return_pct": 5.096
+        },
+        {
+          "date": "2026-05-29",
+          "return_pct": 5.3579
+        },
+        {
+          "date": "2026-06-01",
+          "return_pct": 5.6448
+        },
+        {
+          "date": "2026-06-02",
+          "return_pct": 5.7882
+        },
+        {
+          "date": "2026-06-03",
+          "return_pct": 5.0459
+        },
+        {
+          "date": "2026-06-04",
+          "return_pct": 5.4428
+        },
+        {
+          "date": "2026-06-05",
+          "return_pct": 2.7214
+        },
+        {
+          "date": "2026-06-08",
+          "return_pct": 2.954
+        },
+        {
+          "date": "2026-06-09",
+          "return_pct": 2.6518
+        },
+        {
+          "date": "2026-06-10",
+          "return_pct": 1.0334
+        },
+        {
+          "date": "2026-06-11",
+          "return_pct": 2.7507
+        },
+        {
+          "date": "2026-06-12",
+          "return_pct": 3.3064
+        },
+        {
+          "date": "2026-06-15",
+          "return_pct": 5.1281
+        },
+        {
+          "date": "2026-06-16",
+          "return_pct": 4.5013
+        },
+        {
+          "date": "2026-06-17",
+          "return_pct": 3.1963
+        },
+        {
+          "date": "2026-06-18",
+          "return_pct": 4.2693
+        },
+        {
+          "date": "2026-06-22",
+          "return_pct": 3.9411
+        },
+        {
+          "date": "2026-06-23",
+          "return_pct": 2.4317
+        },
+        {
+          "date": "2026-06-24",
+          "return_pct": 2.3842
+        },
+        {
+          "date": "2026-06-25",
+          "return_pct": 2.5322
+        },
+        {
+          "date": "2026-06-26",
+          "return_pct": 1.7908
+        },
+        {
+          "date": "2026-06-29",
+          "return_pct": 3.4678
+        },
+        {
+          "date": "2026-06-30",
+          "return_pct": 4.2735
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 4.1324
+        },
+        {
+          "date": "2026-07-02",
+          "return_pct": 3.9956
+        }
+      ]
+    },
+    {
+      "id": "nasdaq",
+      "label": "Nasdaq (QQQ)",
+      "color": "#f59e0b",
+      "series": [
+        {
+          "date": "2026-05-04",
+          "return_pct": 0.0
+        },
+        {
+          "date": "2026-05-05",
+          "return_pct": 1.2974
+        },
+        {
+          "date": "2026-05-06",
+          "return_pct": 3.4018
+        },
+        {
+          "date": "2026-05-07",
+          "return_pct": 3.2784
+        },
+        {
+          "date": "2026-05-08",
+          "return_pct": 5.6994
+        },
+        {
+          "date": "2026-05-11",
+          "return_pct": 6.0055
+        },
+        {
+          "date": "2026-05-12",
+          "return_pct": 5.1064
+        },
+        {
+          "date": "2026-05-13",
+          "return_pct": 6.2166
+        },
+        {
+          "date": "2026-05-14",
+          "return_pct": 6.9715
+        },
+        {
+          "date": "2026-05-15",
+          "return_pct": 5.3576
+        },
+        {
+          "date": "2026-05-18",
+          "return_pct": 4.9043
+        },
+        {
+          "date": "2026-05-19",
+          "return_pct": 4.2578
+        },
+        {
+          "date": "2026-05-20",
+          "return_pct": 5.9847
+        },
+        {
+          "date": "2026-05-21",
+          "return_pct": 6.1868
+        },
+        {
+          "date": "2026-05-22",
+          "return_pct": 6.6371
+        },
+        {
+          "date": "2026-05-26",
+          "return_pct": 8.5305
+        },
+        {
+          "date": "2026-05-27",
+          "return_pct": 8.4072
+        },
+        {
+          "date": "2026-05-28",
+          "return_pct": 9.3211
+        },
+        {
+          "date": "2026-05-29",
+          "return_pct": 9.7239
+        },
+        {
+          "date": "2026-06-01",
+          "return_pct": 10.3822
+        },
+        {
+          "date": "2026-06-02",
+          "return_pct": 10.8905
+        },
+        {
+          "date": "2026-06-03",
+          "return_pct": 10.6007
+        },
+        {
+          "date": "2026-06-04",
+          "return_pct": 10.0657
+        },
+        {
+          "date": "2026-06-05",
+          "return_pct": 4.7824
+        },
+        {
+          "date": "2026-06-08",
+          "return_pct": 6.4187
+        },
+        {
+          "date": "2026-06-09",
+          "return_pct": 5.1941
+        },
+        {
+          "date": "2026-06-10",
+          "return_pct": 3.0927
+        },
+        {
+          "date": "2026-06-11",
+          "return_pct": 6.5747
+        },
+        {
+          "date": "2026-06-12",
+          "return_pct": 7.2019
+        },
+        {
+          "date": "2026-06-15",
+          "return_pct": 10.5695
+        },
+        {
+          "date": "2026-06-16",
+          "return_pct": 8.4681
+        },
+        {
+          "date": "2026-06-17",
+          "return_pct": 7.3758
+        },
+        {
+          "date": "2026-06-18",
+          "return_pct": 10.0672
+        },
+        {
+          "date": "2026-06-22",
+          "return_pct": 9.7909
+        },
+        {
+          "date": "2026-06-23",
+          "return_pct": 6.1756
+        },
+        {
+          "date": "2026-06-24",
+          "return_pct": 5.7248
+        },
+        {
+          "date": "2026-06-25",
+          "return_pct": 6.5817
+        },
+        {
+          "date": "2026-06-26",
+          "return_pct": 5.1148
+        },
+        {
+          "date": "2026-06-29",
+          "return_pct": 7.7273
+        },
+        {
+          "date": "2026-06-30",
+          "return_pct": 9.5603
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 7.8895
+        },
+        {
+          "date": "2026-07-02",
+          "return_pct": 6.0194
+        }
+      ]
+    },
+    {
+      "id": "dow",
+      "label": "Dow (DIA)",
+      "color": "#10b981",
+      "series": [
+        {
+          "date": "2026-05-04",
+          "return_pct": 0.0
+        },
+        {
+          "date": "2026-05-05",
+          "return_pct": 0.6945
+        },
+        {
+          "date": "2026-05-06",
+          "return_pct": 1.9385
+        },
+        {
+          "date": "2026-05-07",
+          "return_pct": 1.2971
+        },
+        {
+          "date": "2026-05-08",
+          "return_pct": 1.342
+        },
+        {
+          "date": "2026-05-11",
+          "return_pct": 1.5422
+        },
+        {
+          "date": "2026-05-12",
+          "return_pct": 1.7015
+        },
+        {
+          "date": "2026-05-13",
+          "return_pct": 1.5483
+        },
+        {
+          "date": "2026-05-14",
+          "return_pct": 2.2959
+        },
+        {
+          "date": "2026-05-15",
+          "return_pct": 1.2426
+        },
+        {
+          "date": "2026-05-18",
+          "return_pct": 1.5778
+        },
+        {
+          "date": "2026-05-19",
+          "return_pct": 0.9585
+        },
+        {
+          "date": "2026-05-20",
+          "return_pct": 2.2379
+        },
+        {
+          "date": "2026-05-21",
+          "return_pct": 2.8245
+        },
+        {
+          "date": "2026-05-22",
+          "return_pct": 3.4396
+        },
+        {
+          "date": "2026-05-26",
+          "return_pct": 3.2618
+        },
+        {
+          "date": "2026-05-27",
+          "return_pct": 3.595
+        },
+        {
+          "date": "2026-05-28",
+          "return_pct": 3.6297
+        },
+        {
+          "date": "2026-05-29",
+          "return_pct": 4.392
+        },
+        {
+          "date": "2026-06-01",
+          "return_pct": 4.5269
+        },
+        {
+          "date": "2026-06-02",
+          "return_pct": 5.0604
+        },
+        {
+          "date": "2026-06-03",
+          "return_pct": 3.877
+        },
+        {
+          "date": "2026-06-04",
+          "return_pct": 5.602
+        },
+        {
+          "date": "2026-06-05",
+          "return_pct": 4.1713
+        },
+        {
+          "date": "2026-06-08",
+          "return_pct": 4.0099
+        },
+        {
+          "date": "2026-06-09",
+          "return_pct": 4.112
+        },
+        {
+          "date": "2026-06-10",
+          "return_pct": 2.2399
+        },
+        {
+          "date": "2026-06-11",
+          "return_pct": 4.1018
+        },
+        {
+          "date": "2026-06-12",
+          "return_pct": 4.858
+        },
+        {
+          "date": "2026-06-15",
+          "return_pct": 5.9576
+        },
+        {
+          "date": "2026-06-16",
+          "return_pct": 6.5707
+        },
+        {
+          "date": "2026-06-17",
+          "return_pct": 5.5202
+        },
+        {
+          "date": "2026-06-18",
+          "return_pct": 5.6483
+        },
+        {
+          "date": "2026-06-22",
+          "return_pct": 5.968
+        },
+        {
+          "date": "2026-06-23",
+          "return_pct": 5.8737
+        },
+        {
+          "date": "2026-06-24",
+          "return_pct": 6.2631
+        },
+        {
+          "date": "2026-06-25",
+          "return_pct": 6.4148
+        },
+        {
+          "date": "2026-06-26",
+          "return_pct": 6.1053
+        },
+        {
+          "date": "2026-06-29",
+          "return_pct": 6.9107
+        },
+        {
+          "date": "2026-06-30",
+          "return_pct": 7.0562
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 7.0583
+        },
+        {
+          "date": "2026-07-02",
+          "return_pct": 8.1813
+        }
+      ]
+    },
+    {
+      "id": "boglehead",
+      "label": "Boglehead (50/30/20)",
+      "color": "#8b5cf6",
+      "series": [
+        {
+          "date": "2026-05-04",
+          "return_pct": 0.0
+        },
+        {
+          "date": "2026-05-05",
+          "return_pct": 0.8838
+        },
+        {
+          "date": "2026-05-06",
+          "return_pct": 2.4626
+        },
+        {
+          "date": "2026-05-07",
+          "return_pct": 1.6765
+        },
+        {
+          "date": "2026-05-08",
+          "return_pct": 2.536
+        },
+        {
+          "date": "2026-05-11",
+          "return_pct": 2.5795
+        },
+        {
+          "date": "2026-05-12",
+          "return_pct": 1.9776
+        },
+        {
+          "date": "2026-05-13",
+          "return_pct": 2.567
+        },
+        {
+          "date": "2026-05-14",
+          "return_pct": 2.9196
+        },
+        {
+          "date": "2026-05-15",
+          "return_pct": 1.4498
+        },
+        {
+          "date": "2026-05-18",
+          "return_pct": 1.5356
+        },
+        {
+          "date": "2026-05-19",
+          "return_pct": 0.8789
+        },
+        {
+          "date": "2026-05-20",
+          "return_pct": 2.0713
+        },
+        {
+          "date": "2026-05-21",
+          "return_pct": 2.3699
+        },
+        {
+          "date": "2026-05-22",
+          "return_pct": 2.5854
+        },
+        {
+          "date": "2026-05-26",
+          "return_pct": 3.6218
+        },
+        {
+          "date": "2026-05-27",
+          "return_pct": 3.532
+        },
+        {
+          "date": "2026-05-28",
+          "return_pct": 3.9462
+        },
+        {
+          "date": "2026-05-29",
+          "return_pct": 4.107
+        },
+        {
+          "date": "2026-06-01",
+          "return_pct": 4.3106
+        },
+        {
+          "date": "2026-06-02",
+          "return_pct": 4.6888
+        },
+        {
+          "date": "2026-06-03",
+          "return_pct": 3.9539
+        },
+        {
+          "date": "2026-06-04",
+          "return_pct": 4.2804
+        },
+        {
+          "date": "2026-06-05",
+          "return_pct": 1.6029
+        },
+        {
+          "date": "2026-06-08",
+          "return_pct": 2.0103
+        },
+        {
+          "date": "2026-06-09",
+          "return_pct": 1.9704
+        },
+        {
+          "date": "2026-06-10",
+          "return_pct": 0.7101
+        },
+        {
+          "date": "2026-06-11",
+          "return_pct": 2.7126
+        },
+        {
+          "date": "2026-06-12",
+          "return_pct": 3.1029
+        },
+        {
+          "date": "2026-06-15",
+          "return_pct": 4.4651
+        },
+        {
+          "date": "2026-06-16",
+          "return_pct": 4.0625
+        },
+        {
+          "date": "2026-06-17",
+          "return_pct": 3.1621
+        },
+        {
+          "date": "2026-06-18",
+          "return_pct": 4.1831
+        },
+        {
+          "date": "2026-06-22",
+          "return_pct": 4.0678
+        },
+        {
+          "date": "2026-06-23",
+          "return_pct": 2.397
+        },
+        {
+          "date": "2026-06-24",
+          "return_pct": 2.4549
+        },
+        {
+          "date": "2026-06-25",
+          "return_pct": 2.7864
+        },
+        {
+          "date": "2026-06-26",
+          "return_pct": 2.4843
+        },
+        {
+          "date": "2026-06-29",
+          "return_pct": 3.3543
+        },
+        {
+          "date": "2026-06-30",
+          "return_pct": 3.8908
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 3.4008
+        },
+        {
+          "date": "2026-07-02",
+          "return_pct": 3.4559
+        }
+      ]
+    }
+  ],
+  "paper_return_series": [
+    {
+      "date": "2026-05-04",
+      "return_pct": -0.2783
+    },
+    {
+      "date": "2026-05-05",
+      "return_pct": -0.1453
+    },
+    {
+      "date": "2026-05-06",
+      "return_pct": 0.789
+    },
+    {
+      "date": "2026-05-07",
+      "return_pct": 0.2956
+    },
+    {
+      "date": "2026-05-08",
+      "return_pct": 0.3245
+    },
+    {
+      "date": "2026-05-11",
+      "return_pct": 0.4312
+    },
+    {
+      "date": "2026-05-12",
+      "return_pct": 0.4249
+    },
+    {
+      "date": "2026-05-13",
+      "return_pct": 0.0783
+    },
+    {
+      "date": "2026-05-14",
+      "return_pct": 0.4216
+    },
+    {
+      "date": "2026-05-15",
+      "return_pct": -0.0164
+    },
+    {
+      "date": "2026-05-18",
+      "return_pct": -0.064
+    },
+    {
+      "date": "2026-05-19",
+      "return_pct": -0.374
+    },
+    {
+      "date": "2026-05-20",
+      "return_pct": 0.6012
+    },
+    {
+      "date": "2026-05-21",
+      "return_pct": 0.9815
+    },
+    {
+      "date": "2026-05-22",
+      "return_pct": 1.0698
+    },
+    {
+      "date": "2026-05-26",
+      "return_pct": 1.9052
+    },
+    {
+      "date": "2026-05-27",
+      "return_pct": 1.4553
+    },
+    {
+      "date": "2026-05-28",
+      "return_pct": 1.9313
+    },
+    {
+      "date": "2026-05-29",
+      "return_pct": 2.7992
+    },
+    {
+      "date": "2026-06-01",
+      "return_pct": 2.9487
+    },
+    {
+      "date": "2026-06-02",
+      "return_pct": 3.061
+    },
+    {
+      "date": "2026-06-03",
+      "return_pct": 2.8585
+    },
+    {
+      "date": "2026-06-04",
+      "return_pct": 3.7018
+    },
+    {
+      "date": "2026-06-05",
+      "return_pct": 2.2969
+    },
+    {
+      "date": "2026-06-08",
+      "return_pct": 2.3056
+    },
+    {
+      "date": "2026-06-09",
+      "return_pct": 1.2298
+    },
+    {
+      "date": "2026-06-10",
+      "return_pct": 0.7808
+    },
+    {
+      "date": "2026-06-11",
+      "return_pct": 1.5997
+    },
+    {
+      "date": "2026-06-12",
+      "return_pct": 2.0019
+    },
+    {
+      "date": "2026-06-15",
+      "return_pct": 2.4078
+    },
+    {
+      "date": "2026-06-16",
+      "return_pct": 2.527
+    },
+    {
+      "date": "2026-06-17",
+      "return_pct": 2.9846
+    },
+    {
+      "date": "2026-06-18",
+      "return_pct": 2.9264
+    },
+    {
+      "date": "2026-06-22",
+      "return_pct": 2.7794
+    },
+    {
+      "date": "2026-06-23",
+      "return_pct": 2.5675
+    },
+    {
+      "date": "2026-06-24",
+      "return_pct": 2.4095
+    },
+    {
+      "date": "2026-06-25",
+      "return_pct": 2.5533
+    },
+    {
+      "date": "2026-06-26",
+      "return_pct": 1.3731
+    },
+    {
+      "date": "2026-06-29",
+      "return_pct": 1.64
+    },
+    {
+      "date": "2026-06-30",
+      "return_pct": 1.9095
+    },
+    {
+      "date": "2026-07-01",
+      "return_pct": 0.7881
+    },
+    {
+      "date": "2026-07-02",
+      "return_pct": -0.2082
     }
   ],
   "lifetime_stats": {
