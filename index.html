@@ -361,10 +361,9 @@
       <div id="history-mount"></div>
     </div>
     <div class="panel">
-      <h2>Returns vs Benchmarks</h2>
-      <div class="panel-help">% return since inception — apples-to-apples. Paper Book excludes SPAXX cash yield to isolate stock selection. Boglehead = 50% VTI / 30% VXUS / 20% BND.</div>
-      <div id="benchmark-scorecard-mount" style="margin-bottom:16px"></div>
-      <canvas id="equityChart" height="110"></canvas>
+      <h2>Equity Curve</h2>
+      <div class="panel-help">Trading NAV (excludes SPAXX cash yield) vs SPY — isolates stock selection from the cash carry. Headline NAV above includes cash yield.</div>
+      <canvas id="equityChart" height="100"></canvas>
     </div>
     <div class="panel">
       <h2>Lifetime Stats</h2>
@@ -636,73 +635,26 @@ function renderLifetime(s) {
 }
 
 let chart = null;
-function renderEquityCurve(paperReturnSeries, benchmarks) {
+function renderEquityCurve(navHistory, spyAligned) {
   const ctx = document.getElementById('equityChart');
-  if (!ctx || !paperReturnSeries || !paperReturnSeries.length) return;
-  const labels = paperReturnSeries.map(r => r.date);
-  const datasets = [{
-    label: 'Paper Book',
-    data: paperReturnSeries.map(r => r.return_pct),
-    borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.07)',
-    fill: true, tension: 0.2, pointRadius: 1.5, borderWidth: 2
-  }];
-  (benchmarks || []).forEach(b => {
-    const byDate = {};
-    b.series.forEach(s => { byDate[s.date] = s.return_pct; });
-    datasets.push({
-      label: b.label,
-      data: labels.map(d => byDate[d] ?? null),
-      borderColor: b.color, borderDash: [4,4],
-      pointRadius: 0, tension: 0.2, fill: false, borderWidth: 1.5
-    });
-  });
+  if (!ctx || !navHistory.length) return;
+  const labels = navHistory.map(r => r.date);
+  const navs = navHistory.map(r => r.nav);
+  const spyByDate = {};
+  spyAligned.forEach(s => { spyByDate[s.date] = s.nav_equiv; });
+  const spy = labels.map(d => spyByDate[d] ?? null);
   if (chart) chart.destroy();
   chart = new Chart(ctx, {
-    type: 'line', data: { labels, datasets },
-    options: {
-      responsive: true,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { position: 'bottom', labels: { font: { size: 11 }, boxWidth: 20 } },
-        tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${c.parsed.y != null ? (c.parsed.y >= 0 ? '+' : '') + c.parsed.y.toFixed(2) + '%' : '—'}` } }
-      },
-      scales: { y: { ticks: { callback: v => (v >= 0 ? '+' : '') + v.toFixed(1) + '%' }, grid: { color: 'rgba(0,0,0,0.04)' } } }
+    type: 'line',
+    data: { labels, datasets: [
+      { label: 'Paper NAV (ex-cash)', data: navs, borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.08)', fill: true, tension: 0.2, pointRadius: 1.5 },
+      { label: 'SPY (norm.)', data: spy, borderColor: '#9ca3af', borderDash: [4,4], pointRadius: 0, tension: 0.2, fill: false }
+    ]},
+    options: { responsive: true,
+      plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } },
+      scales: { y: { ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } } }
     }
   });
-}
-
-function renderBenchmarkScorecard(paperReturnSeries, benchmarks) {
-  if (!paperReturnSeries || !paperReturnSeries.length) return '';
-  const paperLast = paperReturnSeries[paperReturnSeries.length - 1].return_pct;
-  const rows = [{ label: 'Paper Book', ret: paperLast, color: '#2563eb', isPaper: true }];
-  (benchmarks || []).forEach(b => {
-    const last = b.series[b.series.length - 1];
-    rows.push({ label: b.label, ret: last ? last.return_pct : null, color: b.color, isPaper: false });
-  });
-  rows.sort((a, b) => (b.ret ?? -999) - (a.ret ?? -999));
-  const best = rows[0].ret || 0.01;
-  const medals = ['\u{1F947}', '\u{1F948}', '\u{1F949}'];
-  return rows.map((r, i) => {
-    const cls = r.ret == null ? '' : r.ret >= 0 ? 'pos' : 'neg';
-    const retStr = r.ret != null ? (r.ret >= 0 ? '+' : '') + r.ret.toFixed(2) + '%' : '\u2014';
-    const barW = r.ret != null ? Math.max(0, Math.min(100, (r.ret / best) * 100)) : 0;
-    const medal = medals[i] ? medals[i] + ' ' : '';
-    const bold = r.isPaper ? 'font-weight:700' : '';
-    const diff = r.isPaper ? null : r.ret - paperLast;
-    const diffHtml = r.isPaper
-      ? '<span class="muted">\u2014</span>'
-      : `<span class="${diff > 0 ? 'neg' : 'pos'}">${diff >= 0 ? '+' : ''}${diff.toFixed(2)}%</span>`;
-    return `<tr>
-      <td data-label="Strategy" style="${bold}">${medal}${esc(r.label)}</td>
-      <td data-label="Return" class="num ${cls}" style="${bold}">${retStr}</td>
-      <td data-label="vs Paper" class="num">${diffHtml}</td>
-      <td class="mobile-hide" style="min-width:120px;padding-right:14px">
-        <div style="height:6px;background:#f3f4f6;border-radius:3px;overflow:hidden">
-          <div style="height:100%;width:${barW}%;background:${r.color};border-radius:3px"></div>
-        </div>
-      </td>
-    </tr>`;
-  }).join('');
 }
 
 // ── Polling loop ──────────────────────────────────────────────
@@ -738,12 +690,7 @@ async function loadAndRender() {
     document.getElementById('lifetime-mount').innerHTML   = renderLifetime(d.lifetime_stats);
 
     // Equity curve — render once per data update (Chart.js handles redraws)
-    renderEquityCurve(d.paper_return_series, d.benchmarks);
-    const scorecardEl = document.getElementById('benchmark-scorecard-mount');
-    if (scorecardEl) {
-      const rows = renderBenchmarkScorecard(d.paper_return_series, d.benchmarks);
-      scorecardEl.innerHTML = `<table class="responsive"><thead><tr><th>Strategy</th><th class="num">Return</th><th class="num">vs Paper</th><th class="mobile-hide"></th></tr></thead><tbody>${rows}</tbody></table>`;
-    }
+    renderEquityCurve(d.nav_history, d.spy_aligned);
   } catch (err) {
     console.error('[paper-dashboard] load failed', err);
     document.getElementById('rendered-at').textContent = 'load failed: ' + err.message;
