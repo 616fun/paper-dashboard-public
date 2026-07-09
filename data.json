@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-08T20:35:50Z",
-  "as_of": "2026-07-08",
+  "rendered_at_utc": "2026-07-09T00:06:15Z",
+  "as_of": "2026-07-09",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-08",
-    "current": 997158.35,
+    "as_of": "2026-07-09",
+    "current": 995775.84,
     "starting": 1000000.0,
     "cash": 374872.36,
-    "day_pnl": -1808.8100000000559,
-    "day_pct": -0.1810680142878827,
-    "incep_pnl": -2841.6500000000233,
-    "incep_pct": -0.28416500000000233,
-    "deployed_pct": 62.4059348246946,
+    "day_pnl": -1382.5100000000093,
+    "day_pct": -0.13864498050886395,
+    "incep_pnl": -4224.160000000033,
+    "incep_pct": -0.42241600000000323,
+    "deployed_pct": 62.35374017509804,
     "open_count": 2,
-    "cash_interest": 4287.45,
+    "cash_interest": 4319.75,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 509.12,
-    "total_incl_cash": 1001445.7999999999
+    "cash_interest_month": 541.42,
+    "total_incl_cash": 1000095.59
   },
   "positions": [
     {
@@ -25,7 +25,7 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 33,
+      "days_held": 34,
       "entry_price": 237.4,
       "last_price": 261.0899963378906,
       "position_value": 24363.064719277954,
@@ -39,7 +39,7 @@
       "target_2": 278.71,
       "t2_dist_pct": 6.748632237638994,
       "max_hold": "2026-08-04",
-      "days_to_max": 27,
+      "days_to_max": 26,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -48,7 +48,7 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 6,
+      "days_held": 7,
       "entry_price": 368.76,
       "last_price": 368.25,
       "position_value": 597922.921875,
@@ -70,9 +70,9 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $997,158",
-      "detail": "daily return -0.18% \u00b7 positions value $622,286",
-      "ts": "2026-07-08"
+      "label": "MTM mark: NAV $995,776",
+      "detail": "daily return -0.14% \u00b7 positions value $620,903",
+      "ts": "2026-07-09"
     }
   ],
   "decisions": [],
@@ -1476,6 +1476,10 @@
     {
       "date": "2026-07-08",
       "nav": 997158.35
+    },
+    {
+      "date": "2026-07-09",
+      "nav": 995775.84
     }
   ],
   "spy_aligned": [
@@ -1661,8 +1665,8 @@
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -0.28,
-    "sharpe": -13.05,
+    "total_return_pct": -0.42,
+    "sharpe": -12.85,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4571,
     "profit_factor": 0.93,
