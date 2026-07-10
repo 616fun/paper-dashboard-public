@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-10T00:01:28Z",
+  "rendered_at_utc": "2026-07-10T20:36:15Z",
   "as_of": "2026-07-10",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-07-10",
-    "current": 995775.84,
+    "current": 1004036.26,
     "starting": 1000000.0,
     "cash": 374872.36,
-    "day_pnl": -7316.430000000051,
-    "day_pct": -0.7293875368015796,
-    "incep_pnl": -4224.160000000033,
-    "incep_pct": -0.42241600000000323,
-    "deployed_pct": 62.35374017509804,
+    "day_pnl": 943.9899999999907,
+    "day_pct": 0.09410799267748227,
+    "incep_pnl": 4036.2600000000093,
+    "incep_pct": 0.40362600000000093,
+    "deployed_pct": 62.663463966928845,
     "open_count": 2,
     "cash_interest": 4352.06,
     "cash_yield_annual": 0.031453,
     "cash_interest_month": 573.73,
-    "total_incl_cash": 1000127.9
+    "total_incl_cash": 1008388.3200000001
   },
   "positions": [
     {
@@ -27,17 +27,17 @@
       "entry_date": "2026-06-05",
       "days_held": 35,
       "entry_price": 237.4,
-      "last_price": 269.0,
-      "position_value": 25101.1701,
+      "last_price": 257.5400085449219,
+      "position_value": 24031.80506335144,
       "cost_basis": 22152.48,
-      "unrealized": 2948.68764,
-      "unrealized_pct": 13.310867733782647,
+      "unrealized": 1879.3226033514402,
+      "unrealized_pct": 8.483575629705928,
       "stop": 145.96,
-      "stop_dist_pct": -45.73977695167286,
+      "stop_dist_pct": -43.32531057032225,
       "target_1": 275.25,
-      "t1_dist_pct": 2.323420074349442,
+      "t1_dist_pct": 6.876598146881334,
       "target_2": 278.71,
-      "t2_dist_pct": 3.6096654275092863,
+      "t2_dist_pct": 8.220078726675002,
       "max_hold": "2026-08-04",
       "days_to_max": 25,
       "setup_type": "momentum_breakout",
@@ -50,11 +50,11 @@
       "entry_date": "2026-07-02",
       "days_held": 8,
       "entry_price": 368.76,
-      "last_price": 371.45001220703125,
-      "position_value": 603118.741695404,
+      "last_price": 372.69000244140625,
+      "position_value": 605132.0983390808,
       "cost_basis": 598751.0,
-      "unrealized": 4367.739195404109,
-      "unrealized_pct": 0.7294750534307638,
+      "unrealized": 6381.095839080866,
+      "unrealized_pct": 1.0657344726668523,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -70,8 +70,8 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $995,776",
-      "detail": "daily return -0.73% \u00b7 positions value $620,903",
+      "label": "MTM mark: NAV $1,004,036",
+      "detail": "daily return +0.83% \u00b7 positions value $629,164",
       "ts": "2026-07-10"
     }
   ],
@@ -1488,6 +1488,10 @@
     {
       "date": "2026-07-10",
       "nav": 995775.84
+    },
+    {
+      "date": "2026-07-10",
+      "nav": 1004036.26
     }
   ],
   "spy_aligned": [
@@ -1674,11 +1678,15 @@
     {
       "date": "2026-07-09",
       "nav_equiv": 1046935.3
+    },
+    {
+      "date": "2026-07-10",
+      "nav_equiv": 1051447.75
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -0.42,
-    "sharpe": -12.42,
+    "total_return_pct": 0.4,
+    "sharpe": -12.08,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4571,
     "profit_factor": 0.93,
