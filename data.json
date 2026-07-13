@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-10T23:55:29Z",
-  "as_of": "2026-07-10",
+  "rendered_at_utc": "2026-07-13T20:36:09Z",
+  "as_of": "2026-07-13",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-10",
-    "current": 1004036.26,
+    "as_of": "2026-07-13",
+    "current": 999563.27,
     "starting": 1000000.0,
     "cash": 374872.36,
-    "day_pnl": 943.9899999999907,
-    "day_pct": 0.09410799267748227,
-    "incep_pnl": 4036.2600000000093,
-    "incep_pct": 0.40362600000000093,
-    "deployed_pct": 62.663463966928845,
+    "day_pnl": -4472.989999999991,
+    "day_pct": -0.44550084276836677,
+    "incep_pnl": -436.7299999999814,
+    "incep_pct": -0.04367299999999814,
+    "deployed_pct": 62.496385046241244,
     "open_count": 2,
-    "cash_interest": 4352.06,
+    "cash_interest": 4448.97,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 573.73,
-    "total_incl_cash": 1008388.3200000001
+    "cash_interest_month": 670.64,
+    "total_incl_cash": 1004012.24
   },
   "positions": [
     {
@@ -25,21 +25,21 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 35,
+      "days_held": 38,
       "entry_price": 237.4,
-      "last_price": 257.5400085449219,
-      "position_value": 24031.80506335144,
+      "last_price": 260.239990234375,
+      "position_value": 24283.74818474121,
       "cost_basis": 22152.48,
-      "unrealized": 1879.3226033514402,
-      "unrealized_pct": 8.483575629705928,
+      "unrealized": 2131.26572474121,
+      "unrealized_pct": 9.620888894007999,
       "stop": 145.96,
-      "stop_dist_pct": -43.32531057032225,
+      "stop_dist_pct": -43.91330868536122,
       "target_1": 275.25,
-      "t1_dist_pct": 6.876598146881334,
+      "t1_dist_pct": 5.767756812512489,
       "target_2": 278.71,
-      "t2_dist_pct": 8.220078726675002,
+      "t2_dist_pct": 7.097298823670677,
       "max_hold": "2026-08-04",
-      "days_to_max": 25,
+      "days_to_max": 22,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -48,13 +48,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 8,
+      "days_held": 11,
       "entry_price": 368.76,
-      "last_price": 372.69000244140625,
-      "position_value": 605132.0983390808,
+      "last_price": 369.7799987792969,
+      "position_value": 600407.1617679596,
       "cost_basis": 598751.0,
-      "unrealized": 6381.095839080866,
-      "unrealized_pct": 1.0657344726668523,
+      "unrealized": 1656.1592679596506,
+      "unrealized_pct": 0.27660233737306367,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -70,9 +70,9 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,036",
-      "detail": "daily return +0.00% \u00b7 positions value $629,164",
-      "ts": "2026-07-10"
+      "label": "MTM mark: NAV $999,563",
+      "detail": "daily return -0.45% \u00b7 positions value $624,691",
+      "ts": "2026-07-13"
     }
   ],
   "decisions": [],
@@ -1496,6 +1496,10 @@
     {
       "date": "2026-07-10",
       "nav": 1004036.26
+    },
+    {
+      "date": "2026-07-13",
+      "nav": 999563.27
     }
   ],
   "spy_aligned": [
@@ -1686,11 +1690,15 @@
     {
       "date": "2026-07-10",
       "nav_equiv": 1051447.75
+    },
+    {
+      "date": "2026-07-13",
+      "nav_equiv": 1043397.69
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.4,
-    "sharpe": -11.9,
+    "total_return_pct": -0.04,
+    "sharpe": -11.8,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4571,
     "profit_factor": 0.93,
