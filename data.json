@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-14T20:38:27Z",
+  "rendered_at_utc": "2026-07-14T23:51:11Z",
   "as_of": "2026-07-14",
   "starting_nav": 1000000.0,
   "hero": {
@@ -71,7 +71,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,002,783",
-      "detail": "daily return +0.32% \u00b7 positions value $627,910",
+      "detail": "daily return +0.00% \u00b7 positions value $627,910",
       "ts": "2026-07-14"
     }
   ],
@@ -1508,6 +1508,10 @@
     {
       "date": "2026-07-14",
       "nav": 1002782.82
+    },
+    {
+      "date": "2026-07-14",
+      "nav": 1002782.82
     }
   ],
   "spy_aligned": [
@@ -1710,7 +1714,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 0.28,
-    "sharpe": -11.42,
+    "sharpe": -11.27,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4571,
     "profit_factor": 0.93,
