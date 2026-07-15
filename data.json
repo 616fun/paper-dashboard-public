@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-15T21:12:06Z",
-  "as_of": "2026-07-15",
+  "rendered_at_utc": "2026-07-15T21:26:15Z",
+  "as_of": "2026-07-14",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-15",
-    "current": 1004747.03,
+    "as_of": "2026-07-14",
+    "current": 1000897.37,
     "starting": 1000000.0,
-    "cash": 387714.53,
-    "day_pnl": 1964.2100000000792,
-    "day_pct": 0.19587591259292608,
-    "incep_pnl": 4747.030000000028,
-    "incep_pct": 0.4747030000000028,
-    "deployed_pct": 61.4117266910458,
+    "cash": 372986.91,
+    "day_pnl": 3497.920000000042,
+    "day_pct": 0.3507040233479216,
+    "incep_pnl": 897.3699999999953,
+    "incep_pct": 0.08973699999999953,
+    "deployed_pct": 62.734749717645876,
     "open_count": 2,
-    "cash_interest": 4514.68,
+    "cash_interest": 4479.03,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 736.35,
-    "total_incl_cash": 1009261.7100000001
+    "cash_interest_month": 700.7,
+    "total_incl_cash": 1005376.4
   },
   "positions": [
     {
@@ -27,17 +27,17 @@
       "entry_date": "2026-06-05",
       "days_held": 40,
       "entry_price": 237.4,
-      "last_price": 264.4599914550781,
-      "position_value": 12338.777591323853,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 22152.48,
-      "unrealized": 1262.524491323853,
-      "unrealized_pct": 11.398479972652964,
-      "stop": 237.4,
-      "stop_dist_pct": -10.232168316346105,
+      "unrealized": null,
+      "unrealized_pct": null,
+      "stop": 145.96,
+      "stop_dist_pct": null,
       "target_1": 275.25,
-      "t1_dist_pct": 4.08001546304016,
+      "t1_dist_pct": null,
       "target_2": 278.71,
-      "t2_dist_pct": 5.388341906281275,
+      "t2_dist_pct": null,
       "max_hold": "2026-08-04",
       "days_to_max": 20,
       "setup_type": "momentum_breakout",
@@ -50,11 +50,11 @@
       "entry_date": "2026-07-02",
       "days_held": 13,
       "entry_price": 368.76,
-      "last_price": 372.4200134277344,
-      "position_value": 604693.7205524445,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 598751.0,
-      "unrealized": 5942.718052444514,
-      "unrealized_pct": 0.9925190985286934,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -69,55 +69,1064 @@
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Partial close DDOG \u2014 TARGET_1",
-      "detail": "46.66 shares @ $275.25 (entry $237.40) \u00b7 P&L $+1,766 (+15.94%) \u00b7 held 40d \u00b7 remainder still open",
-      "ts": "2026-07-15"
-    },
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,747",
-      "detail": "daily return +0.20% \u00b7 positions value $617,032",
-      "ts": "2026-07-15"
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "DDOG (DEFER) \u00b7 QLYS (REJECT) \u00b7 OKTA (DEFER) \u00b7 HUM (DEFER)",
+      "ts": ""
     }
   ],
-  "decisions": [],
-  "watch_list": [],
+  "decisions": [
+    {
+      "date": "2026-07-15",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_PULLBACK",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "REJECT",
+      "setup": "avoid",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "verdict": "DEFER",
+      "setup": "pullback_within_uptrend",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_PULLBACK",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "verdict": "DEFER",
+      "setup": "SHELF_LOST_ROUND_TRIP_NO_EDGE",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "REJECT",
+      "setup": "avoid",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_EXTENDED",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_CONTINUATION",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "MOMENTUM_PULLBACK",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "CVLT",
+      "company": "Commvault Systems",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_CONTINUATION",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-09",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_EXTENDED",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-09",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "verdict": "REJECT",
+      "setup": "FAILED_BREAKOUT_BREAKDOWN",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-09",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_CONTINUATION",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-09",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "MOMENTUM_PULLBACK",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-09",
+      "ticker": "CVLT",
+      "company": "Commvault Systems",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_CONTINUATION",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-08",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "DEFER",
+      "setup": "wait_for_base_below_broken_50d",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-08",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "verdict": "DEFER",
+      "setup": "FAILED_BREAKOUT_PULLBACK",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-08",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "MOMENTUM_BREAKOUT",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-08",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "DEFER",
+      "setup": "extended_uptrend_await_pullback_or_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-08",
+      "ticker": "GPC",
+      "company": "Genuine Parts Company",
+      "verdict": "DEFER",
+      "setup": "EVENT_DRIVEN_GAP",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-07",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "MOMENTUM_BREAKOUT",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-07",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-07",
+      "ticker": "GPC",
+      "company": "Genuine Parts Company",
+      "verdict": "DEFER",
+      "setup": "EVENT_DRIVEN_GAP",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-06",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_wait_for_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-06",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-06",
+      "ticker": "GPC",
+      "company": "Genuine Parts Company",
+      "verdict": "DEFER",
+      "setup": "EVENT_DRIVEN_GAP",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-02",
+      "ticker": "KLAC",
+      "company": "KLA",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "trend_pullback_continuation",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-07-02",
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "verdict": "DEFER",
+      "setup": "post_blowoff_pullback_watch_no_confirmed_reversal_entry_yet",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-02",
+      "ticker": "ALGM",
+      "company": "Allegro MicroSystems",
+      "verdict": "DEFER",
+      "setup": "momentum_pullback_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "DEFER",
+      "setup": "breakout_retest_resuming",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "OC",
+      "company": "Owens Corning",
+      "verdict": "DEFER",
+      "setup": "event_driven_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "uptrend_pullback_toward_ath",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "CAG",
+      "company": "Conagra Brands",
+      "verdict": "DEFER",
+      "setup": "failed_bounce_watch_for_base",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_chase",
+      "reason": "defer"
+    }
+  ],
+  "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 4.5,
+      "stop": 37.2,
+      "target_1": 61.02,
+      "target_2": 72.42,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-15",
+      "setup": "mean_reversion",
+      "decision_doc": "/sessions/lucid-exciting-darwin/mnt/tradingagents-cowork/reports/PBF/2026-07/PBF-decision-2026-07-15.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "HUM",
+      "company": "Humana",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 15.0,
+      "stop": 380.86,
+      "target_1": 415.0,
+      "target_2": 440.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-14",
+      "setup": "breakout",
+      "decision_doc": "/sessions/epic-compassionate-mccarthy/mnt/tradingagents-cowork/reports/HUM/2026-07/HUM-decision-2026-07-14.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 339.0,
+      "target_1": 385.0,
+      "target_2": 405.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-07",
+      "setup": "MOMENTUM_BREAKOUT",
+      "decision_doc": "/sessions/epic-exciting-gates/mnt/tradingagents-cowork/reports/PANW/2026-07/PANW-decision-2026-07-07.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 2.0,
+      "stop": 1480.0,
+      "target_1": 1930.0,
+      "target_2": 2150.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-07",
+      "setup": "uptrend_deep_pullback_buy",
+      "decision_doc": "/sessions/epic-exciting-gates/mnt/tradingagents-cowork/reports/SNDK/2026-07/SNDK-decision-2026-07-07.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 2.0,
+      "stop": 1480.0,
+      "target_1": 1930.0,
+      "target_2": 2150.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-06",
+      "setup": "uptrend_deep_pullback_buy",
+      "decision_doc": "/sessions/serene-intelligent-mendel/mnt/tradingagents-cowork/reports/SNDK/2026-07/SNDK-decision-2026-07-06.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 2.5,
+      "stop": 1800.0,
+      "target_1": 2354.0,
+      "target_2": 2500.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-02",
+      "setup": "uptrend_pullback_buy",
+      "decision_doc": "/sessions/wizardly-confident-goodall/mnt/tradingagents-cowork/reports/SNDK/2026-07/SNDK-decision-2026-07-02.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 3.58,
+      "stop": 1045.0,
+      "target_1": 1255.0,
+      "target_2": 1454.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-01",
+      "setup": "uptrend_pullback_toward_ath",
+      "decision_doc": "/sessions/charming-eager-heisenberg/mnt/tradingagents-cowork/reports/MU/2026-07/MU-decision-2026-07-01.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 1.5,
+      "stop": 1880.0,
+      "target_1": 2150.0,
+      "target_2": 2354.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-30",
+      "setup": "pullback_to_support",
+      "decision_doc": "/sessions/great-bold-edison/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-30.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 1043.0,
+      "target_1": 1255.0,
+      "target_2": 1350.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-30",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/great-bold-edison/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-30.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 393.0,
+      "target_1": 440.0,
+      "target_2": 469.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-26",
+      "setup": "PULLBACK_TO_SUPPORT",
+      "decision_doc": "/sessions/inspiring-quirky-lamport/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-26.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 1110.0,
+      "target_1": 1255.0,
+      "target_2": 1350.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-26",
+      "setup": "post_earnings_breakout_continuation",
+      "decision_doc": "/sessions/inspiring-quirky-lamport/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-26.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "STX",
+      "company": "Seagate Technology Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.5,
+      "stop": 935.0,
+      "target_1": 1120.0,
+      "target_2": 1145.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-26",
+      "setup": "momentum_continuation",
+      "decision_doc": "/sessions/inspiring-quirky-lamport/mnt/tradingagents-cowork/reports/STX/2026-06/STX-decision-2026-06-26.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 6.0,
+      "stop": 1000.0,
+      "target_1": 1110.4,
+      "target_2": 1300.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-25",
+      "setup": "post_earnings_breakout_continuation",
+      "decision_doc": "/sessions/adoring-sleepy-mccarthy/mnt/tradingagents-cowork/reports/MU/2026-06/MU-decision-2026-06-25.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.5,
+      "stop": 1750.0,
+      "target_1": 2050.0,
+      "target_2": 2354.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-25",
+      "setup": "pullback_to_support",
+      "decision_doc": "/sessions/adoring-sleepy-mccarthy/mnt/tradingagents-cowork/reports/SNDK/2026-06/SNDK-decision-2026-06-25.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 408.0,
+      "target_1": 446.0,
+      "target_2": 465.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-24",
+      "setup": "TREND_CONTINUATION",
+      "decision_doc": "/sessions/exciting-epic-volta/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-24.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "WDC",
+      "company": "Western Digital",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.5,
+      "stop": 620.0,
+      "target_1": 749.18,
+      "target_2": 799.87,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-24",
+      "setup": "breakout_pullback",
+      "decision_doc": "/sessions/exciting-epic-volta/mnt/tradingagents-cowork/reports/WDC/2026-06/WDC-decision-2026-06-24.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 6.98,
+      "stop": 398.0,
+      "target_1": 438.0,
+      "target_2": 458.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-23",
+      "setup": "TREND_CONTINUATION",
+      "decision_doc": "/sessions/beautiful-bold-feynman/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-23.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 4.86,
+      "stop": 137.62,
+      "target_1": 186.71,
+      "target_2": 200.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-22",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/practical-upbeat-shannon/mnt/tradingagents-cowork/reports/DOCN/2026-06/DOCN-decision-2026-06-22.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 4.56,
+      "stop": 35.71,
+      "target_1": 58.3,
+      "target_2": 64.25,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-22",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/practical-upbeat-shannon/mnt/tradingagents-cowork/reports/HPE/2026-06/HPE-decision-2026-06-22.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 6.96,
+      "stop": 390.0,
+      "target_1": 424.0,
+      "target_2": 441.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-22",
+      "setup": "TREND_CONTINUATION",
+      "decision_doc": "/sessions/practical-upbeat-shannon/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-22.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 135.94,
+      "target_1": 186.25,
+      "target_2": 187.5,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-18",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/inspiring-dreamy-goodall/mnt/tradingagents-cowork/reports/DOCN/2026-06/DOCN-decision-2026-06-18.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 2.9,
+      "stop": 277.75,
+      "target_1": 561.0,
+      "target_2": 702.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-18",
+      "setup": "breakout",
+      "decision_doc": "/sessions/inspiring-dreamy-goodall/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-18.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 5.0,
+      "stop": 340.0,
+      "target_1": 440.0,
+      "target_2": 469.47,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-17",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/relaxed-jolly-meitner/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-17.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.1,
+      "stop": 44.0,
+      "target_1": 59.16,
+      "target_2": 64.25,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-16",
+      "setup": "breakout",
+      "decision_doc": "/sessions/upbeat-hopeful-gauss/mnt/tradingagents-cowork/reports/HPE/2026-06/HPE-decision-2026-06-16.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 3.0,
+      "stop": 268.27,
+      "target_1": 430.0,
+      "target_2": 469.47,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-16",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/upbeat-hopeful-gauss/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-16.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 4.0,
+      "stop": 42.0,
+      "target_1": 54.0,
+      "target_2": 64.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-15",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/clever-adoring-maxwell/mnt/tradingagents-cowork/reports/HPE/2026-06/HPE-decision-2026-06-15.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 354.42,
+      "target_1": 454.91,
+      "target_2": 514.24,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-15",
+      "setup": "breakout",
+      "decision_doc": "/sessions/clever-adoring-maxwell/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-15.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 5.0,
+      "stop": 331.43,
+      "target_1": 469.47,
+      "target_2": 493.09,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-12",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/dazzling-great-dijkstra/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-11.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 360.0,
+      "target_1": 469.47,
+      "target_2": 496.98,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-12",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/dazzling-great-dijkstra/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-12.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 4.0,
+      "stop": 360.0,
+      "target_1": 420.0,
+      "target_2": 454.22,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-10",
+      "setup": "momentum_pullback",
+      "decision_doc": "/sessions/beautiful-vigilant-hawking/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-10.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.6,
+      "stop": 158.0,
+      "target_1": 449.32,
+      "target_2": 469.47,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-06-04",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/peaceful-bold-franklin/mnt/tradingagents-cowork/reports/DELL/2026-06/DELL-decision-2026-06-04.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 140.0,
+      "target_1": 165.99,
+      "target_2": 177.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-28",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/modest-lucid-wright/mnt/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-28.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 200.0,
+      "target_1": 225.0,
+      "target_2": 250.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-26",
+      "setup": "momentum_continuation",
+      "decision_doc": "/sessions/adoring-epic-mccarthy/mnt/tradingagents-cowork/reports/DDOG/2026-05/DDOG-decision-2026-05-26.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 140.0,
+      "target_1": 165.99,
+      "target_2": 177.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-26",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/adoring-epic-mccarthy/mnt/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-26.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 3.67,
+      "stop": 303.0,
+      "target_1": 507.0,
+      "target_2": 530.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-26",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/adoring-epic-mccarthy/mnt/tradingagents-cowork/reports/AMD/2026-05/AMD-decision-2026-05-26.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "SNDK",
+      "company": "Sandisk",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 3.0,
+      "stop": 1100.0,
+      "target_1": 1600.0,
+      "target_2": 2000.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-23",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/SNDK/2026-05/SNDK-decision-2026-05-22.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 5.0,
+      "stop": 140.0,
+      "target_1": 165.99,
+      "target_2": 177.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-23",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/DOCN/2026-05/DOCN-decision-2026-05-22.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.5,
+      "stop": 303.19,
+      "target_1": 481.41,
+      "target_2": 505.24,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-05-23",
+      "setup": "breakout",
+      "decision_doc": "/sessions/stoic-youthful-bohr/mnt/tradingagents-cowork/reports/AMD/2026-05/AMD-decision-2026-05-22.md"
+    }
+  ],
   "closed_stats": {
-    "total_realized": -2458.1799999999935,
-    "today_realized": 1765.94,
-    "trade_count": 71,
-    "today_count": 1,
-    "win_count": 33,
-    "loss_count": 26,
+    "total_realized": -6109.559999999993,
+    "today_realized": 0.0,
+    "trade_count": 76,
+    "today_count": 0,
+    "win_count": 34,
+    "loss_count": 30,
     "flat_count": 12,
-    "win_rate": 0.559322033898305,
-    "avg_hold_days": 8.76056338028169,
-    "nav_impact_pct": -0.24581799999999934,
-    "today_nav_impact_pct": 0.176594,
+    "win_rate": 0.53125,
+    "avg_hold_days": 7.671052631578948,
+    "nav_impact_pct": -0.6109559999999993,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_1": 28,
-      "stop_hit": 22,
-      "target_2": 10,
+      "target_2": 11,
+      "stop_hit": 26,
       "gap_through_stop": 11
     },
     "rows": [
       {
-        "trade_id": "DDOG-2026-06-05-001",
-        "ticker": "DDOG",
-        "company": "Datadog",
+        "trade_id": "OKTA-2026-07-14-001",
+        "ticker": "OKTA",
+        "company": "Okta",
         "direction": "LONG",
-        "entry_date": "2026-06-05",
-        "exit_date": "2026-07-15",
-        "entry_price": 237.4,
-        "exit_price": 275.25,
-        "shares_closed": 46.6564,
+        "entry_date": "2026-07-14",
+        "exit_date": "2026-07-14",
+        "entry_price": 138.25,
+        "exit_price": 153.2,
+        "shares_closed": 8.6508,
         "exit_reason": "target_1",
-        "hold_days": 40,
-        "pnl": 1765.94,
-        "pnl_pct": 15.94,
-        "setup_type": "momentum_breakout",
+        "hold_days": 0,
+        "pnl": 129.33,
+        "pnl_pct": 10.81,
+        "setup_type": "breakout",
         "is_partial": true
+      },
+      {
+        "trade_id": "OKTA-2026-07-14-001",
+        "ticker": "OKTA",
+        "company": "Okta",
+        "direction": "LONG",
+        "entry_date": "2026-07-14",
+        "exit_date": "2026-07-14",
+        "entry_price": 138.25,
+        "exit_price": 155.48,
+        "shares_closed": 8.6507,
+        "exit_reason": "target_2",
+        "hold_days": 0,
+        "pnl": 149.05,
+        "pnl_pct": 12.46,
+        "setup_type": "breakout",
+        "is_partial": false
+      },
+      {
+        "trade_id": "PANW-2026-07-13-001",
+        "ticker": "PANW",
+        "company": "Palo Alto Networks",
+        "direction": "LONG",
+        "entry_date": "2026-07-13",
+        "exit_date": "2026-07-13",
+        "entry_price": 325.11,
+        "exit_price": 322.0,
+        "shares_closed": 80.9134,
+        "exit_reason": "stop_hit",
+        "hold_days": 0,
+        "pnl": -251.64,
+        "pnl_pct": -0.96,
+        "setup_type": "BREAKDOWN_RECLAIM_CONTINUATION",
+        "is_partial": false
+      },
+      {
+        "trade_id": "PANW-2026-07-07-001",
+        "ticker": "PANW",
+        "company": "Palo Alto Networks",
+        "direction": "LONG",
+        "entry_date": "2026-07-07",
+        "exit_date": "2026-07-07",
+        "entry_price": 359.87,
+        "exit_price": 339.0,
+        "shares_closed": 27.039,
+        "exit_reason": "stop_hit",
+        "hold_days": 0,
+        "pnl": -564.3,
+        "pnl_pct": -5.8,
+        "setup_type": "MOMENTUM_BREAKOUT",
+        "is_partial": false
+      },
+      {
+        "trade_id": "INTC-2026-07-06-001",
+        "ticker": "INTC",
+        "company": "Intel",
+        "direction": "LONG",
+        "entry_date": "2026-07-06",
+        "exit_date": "2026-07-07",
+        "entry_price": 122.57,
+        "exit_price": 112.3,
+        "shares_closed": 80.9736,
+        "exit_reason": "stop_hit",
+        "hold_days": 1,
+        "pnl": -831.6,
+        "pnl_pct": -8.38,
+        "setup_type": "trend_continuation",
+        "is_partial": false
+      },
+      {
+        "trade_id": "KLAC-2026-07-06-001",
+        "ticker": "KLAC",
+        "company": "KLA",
+        "direction": "LONG",
+        "entry_date": "2026-07-06",
+        "exit_date": "2026-07-06",
+        "entry_price": 246.32,
+        "exit_price": 236.0,
+        "shares_closed": 50.0273,
+        "exit_reason": "stop_hit",
+        "hold_days": 0,
+        "pnl": -516.28,
+        "pnl_pct": -4.19,
+        "setup_type": "trend_pullback_continuation",
+        "is_partial": false
       },
       {
         "trade_id": "STX-2026-06-30-001",
@@ -1482,273 +2491,40 @@
     },
     {
       "date": "2026-07-06",
-      "nav": 1002177.63
+      "nav": 1001631.38
     },
     {
       "date": "2026-07-07",
-      "nav": 995775.84
-    },
-    {
-      "date": "2026-07-07",
-      "nav": 998967.16
-    },
-    {
-      "date": "2026-07-07",
-      "nav": 998967.16
+      "nav": 997054.99
     },
     {
       "date": "2026-07-08",
-      "nav": 997158.35
+      "nav": 995246.18
     },
     {
       "date": "2026-07-09",
-      "nav": 995775.84
-    },
-    {
-      "date": "2026-07-09",
-      "nav": 1003092.27
+      "nav": 1001180.1
     },
     {
       "date": "2026-07-10",
-      "nav": 995775.84
-    },
-    {
-      "date": "2026-07-10",
-      "nav": 1004036.26
-    },
-    {
-      "date": "2026-07-10",
-      "nav": 1004036.26
+      "nav": 1002124.09
     },
     {
       "date": "2026-07-13",
-      "nav": 999563.27
-    },
-    {
-      "date": "2026-07-13",
-      "nav": 999563.27
+      "nav": 997399.45
     },
     {
       "date": "2026-07-14",
-      "nav": 1002782.82
-    },
-    {
-      "date": "2026-07-14",
-      "nav": 1002782.82
-    },
-    {
-      "date": "2026-07-15",
-      "nav": 1004747.03
+      "nav": 1000897.37
     }
   ],
-  "spy_aligned": [
-    {
-      "date": "2026-05-04",
-      "nav_equiv": 1000000.0
-    },
-    {
-      "date": "2026-05-05",
-      "nav_equiv": 1008022.19
-    },
-    {
-      "date": "2026-05-06",
-      "nav_equiv": 1022033.13
-    },
-    {
-      "date": "2026-05-07",
-      "nav_equiv": 1018899.47
-    },
-    {
-      "date": "2026-05-08",
-      "nav_equiv": 1027311.58
-    },
-    {
-      "date": "2026-05-11",
-      "nav_equiv": 1029651.37
-    },
-    {
-      "date": "2026-05-12",
-      "nav_equiv": 1028091.51
-    },
-    {
-      "date": "2026-05-13",
-      "nav_equiv": 1033843.52
-    },
-    {
-      "date": "2026-05-14",
-      "nav_equiv": 1042004.95
-    },
-    {
-      "date": "2026-05-15",
-      "nav_equiv": 1029470.3
-    },
-    {
-      "date": "2026-05-18",
-      "nav_equiv": 1028746.14
-    },
-    {
-      "date": "2026-05-19",
-      "nav_equiv": 1021893.8
-    },
-    {
-      "date": "2026-05-20",
-      "nav_equiv": 1032367.22
-    },
-    {
-      "date": "2026-05-21",
-      "nav_equiv": 1034414.51
-    },
-    {
-      "date": "2026-05-22",
-      "nav_equiv": 1038481.36
-    },
-    {
-      "date": "2026-05-26",
-      "nav_equiv": 1045375.44
-    },
-    {
-      "date": "2026-05-27",
-      "nav_equiv": 1045194.37
-    },
-    {
-      "date": "2026-05-28",
-      "nav_equiv": 1050960.24
-    },
-    {
-      "date": "2026-05-29",
-      "nav_equiv": 1053578.6
-    },
-    {
-      "date": "2026-06-01",
-      "nav_equiv": 1056447.64
-    },
-    {
-      "date": "2026-06-02",
-      "nav_equiv": 1057882.2
-    },
-    {
-      "date": "2026-06-03",
-      "nav_equiv": 1050458.88
-    },
-    {
-      "date": "2026-06-04",
-      "nav_equiv": 1054428.23
-    },
-    {
-      "date": "2026-06-05",
-      "nav_equiv": 1027214.07
-    },
-    {
-      "date": "2026-06-08",
-      "nav_equiv": 1029539.92
-    },
-    {
-      "date": "2026-06-09",
-      "nav_equiv": 1026517.71
-    },
-    {
-      "date": "2026-06-10",
-      "nav_equiv": 1010334.09
-    },
-    {
-      "date": "2026-06-11",
-      "nav_equiv": 1027506.58
-    },
-    {
-      "date": "2026-06-12",
-      "nav_equiv": 1033063.59
-    },
-    {
-      "date": "2026-06-15",
-      "nav_equiv": 1051280.63
-    },
-    {
-      "date": "2026-06-16",
-      "nav_equiv": 1045013.31
-    },
-    {
-      "date": "2026-06-17",
-      "nav_equiv": 1031963.36
-    },
-    {
-      "date": "2026-06-18",
-      "nav_equiv": 1040013.34
-    },
-    {
-      "date": "2026-06-22",
-      "nav_equiv": 1036740.44
-    },
-    {
-      "date": "2026-06-23",
-      "nav_equiv": 1021684.94
-    },
-    {
-      "date": "2026-06-24",
-      "nav_equiv": 1021211.38
-    },
-    {
-      "date": "2026-06-25",
-      "nav_equiv": 1022687.68
-    },
-    {
-      "date": "2026-06-26",
-      "nav_equiv": 1015292.24
-    },
-    {
-      "date": "2026-06-29",
-      "nav_equiv": 1032019.04
-    },
-    {
-      "date": "2026-06-30",
-      "nav_equiv": 1040055.17
-    },
-    {
-      "date": "2026-07-01",
-      "nav_equiv": 1038648.49
-    },
-    {
-      "date": "2026-07-02",
-      "nav_equiv": 1037283.63
-    },
-    {
-      "date": "2026-07-06",
-      "nav_equiv": 1046336.43
-    },
-    {
-      "date": "2026-07-07",
-      "nav_equiv": 1041364.34
-    },
-    {
-      "date": "2026-07-08",
-      "nav_equiv": 1038147.12
-    },
-    {
-      "date": "2026-07-09",
-      "nav_equiv": 1046935.3
-    },
-    {
-      "date": "2026-07-10",
-      "nav_equiv": 1051447.75
-    },
-    {
-      "date": "2026-07-13",
-      "nav_equiv": 1043397.69
-    },
-    {
-      "date": "2026-07-14",
-      "nav_equiv": 1047102.42
-    },
-    {
-      "date": "2026-07-15",
-      "nav_equiv": 1051252.75
-    }
-  ],
+  "spy_aligned": [],
   "lifetime_stats": {
-    "total_return_pct": 0.47,
-    "sharpe": -11.09,
-    "max_dd_pct": -3.98,
-    "hit_rate": 0.4648,
-    "profit_factor": 0.96,
-    "trade_count": 71
+    "total_return_pct": 0.09,
+    "sharpe": -12.18,
+    "max_dd_pct": -4.03,
+    "hit_rate": 0.4474,
+    "profit_factor": 0.9,
+    "trade_count": 76
   }
 }
