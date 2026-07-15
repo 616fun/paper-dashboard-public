@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-14T23:51:11Z",
-  "as_of": "2026-07-14",
+  "rendered_at_utc": "2026-07-15T21:12:06Z",
+  "as_of": "2026-07-15",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-14",
-    "current": 1002782.82,
+    "as_of": "2026-07-15",
+    "current": 1004747.03,
     "starting": 1000000.0,
-    "cash": 374872.36,
-    "day_pnl": 3219.54999999993,
-    "day_pct": 0.32209566884144614,
-    "incep_pnl": 2782.819999999949,
-    "incep_pct": 0.27828199999999487,
-    "deployed_pct": 62.616794731285886,
+    "cash": 387714.53,
+    "day_pnl": 1964.2100000000792,
+    "day_pct": 0.19587591259292608,
+    "incep_pnl": 4747.030000000028,
+    "incep_pct": 0.4747030000000028,
+    "deployed_pct": 61.4117266910458,
     "open_count": 2,
-    "cash_interest": 4481.27,
+    "cash_interest": 4514.68,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 702.94,
-    "total_incl_cash": 1007264.09
+    "cash_interest_month": 736.35,
+    "total_incl_cash": 1009261.7100000001
   },
   "positions": [
     {
@@ -25,21 +25,21 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 39,
+      "days_held": 40,
       "entry_price": 237.4,
-      "last_price": 270.7300109863281,
-      "position_value": 25262.60244216614,
+      "last_price": 264.4599914550781,
+      "position_value": 12338.777591323853,
       "cost_basis": 22152.48,
-      "unrealized": 3110.1199821661394,
-      "unrealized_pct": 14.039600246979,
-      "stop": 145.96,
-      "stop_dist_pct": -46.08650903967533,
+      "unrealized": 1262.524491323853,
+      "unrealized_pct": 11.398479972652964,
+      "stop": 237.4,
+      "stop_dist_pct": -10.232168316346105,
       "target_1": 275.25,
-      "t1_dist_pct": 1.6695559525168915,
+      "t1_dist_pct": 4.08001546304016,
       "target_2": 278.71,
-      "t2_dist_pct": 2.947581978296024,
+      "t2_dist_pct": 5.388341906281275,
       "max_hold": "2026-08-04",
-      "days_to_max": 21,
+      "days_to_max": 20,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -48,13 +48,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 12,
+      "days_held": 13,
       "entry_price": 368.76,
-      "last_price": 371.1600036621094,
-      "position_value": 602647.8584461212,
+      "last_price": 372.4200134277344,
+      "position_value": 604693.7205524445,
       "cost_basis": 598751.0,
-      "unrealized": 3896.8559461212717,
-      "unrealized_pct": 0.6508308010926916,
+      "unrealized": 5942.718052444514,
+      "unrealized_pct": 0.9925190985286934,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -69,33 +69,56 @@
   ],
   "events": [
     {
+      "kind": "CLOSE",
+      "label": "Partial close DDOG \u2014 TARGET_1",
+      "detail": "46.66 shares @ $275.25 (entry $237.40) \u00b7 P&L $+1,766 (+15.94%) \u00b7 held 40d \u00b7 remainder still open",
+      "ts": "2026-07-15"
+    },
+    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,002,783",
-      "detail": "daily return +0.00% \u00b7 positions value $627,910",
-      "ts": "2026-07-14"
+      "label": "MTM mark: NAV $1,004,747",
+      "detail": "daily return +0.20% \u00b7 positions value $617,032",
+      "ts": "2026-07-15"
     }
   ],
   "decisions": [],
   "watch_list": [],
   "closed_stats": {
-    "total_realized": -4224.119999999989,
-    "today_realized": 0.0,
-    "trade_count": 70,
-    "today_count": 0,
-    "win_count": 32,
+    "total_realized": -2458.1799999999935,
+    "today_realized": 1765.94,
+    "trade_count": 71,
+    "today_count": 1,
+    "win_count": 33,
     "loss_count": 26,
     "flat_count": 12,
-    "win_rate": 0.5517241379310345,
-    "avg_hold_days": 8.314285714285715,
-    "nav_impact_pct": -0.4224119999999989,
-    "today_nav_impact_pct": 0.0,
+    "win_rate": 0.559322033898305,
+    "avg_hold_days": 8.76056338028169,
+    "nav_impact_pct": -0.24581799999999934,
+    "today_nav_impact_pct": 0.176594,
     "by_reason": {
+      "target_1": 28,
       "stop_hit": 22,
       "target_2": 10,
-      "gap_through_stop": 11,
-      "target_1": 27
+      "gap_through_stop": 11
     },
     "rows": [
+      {
+        "trade_id": "DDOG-2026-06-05-001",
+        "ticker": "DDOG",
+        "company": "Datadog",
+        "direction": "LONG",
+        "entry_date": "2026-06-05",
+        "exit_date": "2026-07-15",
+        "entry_price": 237.4,
+        "exit_price": 275.25,
+        "shares_closed": 46.6564,
+        "exit_reason": "target_1",
+        "hold_days": 40,
+        "pnl": 1765.94,
+        "pnl_pct": 15.94,
+        "setup_type": "momentum_breakout",
+        "is_partial": true
+      },
       {
         "trade_id": "STX-2026-06-30-001",
         "ticker": "STX",
@@ -1512,6 +1535,10 @@
     {
       "date": "2026-07-14",
       "nav": 1002782.82
+    },
+    {
+      "date": "2026-07-15",
+      "nav": 1004747.03
     }
   ],
   "spy_aligned": [
@@ -1710,14 +1737,18 @@
     {
       "date": "2026-07-14",
       "nav_equiv": 1047102.42
+    },
+    {
+      "date": "2026-07-15",
+      "nav_equiv": 1051252.75
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.28,
-    "sharpe": -11.27,
+    "total_return_pct": 0.47,
+    "sharpe": -11.09,
     "max_dd_pct": -3.98,
-    "hit_rate": 0.4571,
-    "profit_factor": 0.93,
-    "trade_count": 70
+    "hit_rate": 0.4648,
+    "profit_factor": 0.96,
+    "trade_count": 71
   }
 }
