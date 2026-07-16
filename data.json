@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-15T23:56:25Z",
-  "as_of": "2026-07-15",
+  "rendered_at_utc": "2026-07-16T20:36:02Z",
+  "as_of": "2026-07-16",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-15",
-    "current": 1004747.03,
+    "as_of": "2026-07-16",
+    "current": 1001659.56,
     "starting": 1000000.0,
     "cash": 387714.53,
-    "day_pnl": 1964.2100000000792,
-    "day_pct": 0.19587591259292608,
-    "incep_pnl": 4747.030000000028,
-    "incep_pct": 0.4747030000000028,
-    "deployed_pct": 61.4117266910458,
+    "day_pnl": -3087.469999999972,
+    "day_pct": -0.3072882932532751,
+    "incep_pnl": 1659.5600000000559,
+    "incep_pct": 0.1659560000000056,
+    "deployed_pct": 61.29278394747213,
     "open_count": 2,
-    "cash_interest": 4514.68,
+    "cash_interest": 4548.09,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 736.35,
-    "total_incl_cash": 1009261.7100000001
+    "cash_interest_month": 769.76,
+    "total_incl_cash": 1006207.65
   },
   "positions": [
     {
@@ -25,21 +25,21 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 40,
+      "days_held": 41,
       "entry_price": 237.4,
-      "last_price": 264.4599914550781,
-      "position_value": 12338.777591323853,
+      "last_price": 262.32000732421875,
+      "position_value": 12238.933421722413,
       "cost_basis": 22152.48,
-      "unrealized": 1262.524491323853,
-      "unrealized_pct": 11.398479972652964,
+      "unrealized": 1162.6803217224133,
+      "unrealized_pct": 10.497054475239585,
       "stop": 237.4,
-      "stop_dist_pct": -10.232168316346105,
+      "stop_dist_pct": -9.499850041334609,
       "target_1": 275.25,
-      "t1_dist_pct": 4.08001546304016,
+      "t1_dist_pct": 4.929091306329606,
       "target_2": 278.71,
-      "t2_dist_pct": 5.388341906281275,
+      "t2_dist_pct": 6.248090964530871,
       "max_hold": "2026-08-04",
-      "days_to_max": 20,
+      "days_to_max": 19,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -48,13 +48,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 13,
+      "days_held": 14,
       "entry_price": 368.76,
-      "last_price": 372.4200134277344,
-      "position_value": 604693.7205524445,
+      "last_price": 370.5799865722656,
+      "position_value": 601706.0919475555,
       "cost_basis": 598751.0,
-      "unrealized": 5942.718052444514,
-      "unrealized_pct": 0.9925190985286934,
+      "unrealized": 2955.089447555598,
+      "unrealized_pct": 0.49354229641654723,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -69,25 +69,51 @@
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Partial close DDOG \u2014 TARGET_1",
-      "detail": "46.66 shares @ $275.25 (entry $237.40) \u00b7 P&L $+1,766 (+15.94%) \u00b7 held 40d \u00b7 remainder still open",
-      "ts": "2026-07-15"
-    },
-    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,747",
-      "detail": "daily return +0.00% \u00b7 positions value $617,032",
-      "ts": "2026-07-15"
+      "label": "MTM mark: NAV $1,001,660",
+      "detail": "daily return -0.31% \u00b7 positions value $613,945",
+      "ts": "2026-07-16"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "DDOG (DEFER) \u00b7 QLYS (REJECT) \u00b7 OKTA (DEFER) \u00b7 HUM (DEFER)",
+      "detail": "DDOG (DEFER) \u00b7 QLYS (REJECT) \u00b7 IBM (DEFER) \u00b7 OKTA (DEFER)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-07-16",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-16",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-16",
+      "ticker": "IBM",
+      "company": "International Business Machines",
+      "verdict": "DEFER",
+      "setup": "post_earnings_crash_oversold_pre_confirmatory_print",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-16",
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
     {
       "date": "2026-07-15",
       "ticker": "QLYS",
@@ -118,6 +144,14 @@
       "company": "Datadog",
       "verdict": "DEFER",
       "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "APTV",
+      "company": "Aptiv",
+      "verdict": "DEFER",
+      "setup": "avoid",
       "reason": "defer"
     },
     {
@@ -367,49 +401,25 @@
       "verdict": "DEFER",
       "setup": "momentum_pullback_continuation",
       "reason": "defer"
-    },
-    {
-      "date": "2026-07-01",
-      "ticker": "SNDK",
-      "company": "Sandisk",
-      "verdict": "DEFER",
-      "setup": "breakout_retest_resuming",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-07-01",
-      "ticker": "OC",
-      "company": "Owens Corning",
-      "verdict": "DEFER",
-      "setup": "event_driven_breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-07-01",
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "uptrend_pullback_toward_ath",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-07-01",
-      "ticker": "CAG",
-      "company": "Conagra Brands",
-      "verdict": "DEFER",
-      "setup": "failed_bounce_watch_for_base",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-07-01",
-      "ticker": "AMAT",
-      "company": "Applied Materials",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_chase",
-      "reason": "defer"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 4.48,
+      "stop": 37.33,
+      "target_1": 61.02,
+      "target_2": 72.42,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-16",
+      "setup": "mean_reversion",
+      "decision_doc": "/sessions/awesome-focused-knuth/mnt/Hedge Fund Build/tradingagents-cowork/reports/PBF/2026-07/PBF-decision-2026-07-16.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "PBF",
@@ -1021,16 +1031,16 @@
   ],
   "closed_stats": {
     "total_realized": -2458.1799999999935,
-    "today_realized": 1765.94,
+    "today_realized": 0.0,
     "trade_count": 71,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 33,
     "loss_count": 26,
     "flat_count": 12,
     "win_rate": 0.559322033898305,
     "avg_hold_days": 8.76056338028169,
     "nav_impact_pct": -0.24581799999999934,
-    "today_nav_impact_pct": 0.176594,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_1": 28,
       "stop_hit": 22,
@@ -2479,6 +2489,10 @@
     {
       "date": "2026-07-15",
       "nav": 1004747.03
+    },
+    {
+      "date": "2026-07-16",
+      "nav": 1001659.56
     }
   ],
   "spy_aligned": [
@@ -2681,11 +2695,15 @@
     {
       "date": "2026-07-15",
       "nav_equiv": 1051252.75
+    },
+    {
+      "date": "2026-07-16",
+      "nav_equiv": 1045556.41
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.47,
-    "sharpe": -10.95,
+    "total_return_pct": 0.17,
+    "sharpe": -10.86,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4648,
     "profit_factor": 0.96,
