@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-17T20:35:59Z",
+  "rendered_at_utc": "2026-07-17T23:49:16Z",
   "as_of": "2026-07-17",
   "starting_nav": 1000000.0,
   "hero": {
@@ -45,7 +45,7 @@
     },
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "VTI",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 15,
@@ -71,7 +71,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $995,694",
-      "detail": "daily return -0.60% \u00b7 positions value $607,979",
+      "detail": "daily return +0.00% \u00b7 positions value $607,979",
       "ts": "2026-07-17"
     },
     {
@@ -149,7 +149,7 @@
     {
       "date": "2026-07-15",
       "ticker": "HUM",
-      "company": "Humana",
+      "company": "HUM",
       "verdict": "DEFER",
       "setup": "mean_reversion",
       "reason": "defer"
@@ -197,7 +197,7 @@
     {
       "date": "2026-07-14",
       "ticker": "AMD",
-      "company": "Advanced Micro Devices",
+      "company": "AMD",
       "verdict": "DEFER",
       "setup": "pullback_within_uptrend",
       "reason": "defer"
@@ -333,7 +333,7 @@
     {
       "date": "2026-07-08",
       "ticker": "HUM",
-      "company": "Humana",
+      "company": "HUM",
       "verdict": "DEFER",
       "setup": "extended_uptrend_await_pullback_or_breakout",
       "reason": "defer"
@@ -341,7 +341,7 @@
     {
       "date": "2026-07-08",
       "ticker": "GPC",
-      "company": "Genuine Parts Company",
+      "company": "GPC",
       "verdict": "DEFER",
       "setup": "EVENT_DRIVEN_GAP",
       "reason": "defer"
@@ -357,7 +357,7 @@
     {
       "date": "2026-07-07",
       "ticker": "HUM",
-      "company": "Humana",
+      "company": "HUM",
       "verdict": "DEFER",
       "setup": "breakout",
       "reason": "defer"
@@ -365,7 +365,7 @@
     {
       "date": "2026-07-07",
       "ticker": "GPC",
-      "company": "Genuine Parts Company",
+      "company": "GPC",
       "verdict": "DEFER",
       "setup": "EVENT_DRIVEN_GAP",
       "reason": "defer"
@@ -381,7 +381,7 @@
     {
       "date": "2026-07-06",
       "ticker": "HUM",
-      "company": "Humana",
+      "company": "HUM",
       "verdict": "DEFER",
       "setup": "breakout",
       "reason": "defer"
@@ -389,7 +389,7 @@
     {
       "date": "2026-07-06",
       "ticker": "GPC",
-      "company": "Genuine Parts Company",
+      "company": "GPC",
       "verdict": "DEFER",
       "setup": "EVENT_DRIVEN_GAP",
       "reason": "defer"
@@ -543,7 +543,7 @@
     {
       "kind": "QUEUED",
       "ticker": "MU",
-      "company": "Micron Technology",
+      "company": "MU",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 3.58,
@@ -575,7 +575,7 @@
     {
       "kind": "QUEUED",
       "ticker": "MU",
-      "company": "Micron Technology",
+      "company": "MU",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 7.0,
@@ -607,7 +607,7 @@
     {
       "kind": "QUEUED",
       "ticker": "MU",
-      "company": "Micron Technology",
+      "company": "MU",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 1.0,
@@ -623,7 +623,7 @@
     {
       "kind": "QUEUED",
       "ticker": "STX",
-      "company": "Seagate Technology Holdings",
+      "company": "STX",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 1.5,
@@ -639,7 +639,7 @@
     {
       "kind": "QUEUED",
       "ticker": "MU",
-      "company": "Micron Technology",
+      "company": "MU",
       "verdict": "APPROVE",
       "direction": "LONG",
       "size_pct": 6.0,
@@ -687,7 +687,7 @@
     {
       "kind": "QUEUED",
       "ticker": "WDC",
-      "company": "Western Digital",
+      "company": "WDC",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 2.5,
@@ -735,7 +735,7 @@
     {
       "kind": "QUEUED",
       "ticker": "HPE",
-      "company": "Hewlett Packard Enterprise Company",
+      "company": "HPE",
       "verdict": "APPROVE",
       "direction": "LONG",
       "size_pct": 4.56,
@@ -815,7 +815,7 @@
     {
       "kind": "QUEUED",
       "ticker": "HPE",
-      "company": "Hewlett Packard Enterprise Company",
+      "company": "HPE",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 2.1,
@@ -847,7 +847,7 @@
     {
       "kind": "QUEUED",
       "ticker": "HPE",
-      "company": "Hewlett Packard Enterprise Company",
+      "company": "HPE",
       "verdict": "APPROVE",
       "direction": "LONG",
       "size_pct": 4.0,
@@ -991,7 +991,7 @@
     {
       "kind": "QUEUED",
       "ticker": "AMD",
-      "company": "Advanced Micro Devices",
+      "company": "AMD",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 3.67,
@@ -1039,7 +1039,7 @@
     {
       "kind": "QUEUED",
       "ticker": "AMD",
-      "company": "Advanced Micro Devices",
+      "company": "AMD",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 2.5,
@@ -1092,7 +1092,7 @@
       {
         "trade_id": "STX-2026-06-30-001",
         "ticker": "STX",
-        "company": "Seagate Technology Holdings",
+        "company": "STX",
         "direction": "LONG",
         "entry_date": "2026-06-30",
         "exit_date": "2026-07-02",
@@ -1160,7 +1160,7 @@
       {
         "trade_id": "MU-2026-06-30-001",
         "ticker": "MU",
-        "company": "Micron Technology",
+        "company": "MU",
         "direction": "LONG",
         "entry_date": "2026-06-30",
         "exit_date": "2026-07-01",
@@ -1177,7 +1177,7 @@
       {
         "trade_id": "HUM-2026-06-23-001",
         "ticker": "HUM",
-        "company": "Humana",
+        "company": "HUM",
         "direction": "LONG",
         "entry_date": "2026-06-23",
         "exit_date": "2026-06-30",
@@ -1194,7 +1194,7 @@
       {
         "trade_id": "WDC-2026-06-26-001",
         "ticker": "WDC",
-        "company": "Western Digital",
+        "company": "WDC",
         "direction": "LONG",
         "entry_date": "2026-06-26",
         "exit_date": "2026-06-29",
@@ -1211,7 +1211,7 @@
       {
         "trade_id": "STX-2026-06-26-001",
         "ticker": "STX",
-        "company": "Seagate Technology Holdings",
+        "company": "STX",
         "direction": "LONG",
         "entry_date": "2026-06-26",
         "exit_date": "2026-06-29",
@@ -1245,7 +1245,7 @@
       {
         "trade_id": "MU-2026-06-25-001",
         "ticker": "MU",
-        "company": "Micron Technology",
+        "company": "MU",
         "direction": "LONG",
         "entry_date": "2026-06-25",
         "exit_date": "2026-06-29",
@@ -1296,7 +1296,7 @@
       {
         "trade_id": "MU-2026-06-25-001",
         "ticker": "MU",
-        "company": "Micron Technology",
+        "company": "MU",
         "direction": "LONG",
         "entry_date": "2026-06-25",
         "exit_date": "2026-06-26",
@@ -1313,7 +1313,7 @@
       {
         "trade_id": "HUM-2026-06-23-001",
         "ticker": "HUM",
-        "company": "Humana",
+        "company": "HUM",
         "direction": "LONG",
         "entry_date": "2026-06-23",
         "exit_date": "2026-06-26",
@@ -1330,7 +1330,7 @@
       {
         "trade_id": "HPE-2026-06-12-001",
         "ticker": "HPE",
-        "company": "Hewlett Packard Enterprise Company",
+        "company": "HPE",
         "direction": "LONG",
         "entry_date": "2026-06-12",
         "exit_date": "2026-06-26",
@@ -1398,7 +1398,7 @@
       {
         "trade_id": "MU-2026-06-16-001",
         "ticker": "MU",
-        "company": "Micron Technology",
+        "company": "MU",
         "direction": "LONG",
         "entry_date": "2026-06-16",
         "exit_date": "2026-06-18",
@@ -1432,7 +1432,7 @@
       {
         "trade_id": "MU-2026-06-16-001",
         "ticker": "MU",
-        "company": "Micron Technology",
+        "company": "MU",
         "direction": "LONG",
         "entry_date": "2026-06-16",
         "exit_date": "2026-06-17",
@@ -1449,7 +1449,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JPM",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-17",
@@ -1517,7 +1517,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JPM",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-12",
@@ -1636,7 +1636,7 @@
       {
         "trade_id": "MU-2026-06-05-001",
         "ticker": "MU",
-        "company": "Micron Technology",
+        "company": "MU",
         "direction": "LONG",
         "entry_date": "2026-06-05",
         "exit_date": "2026-06-05",
@@ -2129,7 +2129,7 @@
       {
         "trade_id": "GLW-2026-05-08-001",
         "ticker": "GLW",
-        "company": "Corning",
+        "company": "GLW",
         "direction": "LONG",
         "entry_date": "2026-05-08",
         "exit_date": "2026-05-08",
@@ -2146,7 +2146,7 @@
       {
         "trade_id": "GLW-2026-05-08-001",
         "ticker": "GLW",
-        "company": "Corning",
+        "company": "GLW",
         "direction": "LONG",
         "entry_date": "2026-05-08",
         "exit_date": "2026-05-08",
@@ -2163,7 +2163,7 @@
       {
         "trade_id": "WDC-2026-05-06-001",
         "ticker": "WDC",
-        "company": "Western Digital",
+        "company": "WDC",
         "direction": "LONG",
         "entry_date": "2026-05-06",
         "exit_date": "2026-05-07",
@@ -2214,7 +2214,7 @@
       {
         "trade_id": "WDC-2026-05-06-001",
         "ticker": "WDC",
-        "company": "Western Digital",
+        "company": "WDC",
         "direction": "LONG",
         "entry_date": "2026-05-06",
         "exit_date": "2026-05-06",
@@ -2248,7 +2248,7 @@
       {
         "trade_id": "AMD-2026-05-05-001",
         "ticker": "AMD",
-        "company": "Advanced Micro Devices",
+        "company": "AMD",
         "direction": "LONG",
         "entry_date": "2026-05-05",
         "exit_date": "2026-05-06",
@@ -2265,7 +2265,7 @@
       {
         "trade_id": "AMD-2026-05-05-001",
         "ticker": "AMD",
-        "company": "Advanced Micro Devices",
+        "company": "AMD",
         "direction": "LONG",
         "entry_date": "2026-05-05",
         "exit_date": "2026-05-06",
@@ -2525,6 +2525,10 @@
     {
       "date": "2026-07-17",
       "nav": 995693.67
+    },
+    {
+      "date": "2026-07-17",
+      "nav": 995693.67
     }
   ],
   "spy_aligned": [
@@ -2739,7 +2743,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": -0.43,
-    "sharpe": -10.68,
+    "sharpe": -10.56,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4648,
     "profit_factor": 0.96,
