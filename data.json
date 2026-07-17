@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-16T23:56:02Z",
-  "as_of": "2026-07-16",
+  "rendered_at_utc": "2026-07-17T20:35:59Z",
+  "as_of": "2026-07-17",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-16",
-    "current": 1001659.56,
+    "as_of": "2026-07-17",
+    "current": 995693.67,
     "starting": 1000000.0,
     "cash": 387714.53,
-    "day_pnl": -3087.469999999972,
-    "day_pct": -0.3072882932532751,
-    "incep_pnl": 1659.5600000000559,
-    "incep_pct": 0.1659560000000056,
-    "deployed_pct": 61.29278394747213,
+    "day_pnl": -5965.890000000014,
+    "day_pct": -0.5956005651261407,
+    "incep_pnl": -4306.329999999958,
+    "incep_pct": -0.4306329999999958,
+    "deployed_pct": 61.060862222815985,
     "open_count": 2,
-    "cash_interest": 4548.09,
+    "cash_interest": 4581.5,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 769.76,
-    "total_incl_cash": 1006207.65
+    "cash_interest_month": 803.17,
+    "total_incl_cash": 1000275.17
   },
   "positions": [
     {
@@ -25,21 +25,21 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 41,
+      "days_held": 42,
       "entry_price": 237.4,
-      "last_price": 262.32000732421875,
-      "position_value": 12238.933421722413,
+      "last_price": 258.69000244140625,
+      "position_value": 12069.57009890747,
       "cost_basis": 22152.48,
-      "unrealized": 1162.6803217224133,
-      "unrealized_pct": 10.497054475239585,
+      "unrealized": 993.3169989074704,
+      "unrealized_pct": 8.9679875490338,
       "stop": 237.4,
-      "stop_dist_pct": -9.499850041334609,
+      "stop_dist_pct": -8.229928578793249,
       "target_1": 275.25,
-      "t1_dist_pct": 4.929091306329606,
+      "t1_dist_pct": 6.401483398008247,
       "target_2": 278.71,
-      "t2_dist_pct": 6.248090964530871,
+      "t2_dist_pct": 7.7389915998505945,
       "max_hold": "2026-08-04",
-      "days_to_max": 19,
+      "days_to_max": 18,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -48,13 +48,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 14,
+      "days_held": 15,
       "entry_price": 368.76,
-      "last_price": 370.5799865722656,
-      "position_value": 601706.0919475555,
+      "last_price": 367.010009765625,
+      "position_value": 595909.5652313232,
       "cost_basis": 598751.0,
-      "unrealized": 2955.089447555598,
-      "unrealized_pct": 0.49354229641654723,
+      "unrealized": -2841.437268676702,
+      "unrealized_pct": -0.4745607534371856,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -70,18 +70,34 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,001,660",
-      "detail": "daily return +0.00% \u00b7 positions value $613,945",
-      "ts": "2026-07-16"
+      "label": "MTM mark: NAV $995,694",
+      "detail": "daily return -0.60% \u00b7 positions value $607,979",
+      "ts": "2026-07-17"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "DDOG (DEFER) \u00b7 QLYS (REJECT) \u00b7 IBM (DEFER) \u00b7 OKTA (DEFER)",
+      "label": "Autopilot analyzed 2 ticker(s)",
+      "detail": "QLYS (REJECT) \u00b7 OKTA (DEFER)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-07-17",
+      "ticker": "QLYS",
+      "company": "Qualys",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-07-17",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
     {
       "date": "2026-07-16",
       "ticker": "QLYS",
@@ -377,33 +393,57 @@
       "verdict": "DEFER",
       "setup": "EVENT_DRIVEN_GAP",
       "reason": "defer"
-    },
-    {
-      "date": "2026-07-02",
-      "ticker": "KLAC",
-      "company": "KLA",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "trend_pullback_continuation",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-07-02",
-      "ticker": "AMAT",
-      "company": "Applied Materials",
-      "verdict": "DEFER",
-      "setup": "post_blowoff_pullback_watch_no_confirmed_reversal_entry_yet",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-07-02",
-      "ticker": "ALGM",
-      "company": "Allegro MicroSystems",
-      "verdict": "DEFER",
-      "setup": "momentum_pullback_continuation",
-      "reason": "defer"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 330.0,
+      "target_1": 368.17,
+      "target_2": 400.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-17",
+      "setup": "MOMENTUM_BREAKOUT",
+      "decision_doc": "/sessions/elegant-stoic-wright/mnt/Hedge Fund Build/tradingagents-cowork/reports/PANW/2026-07/PANW-decision-2026-07-17.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "CRWD",
+      "company": "CrowdStrike Holdings",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 187.0,
+      "target_1": 217.5,
+      "target_2": 240.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-17",
+      "setup": "BREAKOUT_PULLBACK",
+      "decision_doc": "/sessions/elegant-stoic-wright/mnt/Hedge Fund Build/tradingagents-cowork/reports/CRWD/2026-07/CRWD-decision-2026-07-17.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "PYPL",
+      "company": "PayPal Holdings",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.5,
+      "stop": 44.45,
+      "target_1": 60.5,
+      "target_2": 70.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-17",
+      "setup": "breakout",
+      "decision_doc": "/sessions/elegant-stoic-wright/mnt/Hedge Fund Build/tradingagents-cowork/reports/PYPL/2026-07/PYPL-decision-2026-07-17.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "PBF",
@@ -435,22 +475,6 @@
       "logged_date": "2026-07-15",
       "setup": "mean_reversion",
       "decision_doc": "/sessions/lucid-exciting-darwin/mnt/tradingagents-cowork/reports/PBF/2026-07/PBF-decision-2026-07-15.md"
-    },
-    {
-      "kind": "QUEUED",
-      "ticker": "HUM",
-      "company": "Humana",
-      "verdict": "APPROVE",
-      "direction": "LONG",
-      "size_pct": 15.0,
-      "stop": 380.86,
-      "target_1": 415.0,
-      "target_2": 440.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-07-14",
-      "setup": "breakout",
-      "decision_doc": "/sessions/epic-compassionate-mccarthy/mnt/tradingagents-cowork/reports/HUM/2026-07/HUM-decision-2026-07-14.md"
     },
     {
       "kind": "QUEUED",
@@ -2497,6 +2521,10 @@
     {
       "date": "2026-07-16",
       "nav": 1001659.56
+    },
+    {
+      "date": "2026-07-17",
+      "nav": 995693.67
     }
   ],
   "spy_aligned": [
@@ -2703,11 +2731,15 @@
     {
       "date": "2026-07-16",
       "nav_equiv": 1045556.41
+    },
+    {
+      "date": "2026-07-17",
+      "nav_equiv": 1035208.38
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.17,
-    "sharpe": -10.73,
+    "total_return_pct": -0.43,
+    "sharpe": -10.68,
     "max_dd_pct": -3.98,
     "hit_rate": 0.4648,
     "profit_factor": 0.96,
