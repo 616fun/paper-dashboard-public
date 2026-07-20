@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-20T20:36:23Z",
+  "rendered_at_utc": "2026-07-20T23:55:12Z",
   "as_of": "2026-07-20",
   "starting_nav": 1000000.0,
   "hero": {
@@ -45,7 +45,7 @@
     },
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 18,
@@ -94,7 +94,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $993,006",
-      "detail": "daily return -0.10% \u00b7 positions value $609,379",
+      "detail": "daily return +0.00% \u00b7 positions value $609,379",
       "ts": "2026-07-20"
     },
     {
@@ -1520,7 +1520,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JP Morgan Chase",
+        "company": "JPMorgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-17",
@@ -1588,7 +1588,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JP Morgan Chase",
+        "company": "JPMorgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-12",
@@ -2604,6 +2604,10 @@
     {
       "date": "2026-07-20",
       "nav": 993005.64
+    },
+    {
+      "date": "2026-07-20",
+      "nav": 993005.64
     }
   ],
   "spy_aligned": [
@@ -2822,7 +2826,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": -0.7,
-    "sharpe": -10.45,
+    "sharpe": -10.34,
     "max_dd_pct": -4.24,
     "hit_rate": 0.4648,
     "profit_factor": 0.96,
