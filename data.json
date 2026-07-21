@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-21T12:00:37Z",
-  "as_of": "2026-07-20",
+  "rendered_at_utc": "2026-07-21T20:36:34Z",
+  "as_of": "2026-07-21",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-20",
-    "current": 992792.25,
+    "as_of": "2026-07-21",
+    "current": 997233.35,
     "starting": 1000000.0,
     "cash": 369219.9,
-    "day_pnl": -1195.2299999999814,
-    "day_pct": -0.1202459813678922,
-    "incep_pnl": -7207.75,
-    "incep_pct": -0.7207749999999999,
-    "deployed_pct": 62.80995344192101,
+    "day_pnl": 4227.709999999963,
+    "day_pct": 0.4257488406611631,
+    "incep_pnl": -2766.6500000000233,
+    "incep_pct": -0.2766650000000023,
+    "deployed_pct": 62.97557637838727,
     "open_count": 5,
-    "cash_interest": 4674.29,
+    "cash_interest": 4713.2,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 895.96,
-    "total_incl_cash": 997466.54
+    "cash_interest_month": 934.87,
+    "total_incl_cash": 1001946.5499999999
   },
   "positions": [
     {
@@ -27,17 +27,17 @@
       "entry_date": "2026-06-05",
       "days_held": 46,
       "entry_price": 237.4,
-      "last_price": 263.20001220703125,
-      "position_value": 12279.991369537354,
+      "last_price": 254.7899932861328,
+      "position_value": 11887.609321754457,
       "cost_basis": 22152.48,
-      "unrealized": 1203.7382695373544,
-      "unrealized_pct": 10.867738924613004,
+      "unrealized": 811.3562217544568,
+      "unrealized_pct": 7.325186725414001,
       "stop": 237.4,
-      "stop_dist_pct": -9.802435794241962,
+      "stop_dist_pct": -6.825226164437155,
       "target_1": 275.25,
-      "t1_dist_pct": 4.578262626937234,
+      "t1_dist_pct": 8.030145316927854,
       "target_2": 278.71,
-      "t2_dist_pct": 5.892852231620979,
+      "t2_dist_pct": 9.388126435171516,
       "max_hold": "2026-08-04",
       "days_to_max": 14,
       "setup_type": "momentum_breakout",
@@ -50,11 +50,11 @@
       "entry_date": "2026-07-02",
       "days_held": 19,
       "entry_price": 368.76,
-      "last_price": 366.25,
-      "position_value": 594675.546875,
+      "last_price": 369.45001220703125,
+      "position_value": 599871.366695404,
       "cost_basis": 598751.0,
-      "unrealized": -4075.455624999944,
-      "unrealized_pct": -0.6806595075387692,
+      "unrealized": 1120.3641954041086,
+      "unrealized_pct": 0.18711688009309158,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -73,17 +73,17 @@
       "entry_date": "2026-07-16",
       "days_held": 5,
       "entry_price": 59.22,
-      "last_price": 63.849998474121094,
-      "position_value": 2423.854487075043,
+      "last_price": 66.05000305175781,
+      "position_value": 2507.3704008499144,
       "cost_basis": 4496.18,
-      "unrealized": 175.76261307504274,
-      "unrealized_pct": 7.818302050187595,
+      "unrealized": 259.2785268499142,
+      "unrealized_pct": 11.533270941840263,
       "stop": 59.22,
-      "stop_dist_pct": -7.251368182878923,
+      "stop_dist_pct": -10.34065516455119,
       "target_1": 63.6,
-      "t1_dist_pct": -0.39154029772204096,
+      "t1_dist_pct": -3.7093155769242743,
       "target_2": 72.5,
-      "t2_dist_pct": 13.547379377596727,
+      "t2_dist_pct": 9.765324224418082,
       "max_hold": "2026-09-14",
       "days_to_max": 55,
       "setup_type": "mean_reversion",
@@ -96,17 +96,17 @@
       "entry_date": "2026-07-20",
       "days_held": 1,
       "entry_price": 203.08,
-      "last_price": 198.49000549316406,
-      "position_value": 10224.736256967162,
+      "last_price": 191.14999389648438,
+      "position_value": 9846.63317559204,
       "cost_basis": 10461.18,
-      "unrealized": -236.4425510328383,
-      "unrealized_pct": -2.260190322452218,
+      "unrealized": -614.5456324079605,
+      "unrealized_pct": -5.874535209531049,
       "stop": 187.0,
-      "stop_dist_pct": -5.788707327916203,
+      "stop_dist_pct": -2.17106671671241,
       "target_1": 217.5,
-      "t1_dist_pct": 9.577305648011903,
+      "t1_dist_pct": 13.784989246604551,
       "target_2": 240.0,
-      "t2_dist_pct": 20.912888990909686,
+      "t2_dist_pct": 25.55585020314985,
       "max_hold": "2026-09-18",
       "days_to_max": 59,
       "setup_type": "BREAKOUT_PULLBACK",
@@ -119,17 +119,17 @@
       "entry_date": "2026-07-20",
       "days_held": 1,
       "entry_price": 56.49,
-      "last_price": 56.81999969482422,
-      "position_value": 3968.2178666870113,
+      "last_price": 55.849998474121094,
+      "position_value": 3900.474533435058,
       "cost_basis": 3945.17,
-      "unrealized": 23.046650687011606,
-      "unrealized_pct": 0.5841736498924007,
+      "unrealized": -44.69668256494151,
+      "unrealized_pct": -1.1329465850219647,
       "stop": 44.45,
-      "stop_dist_pct": -21.770502923728476,
+      "stop_dist_pct": -20.41181519351956,
       "target_1": 60.5,
-      "t1_dist_pct": 6.476593320909496,
+      "t1_dist_pct": 8.325875833342327,
       "target_2": 70.0,
-      "t2_dist_pct": 23.19605838782917,
+      "t2_dist_pct": 25.335724104693604,
       "max_hold": "2026-09-18",
       "days_to_max": 59,
       "setup_type": "breakout",
@@ -137,6 +137,12 @@
     }
   ],
   "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $997,233",
+      "detail": "daily return -1.17% \u00b7 positions value $628,013",
+      "ts": "2026-07-21"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 4 ticker(s)",
@@ -172,7 +178,7 @@
     {
       "date": "2026-07-20",
       "ticker": "SPCX",
-      "company": "Space Exploration Technologies Corp. Class A Common Stock",
+      "company": "Space Exploration Technologies",
       "verdict": "REJECT",
       "setup": "support_hold",
       "reason": "reject"
@@ -1173,75 +1179,24 @@
     }
   ],
   "closed_stats": {
-    "total_realized": -4298.359999999994,
+    "total_realized": -2458.1799999999935,
     "today_realized": 0.0,
-    "trade_count": 80,
+    "trade_count": 71,
     "today_count": 0,
-    "win_count": 37,
-    "loss_count": 31,
+    "win_count": 33,
+    "loss_count": 26,
     "flat_count": 12,
-    "win_rate": 0.5441176470588235,
-    "avg_hold_days": 7.825,
-    "nav_impact_pct": -0.42983599999999944,
+    "win_rate": 0.559322033898305,
+    "avg_hold_days": 8.76056338028169,
+    "nav_impact_pct": -0.24581799999999934,
     "today_nav_impact_pct": 0.0,
     "by_reason": {
-      "gap_through_stop": 12,
-      "target_1": 31,
-      "target_2": 11,
-      "stop_hit": 26
+      "target_1": 28,
+      "stop_hit": 22,
+      "target_2": 10,
+      "gap_through_stop": 11
     },
     "rows": [
-      {
-        "trade_id": "HUM-2026-07-15-001",
-        "ticker": "HUM",
-        "company": "Humana",
-        "direction": "LONG",
-        "entry_date": "2026-07-15",
-        "exit_date": "2026-07-17",
-        "entry_price": 401.83,
-        "exit_price": 387.5,
-        "shares_closed": 19.8875,
-        "exit_reason": "gap_through_stop",
-        "hold_days": 2,
-        "pnl": -284.99,
-        "pnl_pct": -3.57,
-        "setup_type": "breakout",
-        "is_partial": false
-      },
-      {
-        "trade_id": "PBF-2026-07-16-001",
-        "ticker": "PBF",
-        "company": "PBF Energy",
-        "direction": "LONG",
-        "entry_date": "2026-07-16",
-        "exit_date": "2026-07-16",
-        "entry_price": 59.22,
-        "exit_price": 61.02,
-        "shares_closed": 37.9616,
-        "exit_reason": "target_1",
-        "hold_days": 0,
-        "pnl": 68.33,
-        "pnl_pct": 3.04,
-        "setup_type": "mean_reversion",
-        "is_partial": true
-      },
-      {
-        "trade_id": "HUM-2026-07-15-001",
-        "ticker": "HUM",
-        "company": "Humana",
-        "direction": "LONG",
-        "entry_date": "2026-07-15",
-        "exit_date": "2026-07-16",
-        "entry_price": 401.83,
-        "exit_price": 415.0,
-        "shares_closed": 19.8875,
-        "exit_reason": "target_1",
-        "hold_days": 1,
-        "pnl": 261.92,
-        "pnl_pct": 3.28,
-        "setup_type": "breakout",
-        "is_partial": true
-      },
       {
         "trade_id": "DDOG-2026-06-05-001",
         "ticker": "DDOG",
@@ -1258,108 +1213,6 @@
         "pnl_pct": 15.94,
         "setup_type": "momentum_breakout",
         "is_partial": true
-      },
-      {
-        "trade_id": "OKTA-2026-07-14-001",
-        "ticker": "OKTA",
-        "company": "Okta",
-        "direction": "LONG",
-        "entry_date": "2026-07-14",
-        "exit_date": "2026-07-14",
-        "entry_price": 138.25,
-        "exit_price": 153.2,
-        "shares_closed": 8.6508,
-        "exit_reason": "target_1",
-        "hold_days": 0,
-        "pnl": 129.33,
-        "pnl_pct": 10.81,
-        "setup_type": "breakout",
-        "is_partial": true
-      },
-      {
-        "trade_id": "OKTA-2026-07-14-001",
-        "ticker": "OKTA",
-        "company": "Okta",
-        "direction": "LONG",
-        "entry_date": "2026-07-14",
-        "exit_date": "2026-07-14",
-        "entry_price": 138.25,
-        "exit_price": 155.48,
-        "shares_closed": 8.6507,
-        "exit_reason": "target_2",
-        "hold_days": 0,
-        "pnl": 149.05,
-        "pnl_pct": 12.46,
-        "setup_type": "breakout",
-        "is_partial": false
-      },
-      {
-        "trade_id": "PANW-2026-07-13-001",
-        "ticker": "PANW",
-        "company": "Palo Alto Networks",
-        "direction": "LONG",
-        "entry_date": "2026-07-13",
-        "exit_date": "2026-07-13",
-        "entry_price": 325.11,
-        "exit_price": 322.0,
-        "shares_closed": 80.9134,
-        "exit_reason": "stop_hit",
-        "hold_days": 0,
-        "pnl": -251.64,
-        "pnl_pct": -0.96,
-        "setup_type": "BREAKDOWN_RECLAIM_CONTINUATION",
-        "is_partial": false
-      },
-      {
-        "trade_id": "PANW-2026-07-07-001",
-        "ticker": "PANW",
-        "company": "Palo Alto Networks",
-        "direction": "LONG",
-        "entry_date": "2026-07-07",
-        "exit_date": "2026-07-07",
-        "entry_price": 359.87,
-        "exit_price": 339.0,
-        "shares_closed": 27.039,
-        "exit_reason": "stop_hit",
-        "hold_days": 0,
-        "pnl": -564.3,
-        "pnl_pct": -5.8,
-        "setup_type": "MOMENTUM_BREAKOUT",
-        "is_partial": false
-      },
-      {
-        "trade_id": "INTC-2026-07-06-001",
-        "ticker": "INTC",
-        "company": "Intel",
-        "direction": "LONG",
-        "entry_date": "2026-07-06",
-        "exit_date": "2026-07-07",
-        "entry_price": 122.57,
-        "exit_price": 112.3,
-        "shares_closed": 80.9736,
-        "exit_reason": "stop_hit",
-        "hold_days": 1,
-        "pnl": -831.6,
-        "pnl_pct": -8.38,
-        "setup_type": "trend_continuation",
-        "is_partial": false
-      },
-      {
-        "trade_id": "KLAC-2026-07-06-001",
-        "ticker": "KLAC",
-        "company": "KLA",
-        "direction": "LONG",
-        "entry_date": "2026-07-06",
-        "exit_date": "2026-07-06",
-        "entry_price": 246.32,
-        "exit_price": 236.0,
-        "shares_closed": 50.0273,
-        "exit_reason": "stop_hit",
-        "hold_days": 0,
-        "pnl": -516.28,
-        "pnl_pct": -4.19,
-        "setup_type": "trend_pullback_continuation",
-        "is_partial": false
       },
       {
         "trade_id": "STX-2026-06-30-001",
@@ -2724,47 +2577,95 @@
     },
     {
       "date": "2026-07-06",
-      "nav": 1001631.38
+      "nav": 1002177.63
     },
     {
       "date": "2026-07-07",
-      "nav": 997054.99
+      "nav": 995775.84
+    },
+    {
+      "date": "2026-07-07",
+      "nav": 998967.16
+    },
+    {
+      "date": "2026-07-07",
+      "nav": 998967.16
     },
     {
       "date": "2026-07-08",
-      "nav": 995246.18
+      "nav": 997158.35
     },
     {
       "date": "2026-07-09",
-      "nav": 1001180.1
+      "nav": 995775.84
+    },
+    {
+      "date": "2026-07-09",
+      "nav": 1003092.27
     },
     {
       "date": "2026-07-10",
-      "nav": 1002124.09
+      "nav": 995775.84
+    },
+    {
+      "date": "2026-07-10",
+      "nav": 1004036.26
+    },
+    {
+      "date": "2026-07-10",
+      "nav": 1004036.26
     },
     {
       "date": "2026-07-13",
-      "nav": 997399.45
+      "nav": 999563.27
+    },
+    {
+      "date": "2026-07-13",
+      "nav": 999563.27
     },
     {
       "date": "2026-07-14",
-      "nav": 1000897.37
+      "nav": 1002782.82
+    },
+    {
+      "date": "2026-07-14",
+      "nav": 1002782.82
     },
     {
       "date": "2026-07-15",
-      "nav": 1003098.24
+      "nav": 1004747.03
+    },
+    {
+      "date": "2026-07-15",
+      "nav": 1004747.03
     },
     {
       "date": "2026-07-16",
-      "nav": 999864.37
+      "nav": 1001659.56
+    },
+    {
+      "date": "2026-07-16",
+      "nav": 1001659.56
     },
     {
       "date": "2026-07-17",
-      "nav": 993987.48
+      "nav": 995693.67
+    },
+    {
+      "date": "2026-07-17",
+      "nav": 995693.67
     },
     {
       "date": "2026-07-20",
-      "nav": 992792.25
+      "nav": 993005.64
+    },
+    {
+      "date": "2026-07-20",
+      "nav": 993005.64
+    },
+    {
+      "date": "2026-07-21",
+      "nav": 997233.35
     }
   ],
   "spy_aligned": [
@@ -2979,14 +2880,18 @@
     {
       "date": "2026-07-20",
       "nav_equiv": 1033537.16
+    },
+    {
+      "date": "2026-07-21",
+      "nav_equiv": 1042158.21
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -0.72,
-    "sharpe": -11.72,
-    "max_dd_pct": -4.26,
-    "hit_rate": 0.4625,
-    "profit_factor": 0.93,
-    "trade_count": 80
+    "total_return_pct": -0.28,
+    "sharpe": -10.36,
+    "max_dd_pct": -4.24,
+    "hit_rate": 0.4648,
+    "profit_factor": 0.96,
+    "trade_count": 71
   }
 }
