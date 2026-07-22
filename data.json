@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-22T20:35:39Z",
+  "rendered_at_utc": "2026-07-22T23:59:42Z",
   "as_of": "2026-07-22",
   "starting_nav": 1000000.0,
   "hero": {
@@ -135,7 +135,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $995,518",
-      "detail": "daily return -1.34% \u00b7 positions value $616,715",
+      "detail": "daily return +0.00% \u00b7 positions value $616,715",
       "ts": "2026-07-22"
     },
     {
@@ -389,7 +389,7 @@
     {
       "date": "2026-07-10",
       "ticker": "MRNA",
-      "company": "Moderna",
+      "company": "MRNA",
       "verdict": "REJECT",
       "setup": "MOMENTUM_PULLBACK",
       "reason": "reject"
@@ -429,7 +429,7 @@
     {
       "date": "2026-07-09",
       "ticker": "MRNA",
-      "company": "Moderna",
+      "company": "MRNA",
       "verdict": "REJECT",
       "setup": "MOMENTUM_PULLBACK",
       "reason": "reject"
@@ -461,7 +461,7 @@
     {
       "date": "2026-07-08",
       "ticker": "MRNA",
-      "company": "Moderna",
+      "company": "MRNA",
       "verdict": "REJECT",
       "setup": "MOMENTUM_BREAKOUT",
       "reason": "reject"
@@ -2736,6 +2736,10 @@
     {
       "date": "2026-07-22",
       "nav": 995517.57
+    },
+    {
+      "date": "2026-07-22",
+      "nav": 995517.57
     }
   ],
   "spy_aligned": [
@@ -2962,7 +2966,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": -0.45,
-    "sharpe": -10.29,
+    "sharpe": -10.19,
     "max_dd_pct": -4.24,
     "hit_rate": 0.4459,
     "profit_factor": 0.94,
