@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-07-24T20:35:30Z",
-  "as_of": "2026-07-24",
+  "rendered_at_utc": "2026-07-27T23:57:57Z",
+  "as_of": "2026-07-27",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-07-24",
-    "current": 988902.21,
+    "as_of": "2026-07-27",
+    "current": 989655.42,
     "starting": 1000000.0,
-    "cash": 378802.4,
-    "day_pnl": 292.14999999990687,
-    "day_pct": 0.029551590846638446,
-    "incep_pnl": -11097.790000000037,
-    "incep_pct": -1.1097790000000038,
-    "deployed_pct": 61.69465532896321,
-    "open_count": 4,
-    "cash_interest": 4811.13,
+    "cash": 381050.49,
+    "day_pnl": 753.2100000000792,
+    "day_pct": 0.07616627735113254,
+    "incep_pnl": -10344.579999999958,
+    "incep_pct": -1.0344579999999957,
+    "deployed_pct": 61.49665001582066,
+    "open_count": 3,
+    "cash_interest": 4902.15,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 1032.8,
-    "total_incl_cash": 993713.34
+    "cash_interest_month": 1123.82,
+    "total_incl_cash": 994557.5700000001
   },
   "positions": [
     {
@@ -25,21 +25,21 @@
       "company": "Datadog",
       "direction": "LONG",
       "entry_date": "2026-06-05",
-      "days_held": 49,
+      "days_held": 52,
       "entry_price": 237.4,
-      "last_price": 246.86000061035156,
-      "position_value": 11517.623618476868,
+      "last_price": 251.86000061035156,
+      "position_value": 11750.906118476869,
       "cost_basis": 22152.48,
-      "unrealized": 441.3705184768678,
-      "unrealized_pct": 3.9848359774016706,
+      "unrealized": 674.653018476869,
+      "unrealized_pct": 6.090985935278682,
       "stop": 237.4,
-      "stop_dist_pct": -3.8321318103224824,
+      "stop_dist_pct": -5.7412850692088995,
       "target_1": 275.25,
-      "t1_dist_pct": 11.500445321014052,
+      "t1_dist_pct": 9.286905158804759,
       "target_2": 278.71,
-      "t2_dist_pct": 12.902049465648771,
+      "t2_dist_pct": 10.66068423909345,
       "max_hold": "2026-08-04",
-      "days_to_max": 11,
+      "days_to_max": 8,
       "setup_type": "momentum_breakout",
       "sector": "Technology"
     },
@@ -48,13 +48,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 22,
+      "days_held": 25,
       "entry_price": 368.76,
-      "last_price": 364.79998779296875,
-      "position_value": 592321.180179596,
+      "last_price": 365.17999267578125,
+      "position_value": 592938.1893577576,
       "cost_basis": 598751.0,
-      "unrealized": -6429.822320403997,
-      "unrealized_pct": -1.073872493500167,
+      "unrealized": -5812.813142242376,
+      "unrealized_pct": -0.9708231164493751,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -67,67 +67,82 @@
       "sector": "_CORE_"
     },
     {
-      "ticker": "PBF",
-      "company": "PBF Energy",
-      "direction": "LONG",
-      "entry_date": "2026-07-16",
-      "days_held": 8,
-      "entry_price": 59.22,
-      "last_price": 61.630001068115234,
-      "position_value": 2339.57961154747,
-      "cost_basis": 4496.18,
-      "unrealized": 91.4877375474698,
-      "unrealized_pct": 4.069572894487043,
-      "stop": 59.22,
-      "stop_dist_pct": -3.910434895906676,
-      "target_1": 68.0,
-      "t1_dist_pct": 10.335873473123035,
-      "target_2": 72.5,
-      "t2_dist_pct": 17.637512158844412,
-      "max_hold": "2026-09-14",
-      "days_to_max": 52,
-      "setup_type": "mean_reversion",
-      "sector": "Energy"
-    },
-    {
       "ticker": "PYPL",
       "company": "PayPal Holdings",
       "direction": "LONG",
       "entry_date": "2026-07-20",
-      "days_held": 4,
+      "days_held": 7,
       "entry_price": 56.49,
-      "last_price": 56.150001525878906,
-      "position_value": 3921.426266564941,
+      "last_price": 56.06999969482422,
+      "position_value": 3915.8390666870114,
       "cost_basis": 3945.17,
-      "unrealized": -23.744949435058516,
-      "unrealized_pct": -0.6018737371589531,
+      "unrealized": -29.33214931298835,
+      "unrealized_pct": -0.7434949640215653,
       "stop": 44.45,
-      "stop_dist_pct": -20.83704578438258,
+      "stop_dist_pct": -20.724094449918194,
       "target_1": 60.5,
-      "t1_dist_pct": 7.747103038129444,
+      "t1_dist_pct": 7.900838825195698,
       "target_2": 70.0,
-      "t2_dist_pct": 24.666069630893574,
+      "t2_dist_pct": 24.843945748160312,
       "max_hold": "2026-09-18",
-      "days_to_max": 56,
+      "days_to_max": 53,
       "setup_type": "breakout",
       "sector": "Financial Services"
     }
   ],
   "events": [
     {
+      "kind": "CLOSE",
+      "label": "Closed PBF \u2014 STOP_HIT",
+      "detail": "37.96 shares @ $59.22 (entry $59.22) \u00b7 P&L $+0 (+0.00%) \u00b7 held 11d",
+      "ts": "2026-07-27"
+    },
+    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $988,902",
-      "detail": "daily return -0.66% \u00b7 positions value $610,100",
-      "ts": "2026-07-24"
+      "label": "MTM mark: NAV $989,655",
+      "detail": "daily return +0.08% \u00b7 positions value $608,605",
+      "ts": "2026-07-27"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "DELL (REJECT) \u00b7 DINO (DEFER) \u00b7 PBF (DEFER)",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "DELL (REJECT) \u00b7 DINO (DEFER) \u00b7 MPC (APPROVE WITH MODIFICATIONS) \u00b7 PBF (DEFER)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-07-27",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "momentum_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "momentum_breakout",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "verdict": "REJECT",
+      "setup": "avoid",
+      "reason": "reject"
+    },
     {
       "date": "2026-07-24",
       "ticker": "PBF",
@@ -415,41 +430,41 @@
       "verdict": "DEFER",
       "setup": "breakout",
       "reason": "defer"
-    },
-    {
-      "date": "2026-07-10",
-      "ticker": "QLYS",
-      "company": "Qualys",
-      "verdict": "DEFER",
-      "setup": "MOMENTUM_EXTENDED",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-07-10",
-      "ticker": "OKTA",
-      "company": "Okta",
-      "verdict": "DEFER",
-      "setup": "MOMENTUM_CONTINUATION",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-07-10",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "REJECT",
-      "setup": "MOMENTUM_PULLBACK",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-07-10",
-      "ticker": "CVLT",
-      "company": "Commvault Systems",
-      "verdict": "DEFER",
-      "setup": "MOMENTUM_CONTINUATION",
-      "reason": "defer"
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 7.0,
+      "stop": 297.04,
+      "target_1": 368.8,
+      "target_2": 387.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-27",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/festive-laughing-ritchie/mnt/Hedge Fund Build/tradingagents-cowork/reports/PANW/2026-07/PANW-decision-2026-07-27.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 217.51,
+      "target_1": 326.92,
+      "target_2": 334.28,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-07-27",
+      "setup": "momentum_breakout",
+      "decision_doc": "/sessions/festive-laughing-ritchie/mnt/Hedge Fund Build/tradingagents-cowork/reports/MPC/2026-07/MPC-decision-2026-07-27.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "PANW",
@@ -1206,22 +1221,39 @@
   "closed_stats": {
     "total_realized": -4165.179999999994,
     "today_realized": 0.0,
-    "trade_count": 75,
-    "today_count": 0,
+    "trade_count": 76,
+    "today_count": 1,
     "win_count": 33,
     "loss_count": 30,
-    "flat_count": 12,
+    "flat_count": 13,
     "win_rate": 0.5238095238095238,
-    "avg_hold_days": 8.386666666666667,
+    "avg_hold_days": 8.421052631578947,
     "nav_impact_pct": -0.4165179999999994,
     "today_nav_impact_pct": 0.0,
     "by_reason": {
-      "stop_hit": 24,
+      "stop_hit": 25,
       "target_1": 29,
       "target_2": 11,
       "gap_through_stop": 11
     },
     "rows": [
+      {
+        "trade_id": "PBF-2026-07-16-001",
+        "ticker": "PBF",
+        "company": "PBF Energy",
+        "direction": "LONG",
+        "entry_date": "2026-07-16",
+        "exit_date": "2026-07-27",
+        "entry_price": 59.22,
+        "exit_price": 59.22,
+        "shares_closed": 37.9617,
+        "exit_reason": "stop_hit",
+        "hold_days": 11,
+        "pnl": 0.0,
+        "pnl_pct": 0.0,
+        "setup_type": "mean_reversion",
+        "is_partial": false
+      },
       {
         "trade_id": "CRWD-2026-07-20-001",
         "ticker": "CRWD",
@@ -2670,111 +2702,55 @@
     },
     {
       "date": "2026-07-06",
-      "nav": 1002177.63
+      "nav": 1001631.38
     },
     {
       "date": "2026-07-07",
-      "nav": 995775.84
-    },
-    {
-      "date": "2026-07-07",
-      "nav": 998967.16
-    },
-    {
-      "date": "2026-07-07",
-      "nav": 998967.16
+      "nav": 997054.99
     },
     {
       "date": "2026-07-08",
-      "nav": 997158.35
+      "nav": 995246.18
     },
     {
       "date": "2026-07-09",
-      "nav": 995775.84
-    },
-    {
-      "date": "2026-07-09",
-      "nav": 1003092.27
+      "nav": 1001180.1
     },
     {
       "date": "2026-07-10",
-      "nav": 995775.84
-    },
-    {
-      "date": "2026-07-10",
-      "nav": 1004036.26
-    },
-    {
-      "date": "2026-07-10",
-      "nav": 1004036.26
+      "nav": 1002124.09
     },
     {
       "date": "2026-07-13",
-      "nav": 999563.27
-    },
-    {
-      "date": "2026-07-13",
-      "nav": 999563.27
+      "nav": 997399.45
     },
     {
       "date": "2026-07-14",
-      "nav": 1002782.82
-    },
-    {
-      "date": "2026-07-14",
-      "nav": 1002782.82
+      "nav": 1000897.37
     },
     {
       "date": "2026-07-15",
-      "nav": 1004747.03
-    },
-    {
-      "date": "2026-07-15",
-      "nav": 1004747.03
+      "nav": 1003098.24
     },
     {
       "date": "2026-07-16",
-      "nav": 1001659.56
-    },
-    {
-      "date": "2026-07-16",
-      "nav": 1001659.56
+      "nav": 999864.37
     },
     {
       "date": "2026-07-17",
-      "nav": 995693.67
-    },
-    {
-      "date": "2026-07-17",
-      "nav": 995693.67
+      "nav": 993987.48
     },
     {
       "date": "2026-07-20",
-      "nav": 993005.64
-    },
-    {
-      "date": "2026-07-20",
-      "nav": 993005.64
+      "nav": 992792.25
     },
     {
       "date": "2026-07-21",
-      "nav": 997233.35
-    },
-    {
-      "date": "2026-07-21",
-      "nav": 997233.35
+      "nav": 997182.99
     },
     {
       "date": "2026-07-22",
       "nav": 995517.57
-    },
-    {
-      "date": "2026-07-22",
-      "nav": 995517.57
-    },
-    {
-      "date": "2026-07-23",
-      "nav": 988610.06
     },
     {
       "date": "2026-07-23",
@@ -2783,6 +2759,10 @@
     {
       "date": "2026-07-24",
       "nav": 988902.21
+    },
+    {
+      "date": "2026-07-27",
+      "nav": 989655.42
     }
   ],
   "spy_aligned": [
@@ -3011,16 +2991,16 @@
       "nav_equiv": 1028091.51
     },
     {
-      "date": "2026-07-24",
-      "nav_equiv": 1029136.06
+      "date": "2026-07-27",
+      "nav_equiv": 1029358.95
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -1.11,
-    "sharpe": -10.06,
+    "total_return_pct": -1.03,
+    "sharpe": -11.21,
     "max_dd_pct": -4.67,
-    "hit_rate": 0.44,
+    "hit_rate": 0.4342,
     "profit_factor": 0.93,
-    "trade_count": 75
+    "trade_count": 76
   }
 }
