@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-04T20:36:19Z",
+  "rendered_at_utc": "2026-08-04T23:59:29Z",
   "as_of": "2026-08-04",
   "starting_nav": 1000000.0,
   "hero": {
@@ -192,7 +192,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,013,896",
-      "detail": "daily return +1.90% \u00b7 positions value $722,143",
+      "detail": "daily return +0.00% \u00b7 positions value $722,143",
       "ts": "2026-08-04"
     },
     {
@@ -2328,7 +2328,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JP Morgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-17",
@@ -2396,7 +2396,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JP Morgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-12",
@@ -3436,6 +3436,10 @@
     {
       "date": "2026-08-04",
       "nav": 1013895.74
+    },
+    {
+      "date": "2026-08-04",
+      "nav": 1013895.74
     }
   ],
   "spy_aligned": [
@@ -3698,7 +3702,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 1.39,
-    "sharpe": -10.51,
+    "sharpe": -10.41,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4118,
     "profit_factor": 0.93,
