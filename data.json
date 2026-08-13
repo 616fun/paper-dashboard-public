@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-13T20:36:08Z",
+  "rendered_at_utc": "2026-08-13T23:37:00Z",
   "as_of": "2026-08-13",
   "starting_nav": 1000000.0,
   "hero": {
@@ -296,7 +296,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,023,397",
-      "detail": "daily return +2.92% \u00b7 positions value $807,868",
+      "detail": "daily return +0.00% \u00b7 positions value $807,868",
       "ts": "2026-08-13"
     },
     {
@@ -342,7 +342,7 @@
     {
       "date": "2026-08-13",
       "ticker": "CRL",
-      "company": "Charles River Laboratories International",
+      "company": "Charles River Laboratories Inte",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -2782,7 +2782,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JP Morgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-17",
@@ -2850,7 +2850,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JP Morgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-12",
@@ -3946,6 +3946,10 @@
     {
       "date": "2026-08-13",
       "nav": 1023396.79
+    },
+    {
+      "date": "2026-08-13",
+      "nav": 1023396.79
     }
   ],
   "spy_aligned": [
@@ -4236,7 +4240,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 2.34,
-    "sharpe": -8.14,
+    "sharpe": -8.08,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4396,
     "profit_factor": 0.94,
