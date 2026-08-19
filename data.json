@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-19T20:35:50Z",
+  "rendered_at_utc": "2026-08-19T23:19:03Z",
   "as_of": "2026-08-19",
   "starting_nav": 1000000.0,
   "hero": {
@@ -204,7 +204,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,018,661",
-      "detail": "daily return +0.66% \u00b7 positions value $738,113",
+      "detail": "daily return +0.00% \u00b7 positions value $738,113",
       "ts": "2026-08-19"
     }
   ],
@@ -260,7 +260,7 @@
     {
       "date": "2026-08-17",
       "ticker": "WDAY",
-      "company": "Workday",
+      "company": "Workday, Inc. Class A Common Stock",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -292,7 +292,7 @@
     {
       "date": "2026-08-14",
       "ticker": "WDAY",
-      "company": "Workday",
+      "company": "Workday, Inc. Class A Common Stock",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
       "reason": "awm_no_executable_params"
@@ -790,7 +790,7 @@
     {
       "kind": "PM SUGGESTED",
       "ticker": "WDAY",
-      "company": "Workday",
+      "company": "Workday, Inc. Class A Common Stock",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": null,
@@ -3874,6 +3874,10 @@
     {
       "date": "2026-08-19",
       "nav": 1018660.68
+    },
+    {
+      "date": "2026-08-19",
+      "nav": 1018660.68
     }
   ],
   "spy_aligned": [
@@ -4180,7 +4184,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 1.87,
-    "sharpe": -7.78,
+    "sharpe": -7.73,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4639,
     "profit_factor": 0.97,
