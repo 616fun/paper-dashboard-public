@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 48,
@@ -327,7 +327,7 @@
     {
       "date": "2026-08-14",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -367,7 +367,7 @@
     {
       "date": "2026-08-13",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -857,7 +857,7 @@
       "target_1": 125.0,
       "target_2": 133.11,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "support_hold",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/ANF/2026-08/ANF-decision-2026-08-12.md"
@@ -872,8 +872,8 @@
       "stop": 165.0,
       "target_1": 194.34,
       "target_2": 201.54,
-      "entry_zone": "$138.27\u2013$166.30",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "\u2014",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/QLYS/2026-08/QLYS-decision-2026-08-12.md"
@@ -889,7 +889,7 @@
       "target_1": 112.0,
       "target_2": 120.0,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "post_earnings_breakout_pullback_entry",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/HALO/2026-08/HALO-decision-2026-08-12.md"
@@ -904,8 +904,8 @@
       "stop": 49.29,
       "target_1": 55.0,
       "target_2": 60.73,
-      "entry_zone": "$51.77\u2013$53.39",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "support_hold",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/AHR/2026-08/AHR-decision-2026-08-12.md"
@@ -2130,6 +2130,23 @@
         "is_partial": true
       },
       {
+        "trade_id": "WEX-2026-07-29-001",
+        "ticker": "WEX",
+        "company": "WEX",
+        "direction": "LONG",
+        "entry_date": "2026-07-29",
+        "exit_date": "2026-07-30",
+        "entry_price": 182.88,
+        "exit_price": 182.88,
+        "shares_closed": 80.7043,
+        "exit_reason": "stop_hit",
+        "hold_days": 1,
+        "pnl": 0.0,
+        "pnl_pct": 0.0,
+        "setup_type": "earnings_gap_continuation",
+        "is_partial": false
+      },
+      {
         "trade_id": "THC-2026-07-29-001",
         "ticker": "THC",
         "company": "Tenet Healthcare",
@@ -2145,6 +2162,23 @@
         "pnl_pct": -2.0,
         "setup_type": "earnings_gap_continuation",
         "is_partial": true
+      },
+      {
+        "trade_id": "THC-2026-07-29-001",
+        "ticker": "THC",
+        "company": "Tenet Healthcare",
+        "direction": "LONG",
+        "entry_date": "2026-07-29",
+        "exit_date": "2026-07-30",
+        "entry_price": 257.91,
+        "exit_price": 255.79,
+        "shares_closed": 43.3427,
+        "exit_reason": "gap_through_stop",
+        "hold_days": 1,
+        "pnl": -91.89,
+        "pnl_pct": -0.82,
+        "setup_type": "earnings_gap_continuation",
+        "is_partial": false
       },
       {
         "trade_id": "PBF-2026-07-16-001",
@@ -2169,12 +2203,12 @@
         "company": "CrowdStrike Holdings",
         "direction": "LONG",
         "entry_date": "2026-07-20",
-        "exit_date": "2026-07-22",
+        "exit_date": "2026-07-23",
         "entry_price": 203.08,
         "exit_price": 187.0,
         "shares_closed": 51.5126,
         "exit_reason": "stop_hit",
-        "hold_days": 2,
+        "hold_days": 3,
         "pnl": -828.32,
         "pnl_pct": -7.92,
         "setup_type": "BREAKOUT_PULLBACK",
@@ -2186,12 +2220,12 @@
         "company": "HF Sinclair",
         "direction": "LONG",
         "entry_date": "2026-07-21",
-        "exit_date": "2026-07-21",
+        "exit_date": "2026-07-22",
         "entry_price": 91.12,
         "exit_price": 88.74,
         "shares_closed": 12.4974,
         "exit_reason": "target_1",
-        "hold_days": 0,
+        "hold_days": 1,
         "pnl": -29.74,
         "pnl_pct": -2.61,
         "setup_type": "breakout",
@@ -2203,67 +2237,33 @@
         "company": "HF Sinclair",
         "direction": "LONG",
         "entry_date": "2026-07-21",
-        "exit_date": "2026-07-21",
+        "exit_date": "2026-07-22",
         "entry_price": 91.12,
         "exit_price": 89.47,
         "shares_closed": 12.4974,
         "exit_reason": "target_2",
-        "hold_days": 0,
+        "hold_days": 1,
         "pnl": -20.62,
         "pnl_pct": -1.81,
         "setup_type": "breakout",
         "is_partial": false
       },
       {
-        "trade_id": "HUM-2026-07-15-001",
-        "ticker": "HUM",
-        "company": "Humana",
+        "trade_id": "CRWD-2026-07-20-001",
+        "ticker": "CRWD",
+        "company": "CrowdStrike Holdings",
         "direction": "LONG",
-        "entry_date": "2026-07-15",
-        "exit_date": "2026-07-17",
-        "entry_price": 401.83,
-        "exit_price": 387.5,
-        "shares_closed": 19.8875,
-        "exit_reason": "gap_through_stop",
+        "entry_date": "2026-07-20",
+        "exit_date": "2026-07-22",
+        "entry_price": 203.08,
+        "exit_price": 187.0,
+        "shares_closed": 51.5126,
+        "exit_reason": "stop_hit",
         "hold_days": 2,
-        "pnl": -284.99,
-        "pnl_pct": -3.57,
-        "setup_type": "breakout",
+        "pnl": -828.32,
+        "pnl_pct": -7.92,
+        "setup_type": "BREAKOUT_PULLBACK",
         "is_partial": false
-      },
-      {
-        "trade_id": "PBF-2026-07-16-001",
-        "ticker": "PBF",
-        "company": "PBF Energy",
-        "direction": "LONG",
-        "entry_date": "2026-07-16",
-        "exit_date": "2026-07-16",
-        "entry_price": 59.22,
-        "exit_price": 61.02,
-        "shares_closed": 37.9616,
-        "exit_reason": "target_1",
-        "hold_days": 0,
-        "pnl": 68.33,
-        "pnl_pct": 3.04,
-        "setup_type": "mean_reversion",
-        "is_partial": true
-      },
-      {
-        "trade_id": "HUM-2026-07-15-001",
-        "ticker": "HUM",
-        "company": "Humana",
-        "direction": "LONG",
-        "entry_date": "2026-07-15",
-        "exit_date": "2026-07-16",
-        "entry_price": 401.83,
-        "exit_price": 415.0,
-        "shares_closed": 19.8875,
-        "exit_reason": "target_1",
-        "hold_days": 1,
-        "pnl": 261.92,
-        "pnl_pct": 3.28,
-        "setup_type": "breakout",
-        "is_partial": true
       },
       {
         "trade_id": "DDOG-2026-06-05-001",
@@ -2281,108 +2281,6 @@
         "pnl_pct": 15.94,
         "setup_type": "momentum_breakout",
         "is_partial": true
-      },
-      {
-        "trade_id": "OKTA-2026-07-14-001",
-        "ticker": "OKTA",
-        "company": "Okta",
-        "direction": "LONG",
-        "entry_date": "2026-07-14",
-        "exit_date": "2026-07-14",
-        "entry_price": 138.25,
-        "exit_price": 153.2,
-        "shares_closed": 8.6508,
-        "exit_reason": "target_1",
-        "hold_days": 0,
-        "pnl": 129.33,
-        "pnl_pct": 10.81,
-        "setup_type": "breakout",
-        "is_partial": true
-      },
-      {
-        "trade_id": "OKTA-2026-07-14-001",
-        "ticker": "OKTA",
-        "company": "Okta",
-        "direction": "LONG",
-        "entry_date": "2026-07-14",
-        "exit_date": "2026-07-14",
-        "entry_price": 138.25,
-        "exit_price": 155.48,
-        "shares_closed": 8.6507,
-        "exit_reason": "target_2",
-        "hold_days": 0,
-        "pnl": 149.05,
-        "pnl_pct": 12.46,
-        "setup_type": "breakout",
-        "is_partial": false
-      },
-      {
-        "trade_id": "PANW-2026-07-13-001",
-        "ticker": "PANW",
-        "company": "Palo Alto Networks",
-        "direction": "LONG",
-        "entry_date": "2026-07-13",
-        "exit_date": "2026-07-13",
-        "entry_price": 325.11,
-        "exit_price": 322.0,
-        "shares_closed": 80.9134,
-        "exit_reason": "stop_hit",
-        "hold_days": 0,
-        "pnl": -251.64,
-        "pnl_pct": -0.96,
-        "setup_type": "BREAKDOWN_RECLAIM_CONTINUATION",
-        "is_partial": false
-      },
-      {
-        "trade_id": "PANW-2026-07-07-001",
-        "ticker": "PANW",
-        "company": "Palo Alto Networks",
-        "direction": "LONG",
-        "entry_date": "2026-07-07",
-        "exit_date": "2026-07-07",
-        "entry_price": 359.87,
-        "exit_price": 339.0,
-        "shares_closed": 27.039,
-        "exit_reason": "stop_hit",
-        "hold_days": 0,
-        "pnl": -564.3,
-        "pnl_pct": -5.8,
-        "setup_type": "MOMENTUM_BREAKOUT",
-        "is_partial": false
-      },
-      {
-        "trade_id": "INTC-2026-07-06-001",
-        "ticker": "INTC",
-        "company": "Intel",
-        "direction": "LONG",
-        "entry_date": "2026-07-06",
-        "exit_date": "2026-07-07",
-        "entry_price": 122.57,
-        "exit_price": 112.3,
-        "shares_closed": 80.9736,
-        "exit_reason": "stop_hit",
-        "hold_days": 1,
-        "pnl": -831.6,
-        "pnl_pct": -8.38,
-        "setup_type": "trend_continuation",
-        "is_partial": false
-      },
-      {
-        "trade_id": "KLAC-2026-07-06-001",
-        "ticker": "KLAC",
-        "company": "KLA",
-        "direction": "LONG",
-        "entry_date": "2026-07-06",
-        "exit_date": "2026-07-06",
-        "entry_price": 246.32,
-        "exit_price": 236.0,
-        "shares_closed": 50.0273,
-        "exit_reason": "stop_hit",
-        "hold_days": 0,
-        "pnl": -516.28,
-        "pnl_pct": -4.19,
-        "setup_type": "trend_pullback_continuation",
-        "is_partial": false
       },
       {
         "trade_id": "STX-2026-06-30-001",
@@ -3854,12 +3752,28 @@
       "nav": 1013895.74
     },
     {
+      "date": "2026-08-04",
+      "nav": 1013895.74
+    },
+    {
+      "date": "2026-08-05",
+      "nav": 1012650.43
+    },
+    {
       "date": "2026-08-05",
       "nav": 1012650.43
     },
     {
       "date": "2026-08-06",
       "nav": 1010631.97
+    },
+    {
+      "date": "2026-08-07",
+      "nav": 993895.95
+    },
+    {
+      "date": "2026-08-07",
+      "nav": 1016162.87
     },
     {
       "date": "2026-08-07",
@@ -3870,12 +3784,20 @@
       "nav": 1018378.69
     },
     {
+      "date": "2026-08-10",
+      "nav": 1018378.69
+    },
+    {
+      "date": "2026-08-11",
+      "nav": 1017613.71
+    },
+    {
       "date": "2026-08-11",
       "nav": 1017613.71
     },
     {
       "date": "2026-08-12",
-      "nav": 1017613.71
+      "nav": 1018655.11
     },
     {
       "date": "2026-08-12",
@@ -3884,6 +3806,14 @@
     {
       "date": "2026-08-13",
       "nav": 1023396.79
+    },
+    {
+      "date": "2026-08-13",
+      "nav": 1023396.79
+    },
+    {
+      "date": "2026-08-14",
+      "nav": 1020049.98
     },
     {
       "date": "2026-08-14",
