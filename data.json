@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-20T20:35:47Z",
+  "rendered_at_utc": "2026-08-20T23:21:46Z",
   "as_of": "2026-08-20",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-08-20",
-    "current": 1014039.77,
+    "current": 1013441.85,
     "starting": 1000000.0,
-    "cash": 290715.15,
-    "day_pnl": -4620.910000000033,
-    "day_pct": -0.45362602981790096,
-    "incep_pnl": 14039.770000000019,
-    "incep_pct": 1.4039770000000018,
-    "deployed_pct": 71.33099128843831,
-    "open_count": 7,
-    "cash_interest": 5456.39,
+    "cash": 299971.99,
+    "day_pnl": -5218.8300000000745,
+    "day_pct": -0.5123227098546764,
+    "incep_pnl": 13441.849999999977,
+    "incep_pct": 1.3441849999999977,
+    "deployed_pct": 70.4006707439603,
+    "open_count": 6,
+    "cash_interest": 5457.19,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 436.36,
-    "total_incl_cash": 1019496.16
+    "cash_interest_month": 437.16,
+    "total_incl_cash": 1018899.0399999999
   },
   "positions": [
     {
@@ -113,29 +113,6 @@
       "sector": "Healthcare"
     },
     {
-      "ticker": "ILMN",
-      "company": "Illumina",
-      "direction": "LONG",
-      "entry_date": "2026-08-05",
-      "days_held": 15,
-      "entry_price": 203.5,
-      "last_price": 213.24000549316406,
-      "position_value": 9854.758909863282,
-      "cost_basis": 18809.27,
-      "unrealized": 450.1285098632816,
-      "unrealized_pct": 4.7862434855843095,
-      "stop": 203.5,
-      "stop_dist_pct": -4.567625793592612,
-      "target_1": 220.0,
-      "t1_dist_pct": 3.170134277197177,
-      "target_2": 230.0,
-      "t2_dist_pct": 7.859685835251594,
-      "max_hold": "2026-10-04",
-      "days_to_max": 45,
-      "setup_type": "\u2014",
-      "sector": "Healthcare"
-    },
-    {
       "ticker": "DT",
       "company": "Dynatrace",
       "direction": "LONG",
@@ -190,9 +167,15 @@
       "ts": "2026-08-20"
     },
     {
+      "kind": "CLOSE",
+      "label": "Closed ILMN \u2014 GAP_THROUGH_STOP",
+      "detail": "46.21 shares @ $200.30 (entry $203.50) \u00b7 P&L $-148 (-1.57%) \u00b7 held 15d",
+      "ts": "2026-08-20"
+    },
+    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,014,040",
-      "detail": "daily return -0.45% \u00b7 positions value $723,325",
+      "label": "MTM mark: NAV $1,013,442",
+      "detail": "daily return -0.06% \u00b7 positions value $713,470",
       "ts": "2026-08-20"
     },
     {
@@ -1855,22 +1838,22 @@
     }
   ],
   "closed_stats": {
-    "total_realized": -1221.9699999999875,
-    "today_realized": 762.54,
-    "trade_count": 98,
-    "today_count": 1,
+    "total_realized": -1369.759999999992,
+    "today_realized": 614.75,
+    "trade_count": 99,
+    "today_count": 2,
     "win_count": 46,
-    "loss_count": 37,
+    "loss_count": 38,
     "flat_count": 15,
-    "win_rate": 0.5542168674698795,
-    "avg_hold_days": 9.377551020408163,
-    "nav_impact_pct": -0.12219699999999876,
-    "today_nav_impact_pct": 0.07625399999999999,
+    "win_rate": 0.5476190476190477,
+    "avg_hold_days": 9.434343434343434,
+    "nav_impact_pct": -0.1369759999999992,
+    "today_nav_impact_pct": 0.061474999999999995,
     "by_reason": {
       "target_1": 38,
+      "gap_through_stop": 14,
       "stop_hit": 34,
-      "target_2": 13,
-      "gap_through_stop": 13
+      "target_2": 13
     },
     "rows": [
       {
@@ -1889,6 +1872,23 @@
         "pnl_pct": 8.11,
         "setup_type": "\u2014",
         "is_partial": true
+      },
+      {
+        "trade_id": "ILMN-2026-08-05-001",
+        "ticker": "ILMN",
+        "company": "Illumina",
+        "direction": "LONG",
+        "entry_date": "2026-08-05",
+        "exit_date": "2026-08-20",
+        "entry_price": 203.5,
+        "exit_price": 200.302,
+        "shares_closed": 46.2144,
+        "exit_reason": "gap_through_stop",
+        "hold_days": 15,
+        "pnl": -147.79,
+        "pnl_pct": -1.57,
+        "setup_type": "\u2014",
+        "is_partial": false
       },
       {
         "trade_id": "ZBRA-2026-08-06-001",
@@ -3909,6 +3909,10 @@
     {
       "date": "2026-08-20",
       "nav": 1014039.77
+    },
+    {
+      "date": "2026-08-20",
+      "nav": 1013441.85
     }
   ],
   "spy_aligned": [
@@ -4218,11 +4222,11 @@
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.4,
-    "sharpe": -7.71,
+    "total_return_pct": 1.34,
+    "sharpe": -7.67,
     "max_dd_pct": -5.24,
-    "hit_rate": 0.4694,
+    "hit_rate": 0.4646,
     "profit_factor": 0.98,
-    "trade_count": 98
+    "trade_count": 99
   }
 }
