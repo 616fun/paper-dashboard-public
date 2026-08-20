@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-20T20:30:13Z",
+  "rendered_at_utc": "2026-08-20T20:35:47Z",
   "as_of": "2026-08-20",
   "starting_nav": 1000000.0,
   "hero": {
@@ -14,10 +14,10 @@
     "incep_pct": 1.4039770000000018,
     "deployed_pct": 71.33099128843831,
     "open_count": 7,
-    "cash_interest": 5456.08,
+    "cash_interest": 5456.39,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 436.05,
-    "total_incl_cash": 1019495.85
+    "cash_interest_month": 436.36,
+    "total_incl_cash": 1019496.16
   },
   "positions": [
     {
@@ -55,8 +55,8 @@
       "cost_basis": 41989.09,
       "unrealized": 1536.9406217358373,
       "unrealized_pct": 7.320664736522279,
-      "stop": 602.5335,
-      "stop_dist_pct": -1.6496661019174699,
+      "stop": 587.0585,
+      "stop_dist_pct": -4.175619293022743,
       "target_1": 612.07,
       "t1_dist_pct": -0.0930423470240598,
       "target_2": 647.0,
@@ -78,8 +78,8 @@
       "cost_basis": 22754.57,
       "unrealized": 1233.5594168688967,
       "unrealized_pct": 10.842302132703853,
-      "stop": 199.703,
-      "stop_dist_pct": -5.448135196291191,
+      "stop": 193.678,
+      "stop_dist_pct": -8.300746250919042,
       "target_1": 204.02,
       "t1_dist_pct": -3.4041979476889583,
       "target_2": 215.0,
@@ -124,8 +124,8 @@
       "cost_basis": 18809.27,
       "unrealized": 450.1285098632816,
       "unrealized_pct": 4.7862434855843095,
-      "stop": 207.1792,
-      "stop_dist_pct": -2.8422459843532257,
+      "stop": 203.5,
+      "stop_dist_pct": -4.567625793592612,
       "target_1": 220.0,
       "t1_dist_pct": 3.170134277197177,
       "target_2": 230.0,
@@ -222,7 +222,7 @@
     {
       "date": "2026-08-20",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
       "reason": "defer"
@@ -262,7 +262,7 @@
     {
       "date": "2026-08-18",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -334,7 +334,7 @@
     {
       "date": "2026-08-14",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -374,7 +374,7 @@
     {
       "date": "2026-08-13",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -1855,21 +1855,21 @@
     }
   ],
   "closed_stats": {
-    "total_realized": -2141.9399999999882,
+    "total_realized": -1221.9699999999875,
     "today_realized": 762.54,
-    "trade_count": 104,
+    "trade_count": 98,
     "today_count": 1,
-    "win_count": 50,
-    "loss_count": 40,
-    "flat_count": 14,
-    "win_rate": 0.5555555555555556,
-    "avg_hold_days": 8.817307692307692,
-    "nav_impact_pct": -0.2141939999999988,
+    "win_count": 46,
+    "loss_count": 37,
+    "flat_count": 15,
+    "win_rate": 0.5542168674698795,
+    "avg_hold_days": 9.377551020408163,
+    "nav_impact_pct": -0.12219699999999876,
     "today_nav_impact_pct": 0.07625399999999999,
     "by_reason": {
-      "target_1": 41,
-      "stop_hit": 36,
-      "target_2": 14,
+      "target_1": 38,
+      "stop_hit": 34,
+      "target_2": 13,
       "gap_through_stop": 13
     },
     "rows": [
@@ -2709,7 +2709,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JP Morgan Chase",
+        "company": "JPMorgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-17",
@@ -2777,7 +2777,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JP Morgan Chase",
+        "company": "JPMorgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-12",
@@ -3903,6 +3903,10 @@
       "nav": 1018660.68
     },
     {
+      "date": "2026-08-19",
+      "nav": 1018660.68
+    },
+    {
       "date": "2026-08-20",
       "nav": 1014039.77
     }
@@ -4215,10 +4219,10 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 1.4,
-    "sharpe": -8.14,
+    "sharpe": -7.71,
     "max_dd_pct": -5.24,
-    "hit_rate": 0.4808,
-    "profit_factor": 0.97,
-    "trade_count": 104
+    "hit_rate": 0.4694,
+    "profit_factor": 0.98,
+    "trade_count": 98
   }
 }
