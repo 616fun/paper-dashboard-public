@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-21T20:36:38Z",
+  "rendered_at_utc": "2026-08-21T23:19:25Z",
   "as_of": "2026-08-21",
   "starting_nav": 1000000.0,
   "hero": {
@@ -146,7 +146,7 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,017,271",
-      "detail": "daily return +0.38% \u00b7 positions value $704,462",
+      "detail": "daily return +0.00% \u00b7 positions value $704,462",
       "ts": "2026-08-21"
     },
     {
@@ -176,7 +176,7 @@
     {
       "date": "2026-08-21",
       "ticker": "CRL",
-      "company": "Charles River Laboratories International",
+      "company": "Charles River Laboratories Inte",
       "verdict": "DEFER",
       "setup": "breakout",
       "reason": "defer"
@@ -200,7 +200,7 @@
     {
       "date": "2026-08-20",
       "ticker": "CRL",
-      "company": "Charles River Laboratories International",
+      "company": "Charles River Laboratories Inte",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
       "reason": "defer"
@@ -240,7 +240,7 @@
     {
       "date": "2026-08-18",
       "ticker": "CRL",
-      "company": "Charles River Laboratories International",
+      "company": "Charles River Laboratories Inte",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -256,7 +256,7 @@
     {
       "date": "2026-08-17",
       "ticker": "WDAY",
-      "company": "Workday",
+      "company": "Workday, Inc. Class A Common Stock",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -288,7 +288,7 @@
     {
       "date": "2026-08-14",
       "ticker": "WDAY",
-      "company": "Workday",
+      "company": "Workday, Inc. Class A Common Stock",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
       "reason": "awm_no_executable_params"
@@ -312,7 +312,7 @@
     {
       "date": "2026-08-14",
       "ticker": "CRL",
-      "company": "Charles River Laboratories International",
+      "company": "Charles River Laboratories Inte",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -352,7 +352,7 @@
     {
       "date": "2026-08-13",
       "ticker": "CRL",
-      "company": "Charles River Laboratories International",
+      "company": "Charles River Laboratories Inte",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -770,7 +770,7 @@
     {
       "kind": "PM SUGGESTED",
       "ticker": "WDAY",
-      "company": "Workday",
+      "company": "Workday, Inc. Class A Common Stock",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": null,
@@ -2697,7 +2697,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JP Morgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-17",
@@ -2765,7 +2765,7 @@
       {
         "trade_id": "JPM-2026-05-04-001",
         "ticker": "JPM",
-        "company": "JPMorgan Chase",
+        "company": "JP Morgan Chase",
         "direction": "LONG",
         "entry_date": "2026-05-04",
         "exit_date": "2026-06-12",
@@ -3905,6 +3905,10 @@
     {
       "date": "2026-08-21",
       "nav": 1017270.9
+    },
+    {
+      "date": "2026-08-21",
+      "nav": 1017270.9
     }
   ],
   "spy_aligned": [
@@ -4219,7 +4223,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 1.73,
-    "sharpe": -7.59,
+    "sharpe": -7.54,
     "max_dd_pct": -5.24,
     "hit_rate": 0.47,
     "profit_factor": 1.0,
