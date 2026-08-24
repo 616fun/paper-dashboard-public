@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-24T20:30:55Z",
+  "rendered_at_utc": "2026-08-24T20:36:15Z",
   "as_of": "2026-08-24",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 53,
@@ -178,7 +178,7 @@
     {
       "date": "2026-08-24",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
       "reason": "defer"
@@ -210,7 +210,7 @@
     {
       "date": "2026-08-21",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "breakout",
       "reason": "defer"
@@ -234,7 +234,7 @@
     {
       "date": "2026-08-20",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
       "reason": "defer"
@@ -274,7 +274,7 @@
     {
       "date": "2026-08-18",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -346,7 +346,7 @@
     {
       "date": "2026-08-14",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
       "reason": "defer"
@@ -386,7 +386,7 @@
     {
       "date": "2026-08-13",
       "ticker": "CRL",
-      "company": "Charles River Laboratories Inte",
+      "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -548,7 +548,7 @@
       "target_1": 185.11,
       "target_2": 188.73,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-08-21",
       "setup": "breakout",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/RGEN/2026-08/RGEN-decision-2026-08-21.md"
@@ -563,8 +563,8 @@
       "stop": 272.98,
       "target_1": 336.7,
       "target_2": 351.35,
-      "entry_zone": "$297.41\u2013$317.06",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-08-21",
       "setup": "breakout",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/NDSN/2026-08/NDSN-decision-2026-08-21.md"
@@ -772,7 +772,7 @@
       "target_1": 125.0,
       "target_2": 133.11,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "support_hold",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/ANF/2026-08/ANF-decision-2026-08-12.md"
@@ -787,8 +787,8 @@
       "stop": 165.0,
       "target_1": 194.34,
       "target_2": 201.54,
-      "entry_zone": "$138.27\u2013$166.30",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "\u2014",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/QLYS/2026-08/QLYS-decision-2026-08-12.md"
@@ -804,7 +804,7 @@
       "target_1": 112.0,
       "target_2": 120.0,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "post_earnings_breakout_pullback_entry",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/HALO/2026-08/HALO-decision-2026-08-12.md"
@@ -819,8 +819,8 @@
       "stop": 49.29,
       "target_1": 55.0,
       "target_2": 60.73,
-      "entry_zone": "$51.77\u2013$53.39",
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "entry_zone": null,
+      "modifications": null,
       "logged_date": "2026-08-12",
       "setup": "support_hold",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/AHR/2026-08/AHR-decision-2026-08-12.md"
@@ -3869,6 +3869,10 @@
       "nav": 1017270.9
     },
     {
+      "date": "2026-08-21",
+      "nav": 1017270.9
+    },
+    {
       "date": "2026-08-24",
       "nav": 1015907.49
     }
@@ -4189,7 +4193,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 1.59,
-    "sharpe": -7.55,
+    "sharpe": -7.5,
     "max_dd_pct": -5.24,
     "hit_rate": 0.47,
     "profit_factor": 1.0,
