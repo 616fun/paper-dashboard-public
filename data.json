@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-21T20:30:16Z",
-  "as_of": "2026-08-21",
+  "rendered_at_utc": "2026-08-24T20:30:15Z",
+  "as_of": "2026-08-24",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-08-21",
-    "current": 1017270.9,
+    "as_of": "2026-08-24",
+    "current": 1015907.49,
     "starting": 1000000.0,
     "cash": 312809.12,
-    "day_pnl": 3829.0500000000466,
-    "day_pct": 0.3778263153431099,
-    "incep_pnl": 17270.900000000023,
-    "incep_pct": 1.7270900000000022,
-    "deployed_pct": 69.25016531977863,
+    "day_pnl": -1363.4100000000326,
+    "day_pct": -0.13402624610612893,
+    "incep_pnl": 15907.48999999999,
+    "incep_pct": 1.5907489999999989,
+    "deployed_pct": 69.20889716050819,
     "open_count": 5,
-    "cash_interest": 5484.14,
+    "cash_interest": 5565.01,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 464.11,
-    "total_incl_cash": 1022755.04
+    "cash_interest_month": 544.98,
+    "total_incl_cash": 1021472.5
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 50,
+      "days_held": 53,
       "entry_price": 368.76,
-      "last_price": 378.239990234375,
-      "position_value": 614143.5441436768,
+      "last_price": 377.07000732421875,
+      "position_value": 612243.8575172424,
       "cost_basis": 598751.0,
-      "unrealized": 15392.541643676814,
-      "unrealized_pct": 2.5707750933873075,
+      "unrealized": 13492.855017242488,
+      "unrealized_pct": 2.253500196392989,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Medpace Holdings",
       "direction": "LONG",
       "entry_date": "2026-07-29",
-      "days_held": 23,
+      "days_held": 26,
       "entry_price": 570.85,
-      "last_price": 620.75,
-      "position_value": 22829.757275000004,
+      "last_price": 620.030029296875,
+      "position_value": 22803.27840847168,
       "cost_basis": 41989.09,
-      "unrealized": 1835.20723,
-      "unrealized_pct": 8.741350617500217,
+      "unrealized": 1808.7283634716769,
+      "unrealized_pct": 8.615228045349026,
       "stop": 604.6385,
-      "stop_dist_pct": -2.5954893274264967,
+      "stop_dist_pct": -2.482384492623566,
       "target_1": 612.07,
-      "t1_dist_pct": -1.3983084977849294,
+      "t1_dist_pct": -1.2838135123716126,
       "target_2": 647.0,
-      "t2_dist_pct": 4.2287555376560615,
+      "t2_dist_pct": 4.3497845957089245,
       "max_hold": "2026-09-27",
-      "days_to_max": 37,
+      "days_to_max": 34,
       "setup_type": "earnings_gap_pullback",
       "sector": "Healthcare"
     },
@@ -71,21 +71,21 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 17,
+      "days_held": 20,
       "entry_price": 27.74,
-      "last_price": 26.34000015258789,
-      "position_value": 15746.47089721947,
+      "last_price": 26.489999771118164,
+      "position_value": 15836.143054170801,
       "cost_basis": 16583.41,
-      "unrealized": -836.9421687805316,
-      "unrealized_pct": -5.046863184614661,
+      "unrealized": -747.2700118291996,
+      "unrealized_pct": -4.506129159631701,
       "stop": 23.5,
-      "stop_dist_pct": -10.782081002793245,
+      "stop_dist_pct": -11.287277451690041,
       "target_1": 30.0,
-      "t1_dist_pct": 13.895215741115008,
+      "t1_dist_pct": 13.250284104225479,
       "target_2": 35.0,
-      "t2_dist_pct": 32.877751697967504,
+      "t2_dist_pct": 32.12533145492972,
       "max_hold": "2026-10-03",
-      "days_to_max": 43,
+      "days_to_max": 40,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -94,21 +94,21 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 11,
+      "days_held": 14,
       "entry_price": 48.7,
-      "last_price": 49.29999923706055,
-      "position_value": 35180.33155556869,
+      "last_price": 49.04999923706055,
+      "position_value": 35001.93230556869,
       "cost_basis": 34752.17,
-      "unrealized": 428.15765556869155,
-      "unrealized_pct": 1.2320312875986486,
+      "unrealized": 249.75840556868934,
+      "unrealized_pct": 0.7186842650113734,
       "stop": 45.65,
-      "stop_dist_pct": -7.40364968264891,
+      "stop_dist_pct": -6.931700896932169,
       "target_1": 55.25,
-      "t1_dist_pct": 12.068967251558552,
+      "t1_dist_pct": 12.640164850919996,
       "target_2": 59.5,
-      "t2_dist_pct": 20.689657040139977,
+      "t2_dist_pct": 21.30479291637538,
       "max_hold": "2026-10-09",
-      "days_to_max": 49,
+      "days_to_max": 46,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     },
@@ -117,46 +117,80 @@
       "company": "e.l.f. Beauty",
       "direction": "LONG",
       "entry_date": "2026-08-12",
-      "days_held": 9,
+      "days_held": 12,
       "entry_price": 94.05,
-      "last_price": 101.94000244140625,
-      "position_value": 16561.672302642823,
+      "last_price": 105.94999694824219,
+      "position_value": 17213.155659196473,
       "cost_basis": 15279.83,
-      "unrealized": 1281.8484576428236,
-      "unrealized_pct": 8.389157300804104,
+      "unrealized": 1933.3318141964737,
+      "unrealized_pct": 12.652840986966718,
       "stop": 86.0,
-      "stop_dist_pct": -15.636651029676354,
+      "stop_dist_pct": -18.82963428303636,
       "target_1": 107.5,
-      "t1_dist_pct": 5.454186212904558,
+      "t1_dist_pct": 1.4629571462045508,
       "target_2": 121.0,
-      "t2_dist_pct": 18.69727006289722,
+      "t2_dist_pct": 14.204816880844193,
       "max_hold": "2026-10-11",
-      "days_to_max": 51,
+      "days_to_max": 48,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Consumer Defensive"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Closed MANH \u2014 TARGET_2",
-      "detail": "59.71 shares @ $215.00 (entry $190.55) \u00b7 P&L $+1,460 (+12.83%) \u00b7 held 21d",
-      "ts": "2026-08-21"
-    },
-    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,017,271",
-      "detail": "daily return +0.38% \u00b7 positions value $704,462",
-      "ts": "2026-08-21"
+      "label": "MTM mark: NAV $1,015,907",
+      "detail": "daily return -0.13% \u00b7 positions value $703,098",
+      "ts": "2026-08-24"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 CRL (DEFER) \u00b7 MANH (REJECT)",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "AVTR (DEFER) \u00b7 MRNA (DEFER) \u00b7 CRL (DEFER) \u00b7 THC (DEFER) \u00b7 MANH (REJECT)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-08-24",
+      "ticker": "THC",
+      "company": "Tenet Healthcare",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-08-24",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "breakout_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-08-24",
+      "ticker": "MANH",
+      "company": "Manhattan Associates",
+      "verdict": "REJECT",
+      "setup": "MOMENTUM_BREAKOUT",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-08-24",
+      "ticker": "CRL",
+      "company": "Charles River Laboratories Inte",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-08-24",
+      "ticker": "AVTR",
+      "company": "Avantor",
+      "verdict": "DEFER",
+      "setup": "earnings_gap_pullback",
+      "reason": "defer"
+    },
     {
       "date": "2026-08-21",
       "ticker": "MRNA",
@@ -500,46 +534,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-07",
-      "ticker": "QLYS",
-      "company": "Qualys",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "earnings_gap_momentum",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-07",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "\u2014",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-07",
-      "ticker": "NTAP",
-      "company": "NetApp",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "breakout",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-07",
-      "ticker": "DDOG",
-      "company": "Datadog",
-      "verdict": "DEFER",
-      "setup": "earnings_event_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-07",
-      "ticker": "CACI",
-      "company": "CACI International",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "earnings_breakout",
-      "reason": "awm_no_executable_params"
     }
   ],
   "watch_list": [
@@ -750,38 +744,6 @@
       "logged_date": "2026-08-14",
       "setup": "pullback_to_support",
       "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/DELL/2026-08/DELL-decision-2026-08-14.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "HRB",
-      "company": "H&R Block",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 47.5,
-      "target_1": 57.0,
-      "target_2": 62.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-08-14",
-      "setup": "earnings_gap_pullback",
-      "decision_doc": "/sessions/eloquent-gallant-dirac/mnt/Hedge Fund Build/tradingagents-cowork/reports/HRB/2026-08/HRB-decision-2026-08-14.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "WDAY",
-      "company": "Workday",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 186.5,
-      "target_1": 215.0,
-      "target_2": 230.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-08-14",
-      "setup": "\u2014",
-      "decision_doc": "/Users/briansmacmini/Documents/Claude/Projects/Hedge Fund Build/tradingagents-cowork/reports/WDAY/2026-08/WDAY-decision-2026-08-14.md"
     },
     {
       "kind": "QUEUED",
@@ -1810,16 +1772,16 @@
   ],
   "closed_stats": {
     "total_realized": 90.09000000001765,
-    "today_realized": 1459.85,
+    "today_realized": 0.0,
     "trade_count": 100,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 47,
     "loss_count": 38,
     "flat_count": 15,
     "win_rate": 0.5529411764705883,
     "avg_hold_days": 9.55,
     "nav_impact_pct": 0.009009000000001766,
-    "today_nav_impact_pct": 0.145985,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_2": 14,
       "target_1": 38,
@@ -3905,6 +3867,10 @@
     {
       "date": "2026-08-21",
       "nav": 1017270.9
+    },
+    {
+      "date": "2026-08-24",
+      "nav": 1015907.49
     }
   ],
   "spy_aligned": [
@@ -4215,11 +4181,15 @@
     {
       "date": "2026-08-21",
       "nav_equiv": 1066447.49
+    },
+    {
+      "date": "2026-08-24",
+      "nav_equiv": 1063313.83
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.73,
-    "sharpe": -7.59,
+    "total_return_pct": 1.59,
+    "sharpe": -7.55,
     "max_dd_pct": -5.24,
     "hit_rate": 0.47,
     "profit_factor": 1.0,
