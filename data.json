@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-08-27T20:35:46Z",
-  "as_of": "2026-08-27",
+  "rendered_at_utc": "2026-08-28T06:28:47Z",
+  "as_of": "2026-08-28",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-08-27",
+    "as_of": "2026-08-28",
     "current": 1024311.23,
     "starting": 1000000.0,
     "cash": 321541.61,
-    "day_pnl": 4521.890000000014,
-    "day_pct": 0.44341412707844285,
+    "day_pnl": 0.0,
+    "day_pct": 0.0,
     "incep_pnl": 24311.22999999998,
     "incep_pct": 2.431122999999998,
     "deployed_pct": 68.60899299131964,
     "open_count": 5,
-    "cash_interest": 5647.38,
+    "cash_interest": 5675.09,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 627.35,
-    "total_incl_cash": 1029958.61
+    "cash_interest_month": 655.06,
+    "total_incl_cash": 1029986.32
   },
   "positions": [
     {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 56,
+      "days_held": 57,
       "entry_price": 368.76,
       "last_price": 380.6300048828125,
       "position_value": 618024.1810531616,
@@ -48,7 +48,7 @@
       "company": "Medpace Holdings",
       "direction": "LONG",
       "entry_date": "2026-07-29",
-      "days_held": 29,
+      "days_held": 30,
       "entry_price": 570.85,
       "last_price": 611.5700073242188,
       "position_value": 22492.138258367922,
@@ -62,7 +62,7 @@
       "target_2": 647.0,
       "t2_dist_pct": 5.793284865423156,
       "max_hold": "2026-09-27",
-      "days_to_max": 31,
+      "days_to_max": 30,
       "setup_type": "earnings_gap_pullback",
       "sector": "Healthcare"
     },
@@ -71,7 +71,7 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 23,
+      "days_held": 24,
       "entry_price": 27.74,
       "last_price": 25.93000030517578,
       "position_value": 15501.366469438935,
@@ -85,7 +85,7 @@
       "target_2": 35.0,
       "t2_dist_pct": 34.97878745884084,
       "max_hold": "2026-10-03",
-      "days_to_max": 37,
+      "days_to_max": 36,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -94,7 +94,7 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 17,
+      "days_held": 18,
       "entry_price": 48.7,
       "last_price": 53.43000030517578,
       "position_value": 38127.48792777252,
@@ -108,7 +108,7 @@
       "target_2": 59.5,
       "t2_dist_pct": 11.360658169856338,
       "max_hold": "2026-10-09",
-      "days_to_max": 43,
+      "days_to_max": 42,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     },
@@ -117,7 +117,7 @@
       "company": "e.l.f. Beauty",
       "direction": "LONG",
       "entry_date": "2026-08-12",
-      "days_held": 15,
+      "days_held": 16,
       "entry_price": 94.05,
       "last_price": 106.16999816894531,
       "position_value": 8624.443759259033,
@@ -131,7 +131,7 @@
       "target_2": 121.0,
       "t2_dist_pct": 13.96816623040355,
       "max_hold": "2026-10-11",
-      "days_to_max": 45,
+      "days_to_max": 44,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Consumer Defensive"
     }
@@ -140,14 +140,8 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $1,024,311",
-      "detail": "daily return +0.44% \u00b7 positions value $702,770",
-      "ts": "2026-08-27"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "RGEN (DEFER) \u00b7 MRNA (DEFER) \u00b7 CRL (DEFER) \u00b7 DKS (APPROVE WITH MODIFICATIONS)",
-      "ts": ""
+      "detail": "daily return +0.00% \u00b7 positions value $702,770",
+      "ts": "2026-08-28"
     }
   ],
   "decisions": [
@@ -445,62 +439,6 @@
       "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "ZBRA",
-      "company": "Zebra Technologies",
-      "verdict": "DEFER",
-      "setup": "momentum_breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "HRB",
-      "company": "H&R Block",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "earnings_gap_momentum",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "HPE",
-      "company": "Hewlett Packard Enterprise Company",
-      "verdict": "APPROVE",
-      "setup": "\u2014",
-      "reason": "missing_required_fields:intended_size_pct_nav,stop,target_1"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "HALO",
-      "company": "Halozyme Therapeutics",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "CRL",
-      "company": "Charles River Laboratories International",
-      "verdict": "DEFER",
-      "setup": "\u2014",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "ANF",
-      "company": "Abercrombie & Fitch Co",
-      "verdict": "DEFER",
-      "setup": "uptrend_pullback_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-13",
-      "ticker": "AHR",
-      "company": "American Healthcare REIT",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
       "reason": "defer"
     }
   ],
@@ -3852,6 +3790,10 @@
     {
       "date": "2026-08-27",
       "nav": 1024311.23
+    },
+    {
+      "date": "2026-08-28",
+      "nav": 1024311.23
     }
   ],
   "spy_aligned": [
@@ -4182,7 +4124,7 @@
   ],
   "lifetime_stats": {
     "total_return_pct": 2.43,
-    "sharpe": -7.18,
+    "sharpe": -7.14,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4752,
     "profit_factor": 1.02,
