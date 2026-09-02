@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-01T20:35:49Z",
-  "as_of": "2026-09-01",
+  "rendered_at_utc": "2026-09-02T00:47:24Z",
+  "as_of": "2026-09-02",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-01",
-    "current": 1014464.04,
+    "as_of": "2026-09-02",
+    "current": 1001505.32,
     "starting": 1000000.0,
     "cash": 343778.82,
-    "day_pnl": -6669.069999999949,
-    "day_pct": -0.6531048630868457,
-    "incep_pnl": 14464.040000000037,
-    "incep_pct": 1.4464040000000038,
-    "deployed_pct": 66.11227146109584,
+    "day_pnl": -12958.720000000088,
+    "day_pct": -1.2773956975350342,
+    "incep_pnl": 1505.3199999999488,
+    "incep_pct": 0.15053199999999486,
+    "deployed_pct": 65.67378993054176,
     "open_count": 4,
-    "cash_interest": 5795.5,
+    "cash_interest": 5825.13,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 29.62,
-    "total_incl_cash": 1020259.54
+    "cash_interest_month": 59.25,
+    "total_incl_cash": 1007330.45
   },
   "positions": [
     {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 61,
+      "days_held": 62,
       "entry_price": 368.76,
       "last_price": 375.1700134277344,
       "position_value": 609158.8611774445,
@@ -48,7 +48,7 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 28,
+      "days_held": 29,
       "entry_price": 27.74,
       "last_price": 25.479999542236328,
       "position_value": 15232.3488583416,
@@ -62,7 +62,7 @@
       "target_2": 35.0,
       "t2_dist_pct": 37.3626398304406,
       "max_hold": "2026-10-03",
-      "days_to_max": 32,
+      "days_to_max": 31,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -71,7 +71,7 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 22,
+      "days_held": 23,
       "entry_price": 48.7,
       "last_price": 52.86000061035156,
       "position_value": 37720.73785554504,
@@ -85,7 +85,7 @@
       "target_2": 59.5,
       "t2_dist_pct": 12.561481863373508,
       "max_hold": "2026-10-09",
-      "days_to_max": 38,
+      "days_to_max": 37,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     },
@@ -94,7 +94,7 @@
       "company": "e.l.f. Beauty",
       "direction": "LONG",
       "entry_date": "2026-08-12",
-      "days_held": 20,
+      "days_held": 21,
       "entry_price": 94.05,
       "last_price": 105.54000091552734,
       "position_value": 8573.267570370483,
@@ -108,7 +108,7 @@
       "target_2": 121.0,
       "t2_dist_pct": 14.648473517492777,
       "max_hold": "2026-10-11",
-      "days_to_max": 40,
+      "days_to_max": 39,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Consumer Defensive"
     }
@@ -116,15 +116,9 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,014,464",
-      "detail": "daily return +1.29% \u00b7 positions value $670,685",
-      "ts": "2026-09-01"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "CRM (APPROVE WITH MODIFICATIONS) \u00b7 EQR (DEFER) \u00b7 ELF (DEFER)",
-      "ts": ""
+      "label": "MTM mark: NAV $1,001,505",
+      "detail": "daily return -1.28% \u00b7 positions value $657,726",
+      "ts": "2026-09-02"
     }
   ],
   "decisions": [
@@ -350,46 +344,6 @@
       "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-18",
-      "ticker": "ZBRA",
-      "company": "Zebra Technologies",
-      "verdict": "DEFER",
-      "setup": "momentum_breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-18",
-      "ticker": "QLYS",
-      "company": "Qualys",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "support_hold",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-18",
-      "ticker": "NTAP",
-      "company": "NetApp",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "breakout",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-18",
-      "ticker": "DELL",
-      "company": "Dell Technologies",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "pullback_to_support",
-      "reason": "awm_complex_instrument_tier1"
-    },
-    {
-      "date": "2026-08-18",
-      "ticker": "CRL",
-      "company": "Charles River Laboratories International",
-      "verdict": "DEFER",
-      "setup": "momentum_continuation",
       "reason": "defer"
     }
   ],
@@ -3874,6 +3828,10 @@
     {
       "date": "2026-09-01",
       "nav": 1014464.04
+    },
+    {
+      "date": "2026-09-02",
+      "nav": 1001505.32
     }
   ],
   "spy_aligned": [
@@ -4215,8 +4173,8 @@
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.45,
-    "sharpe": -7.02,
+    "total_return_pct": 0.15,
+    "sharpe": -7.06,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4804,
     "profit_factor": 1.04,
