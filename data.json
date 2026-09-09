@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-08T20:36:30Z",
-  "as_of": "2026-09-08",
+  "rendered_at_utc": "2026-09-09T01:01:04Z",
+  "as_of": "2026-09-09",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-08",
-    "current": 1016105.08,
+    "as_of": "2026-09-09",
+    "current": 1001505.32,
     "starting": 1000000.0,
     "cash": 343778.82,
-    "day_pnl": -5622.640000000014,
-    "day_pct": -0.5503070818123653,
-    "incep_pnl": 16105.079999999958,
-    "incep_pct": 1.6105079999999958,
-    "deployed_pct": 66.16700115306972,
+    "day_pnl": -14599.76000000001,
+    "day_pct": -1.4368356469588766,
+    "incep_pnl": 1505.3199999999488,
+    "incep_pct": 0.15053199999999486,
+    "deployed_pct": 65.67378993054176,
     "open_count": 4,
-    "cash_interest": 6002.87,
+    "cash_interest": 6032.5,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 236.99,
-    "total_incl_cash": 1022107.95
+    "cash_interest_month": 266.62,
+    "total_incl_cash": 1007537.82
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 68,
+      "days_held": 69,
       "entry_price": 368.76,
-      "last_price": 377.6000061035156,
-      "position_value": 613104.409910202,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 598751.0,
-      "unrealized": 14353.407410202082,
-      "unrealized_pct": 2.3972247812983136,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 35,
+      "days_held": 36,
       "entry_price": 27.74,
-      "last_price": 24.860000610351562,
-      "position_value": 14861.70363887787,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 16583.41,
-      "unrealized": -1721.7094271221304,
-      "unrealized_pct": -10.382117482510584,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 23.5,
-      "stop_dist_pct": -5.470637879973607,
+      "stop_dist_pct": null,
       "target_1": 30.0,
-      "t1_dist_pct": 20.675781429820926,
+      "t1_dist_pct": null,
       "target_2": 35.0,
-      "t2_dist_pct": 40.78841166812441,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-03",
-      "days_to_max": 25,
+      "days_to_max": 24,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -71,21 +71,21 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 29,
+      "days_held": 30,
       "entry_price": 48.7,
-      "last_price": 50.290000915527344,
-      "position_value": 35886.79378331757,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 1134.6198833175658,
-      "unrealized_pct": 3.2648889435879744,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 45.65,
-      "stop_dist_pct": -9.226488031529776,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": 9.86279378440263,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 18.31377792166437,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 31,
+      "days_to_max": 30,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     },
@@ -94,21 +94,21 @@
       "company": "e.l.f. Beauty",
       "direction": "LONG",
       "entry_date": "2026-08-12",
-      "days_held": 27,
+      "days_held": 28,
       "entry_price": 94.05,
-      "last_price": 104.30999755859375,
-      "position_value": 8473.35144567871,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 15279.83,
-      "unrealized": 833.4442256787106,
-      "unrealized_pct": 10.90908831323099,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 102.3,
-      "stop_dist_pct": -1.9269462234093937,
+      "stop_dist_pct": null,
       "target_1": 112.0,
-      "t1_dist_pct": 7.372258289131459,
+      "t1_dist_pct": null,
       "target_2": 121.0,
-      "t2_dist_pct": 16.000386187365237,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-11",
-      "days_to_max": 33,
+      "days_to_max": 32,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Consumer Defensive"
     }
@@ -116,15 +116,9 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,016,105",
-      "detail": "daily return +1.46% \u00b7 positions value $672,326",
-      "ts": "2026-09-08"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 2 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 ELF (APPROVE WITH MODIFICATIONS)",
-      "ts": ""
+      "label": "MTM mark: NAV $1,001,505",
+      "detail": "daily return -1.44% \u00b7 positions value $657,726",
+      "ts": "2026-09-09"
     }
   ],
   "decisions": [
@@ -294,46 +288,6 @@
       "company": "Charles River Laboratories International",
       "verdict": "DEFER",
       "setup": "momentum_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-25",
-      "ticker": "RGEN",
-      "company": "Repligen",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-25",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "breakout_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-25",
-      "ticker": "FIVE",
-      "company": "Five Below",
-      "verdict": "DEFER",
-      "setup": "momentum_breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-25",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "DEFER",
-      "setup": "breakout_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-25",
-      "ticker": "CRL",
-      "company": "Charles River Laboratories International",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
       "reason": "defer"
     }
   ],
@@ -633,22 +587,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "direction": "LONG",
       "size_pct": 2.23,
-      "stop": 224.0,
-      "target_1": 269.0,
-      "target_2": 290.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-09-01",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "decision_doc": "/sessions/trusting-cool-volta/mnt/Hedge Fund Build/tradingagents-cowork/reports/CRM/2026-09/CRM-decision-2026-09-01.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "CRM",
-      "company": "Salesforce",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
       "stop": 224.0,
       "target_1": 269.0,
       "target_2": 290.0,
@@ -4090,6 +4028,10 @@
     {
       "date": "2026-09-08",
       "nav": 1016105.08
+    },
+    {
+      "date": "2026-09-09",
+      "nav": 1001505.32
     }
   ],
   "spy_aligned": [
@@ -4443,12 +4385,12 @@
     },
     {
       "date": "2026-09-08",
-      "nav_equiv": 1066781.82
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.61,
-    "sharpe": -6.58,
+    "total_return_pct": 0.15,
+    "sharpe": -6.64,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4804,
     "profit_factor": 1.04,
