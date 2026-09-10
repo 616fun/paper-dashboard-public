@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-09T20:36:20Z",
-  "as_of": "2026-09-09",
+  "rendered_at_utc": "2026-09-10T00:48:03Z",
+  "as_of": "2026-09-10",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-09",
-    "current": 1012569.7,
+    "as_of": "2026-09-10",
+    "current": 1002175.48,
     "starting": 1000000.0,
     "cash": 352088.89,
-    "day_pnl": -3535.3800000000047,
-    "day_pct": -0.3479344872481107,
-    "incep_pnl": 12569.699999999953,
-    "incep_pct": 1.2569699999999953,
-    "deployed_pct": 65.22818231673335,
+    "day_pnl": -10394.219999999972,
+    "day_pct": -1.0265189645710289,
+    "incep_pnl": 2175.4799999999814,
+    "incep_pct": 0.21754799999999813,
+    "deployed_pct": 64.86754096198801,
     "open_count": 3,
-    "cash_interest": 6033.21,
+    "cash_interest": 6063.56,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 267.33,
-    "total_incl_cash": 1018602.9099999999
+    "cash_interest_month": 297.68,
+    "total_incl_cash": 1008239.04
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 69,
+      "days_held": 70,
       "entry_price": 368.76,
-      "last_price": 375.55999755859375,
-      "position_value": 609792.0735359192,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 598751.0,
-      "unrealized": 11041.071035919245,
-      "unrealized_pct": 1.8440171272897778,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 36,
+      "days_held": 37,
       "entry_price": 27.74,
-      "last_price": 24.389999389648438,
-      "position_value": 14580.729436122132,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 16583.41,
-      "unrealized": -2002.683629877869,
-      "unrealized_pct": -12.076426136811689,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 23.5,
-      "stop_dist_pct": -3.6490340792143257,
+      "stop_dist_pct": null,
       "target_1": 30.0,
-      "t1_dist_pct": 23.00123309036469,
+      "t1_dist_pct": null,
       "target_2": 35.0,
-      "t2_dist_pct": 43.50143860542548,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-03",
-      "days_to_max": 24,
+      "days_to_max": 23,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -71,43 +71,31 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 30,
+      "days_held": 31,
       "entry_price": 48.7,
-      "last_price": 50.599998474121094,
-      "position_value": 36108.00711113739,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 1355.8332111373893,
-      "unrealized_pct": 3.9014342384416687,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 45.65,
-      "stop_dist_pct": -9.78260597508264,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": 9.189726612851791,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 17.58893635230193,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 30,
+      "days_to_max": 29,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Closed ELF \u2014 STOP_HIT",
-      "detail": "81.23 shares @ $102.30 (entry $94.05) \u00b7 P&L $+670 (+8.77%) \u00b7 held 28d",
-      "ts": "2026-09-09"
-    },
-    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,012,570",
-      "detail": "daily return +1.10% \u00b7 positions value $660,481",
-      "ts": "2026-09-09"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 2 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 ELF (APPROVE WITH MODIFICATIONS)",
-      "ts": ""
+      "label": "MTM mark: NAV $1,002,175",
+      "detail": "daily return -1.03% \u00b7 positions value $650,087",
+      "ts": "2026-09-10"
     }
   ],
   "decisions": [
@@ -265,30 +253,6 @@
     },
     {
       "date": "2026-08-27",
-      "ticker": "CRL",
-      "company": "Charles River Laboratories International",
-      "verdict": "DEFER",
-      "setup": "momentum_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-26",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-26",
-      "ticker": "DKS",
-      "company": "DICK'S Sporting Goods",
-      "verdict": "DEFER",
-      "setup": "mean_reversion",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-26",
       "ticker": "CRL",
       "company": "Charles River Laboratories International",
       "verdict": "DEFER",
@@ -600,22 +564,6 @@
       "logged_date": "2026-09-03",
       "setup": "\u2014",
       "decision_doc": "/sessions/gracious-practical-goodall/mnt/Hedge Fund Build/tradingagents-cowork/reports/ELF/2026-09/ELF-decision-2026-09-03.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 102.3,
-      "target_1": 112.0,
-      "target_2": 121.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-09-02",
-      "setup": "\u2014",
-      "decision_doc": "/sessions/gracious-practical-goodall/mnt/Hedge Fund Build/tradingagents-cowork/reports/ELF/2026-09/ELF-decision-2026-09-02.md"
     },
     {
       "kind": "QUEUED",
@@ -1020,7 +968,7 @@
     {
       "kind": "QUEUED",
       "ticker": "THC",
-      "company": "THC",
+      "company": "Tenet Healthcare",
       "verdict": "APPROVE",
       "direction": "LONG",
       "size_pct": 4.2,
@@ -1132,7 +1080,7 @@
     {
       "kind": "QUEUED",
       "ticker": "THC",
-      "company": "THC",
+      "company": "Tenet Healthcare",
       "verdict": "APPROVE",
       "direction": "LONG",
       "size_pct": 7.5,
@@ -1884,16 +1832,16 @@
   ],
   "closed_stats": {
     "total_realized": 3095.5000000000077,
-    "today_realized": 670.17,
+    "today_realized": 0.0,
     "trade_count": 103,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 50,
     "loss_count": 38,
     "flat_count": 15,
     "win_rate": 0.5681818181818182,
     "avg_hold_days": 9.970873786407767,
     "nav_impact_pct": 0.30955000000000077,
-    "today_nav_impact_pct": 0.067017,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "stop_hit": 36,
       "target_1": 39,
@@ -2261,7 +2209,7 @@
       {
         "trade_id": "THC-2026-07-29-001",
         "ticker": "THC",
-        "company": "THC",
+        "company": "Tenet Healthcare",
         "direction": "LONG",
         "entry_date": "2026-07-29",
         "exit_date": "2026-07-31",
@@ -2329,7 +2277,7 @@
       {
         "trade_id": "THC-2026-07-29-001",
         "ticker": "THC",
-        "company": "THC",
+        "company": "Tenet Healthcare",
         "direction": "LONG",
         "entry_date": "2026-07-29",
         "exit_date": "2026-07-30",
@@ -2346,7 +2294,7 @@
       {
         "trade_id": "THC-2026-07-29-001",
         "ticker": "THC",
-        "company": "THC",
+        "company": "Tenet Healthcare",
         "direction": "LONG",
         "entry_date": "2026-07-29",
         "exit_date": "2026-07-30",
@@ -4122,6 +4070,10 @@
     {
       "date": "2026-09-09",
       "nav": 1012569.7
+    },
+    {
+      "date": "2026-09-10",
+      "nav": 1002175.48
     }
   ],
   "spy_aligned": [
@@ -4479,12 +4431,12 @@
     },
     {
       "date": "2026-09-09",
-      "nav_equiv": 1061823.67
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.26,
-    "sharpe": -6.53,
+    "total_return_pct": 0.22,
+    "sharpe": -6.56,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4854,
     "profit_factor": 1.05,
