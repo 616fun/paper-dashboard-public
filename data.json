@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-11T00:48:42Z",
+  "rendered_at_utc": "2026-09-11T20:36:26Z",
   "as_of": "2026-09-11",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-09-11",
-    "current": 1002175.48,
+    "current": 1013770.15,
     "starting": 1000000.0,
     "cash": 352088.89,
-    "day_pnl": -7086.859999999986,
-    "day_pct": -0.702182150183072,
-    "incep_pnl": 2175.4799999999814,
-    "incep_pct": 0.21754799999999813,
-    "deployed_pct": 64.86754096198801,
+    "day_pnl": 4507.810000000056,
+    "day_pct": 0.4466440311247575,
+    "incep_pnl": 13770.150000000023,
+    "incep_pct": 1.3770150000000023,
+    "deployed_pct": 65.26935716148282,
     "open_count": 3,
     "cash_interest": 6093.9,
     "cash_yield_annual": 0.031453,
     "cash_interest_month": 328.02,
-    "total_incl_cash": 1008269.38
+    "total_incl_cash": 1019864.05
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 71,
       "entry_price": 368.76,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 376.30999755859375,
+      "position_value": 611009.8391609192,
       "cost_basis": 598751.0,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 12258.836660919245,
+      "unrealized_pct": 2.047401442291405,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-08-04",
       "days_held": 38,
       "entry_price": 27.74,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 23.799999237060547,
+      "position_value": 14228.017963902665,
       "cost_basis": 16583.41,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -2355.3951020973363,
+      "unrealized_pct": -14.20331926077669,
       "stop": 23.5,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -1.2605010364596916,
       "target_1": 30.0,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 26.050424208774864,
       "target_2": 35.0,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 47.05882824357067,
       "max_hold": "2026-10-03",
       "days_to_max": 22,
       "setup_type": "\u2014",
@@ -73,17 +73,17 @@
       "entry_date": "2026-08-10",
       "days_held": 32,
       "entry_price": 48.7,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 51.06999969482422,
+      "position_value": 36443.398572227474,
       "cost_basis": 34752.17,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 1691.2246722274722,
+      "unrealized_pct": 4.866529147482979,
       "stop": 45.65,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -10.612883742338303,
       "target_1": 55.25,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 8.184844977783328,
       "target_2": 59.5,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 16.506756129920507,
       "max_hold": "2026-10-09",
       "days_to_max": 28,
       "setup_type": "post_earnings_breakout",
@@ -93,12 +93,42 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,002,175",
-      "detail": "daily return -0.70% \u00b7 positions value $650,087",
+      "label": "MTM mark: NAV $1,013,770",
+      "detail": "daily return +1.16% \u00b7 positions value $661,681",
       "ts": "2026-09-11"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 3 ticker(s)",
+      "detail": "ANF (DEFER) \u00b7 MRNA (DEFER) \u00b7 PBF (DEFER)",
+      "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-11",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "breakout_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "pullback_reversal_unconfirmed",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "ANF",
+      "company": "Abercrombie & Fitch Co",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
     {
       "date": "2026-09-10",
       "ticker": "MRNA",
@@ -253,6 +283,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.93,
+      "stop": 355.0,
+      "target_1": 435.0,
+      "target_2": 450.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-11",
+      "setup": "extended_breakout_buy",
+      "decision_doc": "/sessions/dazzling-eager-dijkstra/mnt/Hedge Fund Build/tradingagents-cowork/reports/VLO/2026-09/VLO-decision-2026-09-11.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.42,
+      "stop": 358.0,
+      "target_1": 450.0,
+      "target_2": 462.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-11",
+      "setup": "extended_breakout_buy",
+      "decision_doc": "/sessions/dazzling-eager-dijkstra/mnt/Hedge Fund Build/tradingagents-cowork/reports/MPC/2026-09/MPC-decision-2026-09-11.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "VLO",
@@ -4090,6 +4152,10 @@
     {
       "date": "2026-09-11",
       "nav": 1002175.48
+    },
+    {
+      "date": "2026-09-11",
+      "nav": 1013770.15
     }
   ],
   "spy_aligned": [
@@ -4451,12 +4517,16 @@
     },
     {
       "date": "2026-09-10",
-      "nav_equiv": null
+      "nav_equiv": 1055458.85
+    },
+    {
+      "date": "2026-09-11",
+      "nav_equiv": 1064455.88
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.22,
-    "sharpe": -6.49,
+    "total_return_pct": 1.38,
+    "sharpe": -6.38,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4854,
     "profit_factor": 1.05,
