@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-14T20:35:55Z",
-  "as_of": "2026-09-14",
+  "rendered_at_utc": "2026-09-15T01:08:52Z",
+  "as_of": "2026-09-15",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-14",
-    "current": 1011649.38,
+    "as_of": "2026-09-15",
+    "current": 1002175.55,
     "starting": 1000000.0,
     "cash": 91239.3,
-    "day_pnl": -2120.7700000000186,
-    "day_pct": -0.2091963350864117,
-    "incep_pnl": 11649.380000000005,
-    "incep_pct": 1.1649380000000005,
-    "deployed_pct": 90.98113419493224,
+    "day_pnl": -9473.829999999958,
+    "day_pct": -0.9364736624461686,
+    "incep_pnl": 2175.5500000000466,
+    "incep_pct": 0.21755500000000463,
+    "deployed_pct": 90.89587647593278,
     "open_count": 3,
-    "cash_interest": 6162.44,
+    "cash_interest": 6170.3,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 396.56,
-    "total_incl_cash": 1017811.82
+    "cash_interest_month": 404.42,
+    "total_incl_cash": 1008345.8500000001
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 74,
+      "days_held": 75,
       "entry_price": 371.0189,
-      "last_price": 374.67999267578125,
-      "position_value": 868082.9237627747,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 859600.59,
-      "unrealized": 8482.25711616478,
-      "unrealized_pct": 0.9867671635545527,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 41,
+      "days_held": 42,
       "entry_price": 27.74,
-      "last_price": 23.860000610351562,
-      "position_value": 14263.88773887787,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 16583.41,
-      "unrealized": -2319.525327122132,
-      "unrealized_pct": -13.987020150138566,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 23.5,
-      "stop_dist_pct": -1.5088038606142269,
+      "stop_dist_pct": null,
       "target_1": 30.0,
-      "t1_dist_pct": 25.73344188006694,
+      "t1_dist_pct": null,
       "target_2": 35.0,
-      "t2_dist_pct": 46.68901552674477,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-03",
-      "days_to_max": 19,
+      "days_to_max": 18,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -71,21 +71,21 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 35,
+      "days_held": 36,
       "entry_price": 48.7,
-      "last_price": 53.34000015258789,
-      "position_value": 38063.26408888626,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 3311.0901888862572,
-      "unrealized_pct": 9.527721052541859,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 45.65,
-      "stop_dist_pct": -14.416948126339285,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": 3.580802103390025,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 11.548556111343103,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 25,
+      "days_to_max": 24,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
@@ -93,15 +93,9 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,011,649",
-      "detail": "daily return -0.21% \u00b7 positions value $920,410",
-      "ts": "2026-09-14"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "ANF (DEFER) \u00b7 VLO (DEFER) \u00b7 PBF (DEFER)",
-      "ts": ""
+      "label": "MTM mark: NAV $1,002,176",
+      "detail": "daily return -0.94% \u00b7 positions value $910,936",
+      "ts": "2026-09-15"
     }
   ],
   "decisions": [
@@ -288,22 +282,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "post_earnings_breakout_pullback_entry",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-08-31",
-      "ticker": "PATH",
-      "company": "UiPath",
-      "verdict": "DEFER",
-      "setup": "\u2014",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-08-31",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "DEFER",
-      "setup": "breakout_pullback",
-      "reason": "defer"
     }
   ],
   "watch_list": [
@@ -4184,6 +4162,10 @@
     {
       "date": "2026-09-14",
       "nav": 1011649.38
+    },
+    {
+      "date": "2026-09-15",
+      "nav": 1002175.55
     }
   ],
   "spy_aligned": [
@@ -4553,12 +4535,12 @@
     },
     {
       "date": "2026-09-14",
-      "nav_equiv": 1059706.68
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.16,
-    "sharpe": -6.36,
+    "total_return_pct": 0.22,
+    "sharpe": -6.39,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4854,
     "profit_factor": 1.05,
