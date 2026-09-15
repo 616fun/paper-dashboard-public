@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-15T01:08:52Z",
+  "rendered_at_utc": "2026-09-15T20:35:39Z",
   "as_of": "2026-09-15",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-09-15",
-    "current": 1002175.55,
+    "current": 1008631.11,
     "starting": 1000000.0,
-    "cash": 91239.3,
-    "day_pnl": -9473.829999999958,
-    "day_pct": -0.9364736624461686,
-    "incep_pnl": 2175.5500000000466,
-    "incep_pct": 0.21755500000000463,
-    "deployed_pct": 90.89587647593278,
+    "cash": 110952.42,
+    "day_pnl": -3018.2700000000186,
+    "day_pct": -0.2983513912695739,
+    "incep_pnl": 8631.109999999986,
+    "incep_pct": 0.8631109999999985,
+    "deployed_pct": 88.9997027753784,
     "open_count": 3,
-    "cash_interest": 6170.3,
+    "cash_interest": 6172.0,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 404.42,
-    "total_incl_cash": 1008345.8500000001
+    "cash_interest_month": 406.12,
+    "total_incl_cash": 1014803.11
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 75,
       "entry_price": 371.0189,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 372.8399963378906,
+      "position_value": 863819.9008313874,
       "cost_basis": 859600.59,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 4219.234184777481,
+      "unrealized_pct": 0.490836541720837,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-08-04",
       "days_held": 42,
       "entry_price": 27.74,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 23.709999084472656,
+      "position_value": 14174.214441683198,
       "cost_basis": 16583.41,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -2409.198624316803,
+      "unrealized_pct": -14.527761050927698,
       "stop": 23.5,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -0.8856984081883904,
       "target_1": 30.0,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 26.528895649121203,
       "target_2": 35.0,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 47.61704492397474,
       "max_hold": "2026-10-03",
       "days_to_max": 18,
       "setup_type": "\u2014",
@@ -73,17 +73,17 @@
       "entry_date": "2026-08-10",
       "days_held": 36,
       "entry_price": 48.7,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 55.16999816894531,
+      "position_value": 19684.572591682434,
       "cost_basis": 34752.17,
-      "unrealized": null,
-      "unrealized_pct": null,
-      "stop": 45.65,
-      "stop_dist_pct": null,
+      "unrealized": 2308.485641682433,
+      "unrealized_pct": 13.285417184692626,
+      "stop": 52.5915,
+      "stop_dist_pct": -4.673732562124176,
       "target_1": 55.25,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 0.14500966777214758,
       "target_2": 59.5,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 7.848471949908467,
       "max_hold": "2026-10-09",
       "days_to_max": 24,
       "setup_type": "post_earnings_breakout",
@@ -92,13 +92,57 @@
   ],
   "events": [
     {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,002,176",
-      "detail": "daily return -0.94% \u00b7 positions value $910,936",
+      "kind": "CLOSE",
+      "label": "Partial close DT \u2014 TARGET_1",
+      "detail": "356.80 shares @ $55.25 (entry $48.70) \u00b7 P&L $+2,337 (+13.45%) \u00b7 held 36d \u00b7 remainder still open",
       "ts": "2026-09-15"
+    },
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,008,631",
+      "detail": "daily return +0.64% \u00b7 positions value $897,679",
+      "ts": "2026-09-15"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "KHC (REJECT) \u00b7 VLO (REJECT) \u00b7 DINO (APPROVE) \u00b7 PBF (DEFER)",
+      "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-15",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_sma50",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "KHC",
+      "company": "Kraft Heinz Company",
+      "verdict": "REJECT",
+      "setup": "pullback_to_support",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "APPROVE",
+      "setup": "failed_breakout_distribution",
+      "reason": "missing_required_fields:stop,target_1,direction"
+    },
     {
       "date": "2026-09-14",
       "ticker": "VLO",
@@ -285,6 +329,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 1.46,
+      "stop": 127.5,
+      "target_1": 161.37,
+      "target_2": 176.66,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-15",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/sleepy-awesome-ramanujan/mnt/Hedge Fund Build/tradingagents-cowork/reports/MRNA/2026-09/MRNA-decision-2026-09-15.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "MRNA",
@@ -1903,24 +1963,41 @@
     }
   ],
   "closed_stats": {
-    "total_realized": 3095.5000000000077,
-    "today_realized": 0.0,
-    "trade_count": 103,
-    "today_count": 0,
-    "win_count": 50,
+    "total_realized": 5432.530000000013,
+    "today_realized": 2337.03,
+    "trade_count": 104,
+    "today_count": 1,
+    "win_count": 51,
     "loss_count": 38,
     "flat_count": 15,
-    "win_rate": 0.5681818181818182,
-    "avg_hold_days": 9.970873786407767,
-    "nav_impact_pct": 0.30955000000000077,
-    "today_nav_impact_pct": 0.0,
+    "win_rate": 0.5730337078651685,
+    "avg_hold_days": 10.221153846153847,
+    "nav_impact_pct": 0.5432530000000013,
+    "today_nav_impact_pct": 0.23370300000000005,
     "by_reason": {
+      "target_1": 40,
       "stop_hit": 36,
-      "target_1": 39,
       "target_2": 14,
       "gap_through_stop": 14
     },
     "rows": [
+      {
+        "trade_id": "DT-2026-08-10-001",
+        "ticker": "DT",
+        "company": "Dynatrace",
+        "direction": "LONG",
+        "entry_date": "2026-08-10",
+        "exit_date": "2026-09-15",
+        "entry_price": 48.7,
+        "exit_price": 55.25,
+        "shares_closed": 356.7985,
+        "exit_reason": "target_1",
+        "hold_days": 36,
+        "pnl": 2337.03,
+        "pnl_pct": 13.45,
+        "setup_type": "post_earnings_breakout",
+        "is_partial": true
+      },
       {
         "trade_id": "ELF-2026-08-12-001",
         "ticker": "ELF",
@@ -4166,6 +4243,10 @@
     {
       "date": "2026-09-15",
       "nav": 1002175.55
+    },
+    {
+      "date": "2026-09-15",
+      "nav": 1008631.11
     }
   ],
   "spy_aligned": [
@@ -4535,15 +4616,19 @@
     },
     {
       "date": "2026-09-14",
-      "nav_equiv": null
+      "nav_equiv": 1059706.68
+    },
+    {
+      "date": "2026-09-15",
+      "nav_equiv": 1054846.04
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.22,
-    "sharpe": -6.39,
+    "total_return_pct": 0.86,
+    "sharpe": -6.32,
     "max_dd_pct": -5.24,
-    "hit_rate": 0.4854,
-    "profit_factor": 1.05,
-    "trade_count": 103
+    "hit_rate": 0.4904,
+    "profit_factor": 1.08,
+    "trade_count": 104
   }
 }
