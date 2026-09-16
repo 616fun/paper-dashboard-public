@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-15T20:35:39Z",
-  "as_of": "2026-09-15",
+  "rendered_at_utc": "2026-09-16T01:02:01Z",
+  "as_of": "2026-09-16",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-15",
-    "current": 1008631.11,
+    "as_of": "2026-09-16",
+    "current": 1004512.59,
     "starting": 1000000.0,
     "cash": 110952.42,
-    "day_pnl": -3018.2700000000186,
-    "day_pct": -0.2983513912695739,
-    "incep_pnl": 8631.109999999986,
-    "incep_pct": 0.8631109999999985,
-    "deployed_pct": 88.9997027753784,
+    "day_pnl": -4118.520000000019,
+    "day_pct": -0.4083276788874794,
+    "incep_pnl": 4512.589999999967,
+    "incep_pct": 0.45125899999999675,
+    "deployed_pct": 88.95460135546932,
     "open_count": 3,
-    "cash_interest": 6172.0,
+    "cash_interest": 6181.56,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 406.12,
-    "total_incl_cash": 1014803.11
+    "cash_interest_month": 415.68,
+    "total_incl_cash": 1010694.15
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 75,
+      "days_held": 76,
       "entry_price": 371.0189,
-      "last_price": 372.8399963378906,
-      "position_value": 863819.9008313874,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 859600.59,
-      "unrealized": 4219.234184777481,
-      "unrealized_pct": 0.490836541720837,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 42,
+      "days_held": 43,
       "entry_price": 27.74,
-      "last_price": 23.709999084472656,
-      "position_value": 14174.214441683198,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 16583.41,
-      "unrealized": -2409.198624316803,
-      "unrealized_pct": -14.527761050927698,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 23.5,
-      "stop_dist_pct": -0.8856984081883904,
+      "stop_dist_pct": null,
       "target_1": 30.0,
-      "t1_dist_pct": 26.528895649121203,
+      "t1_dist_pct": null,
       "target_2": 35.0,
-      "t2_dist_pct": 47.61704492397474,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-03",
-      "days_to_max": 18,
+      "days_to_max": 17,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -71,43 +71,31 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 36,
+      "days_held": 37,
       "entry_price": 48.7,
-      "last_price": 55.16999816894531,
-      "position_value": 19684.572591682434,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 2308.485641682433,
-      "unrealized_pct": 13.285417184692626,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 52.5915,
-      "stop_dist_pct": -4.673732562124176,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": 0.14500966777214758,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 7.848471949908467,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 24,
+      "days_to_max": 23,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
   "events": [
     {
-      "kind": "CLOSE",
-      "label": "Partial close DT \u2014 TARGET_1",
-      "detail": "356.80 shares @ $55.25 (entry $48.70) \u00b7 P&L $+2,337 (+13.45%) \u00b7 held 36d \u00b7 remainder still open",
-      "ts": "2026-09-15"
-    },
-    {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,008,631",
-      "detail": "daily return +0.64% \u00b7 positions value $897,679",
-      "ts": "2026-09-15"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "KHC (REJECT) \u00b7 VLO (REJECT) \u00b7 DINO (APPROVE) \u00b7 PBF (DEFER)",
-      "ts": ""
+      "label": "MTM mark: NAV $1,004,513",
+      "detail": "daily return -0.41% \u00b7 positions value $893,560",
+      "ts": "2026-09-16"
     }
   ],
   "decisions": [
@@ -301,30 +289,6 @@
       "company": "e.l.f. Beauty",
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-09-01",
-      "ticker": "EQR",
-      "company": "Equity Residential",
-      "verdict": "DEFER",
-      "setup": "\u2014",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-01",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "DEFER",
-      "setup": "breakout_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-01",
-      "ticker": "CRM",
-      "company": "Salesforce",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "post_earnings_breakout_pullback_entry",
       "reason": "awm_no_executable_params"
     }
   ],
@@ -552,22 +516,6 @@
       "logged_date": "2026-09-08",
       "setup": "momentum_breakout_pullback_entry",
       "decision_doc": "/sessions/sharp-vibrant-lamport/mnt/Hedge Fund Build/tradingagents-cowork/reports/CNH/2026-09/CNH-decision-2026-09-08.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 102.3,
-      "target_1": 112.0,
-      "target_2": 121.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-09-08",
-      "setup": "extended_breakout_buy",
-      "decision_doc": "/sessions/sharp-vibrant-lamport/mnt/Hedge Fund Build/tradingagents-cowork/reports/ELF/2026-09/ELF-decision-2026-09-08.md"
     },
     {
       "kind": "QUEUED",
@@ -1964,16 +1912,16 @@
   ],
   "closed_stats": {
     "total_realized": 5432.530000000013,
-    "today_realized": 2337.03,
+    "today_realized": 0.0,
     "trade_count": 104,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 51,
     "loss_count": 38,
     "flat_count": 15,
     "win_rate": 0.5730337078651685,
     "avg_hold_days": 10.221153846153847,
     "nav_impact_pct": 0.5432530000000013,
-    "today_nav_impact_pct": 0.23370300000000005,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_1": 40,
       "stop_hit": 36,
@@ -4247,6 +4195,10 @@
     {
       "date": "2026-09-15",
       "nav": 1008631.11
+    },
+    {
+      "date": "2026-09-16",
+      "nav": 1004512.59
     }
   ],
   "spy_aligned": [
@@ -4620,12 +4572,12 @@
     },
     {
       "date": "2026-09-15",
-      "nav_equiv": 1054846.04
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.86,
-    "sharpe": -6.32,
+    "total_return_pct": 0.45,
+    "sharpe": -6.31,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4904,
     "profit_factor": 1.08,
