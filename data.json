@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-16T01:02:01Z",
+  "rendered_at_utc": "2026-09-16T20:35:45Z",
   "as_of": "2026-09-16",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-09-16",
-    "current": 1004512.59,
+    "current": 1004870.02,
     "starting": 1000000.0,
     "cash": 110952.42,
-    "day_pnl": -4118.520000000019,
-    "day_pct": -0.4083276788874794,
-    "incep_pnl": 4512.589999999967,
-    "incep_pct": 0.45125899999999675,
-    "deployed_pct": 88.95460135546932,
+    "day_pnl": -3761.0899999999674,
+    "day_pct": -0.37289054072503947,
+    "incep_pnl": 4870.020000000019,
+    "incep_pct": 0.4870020000000018,
+    "deployed_pct": 88.95853017885835,
     "open_count": 3,
     "cash_interest": 6181.56,
     "cash_yield_annual": 0.031453,
     "cash_interest_month": 415.68,
-    "total_incl_cash": 1010694.15
+    "total_incl_cash": 1011051.5800000001
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 76,
       "entry_price": 371.0189,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 371.260009765625,
+      "position_value": 860159.2853996338,
       "cost_basis": 859600.59,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 558.6187530239113,
+      "unrealized_pct": 0.06498584455537246,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-08-04",
       "days_held": 43,
       "entry_price": 27.74,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 23.530000686645508,
+      "position_value": 14066.608537487604,
       "cost_basis": 16583.41,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -2516.804528512397,
+      "unrealized_pct": -15.176637755423544,
       "stop": 23.5,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -0.1274997270294801,
       "target_1": 30.0,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 27.496808859111304,
       "target_2": 35.0,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 48.746277002296516,
       "max_hold": "2026-10-03",
       "days_to_max": 17,
       "setup_type": "\u2014",
@@ -73,17 +73,17 @@
       "entry_date": "2026-08-10",
       "days_held": 37,
       "entry_price": 48.7,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 55.189998626708984,
+      "position_value": 19691.708725011824,
       "cost_basis": 34752.17,
-      "unrealized": null,
-      "unrealized_pct": null,
-      "stop": 52.5915,
-      "stop_dist_pct": null,
+      "unrealized": 2315.621775011823,
+      "unrealized_pct": 13.326485886466072,
+      "stop": 52.8815,
+      "stop_dist_pct": -4.182820590960828,
       "target_1": 55.25,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 0.10871783798519284,
       "target_2": 59.5,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 7.809388440907131,
       "max_hold": "2026-10-09",
       "days_to_max": 23,
       "setup_type": "post_earnings_breakout",
@@ -93,12 +93,50 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,513",
-      "detail": "daily return -0.41% \u00b7 positions value $893,560",
+      "label": "MTM mark: NAV $1,004,870",
+      "detail": "daily return +0.04% \u00b7 positions value $893,918",
       "ts": "2026-09-16"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "KHC (DEFER) \u00b7 VLO (\u2014) \u00b7 DINO (DEFER) \u00b7 PBF (DEFER)",
+      "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-16",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "\u2014",
+      "setup": "extended_breakout_buy",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "KHC",
+      "company": "Kraft Heinz Company",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "DEFER",
+      "setup": "breakout_continuation",
+      "reason": "defer"
+    },
     {
       "date": "2026-09-15",
       "ticker": "VLO",
@@ -293,6 +331,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 1.45,
+      "stop": 127.5,
+      "target_1": 161.37,
+      "target_2": 176.66,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-16",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/admiring-tender-bell/mnt/Hedge Fund Build/tradingagents-cowork/reports/MRNA/2026-09/MRNA-decision-2026-09-16.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "MRNA",
@@ -4199,6 +4253,10 @@
     {
       "date": "2026-09-16",
       "nav": 1004512.59
+    },
+    {
+      "date": "2026-09-16",
+      "nav": 1004870.02
     }
   ],
   "spy_aligned": [
@@ -4572,12 +4630,16 @@
     },
     {
       "date": "2026-09-15",
-      "nav_equiv": null
+      "nav_equiv": 1054846.04
+    },
+    {
+      "date": "2026-09-16",
+      "nav_equiv": 1050194.26
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.45,
-    "sharpe": -6.31,
+    "total_return_pct": 0.49,
+    "sharpe": -6.28,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4904,
     "profit_factor": 1.08,
