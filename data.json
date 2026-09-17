@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-16T20:35:45Z",
-  "as_of": "2026-09-16",
+  "rendered_at_utc": "2026-09-17T01:03:53Z",
+  "as_of": "2026-09-17",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-16",
-    "current": 1004870.02,
+    "as_of": "2026-09-17",
+    "current": 1004512.59,
     "starting": 1000000.0,
     "cash": 110952.42,
-    "day_pnl": -3761.0899999999674,
-    "day_pct": -0.37289054072503947,
-    "incep_pnl": 4870.020000000019,
-    "incep_pct": 0.4870020000000018,
-    "deployed_pct": 88.95853017885835,
+    "day_pnl": -357.4300000000512,
+    "day_pct": -0.03556977448685863,
+    "incep_pnl": 4512.589999999967,
+    "incep_pct": 0.45125899999999675,
+    "deployed_pct": 88.95460135546932,
     "open_count": 3,
-    "cash_interest": 6181.56,
+    "cash_interest": 6191.12,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 415.68,
-    "total_incl_cash": 1011051.5800000001
+    "cash_interest_month": 425.24,
+    "total_incl_cash": 1010703.71
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 76,
+      "days_held": 77,
       "entry_price": 371.0189,
-      "last_price": 371.260009765625,
-      "position_value": 860159.2853996338,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 859600.59,
-      "unrealized": 558.6187530239113,
-      "unrealized_pct": 0.06498584455537246,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Baxter International",
       "direction": "LONG",
       "entry_date": "2026-08-04",
-      "days_held": 43,
+      "days_held": 44,
       "entry_price": 27.74,
-      "last_price": 23.530000686645508,
-      "position_value": 14066.608537487604,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 16583.41,
-      "unrealized": -2516.804528512397,
-      "unrealized_pct": -15.176637755423544,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 23.5,
-      "stop_dist_pct": -0.1274997270294801,
+      "stop_dist_pct": null,
       "target_1": 30.0,
-      "t1_dist_pct": 27.496808859111304,
+      "t1_dist_pct": null,
       "target_2": 35.0,
-      "t2_dist_pct": 48.746277002296516,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-03",
-      "days_to_max": 17,
+      "days_to_max": 16,
       "setup_type": "\u2014",
       "sector": "Healthcare"
     },
@@ -71,21 +71,21 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 37,
+      "days_held": 38,
       "entry_price": 48.7,
-      "last_price": 55.189998626708984,
-      "position_value": 19691.708725011824,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 2315.621775011823,
-      "unrealized_pct": 13.326485886466072,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 52.8815,
-      "stop_dist_pct": -4.182820590960828,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": 0.10871783798519284,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 7.809388440907131,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 23,
+      "days_to_max": 22,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
@@ -93,15 +93,9 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,870",
-      "detail": "daily return +0.04% \u00b7 positions value $893,918",
-      "ts": "2026-09-16"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "KHC (DEFER) \u00b7 VLO (\u2014) \u00b7 DINO (DEFER) \u00b7 PBF (DEFER)",
-      "ts": ""
+      "label": "MTM mark: NAV $1,004,513",
+      "detail": "daily return -0.04% \u00b7 positions value $893,560",
+      "ts": "2026-09-17"
     }
   ],
   "decisions": [
@@ -312,22 +306,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "\u2014",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-09-02",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "breakout_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-02",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "\u2014",
-      "reason": "awm_no_executable_params"
     }
   ],
   "watch_list": [
@@ -506,22 +484,6 @@
       "logged_date": "2026-09-09",
       "setup": "momentum_breakout_pullback_entry",
       "decision_doc": "/sessions/gallant-sharp-bardeen/mnt/Hedge Fund Build/tradingagents-cowork/reports/CNH/2026-09/CNH-decision-2026-09-09.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 102.3,
-      "target_1": 112.0,
-      "target_2": 121.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-09-09",
-      "setup": "extended_breakout_buy",
-      "decision_doc": "/sessions/gallant-sharp-bardeen/mnt/Hedge Fund Build/tradingagents-cowork/reports/ELF/2026-09/ELF-decision-2026-09-09.md"
     },
     {
       "kind": "QUEUED",
@@ -4257,6 +4219,10 @@
     {
       "date": "2026-09-16",
       "nav": 1004870.02
+    },
+    {
+      "date": "2026-09-17",
+      "nav": 1004512.59
     }
   ],
   "spy_aligned": [
@@ -4634,12 +4600,12 @@
     },
     {
       "date": "2026-09-16",
-      "nav_equiv": 1050194.26
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.49,
-    "sharpe": -6.28,
+    "total_return_pct": 0.45,
+    "sharpe": -6.26,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4904,
     "profit_factor": 1.08,
