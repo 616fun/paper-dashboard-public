@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-17T01:03:53Z",
+  "rendered_at_utc": "2026-09-17T20:36:18Z",
   "as_of": "2026-09-17",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-09-17",
-    "current": 1004512.59,
+    "current": 1014472.06,
     "starting": 1000000.0,
-    "cash": 110952.42,
-    "day_pnl": -357.4300000000512,
-    "day_pct": -0.03556977448685863,
-    "incep_pnl": 4512.589999999967,
-    "incep_pct": 0.45125899999999675,
-    "deployed_pct": 88.95460135546932,
-    "open_count": 3,
-    "cash_interest": 6191.12,
+    "cash": 104167.87,
+    "day_pnl": 9602.040000000037,
+    "day_pct": 0.9555504501965375,
+    "incep_pnl": 14472.060000000056,
+    "incep_pct": 1.4472060000000055,
+    "deployed_pct": 89.73181479241528,
+    "open_count": 2,
+    "cash_interest": 6190.54,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 425.24,
-    "total_incl_cash": 1010703.71
+    "cash_interest_month": 424.66,
+    "total_incl_cash": 1020662.6000000001
   },
   "positions": [
     {
@@ -26,12 +26,12 @@
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 77,
-      "entry_price": 371.0189,
-      "last_price": null,
-      "position_value": null,
-      "cost_basis": 859600.59,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "entry_price": 371.0245,
+      "last_price": 375.3399963378906,
+      "position_value": 890384.129158719,
+      "cost_basis": 880146.86,
+      "unrealized": 10237.250189668965,
+      "unrealized_pct": 1.1631297496231823,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -44,46 +44,23 @@
       "sector": "_CORE_"
     },
     {
-      "ticker": "BAX",
-      "company": "Baxter International",
-      "direction": "LONG",
-      "entry_date": "2026-08-04",
-      "days_held": 44,
-      "entry_price": 27.74,
-      "last_price": null,
-      "position_value": null,
-      "cost_basis": 16583.41,
-      "unrealized": null,
-      "unrealized_pct": null,
-      "stop": 23.5,
-      "stop_dist_pct": null,
-      "target_1": 30.0,
-      "t1_dist_pct": null,
-      "target_2": 35.0,
-      "t2_dist_pct": null,
-      "max_hold": "2026-10-03",
-      "days_to_max": 16,
-      "setup_type": "\u2014",
-      "sector": "Healthcare"
-    },
-    {
       "ticker": "DT",
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
       "days_held": 38,
       "entry_price": 48.7,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 55.83000183105469,
+      "position_value": 19920.060908317566,
       "cost_basis": 34752.17,
-      "unrealized": null,
-      "unrealized_pct": null,
-      "stop": 52.8815,
-      "stop_dist_pct": null,
+      "unrealized": 2543.973958317565,
+      "unrealized_pct": 14.640660844054795,
+      "stop": 53.4115,
+      "stop_dist_pct": -4.331903549588336,
       "target_1": 55.25,
-      "t1_dist_pct": null,
+      "t1_dist_pct": -1.038871237743842,
       "target_2": 59.5,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 6.573523282429708,
       "max_hold": "2026-10-09",
       "days_to_max": 22,
       "setup_type": "post_earnings_breakout",
@@ -92,13 +69,57 @@
   ],
   "events": [
     {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,513",
-      "detail": "daily return -0.04% \u00b7 positions value $893,560",
+      "kind": "CLOSE",
+      "label": "Closed BAX \u2014 SOFT_STOP_CONFIRMED",
+      "detail": "597.82 shares @ $23.02 (entry $27.74) \u00b7 P&L $-2,822 (-17.02%) \u00b7 held 44d",
       "ts": "2026-09-17"
+    },
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,014,472",
+      "detail": "daily return +0.99% \u00b7 positions value $910,304",
+      "ts": "2026-09-17"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "VLO (DEFER) \u00b7 DINO (\u2014) \u00b7 MPC (REJECT) \u00b7 PBF (DEFER)",
+      "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-17",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
     {
       "date": "2026-09-16",
       "ticker": "VLO",
@@ -309,6 +330,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 1.45,
+      "stop": 127.5,
+      "target_1": 161.37,
+      "target_2": 176.66,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-17",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/hopeful-dazzling-lamport/mnt/Hedge Fund Build/tradingagents-cowork/reports/MRNA/2026-09/MRNA-decision-2026-09-17.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "MRNA",
@@ -1927,24 +1964,42 @@
     }
   ],
   "closed_stats": {
-    "total_realized": 5432.530000000013,
-    "today_realized": 0.0,
-    "trade_count": 104,
-    "today_count": 0,
+    "total_realized": 2610.840000000018,
+    "today_realized": -2821.69,
+    "trade_count": 105,
+    "today_count": 1,
     "win_count": 51,
-    "loss_count": 38,
+    "loss_count": 39,
     "flat_count": 15,
-    "win_rate": 0.5730337078651685,
-    "avg_hold_days": 10.221153846153847,
-    "nav_impact_pct": 0.5432530000000013,
-    "today_nav_impact_pct": 0.0,
+    "win_rate": 0.5666666666666667,
+    "avg_hold_days": 10.542857142857143,
+    "nav_impact_pct": 0.2610840000000018,
+    "today_nav_impact_pct": -0.282169,
     "by_reason": {
+      "soft_stop_confirmed": 1,
       "target_1": 40,
       "stop_hit": 36,
       "target_2": 14,
       "gap_through_stop": 14
     },
     "rows": [
+      {
+        "trade_id": "BAX-2026-08-04-001",
+        "ticker": "BAX",
+        "company": "Baxter International",
+        "direction": "LONG",
+        "entry_date": "2026-08-04",
+        "exit_date": "2026-09-17",
+        "entry_price": 27.74,
+        "exit_price": 23.02,
+        "shares_closed": 597.8159,
+        "exit_reason": "soft_stop_confirmed",
+        "hold_days": 44,
+        "pnl": -2821.69,
+        "pnl_pct": -17.02,
+        "setup_type": "\u2014",
+        "is_partial": false
+      },
       {
         "trade_id": "DT-2026-08-10-001",
         "ticker": "DT",
@@ -4223,6 +4278,10 @@
     {
       "date": "2026-09-17",
       "nav": 1004512.59
+    },
+    {
+      "date": "2026-09-17",
+      "nav": 1014472.06
     }
   ],
   "spy_aligned": [
@@ -4600,15 +4659,19 @@
     },
     {
       "date": "2026-09-16",
-      "nav_equiv": null
+      "nav_equiv": 1050194.26
+    },
+    {
+      "date": "2026-09-17",
+      "nav_equiv": 1062102.15
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.45,
-    "sharpe": -6.26,
+    "total_return_pct": 1.45,
+    "sharpe": -6.17,
     "max_dd_pct": -5.24,
-    "hit_rate": 0.4904,
-    "profit_factor": 1.08,
-    "trade_count": 104
+    "hit_rate": 0.4857,
+    "profit_factor": 1.04,
+    "trade_count": 105
   }
 }
