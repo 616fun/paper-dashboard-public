@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-18T00:59:04Z",
+  "rendered_at_utc": "2026-09-18T20:36:08Z",
   "as_of": "2026-09-18",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-09-18",
-    "current": 1001690.84,
+    "current": 1014439.36,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": -12781.220000000088,
-    "day_pct": -1.2598888134977406,
-    "incep_pnl": 1690.8399999999674,
-    "incep_pct": 0.16908399999999674,
-    "deployed_pct": 89.60079638943289,
+    "day_pnl": -32.70000000006985,
+    "day_pct": -0.003223351464215766,
+    "incep_pnl": 14439.359999999986,
+    "incep_pct": 1.4439359999999986,
+    "deployed_pct": 89.73148380204806,
     "open_count": 2,
     "cash_interest": 6199.51,
     "cash_yield_annual": 0.031453,
     "cash_interest_month": 433.63,
-    "total_incl_cash": 1007890.35
+    "total_incl_cash": 1020638.87
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 78,
       "entry_price": 371.0245,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 375.42999267578125,
+      "position_value": 890597.6190924378,
       "cost_basis": 880146.86,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 10450.740123387775,
+      "unrealized_pct": 1.1873859208168902,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-08-10",
       "days_held": 39,
       "entry_price": 48.7,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 55.13999938964844,
+      "position_value": 19673.869072227477,
       "cost_basis": 34752.17,
-      "unrealized": null,
-      "unrealized_pct": null,
-      "stop": 53.4115,
-      "stop_dist_pct": null,
+      "unrealized": 2297.782122227476,
+      "unrealized_pct": 13.223818048559407,
+      "stop": 54.3714,
+      "stop_dist_pct": -1.3939053285385548,
       "target_1": 55.25,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 0.19949331078921478,
       "target_2": 59.5,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 7.907146642388385,
       "max_hold": "2026-10-09",
       "days_to_max": 21,
       "setup_type": "post_earnings_breakout",
@@ -70,12 +70,58 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,001,691",
-      "detail": "daily return -1.26% \u00b7 positions value $897,523",
+      "label": "MTM mark: NAV $1,014,439",
+      "detail": "daily return +1.27% \u00b7 positions value $910,271",
       "ts": "2026-09-18"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "VLO (REJECT) \u00b7 MRNA (REJECT) \u00b7 DINO (\u2014) \u00b7 MPC (\u2014) \u00b7 FANG (DEFER)",
+      "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-18",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "FANG",
+      "company": "Diamondback Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "\u2014",
+      "setup": "breakout_continuation",
+      "reason": "unparseable_decision"
+    },
     {
       "date": "2026-09-17",
       "ticker": "VLO",
@@ -4250,6 +4296,10 @@
     {
       "date": "2026-09-18",
       "nav": 1001690.84
+    },
+    {
+      "date": "2026-09-18",
+      "nav": 1014439.36
     }
   ],
   "spy_aligned": [
@@ -4631,12 +4681,16 @@
     },
     {
       "date": "2026-09-17",
-      "nav_equiv": null
+      "nav_equiv": 1062102.15
+    },
+    {
+      "date": "2026-09-18",
+      "nav_equiv": 1060834.8
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.17,
-    "sharpe": -6.21,
+    "total_return_pct": 1.44,
+    "sharpe": -6.1,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
