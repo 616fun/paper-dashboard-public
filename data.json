@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-21T13:04:07Z",
-  "as_of": "2026-09-18",
+  "rendered_at_utc": "2026-09-21T20:33:50Z",
+  "as_of": "2026-09-21",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-18",
-    "current": 1014439.36,
+    "as_of": "2026-09-21",
+    "current": 1028339.37,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": -32.70000000006985,
-    "day_pct": -0.003223351464215766,
-    "incep_pnl": 14439.359999999986,
-    "incep_pct": 1.4439359999999986,
-    "deployed_pct": 89.73148380204806,
+    "day_pnl": 13900.01000000001,
+    "day_pct": 1.3702159584975104,
+    "incep_pnl": 28339.369999999995,
+    "incep_pct": 2.8339369999999997,
+    "deployed_pct": 89.87028280362348,
     "open_count": 2,
-    "cash_interest": 6199.51,
+    "cash_interest": 6226.44,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 433.63,
-    "total_incl_cash": 1020638.87
+    "cash_interest_month": 460.56,
+    "total_incl_cash": 1034565.8099999999
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 81,
       "entry_price": 371.0245,
-      "last_price": 375.42999267578125,
-      "position_value": 890597.6190924378,
+      "last_price": 381.1000061035156,
+      "position_value": 904048.0640688019,
       "cost_basis": 880146.86,
-      "unrealized": 10450.740123387775,
-      "unrealized_pct": 1.1873859208168902,
+      "unrealized": 23901.18509975192,
+      "unrealized_pct": 2.7155905077739186,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,25 +50,311 @@
       "entry_date": "2026-08-10",
       "days_held": 42,
       "entry_price": 48.7,
-      "last_price": 55.13999938964844,
-      "position_value": 19673.869072227477,
+      "last_price": 56.400001525878906,
+      "position_value": 20123.435944431305,
       "cost_basis": 34752.17,
-      "unrealized": 2297.782122227476,
-      "unrealized_pct": 13.223818048559407,
-      "stop": 53.4115,
-      "stop_dist_pct": -3.134746842186103,
+      "unrealized": 2747.348994431304,
+      "unrealized_pct": 15.811091428909455,
+      "stop": 53.7915,
+      "stop_dist_pct": -4.625002580331504,
       "target_1": 55.25,
-      "t1_dist_pct": 0.19949331078921478,
+      "t1_dist_pct": -2.0390097424930613,
       "target_2": 59.5,
-      "t2_dist_pct": 7.907146642388385,
+      "t2_dist_pct": 5.496451046545934,
       "max_hold": "2026-10-09",
       "days_to_max": 18,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [],
-  "decisions": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,028,339",
+      "detail": "daily return +1.37% \u00b7 positions value $924,172",
+      "ts": "2026-09-21"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "VLO (DEFER) \u00b7 MRNA (REJECT) \u00b7 DINO (REJECT) \u00b7 FANG (\u2014)",
+      "ts": ""
+    }
+  ],
+  "decisions": [
+    {
+      "date": "2026-09-21",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-21",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-21",
+      "ticker": "FANG",
+      "company": "Diamondback Energy",
+      "verdict": "\u2014",
+      "setup": "pullback_to_support",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-21",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "REJECT",
+      "setup": "breakout_continuation",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "FANG",
+      "company": "Diamondback Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-18",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "\u2014",
+      "setup": "breakout_continuation",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "\u2014",
+      "setup": "\u2014",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "\u2014",
+      "setup": "extended_breakout_buy",
+      "reason": "unparseable_decision"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "KHC",
+      "company": "Kraft Heinz Company",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-16",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "DEFER",
+      "setup": "breakout_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "pullback_to_sma50",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "KHC",
+      "company": "Kraft Heinz Company",
+      "verdict": "REJECT",
+      "setup": "pullback_to_support",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "APPROVE",
+      "setup": "failed_breakout_distribution",
+      "reason": "missing_required_fields:stop,target_1,direction"
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "uptrend_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "ANF",
+      "company": "Abercrombie & Fitch Co",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "PBF",
+      "company": "PBF Energy",
+      "verdict": "DEFER",
+      "setup": "breakout_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "pullback_reversal_unconfirmed",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-11",
+      "ticker": "ANF",
+      "company": "Abercrombie & Fitch Co",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-10",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "none_confirmed_downtrend",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-10",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "REJECT",
+      "setup": "extended_breakout_buy",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-10",
+      "ticker": "ANF",
+      "company": "Abercrombie & Fitch Co",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-09",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "none_confirmed_downtrend",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-09",
+      "ticker": "ELF",
+      "company": "e.l.f. Beauty",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "extended_breakout_buy",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-09-08",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "none_failed_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-08",
+      "ticker": "ELF",
+      "company": "e.l.f. Beauty",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "extended_breakout_buy",
+      "reason": "awm_no_executable_params"
+    }
+  ],
   "watch_list": [
     {
       "kind": "QUEUED",
@@ -3910,6 +4196,10 @@
     {
       "date": "2026-09-18",
       "nav": 1014439.36
+    },
+    {
+      "date": "2026-09-21",
+      "nav": 1028339.37
     }
   ],
   "spy_aligned": [
@@ -4296,11 +4586,15 @@
     {
       "date": "2026-09-18",
       "nav_equiv": 1060834.8
+    },
+    {
+      "date": "2026-09-21",
+      "nav_equiv": 1077283.03
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.44,
-    "sharpe": -0.05,
+    "total_return_pct": 2.83,
+    "sharpe": 0.37,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
