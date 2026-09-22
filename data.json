@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-21T20:35:40Z",
-  "as_of": "2026-09-21",
+  "rendered_at_utc": "2026-09-22T20:33:49Z",
+  "as_of": "2026-09-22",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-21",
-    "current": 1028339.37,
+    "as_of": "2026-09-22",
+    "current": 1029028.04,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": 13900.01000000001,
-    "day_pct": 1.3702159584975104,
-    "incep_pnl": 28339.369999999995,
-    "incep_pct": 2.8339369999999997,
-    "deployed_pct": 89.87028280362348,
+    "day_pnl": 688.6700000000419,
+    "day_pct": 0.0669691368521699,
+    "incep_pnl": 29028.040000000037,
+    "incep_pct": 2.9028040000000037,
+    "deployed_pct": 89.87706204779415,
     "open_count": 2,
-    "cash_interest": 6226.44,
+    "cash_interest": 6235.42,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 460.56,
-    "total_incl_cash": 1034565.8099999999
+    "cash_interest_month": 469.54,
+    "total_incl_cash": 1035263.4600000001
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 81,
+      "days_held": 82,
       "entry_price": 371.0245,
-      "last_price": 381.1000061035156,
-      "position_value": 904048.0640688019,
+      "last_price": 381.2699890136719,
+      "position_value": 904451.2987011566,
       "cost_basis": 880146.86,
-      "unrealized": 23901.18509975192,
-      "unrealized_pct": 2.7155905077739186,
+      "unrealized": 24304.419732106617,
+      "unrealized_pct": 2.761404978289001,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 42,
+      "days_held": 43,
       "entry_price": 48.7,
-      "last_price": 56.400001525878906,
-      "position_value": 20123.435944431305,
+      "last_price": 57.20000076293945,
+      "position_value": 20408.87447221565,
       "cost_basis": 34752.17,
-      "unrealized": 2747.348994431304,
-      "unrealized_pct": 15.811091428909455,
-      "stop": 53.7915,
-      "stop_dist_pct": -4.625002580331504,
+      "unrealized": 3032.787522215651,
+      "unrealized_pct": 17.453800334577924,
+      "stop": 54.3914,
+      "stop_dist_pct": -4.910141128458132,
       "target_1": 55.25,
-      "t1_dist_pct": -2.0390097424930613,
+      "t1_dist_pct": -3.409092197430321,
       "target_2": 59.5,
-      "t2_dist_pct": 5.496451046545934,
+      "t2_dist_pct": 4.020977633536577,
       "max_hold": "2026-10-09",
-      "days_to_max": 18,
+      "days_to_max": 17,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
@@ -70,18 +70,58 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,028,339",
-      "detail": "daily return +1.37% \u00b7 positions value $924,172",
-      "ts": "2026-09-21"
+      "label": "MTM mark: NAV $1,029,028",
+      "detail": "daily return +0.07% \u00b7 positions value $924,860",
+      "ts": "2026-09-22"
     },
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "VLO (DEFER) \u00b7 MRNA (REJECT) \u00b7 DINO (REJECT) \u00b7 FANG (\u2014)",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "VLO (APPROVE WITH MODIFICATIONS) \u00b7 PSX (DEFER) \u00b7 DINO (\u2014) \u00b7 MPC (APPROVE WITH MODIFICATIONS) \u00b7 ILMN (DEFER)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-22",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "\u2014",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-09-22",
+      "ticker": "PSX",
+      "company": "Phillips 66",
+      "verdict": "DEFER",
+      "setup": "\u2014",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-22",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "pullback_to_support",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-09-22",
+      "ticker": "ILMN",
+      "company": "Illumina",
+      "verdict": "DEFER",
+      "setup": "breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-22",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "\u2014",
+      "setup": "breakout_continuation",
+      "reason": "unparseable_decision"
+    },
     {
       "date": "2026-09-21",
       "ticker": "VLO",
@@ -356,6 +396,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "VLO",
+      "company": "Valero Energy",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 371.0,
+      "target_1": 415.5,
+      "target_2": 437.8,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-22",
+      "setup": "\u2014",
+      "decision_doc": "/sessions/beautiful-amazing-fermat/mnt/Hedge Fund Build/tradingagents-cowork/reports/VLO/2026-09/VLO-decision-2026-09-22.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 387.0,
+      "target_1": 450.0,
+      "target_2": 462.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-09-22",
+      "setup": "pullback_to_support",
+      "decision_doc": "/sessions/beautiful-amazing-fermat/mnt/Hedge Fund Build/tradingagents-cowork/reports/MPC/2026-09/MPC-decision-2026-09-22.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "MPC",
@@ -4200,6 +4272,10 @@
     {
       "date": "2026-09-21",
       "nav": 1028339.37
+    },
+    {
+      "date": "2026-09-22",
+      "nav": 1029028.04
     }
   ],
   "spy_aligned": [
@@ -4590,11 +4666,15 @@
     {
       "date": "2026-09-21",
       "nav_equiv": 1077283.03
+    },
+    {
+      "date": "2026-09-22",
+      "nav_equiv": 1077115.91
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 2.83,
-    "sharpe": 0.37,
+    "total_return_pct": 2.9,
+    "sharpe": 0.39,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
