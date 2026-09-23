@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-22T20:35:43Z",
-  "as_of": "2026-09-22",
+  "rendered_at_utc": "2026-09-23T20:34:25Z",
+  "as_of": "2026-09-23",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-22",
-    "current": 1029028.04,
+    "as_of": "2026-09-23",
+    "current": 1022283.99,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": 688.6700000000419,
-    "day_pct": 0.0669691368521699,
-    "incep_pnl": 29028.040000000037,
-    "incep_pct": 2.9028040000000037,
-    "deployed_pct": 89.87706204779415,
+    "day_pnl": -6744.050000000047,
+    "day_pct": -0.6553805861305826,
+    "incep_pnl": 22283.98999999999,
+    "incep_pct": 2.228398999999999,
+    "deployed_pct": 89.81028060509878,
     "open_count": 2,
-    "cash_interest": 6235.42,
+    "cash_interest": 6244.4,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 469.54,
-    "total_incl_cash": 1035263.4600000001
+    "cash_interest_month": 478.52,
+    "total_incl_cash": 1028528.39
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 82,
+      "days_held": 83,
       "entry_price": 371.0245,
-      "last_price": 381.2699890136719,
-      "position_value": 904451.2987011566,
+      "last_price": 378.2300109863281,
+      "position_value": 897239.8418488434,
       "cost_basis": 880146.86,
-      "unrealized": 24304.419732106617,
-      "unrealized_pct": 2.761404978289001,
+      "unrealized": 17092.96287979337,
+      "unrealized_pct": 1.9420580005708838,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,21 +48,21 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 43,
+      "days_held": 44,
       "entry_price": 48.7,
-      "last_price": 57.20000076293945,
-      "position_value": 20408.87447221565,
+      "last_price": 58.5099983215332,
+      "position_value": 20876.279636125564,
       "cost_basis": 34752.17,
-      "unrealized": 3032.787522215651,
-      "unrealized_pct": 17.453800334577924,
-      "stop": 54.3914,
-      "stop_dist_pct": -4.910141128458132,
+      "unrealized": 3500.1926861255633,
+      "unrealized_pct": 20.143733719780695,
+      "stop": 56.4515,
+      "stop_dist_pct": -3.5181992489916367,
       "target_1": 55.25,
-      "t1_dist_pct": -3.409092197430321,
+      "t1_dist_pct": -5.571694436937693,
       "target_2": 59.5,
-      "t2_dist_pct": 4.020977633536577,
+      "t2_dist_pct": 1.692021375605561,
       "max_hold": "2026-10-09",
-      "days_to_max": 17,
+      "days_to_max": 16,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
@@ -70,18 +70,58 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $1,029,028",
-      "detail": "daily return +0.07% \u00b7 positions value $924,860",
-      "ts": "2026-09-22"
+      "label": "MTM mark: NAV $1,022,284",
+      "detail": "daily return -0.66% \u00b7 positions value $918,116",
+      "ts": "2026-09-23"
     },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "VLO (APPROVE WITH MODIFICATIONS) \u00b7 PSX (DEFER) \u00b7 DINO (\u2014) \u00b7 MPC (APPROVE WITH MODIFICATIONS) \u00b7 ILMN (DEFER)",
+      "detail": "WBD (REJECT) \u00b7 MRNA (REJECT) \u00b7 META (REJECT) \u00b7 AMD (REJECT) \u00b7 OKTA (REJECT)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-09-23",
+      "ticker": "WBD",
+      "company": "Warner Bros. Discovery",
+      "verdict": "REJECT",
+      "setup": "merger_arbitrage",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-23",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-23",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-23",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-23",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "verdict": "REJECT",
+      "setup": "momentum_breakout",
+      "reason": "reject"
+    },
     {
       "date": "2026-09-22",
       "ticker": "VLO",
@@ -372,22 +412,6 @@
     },
     {
       "date": "2026-09-09",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "extended_breakout_buy",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-09-08",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "none_failed_breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-08",
       "ticker": "ELF",
       "company": "e.l.f. Beauty",
       "verdict": "APPROVE WITH MODIFICATIONS",
@@ -4276,6 +4300,10 @@
     {
       "date": "2026-09-22",
       "nav": 1029028.04
+    },
+    {
+      "date": "2026-09-23",
+      "nav": 1022283.99
     }
   ],
   "spy_aligned": [
@@ -4670,11 +4698,15 @@
     {
       "date": "2026-09-22",
       "nav_equiv": 1077115.91
+    },
+    {
+      "date": "2026-09-23",
+      "nav_equiv": 1069358.35
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 2.9,
-    "sharpe": 0.39,
+    "total_return_pct": 2.23,
+    "sharpe": 0.18,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
