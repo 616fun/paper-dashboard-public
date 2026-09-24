@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-23T20:35:40Z",
+  "rendered_at_utc": "2026-09-24T01:01:17Z",
   "as_of": "2026-09-23",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 83,
+      "days_held": 84,
       "entry_price": 371.0245,
-      "last_price": 378.2300109863281,
-      "position_value": 897239.8418488434,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 880146.86,
-      "unrealized": 17092.96287979337,
-      "unrealized_pct": 1.9420580005708838,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,39 +48,26 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 44,
+      "days_held": 45,
       "entry_price": 48.7,
-      "last_price": 58.5099983215332,
-      "position_value": 20876.279636125564,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 3500.1926861255633,
-      "unrealized_pct": 20.143733719780695,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 56.4515,
-      "stop_dist_pct": -3.5181992489916367,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": -5.571694436937693,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 1.692021375605561,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 16,
+      "days_to_max": 15,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,022,284",
-      "detail": "daily return -0.66% \u00b7 positions value $918,116",
-      "ts": "2026-09-23"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "WBD (REJECT) \u00b7 MRNA (REJECT) \u00b7 META (REJECT) \u00b7 AMD (REJECT) \u00b7 OKTA (REJECT)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-09-23",
@@ -401,22 +388,6 @@
       "verdict": "DEFER",
       "setup": "post_earnings_breakout_pullback_entry",
       "reason": "defer"
-    },
-    {
-      "date": "2026-09-09",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "none_confirmed_downtrend",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-09",
-      "ticker": "ELF",
-      "company": "e.l.f. Beauty",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "extended_breakout_buy",
-      "reason": "awm_no_executable_params"
     }
   ],
   "watch_list": [
@@ -4701,7 +4672,7 @@
     },
     {
       "date": "2026-09-23",
-      "nav_equiv": 1069358.35
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
