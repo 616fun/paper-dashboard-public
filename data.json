@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-24T20:34:07Z",
+  "rendered_at_utc": "2026-09-24T20:35:48Z",
   "as_of": "2026-09-24",
   "starting_nav": 1000000.0,
   "hero": {
@@ -55,8 +55,8 @@
       "cost_basis": 34752.17,
       "unrealized": 3560.8491388862603,
       "unrealized_pct": 20.492813768328087,
-      "stop": 56.5464,
-      "stop_dist_pct": -3.6359923211990712,
+      "stop": 56.5465,
+      "stop_dist_pct": -3.635821905385364,
       "target_1": 55.25,
       "t1_dist_pct": -5.845262930022929,
       "target_2": 59.5,
