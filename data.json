@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-24T20:35:48Z",
+  "rendered_at_utc": "2026-09-25T01:07:15Z",
   "as_of": "2026-09-24",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 84,
+      "days_held": 85,
       "entry_price": 371.0245,
-      "last_price": 378.0799865722656,
-      "position_value": 896883.9528986359,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 880146.86,
-      "unrealized": 16737.073929585866,
-      "unrealized_pct": 1.9016228233622379,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,39 +48,26 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 45,
+      "days_held": 46,
       "entry_price": 48.7,
-      "last_price": 58.68000030517578,
-      "position_value": 20936.93608888626,
+      "last_price": null,
+      "position_value": null,
       "cost_basis": 34752.17,
-      "unrealized": 3560.8491388862603,
-      "unrealized_pct": 20.492813768328087,
+      "unrealized": null,
+      "unrealized_pct": null,
       "stop": 56.5465,
-      "stop_dist_pct": -3.635821905385364,
+      "stop_dist_pct": null,
       "target_1": 55.25,
-      "t1_dist_pct": -5.845262930022929,
+      "t1_dist_pct": null,
       "target_2": 59.5,
-      "t2_dist_pct": 1.3974091522830001,
+      "t2_dist_pct": null,
       "max_hold": "2026-10-09",
-      "days_to_max": 15,
+      "days_to_max": 14,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,021,989",
-      "detail": "daily return -0.03% \u00b7 positions value $917,821",
-      "ts": "2026-09-24"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "MRNA (REJECT) \u00b7 TWLO (REJECT) \u00b7 META (REJECT) \u00b7 DINO (\u2014) \u00b7 OKTA (REJECT)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-09-24",
@@ -412,30 +399,6 @@
     },
     {
       "date": "2026-09-11",
-      "ticker": "ANF",
-      "company": "Abercrombie & Fitch Co",
-      "verdict": "DEFER",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-10",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "none_confirmed_downtrend",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-10",
-      "ticker": "DINO",
-      "company": "HF Sinclair",
-      "verdict": "REJECT",
-      "setup": "extended_breakout_buy",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-09-10",
       "ticker": "ANF",
       "company": "Abercrombie & Fitch Co",
       "verdict": "DEFER",
@@ -4733,7 +4696,7 @@
     },
     {
       "date": "2026-09-24",
-      "nav_equiv": 1068480.92
+      "nav_equiv": null
     }
   ],
   "lifetime_stats": {
