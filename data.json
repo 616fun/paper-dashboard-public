@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-26T01:09:26Z",
+  "rendered_at_utc": "2026-09-28T08:47:04Z",
   "as_of": "2026-09-25",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,16 +22,16 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 86,
+      "days_held": 88,
       "entry_price": 371.0245,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 379.7699890136719,
+      "position_value": 900892.9883511567,
       "cost_basis": 880146.86,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": 20746.10938210669,
+      "unrealized_pct": 2.357119007955514,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,27 +48,74 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 47,
+      "days_held": 49,
       "entry_price": 48.7,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 57.95000076293945,
+      "position_value": 20676.47334721565,
       "cost_basis": 34752.17,
-      "unrealized": null,
-      "unrealized_pct": null,
-      "stop": 56.4515,
-      "stop_dist_pct": null,
+      "unrealized": 3300.3863972156505,
+      "unrealized_pct": 18.99384140233973,
+      "stop": 56.5514,
+      "stop_dist_pct": -2.4134611639796457,
       "target_1": 55.25,
-      "t1_dist_pct": null,
+      "t1_dist_pct": -4.659190211203888,
       "target_2": 59.5,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 2.674718234088121,
       "max_hold": "2026-10-09",
-      "days_to_max": 13,
+      "days_to_max": 11,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "MRNA (REJECT) \u00b7 TWLO (REJECT) \u00b7 META (REJECT) \u00b7 DINO (REJECT) \u00b7 OKTA (REJECT)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-09-28",
+      "ticker": "TWLO",
+      "company": "Twilio",
+      "verdict": "REJECT",
+      "setup": "momentum_breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "REJECT",
+      "setup": "breakout",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "mean_reversion",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "verdict": "REJECT",
+      "setup": "breakout_pullback",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker": "DINO",
+      "company": "HF Sinclair",
+      "verdict": "REJECT",
+      "setup": "base_retest_partial_reclaim",
+      "reason": "reject"
+    },
     {
       "date": "2026-09-25",
       "ticker": "TWLO",
@@ -4720,7 +4767,7 @@
     },
     {
       "date": "2026-09-25",
-      "nav_equiv": null
+      "nav_equiv": 1074288.61
     }
   ],
   "lifetime_stats": {
