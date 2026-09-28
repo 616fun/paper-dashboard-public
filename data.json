@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-28T08:47:04Z",
-  "as_of": "2026-09-25",
+  "rendered_at_utc": "2026-09-28T20:35:54Z",
+  "as_of": "2026-09-28",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-25",
-    "current": 1025737.33,
+    "as_of": "2026-09-28",
+    "current": 1016375.33,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": 3748.569999999949,
-    "day_pct": 0.3667917052238372,
-    "incep_pnl": 25737.329999999958,
-    "incep_pct": 2.573732999999996,
-    "deployed_pct": 89.8445862353474,
+    "day_pnl": -9362.0,
+    "day_pct": -0.9127092995630763,
+    "incep_pnl": 16375.329999999958,
+    "incep_pct": 1.637532999999996,
+    "deployed_pct": 89.7510430521764,
     "open_count": 2,
-    "cash_interest": 6262.35,
+    "cash_interest": 6289.28,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 496.47,
-    "total_incl_cash": 1031999.6799999999
+    "cash_interest_month": 523.4,
+    "total_incl_cash": 1022664.61
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 88,
       "entry_price": 371.0245,
-      "last_price": 379.7699890136719,
-      "position_value": 900892.9883511567,
+      "last_price": 375.8399963378906,
+      "position_value": 891570.2326087189,
       "cost_basis": 880146.86,
-      "unrealized": 20746.10938210669,
-      "unrealized_pct": 2.357119007955514,
+      "unrealized": 11423.353639668901,
+      "unrealized_pct": 1.2978917397343404,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-08-10",
       "days_held": 49,
       "entry_price": 48.7,
-      "last_price": 57.95000076293945,
-      "position_value": 20676.47334721565,
+      "last_price": 57.84000015258789,
+      "position_value": 20637.22529444313,
       "cost_basis": 34752.17,
-      "unrealized": 3300.3863972156505,
-      "unrealized_pct": 18.99384140233973,
+      "unrealized": 3261.1383444431303,
+      "unrealized_pct": 18.76796745911271,
       "stop": 56.5514,
-      "stop_dist_pct": -2.4134611639796457,
+      "stop_dist_pct": -2.2278702441017106,
       "target_1": 55.25,
-      "t1_dist_pct": -4.659190211203888,
+      "t1_dist_pct": -4.47787023816598,
       "target_2": 59.5,
-      "t2_dist_pct": 2.674718234088121,
+      "t2_dist_pct": 2.869985897359714,
       "max_hold": "2026-10-09",
       "days_to_max": 11,
       "setup_type": "post_earnings_breakout",
@@ -68,6 +68,12 @@
     }
   ],
   "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,016,375",
+      "detail": "daily return -0.91% \u00b7 positions value $912,207",
+      "ts": "2026-09-28"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
@@ -4362,6 +4368,10 @@
     {
       "date": "2026-09-25",
       "nav": 1025737.33
+    },
+    {
+      "date": "2026-09-28",
+      "nav": 1016375.33
     }
   ],
   "spy_aligned": [
@@ -4768,11 +4778,15 @@
     {
       "date": "2026-09-25",
       "nav_equiv": 1074288.61
+    },
+    {
+      "date": "2026-09-28",
+      "nav_equiv": 1066294.31
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 2.57,
-    "sharpe": 0.26,
+    "total_return_pct": 1.64,
+    "sharpe": -0.02,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
