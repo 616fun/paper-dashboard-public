@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-28T20:35:54Z",
+  "rendered_at_utc": "2026-09-29T02:28:13Z",
   "as_of": "2026-09-28",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 88,
+      "days_held": 89,
       "entry_price": 371.0245,
       "last_price": 375.8399963378906,
       "position_value": 891570.2326087189,
@@ -48,7 +48,7 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 49,
+      "days_held": 50,
       "entry_price": 48.7,
       "last_price": 57.84000015258789,
       "position_value": 20637.22529444313,
@@ -62,25 +62,12 @@
       "target_2": 59.5,
       "t2_dist_pct": 2.869985897359714,
       "max_hold": "2026-10-09",
-      "days_to_max": 11,
+      "days_to_max": 10,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,016,375",
-      "detail": "daily return -0.91% \u00b7 positions value $912,207",
-      "ts": "2026-09-28"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "MRNA (REJECT) \u00b7 TWLO (REJECT) \u00b7 META (REJECT) \u00b7 DINO (REJECT) \u00b7 OKTA (REJECT)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-09-28",
@@ -449,30 +436,6 @@
       "verdict": "APPROVE",
       "setup": "failed_breakout_distribution",
       "reason": "missing_required_fields:stop,target_1,direction"
-    },
-    {
-      "date": "2026-09-14",
-      "ticker": "VLO",
-      "company": "Valero Energy",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-14",
-      "ticker": "PBF",
-      "company": "PBF Energy",
-      "verdict": "DEFER",
-      "setup": "uptrend_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-14",
-      "ticker": "ANF",
-      "company": "Abercrombie & Fitch Co",
-      "verdict": "DEFER",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "defer"
     }
   ],
   "watch_list": [
