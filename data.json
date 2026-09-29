@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-29T07:54:47Z",
-  "as_of": "2026-09-28",
+  "rendered_at_utc": "2026-09-29T20:35:42Z",
+  "as_of": "2026-09-29",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-28",
-    "current": 1016375.33,
+    "as_of": "2026-09-29",
+    "current": 1014888.87,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": -9362.0,
-    "day_pct": -0.9127092995630763,
-    "incep_pnl": 16375.329999999958,
-    "incep_pct": 1.637532999999996,
-    "deployed_pct": 89.7510430521764,
+    "day_pnl": -1486.4599999999627,
+    "day_pct": -0.14625109013615695,
+    "incep_pnl": 14888.869999999995,
+    "incep_pct": 1.4888869999999994,
+    "deployed_pct": 89.7360318869198,
     "open_count": 2,
-    "cash_interest": 6289.28,
+    "cash_interest": 6298.25,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 523.4,
-    "total_incl_cash": 1022664.61
+    "cash_interest_month": 532.37,
+    "total_incl_cash": 1021187.12
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 89,
       "entry_price": 371.0245,
-      "last_price": 375.8399963378906,
-      "position_value": 891570.2326087189,
+      "last_price": 375.260009765625,
+      "position_value": 890194.3844600831,
       "cost_basis": 880146.86,
-      "unrealized": 11423.353639668901,
-      "unrealized_pct": 1.2978917397343404,
+      "unrealized": 10047.50549103308,
+      "unrealized_pct": 1.1415714503018077,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-08-10",
       "days_held": 50,
       "entry_price": 48.7,
-      "last_price": 57.84000015258789,
-      "position_value": 20637.22529444313,
+      "last_price": 57.529998779296875,
+      "position_value": 20526.617269454957,
       "cost_basis": 34752.17,
-      "unrealized": 3261.1383444431303,
-      "unrealized_pct": 18.76796745911271,
+      "unrealized": 3150.530319454956,
+      "unrealized_pct": 18.131414331205082,
       "stop": 56.5514,
-      "stop_dist_pct": -2.2278702441017106,
+      "stop_dist_pct": -1.7010234661243189,
       "target_1": 55.25,
-      "t1_dist_pct": -4.47787023816598,
+      "t1_dist_pct": -3.963147623283751,
       "target_2": 59.5,
-      "t2_dist_pct": 2.869985897359714,
+      "t2_dist_pct": 3.4243025595405765,
       "max_hold": "2026-10-09",
       "days_to_max": 10,
       "setup_type": "post_earnings_breakout",
@@ -68,6 +68,12 @@
     }
   ],
   "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,014,889",
+      "detail": "daily return -0.15% \u00b7 positions value $910,721",
+      "ts": "2026-09-29"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 4 ticker(s)",
@@ -489,7 +495,7 @@
       "target_1": 119.5,
       "target_2": 126.0,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS",
+      "modifications": null,
       "logged_date": "2026-09-29",
       "setup": "breakout_pullback",
       "decision_doc": "/sessions/rcw-01ss4jbhm3ncyrqbwuykxzdi/mnt/tradingagents-cowork/reports/HALO/2026-09/HALO-decision-2026-09-29.md"
@@ -4390,6 +4396,10 @@
     {
       "date": "2026-09-28",
       "nav": 1016375.33
+    },
+    {
+      "date": "2026-09-29",
+      "nav": 1014888.87
     }
   ],
   "spy_aligned": [
@@ -4800,11 +4810,15 @@
     {
       "date": "2026-09-28",
       "nav_equiv": 1066294.31
+    },
+    {
+      "date": "2026-09-29",
+      "nav_equiv": 1064330.58
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.64,
-    "sharpe": -0.02,
+    "total_return_pct": 1.49,
+    "sharpe": -0.07,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
