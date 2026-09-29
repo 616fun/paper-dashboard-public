@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-29T02:28:13Z",
+  "rendered_at_utc": "2026-09-29T07:54:47Z",
   "as_of": "2026-09-28",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 89,
@@ -67,8 +67,47 @@
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "MRNA (REJECT) \u00b7 META (REJECT) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-09-29",
+      "ticker": "SWKS",
+      "company": "Skyworks Solutions",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "mean_reversion",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "verdict": "REJECT",
+      "setup": "pullback_to_support",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "ILMN",
+      "company": "Illumina",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
     {
       "date": "2026-09-28",
       "ticker": "TWLO",
@@ -439,6 +478,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "HALO",
+      "company": "Halozyme Therapeutics",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 4.0,
+      "stop": 108.9,
+      "target_1": 119.5,
+      "target_2": 126.0,
+      "entry_zone": null,
+      "modifications": "APPROVE WITH MODIFICATIONS",
+      "logged_date": "2026-09-29",
+      "setup": "breakout_pullback",
+      "decision_doc": "/sessions/rcw-01ss4jbhm3ncyrqbwuykxzdi/mnt/tradingagents-cowork/reports/HALO/2026-09/HALO-decision-2026-09-29.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "VLO",
