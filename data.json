@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-09-30T20:40:00Z",
+  "rendered_at_utc": "2026-10-01T01:47:30Z",
   "as_of": "2026-09-30",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 90,
+      "days_held": 91,
       "entry_price": 371.0245,
       "last_price": 374.239990234375,
       "position_value": 887774.687089917,
@@ -48,7 +48,7 @@
       "company": "Dynatrace",
       "direction": "LONG",
       "entry_date": "2026-08-10",
-      "days_held": 51,
+      "days_held": 52,
       "entry_price": 48.7,
       "last_price": 57.7400016784668,
       "position_value": 20601.545988874434,
@@ -62,25 +62,12 @@
       "target_2": 59.5,
       "t2_dist_pct": 3.0481438697109806,
       "max_hold": "2026-10-09",
-      "days_to_max": 9,
+      "days_to_max": 8,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,012,544",
-      "detail": "daily return -0.23% \u00b7 positions value $908,376",
-      "ts": "2026-09-30"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "MRNA (REJECT) \u00b7 META (REJECT) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-09-30",
@@ -449,38 +436,6 @@
       "verdict": "\u2014",
       "setup": "\u2014",
       "reason": "unparseable_decision"
-    },
-    {
-      "date": "2026-09-16",
-      "ticker": "VLO",
-      "company": "Valero Energy",
-      "verdict": "\u2014",
-      "setup": "extended_breakout_buy",
-      "reason": "unparseable_decision"
-    },
-    {
-      "date": "2026-09-16",
-      "ticker": "PBF",
-      "company": "PBF Energy",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-16",
-      "ticker": "KHC",
-      "company": "Kraft Heinz Company",
-      "verdict": "DEFER",
-      "setup": "support_hold",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-16",
-      "ticker": "DINO",
-      "company": "HF Sinclair",
-      "verdict": "DEFER",
-      "setup": "breakout_continuation",
-      "reason": "defer"
     }
   ],
   "watch_list": [
