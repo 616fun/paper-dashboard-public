@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-01T07:38:09Z",
-  "as_of": "2026-09-30",
+  "rendered_at_utc": "2026-10-01T20:35:41Z",
+  "as_of": "2026-10-01",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-09-30",
-    "current": 1012544.1,
+    "as_of": "2026-10-01",
+    "current": 1015316.32,
     "starting": 1000000.0,
     "cash": 104167.87,
-    "day_pnl": -2344.7700000000186,
-    "day_pct": -0.23103711837927815,
-    "incep_pnl": 12544.099999999977,
-    "incep_pct": 1.2544099999999976,
-    "deployed_pct": 89.71226339672515,
+    "day_pnl": 2772.219999999972,
+    "day_pct": 0.2737875812026333,
+    "incep_pnl": 15316.319999999949,
+    "incep_pct": 1.531631999999995,
+    "deployed_pct": 89.74035303598784,
     "open_count": 2,
-    "cash_interest": 6307.23,
+    "cash_interest": 6316.21,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 541.35,
-    "total_incl_cash": 1018851.33
+    "cash_interest_month": 8.98,
+    "total_incl_cash": 1021632.5299999999
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 91,
       "entry_price": 371.0245,
-      "last_price": 374.239990234375,
-      "position_value": 887774.687089917,
+      "last_price": 375.17999267578125,
+      "position_value": 890004.5673674378,
       "cost_basis": 880146.86,
-      "unrealized": 7627.808120867005,
-      "unrealized_pct": 0.8666517263347853,
+      "unrealized": 9857.688398387749,
+      "unrealized_pct": 1.1200049257613047,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,24 +50,31 @@
       "entry_date": "2026-08-10",
       "days_held": 52,
       "entry_price": 48.7,
-      "last_price": 57.7400016784668,
-      "position_value": 20601.545988874434,
+      "last_price": 59.2599983215332,
+      "position_value": 21143.878511125564,
       "cost_basis": 34752.17,
-      "unrealized": 3225.4590388744327,
-      "unrealized_pct": 18.56263178329936,
-      "stop": 56.5514,
-      "stop_dist_pct": -2.058541122124812,
+      "unrealized": 3767.791561125563,
+      "unrealized_pct": 21.6837747875425,
+      "stop": 56.5614,
+      "stop_dist_pct": -4.55382787372206,
       "target_1": 55.25,
-      "t1_dist_pct": -4.3124378352683745,
+      "t1_dist_pct": -6.766787774403459,
       "target_2": 59.5,
-      "t2_dist_pct": 3.0481438697109806,
+      "t2_dist_pct": 0.4049977814116607,
       "max_hold": "2026-10-09",
       "days_to_max": 8,
       "setup_type": "post_earnings_breakout",
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,015,316",
+      "detail": "daily return +0.27% \u00b7 positions value $911,148",
+      "ts": "2026-10-01"
+    }
+  ],
   "decisions": [
     {
       "date": "2026-09-30",
@@ -4343,6 +4350,10 @@
     {
       "date": "2026-09-30",
       "nav": 1012544.1
+    },
+    {
+      "date": "2026-10-01",
+      "nav": 1015316.32
     }
   ],
   "spy_aligned": [
@@ -4761,11 +4772,15 @@
     {
       "date": "2026-09-30",
       "nav_equiv": 1062143.97
+    },
+    {
+      "date": "2026-10-01",
+      "nav_equiv": 1064038.08
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.25,
-    "sharpe": -0.14,
+    "total_return_pct": 1.53,
+    "sharpe": -0.06,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4857,
     "profit_factor": 1.04,
