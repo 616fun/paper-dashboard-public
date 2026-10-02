@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-02T07:53:26Z",
-  "as_of": "2026-10-01",
+  "rendered_at_utc": "2026-10-02T20:35:42Z",
+  "as_of": "2026-10-02",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-01",
-    "current": 1015316.32,
+    "as_of": "2026-10-02",
+    "current": 1022067.84,
     "starting": 1000000.0,
-    "cash": 104167.87,
-    "day_pnl": 2772.219999999972,
-    "day_pct": 0.2737875812026333,
-    "incep_pnl": 15316.319999999949,
-    "incep_pct": 1.531631999999995,
-    "deployed_pct": 89.74035303598784,
-    "open_count": 2,
-    "cash_interest": 6316.21,
+    "cash": 125397.38,
+    "day_pnl": 6751.520000000019,
+    "day_pct": 0.6649671503359681,
+    "incep_pnl": 22067.839999999967,
+    "incep_pct": 2.2067839999999967,
+    "deployed_pct": 87.73101206276091,
+    "open_count": 1,
+    "cash_interest": 6327.01,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 8.98,
-    "total_incl_cash": 1021632.5299999999
+    "cash_interest_month": 19.78,
+    "total_incl_cash": 1028394.85
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 92,
       "entry_price": 371.0245,
-      "last_price": 375.17999267578125,
-      "position_value": 890004.5673674378,
+      "last_price": 377.989990234375,
+      "position_value": 896670.4629649171,
       "cost_basis": 880146.86,
-      "unrealized": 9857.688398387749,
-      "unrealized_pct": 1.1200049257613047,
+      "unrealized": 16523.583995867055,
+      "unrealized_pct": 1.8773666521685297,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -42,32 +42,21 @@
       "days_to_max": null,
       "setup_type": "index_core",
       "sector": "_CORE_"
-    },
-    {
-      "ticker": "DT",
-      "company": "Dynatrace",
-      "direction": "LONG",
-      "entry_date": "2026-08-10",
-      "days_held": 53,
-      "entry_price": 48.7,
-      "last_price": 59.2599983215332,
-      "position_value": 21143.878511125564,
-      "cost_basis": 34752.17,
-      "unrealized": 3767.791561125563,
-      "unrealized_pct": 21.6837747875425,
-      "stop": 56.5614,
-      "stop_dist_pct": -4.55382787372206,
-      "target_1": 55.25,
-      "t1_dist_pct": -6.766787774403459,
-      "target_2": 59.5,
-      "t2_dist_pct": 0.4049977814116607,
-      "max_hold": "2026-10-09",
-      "days_to_max": 7,
-      "setup_type": "post_earnings_breakout",
-      "sector": "Technology"
     }
   ],
   "events": [
+    {
+      "kind": "CLOSE",
+      "label": "Closed DT \u2014 TARGET_2",
+      "detail": "356.80 shares @ $59.50 (entry $48.70) \u00b7 P&L $+3,853 (+22.18%) \u00b7 held 53d",
+      "ts": "2026-10-02"
+    },
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,022,068",
+      "detail": "daily return +0.67% \u00b7 positions value $896,670",
+      "ts": "2026-10-02"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
@@ -2136,25 +2125,42 @@
     }
   ],
   "closed_stats": {
-    "total_realized": 2610.840000000018,
-    "today_realized": 0.0,
-    "trade_count": 105,
-    "today_count": 0,
-    "win_count": 51,
+    "total_realized": 6464.260000000009,
+    "today_realized": 3853.42,
+    "trade_count": 106,
+    "today_count": 1,
+    "win_count": 52,
     "loss_count": 39,
     "flat_count": 15,
-    "win_rate": 0.5666666666666667,
-    "avg_hold_days": 10.542857142857143,
-    "nav_impact_pct": 0.2610840000000018,
-    "today_nav_impact_pct": 0.0,
+    "win_rate": 0.5714285714285714,
+    "avg_hold_days": 10.943396226415095,
+    "nav_impact_pct": 0.6464260000000009,
+    "today_nav_impact_pct": 0.385342,
     "by_reason": {
+      "target_2": 15,
       "soft_stop_confirmed": 1,
       "target_1": 40,
       "stop_hit": 36,
-      "target_2": 14,
       "gap_through_stop": 14
     },
     "rows": [
+      {
+        "trade_id": "DT-2026-08-10-001",
+        "ticker": "DT",
+        "company": "Dynatrace",
+        "direction": "LONG",
+        "entry_date": "2026-08-10",
+        "exit_date": "2026-10-02",
+        "entry_price": 48.7,
+        "exit_price": 59.5,
+        "shares_closed": 356.7985,
+        "exit_reason": "target_2",
+        "hold_days": 53,
+        "pnl": 3853.42,
+        "pnl_pct": 22.18,
+        "setup_type": "post_earnings_breakout",
+        "is_partial": false
+      },
       {
         "trade_id": "BAX-2026-08-04-001",
         "ticker": "BAX",
@@ -4362,6 +4368,10 @@
     {
       "date": "2026-10-01",
       "nav": 1015316.32
+    },
+    {
+      "date": "2026-10-02",
+      "nav": 1022067.84
     }
   ],
   "spy_aligned": [
@@ -4784,14 +4794,18 @@
     {
       "date": "2026-10-01",
       "nav_equiv": 1064038.08
+    },
+    {
+      "date": "2026-10-02",
+      "nav_equiv": 1071907.08
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.53,
-    "sharpe": -0.06,
+    "total_return_pct": 2.21,
+    "sharpe": 0.12,
     "max_dd_pct": -5.24,
-    "hit_rate": 0.4857,
-    "profit_factor": 1.04,
-    "trade_count": 105
+    "hit_rate": 0.4906,
+    "profit_factor": 1.1,
+    "trade_count": 106
   }
 }
