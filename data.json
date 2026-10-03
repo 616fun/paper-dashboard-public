@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-02T20:39:58Z",
+  "rendered_at_utc": "2026-10-03T01:42:05Z",
   "as_of": "2026-10-02",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 92,
+      "days_held": 93,
       "entry_price": 371.0245,
       "last_price": 377.989990234375,
       "position_value": 896670.4629649171,
@@ -44,26 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "CLOSE",
-      "label": "Closed DT \u2014 TARGET_2",
-      "detail": "356.80 shares @ $59.50 (entry $48.70) \u00b7 P&L $+3,853 (+22.18%) \u00b7 held 53d",
-      "ts": "2026-10-02"
-    },
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,022,068",
-      "detail": "daily return +0.67% \u00b7 positions value $896,670",
-      "ts": "2026-10-02"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "MRNA (REJECT) \u00b7 META (REJECT) \u00b7 HALO (DEFER) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-10-02",
@@ -400,46 +381,6 @@
       "verdict": "REJECT",
       "setup": "breakout_continuation",
       "reason": "reject"
-    },
-    {
-      "date": "2026-09-18",
-      "ticker": "VLO",
-      "company": "Valero Energy",
-      "verdict": "REJECT",
-      "setup": "extended_breakout_buy",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-09-18",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "REJECT",
-      "setup": "breakout",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-09-18",
-      "ticker": "MPC",
-      "company": "Marathon Petroleum",
-      "verdict": "\u2014",
-      "setup": "\u2014",
-      "reason": "unparseable_decision"
-    },
-    {
-      "date": "2026-09-18",
-      "ticker": "FANG",
-      "company": "Diamondback Energy",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-18",
-      "ticker": "DINO",
-      "company": "HF Sinclair",
-      "verdict": "\u2014",
-      "setup": "breakout_continuation",
-      "reason": "unparseable_decision"
     }
   ],
   "watch_list": [
@@ -2126,16 +2067,16 @@
   ],
   "closed_stats": {
     "total_realized": 6464.260000000009,
-    "today_realized": 3853.42,
+    "today_realized": 0.0,
     "trade_count": 106,
-    "today_count": 1,
+    "today_count": 0,
     "win_count": 52,
     "loss_count": 39,
     "flat_count": 15,
     "win_rate": 0.5714285714285714,
     "avg_hold_days": 10.943396226415095,
     "nav_impact_pct": 0.6464260000000009,
-    "today_nav_impact_pct": 0.385342,
+    "today_nav_impact_pct": 0.0,
     "by_reason": {
       "target_2": 15,
       "soft_stop_confirmed": 1,
