@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-03T01:42:05Z",
+  "rendered_at_utc": "2026-10-05T07:59:23Z",
   "as_of": "2026-10-02",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,10 +22,10 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 93,
+      "days_held": 95,
       "entry_price": 371.0245,
       "last_price": 377.989990234375,
       "position_value": 896670.4629649171,
@@ -44,8 +44,55 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "MRNA (REJECT) \u00b7 META (REJECT) \u00b7 HALO (DEFER) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-10-05",
+      "ticker": "SWKS",
+      "company": "Skyworks Solutions",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "mean_reversion",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "verdict": "REJECT",
+      "setup": "pullback_to_support",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "ILMN",
+      "company": "Illumina",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "HALO",
+      "company": "Halozyme Therapeutics",
+      "verdict": "DEFER",
+      "setup": "none_pending_confirmation",
+      "reason": "defer"
+    },
     {
       "date": "2026-10-02",
       "ticker": "SWKS",
