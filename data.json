@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-06T07:54:30Z",
-  "as_of": "2026-10-05",
+  "rendered_at_utc": "2026-10-07T07:55:21Z",
+  "as_of": "2026-10-06",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-05",
-    "current": 1028259.34,
+    "as_of": "2026-10-06",
+    "current": 1033031.73,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": 6191.5,
-    "day_pct": 0.6057817062319464,
-    "incep_pnl": 28259.339999999967,
-    "incep_pct": 2.8259339999999966,
-    "deployed_pct": 91.05419261253684,
+    "day_pnl": 4772.390000000014,
+    "day_pct": 0.46412318511009243,
+    "incep_pnl": 33031.72999999998,
+    "incep_pct": 3.3031729999999984,
+    "deployed_pct": 91.09552036702688,
     "open_count": 1,
-    "cash_interest": 6356.55,
+    "cash_interest": 6364.48,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 49.32,
-    "total_incl_cash": 1034615.89
+    "cash_interest_month": 57.25,
+    "total_incl_cash": 1039396.21
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 96,
+      "days_held": 97,
       "entry_price": 371.3662,
-      "last_price": 380.6000061035156,
-      "position_value": 936273.2366346038,
+      "last_price": 382.5400085449219,
+      "position_value": 941045.6284784453,
       "cost_basis": 913558.14,
-      "unrealized": 22715.095607863972,
-      "unrealized_pct": 2.4864422512107085,
+      "unrealized": 27487.4874517055,
+      "unrealized_pct": 3.008838323175858,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -53,6 +53,46 @@
     }
   ],
   "decisions": [
+    {
+      "date": "2026-10-07",
+      "ticker": "SWKS",
+      "company": "Skyworks Solutions",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "mean_reversion",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "verdict": "REJECT",
+      "setup": "pullback_to_support",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "ILMN",
+      "company": "Illumina",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-07",
+      "ticker": "HALO",
+      "company": "Halozyme Therapeutics",
+      "verdict": "DEFER",
+      "setup": "none_pending_confirmation",
+      "reason": "defer"
+    },
     {
       "date": "2026-10-06",
       "ticker": "SWKS",
@@ -396,46 +436,6 @@
       "verdict": "REJECT",
       "setup": "momentum_breakout",
       "reason": "reject"
-    },
-    {
-      "date": "2026-09-22",
-      "ticker": "VLO",
-      "company": "Valero Energy",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "\u2014",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-09-22",
-      "ticker": "PSX",
-      "company": "Phillips 66",
-      "verdict": "DEFER",
-      "setup": "\u2014",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-22",
-      "ticker": "MPC",
-      "company": "Marathon Petroleum",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "pullback_to_support",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-09-22",
-      "ticker": "ILMN",
-      "company": "Illumina",
-      "verdict": "DEFER",
-      "setup": "breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-22",
-      "ticker": "DINO",
-      "company": "HF Sinclair",
-      "verdict": "\u2014",
-      "setup": "breakout_continuation",
-      "reason": "unparseable_decision"
     }
   ],
   "watch_list": [
@@ -4372,6 +4372,10 @@
     {
       "date": "2026-10-05",
       "nav": 1028259.34
+    },
+    {
+      "date": "2026-10-06",
+      "nav": 1033031.73
     }
   ],
   "spy_aligned": [
@@ -4802,11 +4806,15 @@
     {
       "date": "2026-10-05",
       "nav_equiv": 1079135.4
+    },
+    {
+      "date": "2026-10-06",
+      "nav_equiv": 1085068.48
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 2.83,
-    "sharpe": 0.29,
+    "total_return_pct": 3.3,
+    "sharpe": 0.42,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
