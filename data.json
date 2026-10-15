@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-14T07:51:26Z",
-  "as_of": "2026-10-13",
+  "rendered_at_utc": "2026-10-15T07:54:00Z",
+  "as_of": "2026-10-14",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-13",
-    "current": 1030030.53,
+    "as_of": "2026-10-14",
+    "current": 1019108.16,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -615.0,
-    "day_pct": -0.05967134015513559,
-    "incep_pnl": 30030.530000000028,
-    "incep_pct": 3.0030530000000026,
-    "deployed_pct": 91.06957538433352,
+    "day_pnl": -10922.369999999995,
+    "day_pct": -1.060392840977247,
+    "incep_pnl": 19108.160000000033,
+    "incep_pct": 1.9108160000000034,
+    "deployed_pct": 90.97386287241582,
     "open_count": 1,
-    "cash_interest": 6419.96,
+    "cash_interest": 6427.89,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 112.73,
-    "total_incl_cash": 1036450.49
+    "cash_interest_month": 120.66,
+    "total_incl_cash": 1025536.05
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 104,
+      "days_held": 105,
       "entry_price": 371.3662,
-      "last_price": 381.32000732421875,
-      "position_value": 938044.4343815246,
+      "last_price": 376.8800048828125,
+      "position_value": 927122.060787683,
       "cost_basis": 913558.14,
-      "unrealized": 24486.29335478472,
-      "unrealized_pct": 2.6803212904725244,
+      "unrealized": 13563.919760943158,
+      "unrealized_pct": 1.484735251299801,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -47,12 +47,52 @@
   "events": [
     {
       "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 META (REJECT) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "MRNA (DEFER) \u00b7 META (REJECT) \u00b7 HALO (APPROVE WITH MODIFICATIONS) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
       "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-10-15",
+      "ticker": "SWKS",
+      "company": "Skyworks Solutions",
+      "verdict": "DEFER",
+      "setup": "support_hold_50d_test",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-15",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "MOMENTUM_CHASE",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-15",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "verdict": "REJECT",
+      "setup": "pullback_to_support",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-10-15",
+      "ticker": "ILMN",
+      "company": "Illumina",
+      "verdict": "DEFER",
+      "setup": "uptrend_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-15",
+      "ticker": "HALO",
+      "company": "Halozyme Therapeutics",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "breakout_extended_wait_for_retest",
+      "reason": "awm_no_executable_params"
+    },
     {
       "date": "2026-10-14",
       "ticker": "SWKS",
@@ -380,41 +420,25 @@
       "verdict": "DEFER",
       "setup": "none_pending_basing",
       "reason": "defer"
-    },
-    {
-      "date": "2026-09-30",
-      "ticker": "SWKS",
-      "company": "Skyworks Solutions",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-09-30",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "REJECT",
-      "setup": "mean_reversion",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-09-30",
-      "ticker": "META",
-      "company": "Meta Platforms",
-      "verdict": "REJECT",
-      "setup": "pullback_to_support",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-09-30",
-      "ticker": "ILMN",
-      "company": "Illumina",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "HALO",
+      "company": "Halozyme Therapeutics",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 109.3,
+      "target_1": 119.21,
+      "target_2": 124.0,
+      "entry_zone": null,
+      "modifications": "DEFER (supersedes the 10-14 APPROVE WITH MODIFICATIONS; the $110.42 limit plan is stale and no new order is authorized)",
+      "logged_date": "2026-10-15",
+      "setup": "breakout_extended_wait_for_retest",
+      "decision_doc": "/sessions/rcw-016nub9ez5fdkhyejkirlgia/mnt/tradingagents-cowork/reports/HALO/2026-10/HALO-decision-2026-10-15.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "HALO",
@@ -426,7 +450,7 @@
       "target_1": 116.85,
       "target_2": 122.0,
       "entry_zone": null,
-      "modifications": "APPROVE WITH MODIFICATIONS (re-affirms the 10-13 plan; same levels; size refreshed to the 10-12 book mark; supersedes the 10-13 order)",
+      "modifications": null,
       "logged_date": "2026-10-14",
       "setup": "pullback_to_support",
       "decision_doc": "/sessions/rcw-01rbfurprpyg9owu5vnauhhl/mnt/tradingagents-cowork/reports/HALO/2026-10/HALO-decision-2026-10-14.md"
@@ -4436,6 +4460,10 @@
     {
       "date": "2026-10-13",
       "nav": 1030030.53
+    },
+    {
+      "date": "2026-10-14",
+      "nav": 1019108.16
     }
   ],
   "spy_aligned": [
@@ -4890,11 +4918,15 @@
     {
       "date": "2026-10-13",
       "nav_equiv": 1083564.29
+    },
+    {
+      "date": "2026-10-14",
+      "nav_equiv": 1071851.32
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 3.0,
-    "sharpe": 0.3,
+    "total_return_pct": 1.91,
+    "sharpe": 0.0,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
