@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-15T07:54:00Z",
-  "as_of": "2026-10-14",
+  "rendered_at_utc": "2026-10-16T07:38:32Z",
+  "as_of": "2026-10-15",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-14",
-    "current": 1019108.16,
+    "as_of": "2026-10-15",
+    "current": 1022896.57,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -10922.369999999995,
-    "day_pct": -1.060392840977247,
-    "incep_pnl": 19108.160000000033,
-    "incep_pct": 1.9108160000000034,
-    "deployed_pct": 90.97386287241582,
+    "day_pnl": 3788.409999999916,
+    "day_pct": 0.3717377751150492,
+    "incep_pnl": 22896.56999999995,
+    "incep_pct": 2.2896569999999947,
+    "deployed_pct": 91.00729216444631,
     "open_count": 1,
-    "cash_interest": 6427.89,
+    "cash_interest": 6435.82,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 120.66,
-    "total_incl_cash": 1025536.05
+    "cash_interest_month": 128.59,
+    "total_incl_cash": 1029332.3899999999
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 105,
+      "days_held": 106,
       "entry_price": 371.3662,
-      "last_price": 376.8800048828125,
-      "position_value": 927122.060787683,
+      "last_price": 378.4200134277344,
+      "position_value": 930910.4705661285,
       "cost_basis": 913558.14,
-      "unrealized": 13563.919760943158,
-      "unrealized_pct": 1.484735251299801,
+      "unrealized": 17352.32953938865,
+      "unrealized_pct": 1.8994225720419418,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -44,14 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 META (REJECT) \u00b7 HALO (APPROVE WITH MODIFICATIONS) \u00b7 SWKS (DEFER) \u00b7 ILMN (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-10-15",
@@ -434,7 +427,7 @@
       "target_1": 119.21,
       "target_2": 124.0,
       "entry_zone": null,
-      "modifications": "DEFER (supersedes the 10-14 APPROVE WITH MODIFICATIONS; the $110.42 limit plan is stale and no new order is authorized)",
+      "modifications": null,
       "logged_date": "2026-10-15",
       "setup": "breakout_extended_wait_for_retest",
       "decision_doc": "/sessions/rcw-016nub9ez5fdkhyejkirlgia/mnt/tradingagents-cowork/reports/HALO/2026-10/HALO-decision-2026-10-15.md"
@@ -4464,6 +4457,10 @@
     {
       "date": "2026-10-14",
       "nav": 1019108.16
+    },
+    {
+      "date": "2026-10-15",
+      "nav": 1022896.57
     }
   ],
   "spy_aligned": [
@@ -4922,11 +4919,15 @@
     {
       "date": "2026-10-14",
       "nav_equiv": 1071851.32
+    },
+    {
+      "date": "2026-10-15",
+      "nav_equiv": 1074901.42
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.91,
-    "sharpe": 0.0,
+    "total_return_pct": 2.29,
+    "sharpe": 0.1,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
