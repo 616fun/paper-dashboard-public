@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-22T07:52:27Z",
-  "as_of": "2026-10-21",
+  "rendered_at_utc": "2026-10-23T07:51:29Z",
+  "as_of": "2026-10-22",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-21",
-    "current": 1024692.32,
+    "as_of": "2026-10-22",
+    "current": 1014237.35,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": 5067.579999999958,
-    "day_pct": 0.4970044175271736,
-    "incep_pnl": 24692.31999999995,
-    "incep_pct": 2.469231999999995,
-    "deployed_pct": 91.02305168052787,
+    "day_pnl": -10454.969999999972,
+    "day_pct": -1.020303343348955,
+    "incep_pnl": 14237.349999999977,
+    "incep_pct": 1.4237349999999978,
+    "deployed_pct": 90.93051542619683,
     "open_count": 1,
-    "cash_interest": 6483.38,
+    "cash_interest": 6491.3,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 176.15,
-    "total_incl_cash": 1031175.7
+    "cash_interest_month": 184.07,
+    "total_incl_cash": 1020728.65
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 112,
+      "days_held": 113,
       "entry_price": 371.3662,
-      "last_price": 379.1499938964844,
-      "position_value": 932706.217190396,
+      "last_price": 374.8999938964844,
+      "position_value": 922251.2482153961,
       "cost_basis": 913558.14,
-      "unrealized": 19148.076163656195,
-      "unrealized_pct": 2.0959887831699295,
+      "unrealized": 8693.107188656228,
+      "unrealized_pct": 0.9515658389170636,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -53,6 +53,46 @@
     }
   ],
   "decisions": [
+    {
+      "date": "2026-10-23",
+      "ticker": "VICR",
+      "company": "Vicor",
+      "verdict": "DEFER",
+      "setup": "NONE_BREAKDOWN_BELOW_SUPPORT",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-23",
+      "ticker": "TWLO",
+      "company": "Twilio",
+      "verdict": "DEFER",
+      "setup": "trend_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-23",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-23",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "POST_EVENT_WAIT_FOR_BASE",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-23",
+      "ticker": "ACN",
+      "company": "Accenture",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
     {
       "date": "2026-10-22",
       "ticker": "VICR",
@@ -300,65 +340,9 @@
       "verdict": "DEFER",
       "setup": "mean_reversion",
       "reason": "defer"
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "SWKS",
-      "company": "Skyworks Solutions",
-      "verdict": "DEFER",
-      "setup": "support_hold",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "REJECT",
-      "setup": "mean_reversion",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "META",
-      "company": "Meta Platforms",
-      "verdict": "REJECT",
-      "setup": "pullback_to_support",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "ILMN",
-      "company": "Illumina",
-      "verdict": "DEFER",
-      "setup": "mean_reversion",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "HALO",
-      "company": "Halozyme Therapeutics",
-      "verdict": "DEFER",
-      "setup": "none_pending_confirmation",
-      "reason": "defer"
     }
   ],
   "watch_list": [
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "HALO",
-      "company": "Halozyme Therapeutics",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 109.3,
-      "target_1": 119.21,
-      "target_2": 124.0,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-10-15",
-      "setup": "breakout_extended_wait_for_retest",
-      "decision_doc": "/sessions/rcw-016nub9ez5fdkhyejkirlgia/mnt/tradingagents-cowork/reports/HALO/2026-10/HALO-decision-2026-10-15.md"
-    },
     {
       "kind": "QUEUED",
       "ticker": "HALO",
@@ -4404,6 +4388,10 @@
     {
       "date": "2026-10-21",
       "nav": 1024692.32
+    },
+    {
+      "date": "2026-10-22",
+      "nav": 1014237.35
     }
   ],
   "spy_aligned": [
@@ -4882,11 +4870,15 @@
     {
       "date": "2026-10-21",
       "nav_equiv": 1076712.05
+    },
+    {
+      "date": "2026-10-22",
+      "nav_equiv": 1063996.34
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 2.47,
-    "sharpe": 0.12,
+    "total_return_pct": 1.42,
+    "sharpe": -0.14,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
