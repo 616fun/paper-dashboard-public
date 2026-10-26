@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-10-23T07:51:29Z",
-  "as_of": "2026-10-22",
+  "rendered_at_utc": "2026-10-26T07:51:13Z",
+  "as_of": "2026-10-23",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-22",
-    "current": 1014237.35,
+    "as_of": "2026-10-23",
+    "current": 1009588.0,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -10454.969999999972,
-    "day_pct": -1.020303343348955,
-    "incep_pnl": 14237.349999999977,
-    "incep_pct": 1.4237349999999978,
-    "deployed_pct": 90.93051542619683,
+    "day_pnl": -4649.349999999977,
+    "day_pct": -0.4584084780549618,
+    "incep_pnl": 9588.0,
+    "incep_pct": 0.9587999999999999,
+    "deployed_pct": 90.88874867767842,
     "open_count": 1,
-    "cash_interest": 6491.3,
+    "cash_interest": 6499.23,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 184.07,
-    "total_incl_cash": 1020728.65
+    "cash_interest_month": 192.0,
+    "total_incl_cash": 1016087.23
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 113,
+      "days_held": 116,
       "entry_price": 371.3662,
-      "last_price": 374.8999938964844,
-      "position_value": 922251.2482153961,
+      "last_price": 373.010009765625,
+      "position_value": 917601.9010503661,
       "cost_basis": 913558.14,
-      "unrealized": 8693.107188656228,
-      "unrealized_pct": 0.9515658389170636,
+      "unrealized": 4043.760023626266,
+      "unrealized_pct": 0.4426384968866372,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -53,6 +53,46 @@
     }
   ],
   "decisions": [
+    {
+      "date": "2026-10-26",
+      "ticker": "VICR",
+      "company": "Vicor",
+      "verdict": "DEFER",
+      "setup": "NONE_NO_BASE",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-26",
+      "ticker": "TWLO",
+      "company": "Twilio",
+      "verdict": "DEFER",
+      "setup": "trend_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-26",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-26",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "POST_EVENT_WAIT_FOR_BASE",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-10-26",
+      "ticker": "ACN",
+      "company": "Accenture",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
     {
       "date": "2026-10-23",
       "ticker": "VICR",
@@ -307,38 +347,6 @@
       "company": "Illumina",
       "verdict": "DEFER",
       "setup": "uptrend_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-09",
-      "ticker": "SWKS",
-      "company": "Skyworks Solutions",
-      "verdict": "DEFER",
-      "setup": "support_hold",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-09",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "REJECT",
-      "setup": "mean_reversion",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-10-09",
-      "ticker": "META",
-      "company": "Meta Platforms",
-      "verdict": "REJECT",
-      "setup": "pullback_to_support",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-10-09",
-      "ticker": "ILMN",
-      "company": "Illumina",
-      "verdict": "DEFER",
-      "setup": "mean_reversion",
       "reason": "defer"
     }
   ],
@@ -4392,6 +4400,10 @@
     {
       "date": "2026-10-22",
       "nav": 1014237.35
+    },
+    {
+      "date": "2026-10-23",
+      "nav": 1009588.0
     }
   ],
   "spy_aligned": [
@@ -4874,11 +4886,15 @@
     {
       "date": "2026-10-22",
       "nav_equiv": 1063996.34
+    },
+    {
+      "date": "2026-10-23",
+      "nav_equiv": 1058439.24
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 1.42,
-    "sharpe": -0.14,
+    "total_return_pct": 0.96,
+    "sharpe": -0.26,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
