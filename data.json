@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-02T08:50:38Z",
-  "as_of": "2026-10-29",
+  "rendered_at_utc": "2026-11-02T08:50:43Z",
+  "as_of": "2026-10-30",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-29",
-    "current": 1022453.71,
+    "as_of": "2026-10-30",
+    "current": 1006045.61,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -2287.859999999986,
-    "day_pct": -0.22326214403500644,
-    "incep_pnl": 22453.709999999963,
-    "incep_pct": 2.2453709999999965,
-    "deployed_pct": 91.00339711222722,
+    "day_pnl": -16408.099999999977,
+    "day_pct": -1.6047768069617523,
+    "incep_pnl": 6045.609999999986,
+    "incep_pct": 0.6045609999999986,
+    "deployed_pct": 90.8566670252654,
     "open_count": 1,
-    "cash_interest": 6546.79,
+    "cash_interest": 6554.72,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 239.56,
-    "total_incl_cash": 1029000.5
+    "cash_interest_month": 247.49,
+    "total_incl_cash": 1012600.33
   },
   "positions": [
     {
@@ -4444,6 +4444,10 @@
     {
       "date": "2026-10-29",
       "nav": 1022453.71
+    },
+    {
+      "date": "2026-10-30",
+      "nav": 1006045.61
     }
   ],
   "spy_aligned": [
@@ -4946,11 +4950,15 @@
     {
       "date": "2026-10-29",
       "nav_equiv": 1071517.07
+    },
+    {
+      "date": "2026-10-30",
+      "nav_equiv": 1052520.1
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 2.25,
-    "sharpe": 0.04,
+    "total_return_pct": 0.6,
+    "sharpe": -0.34,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
