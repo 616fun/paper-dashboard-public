@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-02T08:50:43Z",
-  "as_of": "2026-10-30",
+  "rendered_at_utc": "2026-11-02T21:35:43Z",
+  "as_of": "2026-11-02",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-10-30",
-    "current": 1006045.61,
+    "as_of": "2026-11-02",
+    "current": 1002183.4,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -16408.099999999977,
-    "day_pct": -1.6047768069617523,
-    "incep_pnl": 6045.609999999986,
-    "incep_pct": 0.6045609999999986,
-    "deployed_pct": 90.8566670252654,
+    "day_pnl": -3862.2099999999627,
+    "day_pct": -0.3839000897782321,
+    "incep_pnl": 2183.4000000000233,
+    "incep_pct": 0.21834000000000234,
+    "deployed_pct": 90.82143048867104,
     "open_count": 1,
-    "cash_interest": 6554.72,
+    "cash_interest": 6578.49,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 247.49,
-    "total_incl_cash": 1012600.33
+    "cash_interest_month": 15.85,
+    "total_incl_cash": 1008761.89
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 123,
       "entry_price": 371.3662,
-      "last_price": 371.57000732421875,
-      "position_value": 914059.5055565246,
+      "last_price": 370.0,
+      "position_value": 910197.2989999999,
       "cost_basis": 913558.14,
-      "unrealized": 501.3645297847688,
-      "unrealized_pct": 0.05488041836300531,
+      "unrealized": -3360.8420267399633,
+      "unrealized_pct": -0.3678848532795891,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -45,6 +45,12 @@
     }
   ],
   "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,002,183",
+      "detail": "daily return -0.38% \u00b7 positions value $910,197",
+      "ts": "2026-11-02"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
@@ -354,7 +360,7 @@
       "target_1": 233.08,
       "target_2": 261.13,
       "entry_zone": null,
-      "modifications": "1. Starter size only (0.90% NAV); do not add until a close above $210 on above-average volume. 2. Hard stop at $176.98 (below the $180 low); gap-through risk acknowledged, as the stock opened -23% on 10-30. 3. Take partial profit at T1 $233.08 (just under $241.90 gap-fill supply)\u2026",
+      "modifications": null,
       "logged_date": "2026-11-02",
       "setup": "POST_EARNINGS_GAP_BOUNCE",
       "decision_doc": "/sessions/rcw-01jb1md8c3sxaa4mdzxnbmgp/mnt/tradingagents-cowork/reports/TWLO/2026-11/TWLO-decision-2026-11-02.md"
@@ -4448,6 +4454,10 @@
     {
       "date": "2026-10-30",
       "nav": 1006045.61
+    },
+    {
+      "date": "2026-11-02",
+      "nav": 1002183.4
     }
   ],
   "spy_aligned": [
@@ -4954,11 +4964,15 @@
     {
       "date": "2026-10-30",
       "nav_equiv": 1052520.1
+    },
+    {
+      "date": "2026-11-02",
+      "nav_equiv": 1047478.4
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.6,
-    "sharpe": -0.34,
+    "total_return_pct": 0.22,
+    "sharpe": -0.43,
     "max_dd_pct": -5.24,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
