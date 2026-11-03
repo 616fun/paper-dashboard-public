@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-02T21:38:30Z",
+  "rendered_at_utc": "2026-11-03T03:49:40Z",
   "as_of": "2026-11-02",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 123,
+      "days_held": 124,
       "entry_price": 371.3662,
       "last_price": 370.0,
       "position_value": 910197.2989999999,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,002,183",
-      "detail": "daily return -0.38% \u00b7 positions value $910,197",
-      "ts": "2026-11-02"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 TWLO (APPROVE WITH MODIFICATIONS) \u00b7 ACN (APPROVE WITH MODIFICATIONS) \u00b7 OKTA (DEFER) \u00b7 VICR (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-02",
@@ -305,46 +292,6 @@
       "company": "Accenture",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-19",
-      "ticker": "SWKS",
-      "company": "Skyworks Solutions",
-      "verdict": "DEFER",
-      "setup": "support_hold_50d_reclaim",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-19",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "POST_REVERSAL_PULLBACK",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-19",
-      "ticker": "META",
-      "company": "Meta Platforms",
-      "verdict": "REJECT",
-      "setup": "pullback_to_support",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-10-19",
-      "ticker": "ILMN",
-      "company": "Illumina",
-      "verdict": "DEFER",
-      "setup": "uptrend_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-19",
-      "ticker": "HALO",
-      "company": "Halozyme Therapeutics",
-      "verdict": "DEFER",
-      "setup": "breakout_extended_wait_for_retest",
       "reason": "defer"
     }
   ],
