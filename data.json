@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-04T02:53:04Z",
+  "rendered_at_utc": "2026-11-04T08:51:55Z",
   "as_of": "2026-11-03",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 125,
@@ -44,8 +44,55 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "REGN (DEFER) \u00b7 MRNA (DEFER) \u00b7 EXEL (DEFER) \u00b7 IDXX (APPROVE WITH MODIFICATIONS) \u00b7 WING (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-04",
+      "ticker": "WING",
+      "company": "Wingstop",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "REGN",
+      "company": "Regeneron Pharmaceuticals",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "PRE_EARNINGS_WAIT",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "POST_EARNINGS_GAP_PULLBACK_LIMIT",
+      "reason": "awm_complex_instrument_tier1"
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "EXEL",
+      "company": "Exelixis",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-03",
       "ticker": "WING",
@@ -336,6 +383,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 618.0,
+      "target_1": 710.0,
+      "target_2": 769.98,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-04",
+      "setup": "POST_EARNINGS_GAP_PULLBACK_LIMIT",
+      "decision_doc": "/sessions/rcw-01jb1md6xdktrp9g513r2tu9/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-04.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "TWLO",
