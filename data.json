@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-04T21:38:00Z",
+  "rendered_at_utc": "2026-11-05T03:05:59Z",
   "as_of": "2026-11-04",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 125,
+      "days_held": 126,
       "entry_price": 371.3662,
       "last_price": 376.9200134277344,
       "position_value": 927220.4815161284,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,019,207",
-      "detail": "daily return +1.40% \u00b7 positions value $927,220",
-      "ts": "2026-11-04"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "REGN (DEFER) \u00b7 MRNA (DEFER) \u00b7 EXEL (DEFER) \u00b7 IDXX (APPROVE WITH MODIFICATIONS) \u00b7 WING (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-04",
