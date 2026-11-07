@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-06T21:38:35Z",
+  "rendered_at_utc": "2026-11-07T02:30:56Z",
   "as_of": "2026-11-06",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 127,
+      "days_held": 128,
       "entry_price": 371.3662,
       "last_price": 361.92999267578125,
       "position_value": 890345.1398934752,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $982,331",
-      "detail": "daily return +0.35% \u00b7 positions value $890,345",
-      "ts": "2026-11-06"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "REGN (DEFER) \u00b7 MRNA (DEFER) \u00b7 EXEL (DEFER) \u00b7 IDXX (DEFER) \u00b7 WING (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-06",
@@ -385,46 +372,6 @@
       "company": "Accenture",
       "verdict": "DEFER",
       "setup": "pullback_to_support",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-23",
-      "ticker": "VICR",
-      "company": "Vicor",
-      "verdict": "DEFER",
-      "setup": "NONE_BREAKDOWN_BELOW_SUPPORT",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-23",
-      "ticker": "TWLO",
-      "company": "Twilio",
-      "verdict": "DEFER",
-      "setup": "trend_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-23",
-      "ticker": "OKTA",
-      "company": "Okta",
-      "verdict": "DEFER",
-      "setup": "support_hold",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-23",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "POST_EVENT_WAIT_FOR_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-23",
-      "ticker": "ACN",
-      "company": "Accenture",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
       "reason": "defer"
     }
   ],
