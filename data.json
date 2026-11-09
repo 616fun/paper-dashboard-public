@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-09T08:55:29Z",
-  "as_of": "2026-11-06",
+  "rendered_at_utc": "2026-11-09T21:35:46Z",
+  "as_of": "2026-11-09",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-06",
-    "current": 982331.24,
+    "as_of": "2026-11-09",
+    "current": 1004397.38,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": 3468.5999999999767,
-    "day_pct": 0.35435002402379734,
-    "incep_pnl": -17668.76000000001,
-    "incep_pct": -1.766876000000001,
-    "deployed_pct": 90.63593864733448,
+    "day_pnl": 22066.140000000014,
+    "day_pct": 2.2463033955837557,
+    "incep_pnl": 4397.380000000005,
+    "incep_pct": 0.43973800000000046,
+    "deployed_pct": 90.84166268932321,
     "open_count": 1,
-    "cash_interest": 6610.2,
+    "cash_interest": 6633.98,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 47.56,
-    "total_incl_cash": 988941.44
+    "cash_interest_month": 71.34,
+    "total_incl_cash": 1011031.36
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 130,
       "entry_price": 371.3662,
-      "last_price": 361.92999267578125,
-      "position_value": 890345.1398934752,
+      "last_price": 370.8999938964844,
+      "position_value": 912411.2774153961,
       "cost_basis": 913558.14,
-      "unrealized": -23213.001133264625,
-      "unrealized_pct": -2.5409440396618588,
+      "unrealized": -1146.8636113437824,
+      "unrealized_pct": -0.12553810861505021,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -45,6 +45,12 @@
     }
   ],
   "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,004,397",
+      "detail": "daily return +2.25% \u00b7 positions value $912,411",
+      "ts": "2026-11-09"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 5 ticker(s)",
@@ -4604,6 +4610,10 @@
     {
       "date": "2026-11-06",
       "nav": 982331.24
+    },
+    {
+      "date": "2026-11-09",
+      "nav": 1004397.38
     }
   ],
   "spy_aligned": [
@@ -5130,11 +5140,15 @@
     {
       "date": "2026-11-06",
       "nav_equiv": 1024066.47
+    },
+    {
+      "date": "2026-11-09",
+      "nav_equiv": 1048300.15
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -1.77,
-    "sharpe": -0.72,
+    "total_return_pct": 0.44,
+    "sharpe": -0.29,
     "max_dd_pct": -5.61,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
