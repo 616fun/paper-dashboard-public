@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-07T02:30:56Z",
+  "rendered_at_utc": "2026-11-09T08:55:29Z",
   "as_of": "2026-11-06",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,10 +22,10 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 128,
+      "days_held": 130,
       "entry_price": 371.3662,
       "last_price": 361.92999267578125,
       "position_value": 890345.1398934752,
@@ -44,14 +44,69 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "REGN (DEFER) \u00b7 MRNA (DEFER) \u00b7 EXEL (APPROVE WITH MODIFICATIONS) \u00b7 IDXX (DEFER) \u00b7 WING (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-09",
+      "ticker": "WING",
+      "company": "Wingstop",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-09",
+      "ticker": "REGN",
+      "company": "Regeneron Pharmaceuticals",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-09",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-09",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-09",
+      "ticker": "EXEL",
+      "company": "Exelixis",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "pullback_to_support",
+      "reason": "awm_no_executable_params"
+    },
     {
       "date": "2026-11-06",
       "ticker": "WING",
       "company": "Wingstop",
       "verdict": "DEFER",
       "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-06",
+      "ticker": "SOFI",
+      "company": "SoFi Technologies",
+      "verdict": "DEFER",
+      "setup": "mean_reversion",
       "reason": "defer"
     },
     {
@@ -376,6 +431,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "EXEL",
+      "company": "Exelixis",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 64.95,
+      "target_1": 72.05,
+      "target_2": 73.6,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-09",
+      "setup": "pullback_to_support",
+      "decision_doc": "/sessions/rcw-01jb1md95ff5m7bzwdfyj3gi/mnt/tradingagents-cowork/reports/EXEL/2026-11/EXEL-decision-2026-11-09.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "IDXX",
