@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-10T04:28:44Z",
+  "rendered_at_utc": "2026-11-10T08:52:46Z",
   "as_of": "2026-11-09",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 131,
@@ -44,8 +44,47 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "REGN (APPROVE WITH MODIFICATIONS) \u00b7 MRNA (DEFER) \u00b7 EXEL (DEFER) \u00b7 WING (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-10",
+      "ticker": "WING",
+      "company": "Wingstop",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-10",
+      "ticker": "REGN",
+      "company": "Regeneron Pharmaceuticals",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-11-10",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "extended_breakout_buy",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-10",
+      "ticker": "EXEL",
+      "company": "Exelixis",
+      "verdict": "DEFER",
+      "setup": "none_extended_below_resistance",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-09",
       "ticker": "WING",
@@ -384,6 +423,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.95,
+      "stop": 655.0,
+      "target_1": 713.74,
+      "target_2": 769.98,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-10",
+      "setup": "breakout_pullback",
+      "decision_doc": "/sessions/rcw-01jb1md7yq8gpvkbikmctdlv/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-10.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "REGN",
+      "company": "Regeneron Pharmaceuticals",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 868.64,
+      "target_1": 971.28,
+      "target_2": 1022.6,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-10",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md7yq8gpvkbikmctdlv/mnt/tradingagents-cowork/reports/REGN/2026-11/REGN-decision-2026-11-10.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "EXEL",
