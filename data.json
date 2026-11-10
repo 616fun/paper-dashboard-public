@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-09T21:38:05Z",
+  "rendered_at_utc": "2026-11-10T04:28:44Z",
   "as_of": "2026-11-09",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 130,
+      "days_held": 131,
       "entry_price": 371.3662,
       "last_price": 370.8999938964844,
       "position_value": 912411.2774153961,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,004,397",
-      "detail": "daily return +2.25% \u00b7 positions value $912,411",
-      "ts": "2026-11-09"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "REGN (DEFER) \u00b7 MRNA (DEFER) \u00b7 EXEL (APPROVE WITH MODIFICATIONS) \u00b7 IDXX (DEFER) \u00b7 WING (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-09",
@@ -394,46 +381,6 @@
       "verdict": "DEFER",
       "setup": "pullback_to_support",
       "reason": "defer"
-    },
-    {
-      "date": "2026-10-26",
-      "ticker": "VICR",
-      "company": "Vicor",
-      "verdict": "DEFER",
-      "setup": "NONE_NO_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-26",
-      "ticker": "TWLO",
-      "company": "Twilio",
-      "verdict": "DEFER",
-      "setup": "trend_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-26",
-      "ticker": "OKTA",
-      "company": "Okta",
-      "verdict": "DEFER",
-      "setup": "support_hold",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-26",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "POST_EVENT_WAIT_FOR_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-26",
-      "ticker": "ACN",
-      "company": "Accenture",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
     }
   ],
   "watch_list": [
@@ -484,38 +431,6 @@
       "logged_date": "2026-11-04",
       "setup": "POST_EARNINGS_GAP_PULLBACK_LIMIT",
       "decision_doc": "/sessions/rcw-01jb1md6xdktrp9g513r2tu9/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-04.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "TWLO",
-      "company": "Twilio",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 176.98,
-      "target_1": 233.08,
-      "target_2": 261.13,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-11-02",
-      "setup": "POST_EARNINGS_GAP_BOUNCE",
-      "decision_doc": "/sessions/rcw-01jb1md8c3sxaa4mdzxnbmgp/mnt/tradingagents-cowork/reports/TWLO/2026-11/TWLO-decision-2026-11-02.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "ACN",
-      "company": "Accenture",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 241.81,
-      "target_1": 274.67,
-      "target_2": 291.1,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-11-02",
-      "setup": "momentum_breakout",
-      "decision_doc": "/sessions/rcw-01jb1md8c3sxaa4mdzxnbmgp/mnt/tradingagents-cowork/reports/ACN/2026-11/ACN-decision-2026-11-02.md"
     },
     {
       "kind": "QUEUED",
