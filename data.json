@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-11T09:07:30Z",
-  "as_of": "2026-11-10",
+  "rendered_at_utc": "2026-11-11T21:35:50Z",
+  "as_of": "2026-11-11",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-10",
-    "current": 1001076.37,
+    "as_of": "2026-11-11",
+    "current": 1012638.37,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -3321.0100000000093,
-    "day_pct": -0.33064701940978874,
-    "incep_pnl": 1076.3699999999953,
-    "incep_pct": 0.10763699999999954,
-    "deployed_pct": 90.81128046204907,
+    "day_pnl": 11562.0,
+    "day_pct": 1.1549568391070903,
+    "incep_pnl": 12638.369999999995,
+    "incep_pct": 1.2638369999999997,
+    "deployed_pct": 90.91619449498047,
     "open_count": 1,
-    "cash_interest": 6641.91,
+    "cash_interest": 6649.83,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 79.27,
-    "total_incl_cash": 1007718.28
+    "cash_interest_month": 87.19,
+    "total_incl_cash": 1019288.2
   },
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
+      "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 132,
       "entry_price": 371.3662,
-      "last_price": 369.54998779296875,
-      "position_value": 909090.2722557922,
+      "last_price": 374.25,
+      "position_value": 920652.267975,
       "cost_basis": 913558.14,
-      "unrealized": -4467.86877094768,
-      "unrealized_pct": -0.4890623344373334,
+      "unrealized": 7094.12694826012,
+      "unrealized_pct": 0.7765380909732899,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -45,6 +45,12 @@
     }
   ],
   "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,012,638",
+      "detail": "daily return +1.16% \u00b7 positions value $920,652",
+      "ts": "2026-11-11"
+    },
     {
       "kind": "ANALYZE",
       "label": "Autopilot analyzed 3 ticker(s)",
@@ -4620,6 +4626,10 @@
     {
       "date": "2026-11-10",
       "nav": 1001076.37
+    },
+    {
+      "date": "2026-11-11",
+      "nav": 1012638.37
     }
   ],
   "spy_aligned": [
@@ -5154,11 +5164,15 @@
     {
       "date": "2026-11-10",
       "nav_equiv": 1044442.24
+    },
+    {
+      "date": "2026-11-11",
+      "nav_equiv": 1058216.44
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.11,
-    "sharpe": -0.35,
+    "total_return_pct": 1.26,
+    "sharpe": -0.14,
     "max_dd_pct": -5.61,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
