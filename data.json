@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-10T21:38:05Z",
+  "rendered_at_utc": "2026-11-11T02:29:43Z",
   "as_of": "2026-11-10",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 131,
+      "days_held": 132,
       "entry_price": 371.3662,
       "last_price": 369.54998779296875,
       "position_value": 909090.2722557922,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,001,076",
-      "detail": "daily return -0.33% \u00b7 positions value $909,090",
-      "ts": "2026-11-10"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "REGN (APPROVE WITH MODIFICATIONS) \u00b7 MRNA (DEFER) \u00b7 EXEL (DEFER) \u00b7 WING (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-10",
@@ -381,46 +368,6 @@
     },
     {
       "date": "2026-10-28",
-      "ticker": "ACN",
-      "company": "Accenture",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-27",
-      "ticker": "VICR",
-      "company": "Vicor",
-      "verdict": "DEFER",
-      "setup": "NONE_NO_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-27",
-      "ticker": "TWLO",
-      "company": "Twilio",
-      "verdict": "DEFER",
-      "setup": "trend_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-27",
-      "ticker": "OKTA",
-      "company": "Okta",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-27",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "POST_EVENT_WAIT_FOR_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-27",
       "ticker": "ACN",
       "company": "Accenture",
       "verdict": "DEFER",
