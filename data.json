@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-11T02:29:43Z",
+  "rendered_at_utc": "2026-11-11T09:07:30Z",
   "as_of": "2026-11-10",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 132,
@@ -44,8 +44,39 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 3 ticker(s)",
+      "detail": "MRNA (DEFER) \u00b7 IDXX (DEFER) \u00b7 WING (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-11",
+      "ticker": "WING",
+      "company": "Wingstop",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-11",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "none_failed_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-11",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "DEFER",
+      "setup": "breakout_pullback",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-10",
       "ticker": "WING",
@@ -376,6 +407,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "REGN",
+      "company": "Regeneron Pharmaceuticals",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.19,
+      "stop": 868.64,
+      "target_1": 963.48,
+      "target_2": 1010.9,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-11",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md4jgqxfyab2ch5jau7/mnt/tradingagents-cowork/reports/REGN/2026-11/REGN-decision-2026-11-11.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "EXEL",
+      "company": "Exelixis",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 0.81,
+      "stop": 66.18,
+      "target_1": 73.6,
+      "target_2": 78.0,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-11",
+      "setup": "pullback_to_support",
+      "decision_doc": "/sessions/rcw-01jb1md4jgqxfyab2ch5jau7/mnt/tradingagents-cowork/reports/EXEL/2026-11/EXEL-decision-2026-11-11.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "IDXX",
