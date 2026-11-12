@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-11T21:38:18Z",
+  "rendered_at_utc": "2026-11-12T03:34:01Z",
   "as_of": "2026-11-11",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 132,
+      "days_held": 133,
       "entry_price": 371.3662,
       "last_price": 374.25,
       "position_value": 920652.267975,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $1,012,638",
-      "detail": "daily return +1.16% \u00b7 positions value $920,652",
-      "ts": "2026-11-11"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "MRNA (DEFER) \u00b7 IDXX (DEFER) \u00b7 WING (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-11",
@@ -362,54 +349,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "momentum_breakout",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-10-28",
-      "ticker": "VICR",
-      "company": "Vicor",
-      "verdict": "DEFER",
-      "setup": "NONE_NO_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-28",
-      "ticker": "TWLO",
-      "company": "Twilio",
-      "verdict": "DEFER",
-      "setup": "trend_continuation",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-28",
-      "ticker": "OKTA",
-      "company": "Okta",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-28",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "POST_EVENT_WAIT_FOR_BASE",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-28",
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "verdict": "DEFER",
-      "setup": "breakout",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-10-28",
-      "ticker": "ACN",
-      "company": "Accenture",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
     }
   ],
   "watch_list": [
@@ -508,22 +447,6 @@
       "logged_date": "2026-11-05",
       "setup": "POST_EARNINGS_BREAKOUT_PULLBACK_LIMIT",
       "decision_doc": "/sessions/rcw-01jb1md7m2m8mdq6kqemmeuc/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-05.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "IDXX",
-      "company": "IDEXX Laboratories",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 618.0,
-      "target_1": 710.0,
-      "target_2": 769.98,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-11-04",
-      "setup": "POST_EARNINGS_GAP_PULLBACK_LIMIT",
-      "decision_doc": "/sessions/rcw-01jb1md6xdktrp9g513r2tu9/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-04.md"
     },
     {
       "kind": "QUEUED",
