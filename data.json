@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-12T03:34:01Z",
+  "rendered_at_utc": "2026-11-12T09:01:15Z",
   "as_of": "2026-11-11",
   "starting_nav": 1000000.0,
   "hero": {
@@ -22,7 +22,7 @@
   "positions": [
     {
       "ticker": "VTI",
-      "company": "Vanguard Morningstar Total Stock Market ETF",
+      "company": "Vanguard Total Stock Market Index Fund ETF Shares",
       "direction": "LONG",
       "entry_date": "2026-07-02",
       "days_held": 133,
@@ -44,8 +44,55 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "MRNA (DEFER) \u00b7 EPAM (APPROVE WITH MODIFICATIONS) \u00b7 FOXA (DEFER) \u00b7 DBX (DEFER) \u00b7 CLX (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-12",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "none_awaiting_support_test",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-12",
+      "ticker": "FOXA",
+      "company": "Fox",
+      "verdict": "DEFER",
+      "setup": "none_mid_range",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-12",
+      "ticker": "EPAM",
+      "company": "EPAM Systems",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "awm_complex_instrument_tier1"
+    },
+    {
+      "date": "2026-11-12",
+      "ticker": "DBX",
+      "company": "Dropbox",
+      "verdict": "DEFER",
+      "setup": "none_awaiting_reclaim_or_retest",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-12",
+      "ticker": "CLX",
+      "company": "Clorox Company",
+      "verdict": "DEFER",
+      "setup": "none_awaiting_pullback",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-11",
       "ticker": "WING",
@@ -352,6 +399,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "EPAM",
+      "company": "EPAM Systems",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 149.69,
+      "target_1": 175.95,
+      "target_2": 189.08,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-12",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md7kuv2acgqdhsf94v2/mnt/tradingagents-cowork/reports/EPAM/2026-11/EPAM-decision-2026-11-12.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "REGN",
