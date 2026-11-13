@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-13T03:06:45Z",
-  "as_of": "2026-11-12",
+  "rendered_at_utc": "2026-11-13T21:35:54Z",
+  "as_of": "2026-11-13",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-12",
-    "current": 1008628.57,
+    "as_of": "2026-11-13",
+    "current": 1004913.95,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -4009.8000000000466,
-    "day_pct": -0.39597551493136157,
-    "incep_pnl": 8628.569999999949,
-    "incep_pct": 0.8628569999999949,
-    "deployed_pct": 90.88008185213315,
+    "day_pnl": -3714.6199999999953,
+    "day_pct": -0.3682842337095404,
+    "incep_pnl": 4913.949999999953,
+    "incep_pct": 0.49139499999999536,
+    "deployed_pct": 90.84637047779066,
     "open_count": 1,
-    "cash_interest": 6657.76,
+    "cash_interest": 6665.69,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 95.12,
-    "total_incl_cash": 1015286.33
+    "cash_interest_month": 103.05,
+    "total_incl_cash": 1011579.6399999999
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 134,
       "entry_price": 371.3662,
-      "last_price": 372.6199951171875,
-      "position_value": 916642.4678623169,
+      "last_price": 371.1099853515625,
+      "position_value": 912927.8548619506,
       "cost_basis": 913558.14,
-      "unrealized": 3084.326835577027,
-      "unrealized_pct": 0.33761691752980055,
+      "unrealized": -630.2861647892278,
+      "unrealized_pct": -0.06899245231188622,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -44,8 +44,61 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $1,004,914",
+      "detail": "daily return -0.37% \u00b7 positions value $912,928",
+      "ts": "2026-11-13"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "APP (APPROVE WITH MODIFICATIONS) \u00b7 MRNA (DEFER) \u00b7 EPAM (APPROVE WITH MODIFICATIONS) \u00b7 FISV (DEFER) \u00b7 IDXX (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-13",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "DEFER",
+      "setup": "none_testing_20d",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-13",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "DEFER",
+      "setup": "breakout_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-13",
+      "ticker": "FISV",
+      "company": "Fiserv",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-13",
+      "ticker": "EPAM",
+      "company": "EPAM Systems",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "awm_no_executable_params"
+    },
+    {
+      "date": "2026-11-13",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "awm_no_executable_params"
+    },
     {
       "date": "2026-11-12",
       "ticker": "MRNA",
@@ -392,6 +445,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 355.96,
+      "target_1": 431.4,
+      "target_2": 469.12,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-13",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md713gunmswzzsx7fag/mnt/tradingagents-cowork/reports/APP/2026-11/APP-decision-2026-11-13.md"
+    },
+    {
+      "kind": "PM SUGGESTED",
+      "ticker": "EPAM",
+      "company": "EPAM Systems",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": null,
+      "stop": 150.97,
+      "target_1": 176.69,
+      "target_2": 189.55,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-13",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md713gunmswzzsx7fag/mnt/tradingagents-cowork/reports/EPAM/2026-11/EPAM-decision-2026-11-13.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "EPAM",
@@ -4597,6 +4682,10 @@
     {
       "date": "2026-11-12",
       "nav": 1008628.57
+    },
+    {
+      "date": "2026-11-13",
+      "nav": 1004913.95
     }
   ],
   "spy_aligned": [
@@ -5139,11 +5228,15 @@
     {
       "date": "2026-11-12",
       "nav_equiv": 1054469.97
+    },
+    {
+      "date": "2026-11-13",
+      "nav_equiv": 1050639.94
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.86,
-    "sharpe": -0.22,
+    "total_return_pct": 0.49,
+    "sharpe": -0.28,
     "max_dd_pct": -5.61,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
