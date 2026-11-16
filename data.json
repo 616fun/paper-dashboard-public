@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-14T02:53:22Z",
-  "as_of": "2026-11-13",
+  "rendered_at_utc": "2026-11-16T21:35:40Z",
+  "as_of": "2026-11-16",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-13",
-    "current": 1004913.95,
+    "as_of": "2026-11-16",
+    "current": 988161.41,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -3714.6199999999953,
-    "day_pct": -0.3682842337095404,
-    "incep_pnl": 4913.949999999953,
-    "incep_pct": 0.49139499999999536,
-    "deployed_pct": 90.84637047779066,
+    "day_pnl": -16752.53999999992,
+    "day_pct": -1.6670621399971532,
+    "incep_pnl": -11838.589999999967,
+    "incep_pct": -1.1838589999999967,
+    "deployed_pct": 90.69118677686473,
     "open_count": 1,
-    "cash_interest": 6665.69,
+    "cash_interest": 6689.47,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 103.05,
-    "total_incl_cash": 1011579.6399999999
+    "cash_interest_month": 126.83,
+    "total_incl_cash": 994850.88
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 135,
+      "days_held": 137,
       "entry_price": 371.3662,
-      "last_price": 371.1099853515625,
-      "position_value": 912927.8548619506,
+      "last_price": 364.29998779296875,
+      "position_value": 896175.3105807921,
       "cost_basis": 913558.14,
-      "unrealized": -630.2861647892278,
-      "unrealized_pct": -0.06899245231188622,
+      "unrealized": -17382.830445947708,
+      "unrealized_pct": -1.9027612655732342,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -44,8 +44,37 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $988,161",
+      "detail": "daily return -1.67% \u00b7 positions value $896,175",
+      "ts": "2026-11-16"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 2 ticker(s)",
+      "detail": "APP (DEFER) \u00b7 MRNA (REJECT)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-16",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "support_hold",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-13",
       "ticker": "MRNA",
@@ -432,6 +461,54 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "EPAM",
+      "company": "EPAM Systems",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.57,
+      "stop": 150.17,
+      "target_1": 176.13,
+      "target_2": 189.11,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-16",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md5xsun1geuznrcc46a/mnt/tradingagents-cowork/reports/EPAM/2026-11/EPAM-decision-2026-11-16.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.0,
+      "stop": 655.0,
+      "target_1": 713.74,
+      "target_2": 769.98,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-16",
+      "setup": "breakout_pullback",
+      "decision_doc": "/sessions/rcw-01jb1md5xsun1geuznrcc46a/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-16.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "HAS",
+      "company": "Hasbro",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 3.05,
+      "stop": 112.5,
+      "target_1": 124.62,
+      "target_2": 129.35,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-16",
+      "setup": "breakout_pullback",
+      "decision_doc": "/sessions/rcw-01jb1md5xsun1geuznrcc46a/mnt/tradingagents-cowork/reports/HAS/2026-11/HAS-decision-2026-11-16.md"
+    },
     {
       "kind": "PM SUGGESTED",
       "ticker": "APP",
@@ -4673,6 +4750,10 @@
     {
       "date": "2026-11-13",
       "nav": 1004913.95
+    },
+    {
+      "date": "2026-11-16",
+      "nav": 988161.41
     }
   ],
   "spy_aligned": [
@@ -5219,11 +5300,15 @@
     {
       "date": "2026-11-13",
       "nav_equiv": 1050639.94
+    },
+    {
+      "date": "2026-11-16",
+      "nav_equiv": 1030556.68
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": 0.49,
-    "sharpe": -0.28,
+    "total_return_pct": -1.18,
+    "sharpe": -0.56,
     "max_dd_pct": -5.61,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
