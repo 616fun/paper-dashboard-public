@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-17T04:56:41Z",
-  "as_of": "2026-11-16",
+  "rendered_at_utc": "2026-11-17T21:35:54Z",
+  "as_of": "2026-11-17",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-16",
-    "current": 988161.41,
+    "as_of": "2026-11-17",
+    "current": 978050.88,
     "starting": 1000000.0,
     "cash": 91986.1,
-    "day_pnl": -16752.53999999992,
-    "day_pct": -1.6670621399971532,
-    "incep_pnl": -11838.589999999967,
-    "incep_pct": -1.1838589999999967,
-    "deployed_pct": 90.69118677686473,
+    "day_pnl": -10110.530000000028,
+    "day_pct": -1.0231658408923323,
+    "incep_pnl": -21949.119999999995,
+    "incep_pct": -2.1949119999999995,
+    "deployed_pct": 90.59495759566211,
     "open_count": 1,
-    "cash_interest": 6689.47,
+    "cash_interest": 6697.39,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 126.83,
-    "total_incl_cash": 994850.88
+    "cash_interest_month": 134.75,
+    "total_incl_cash": 984748.27
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 138,
       "entry_price": 371.3662,
-      "last_price": 364.29998779296875,
-      "position_value": 896175.3105807921,
+      "last_price": 360.19000244140625,
+      "position_value": 886064.7766188415,
       "cost_basis": 913558.14,
-      "unrealized": -17382.830445947708,
-      "unrealized_pct": -1.9027612655732342,
+      "unrealized": -27493.364407898393,
+      "unrealized_pct": -3.009481627190016,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -44,8 +44,53 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $978,051",
+      "detail": "daily return -1.02% \u00b7 positions value $886,065",
+      "ts": "2026-11-17"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 4 ticker(s)",
+      "detail": "APP (DEFER) \u00b7 MRNA (REJECT) \u00b7 FISV (DEFER) \u00b7 BKH (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-17",
+      "ticker": "MRNA",
+      "company": "Moderna",
+      "verdict": "REJECT",
+      "setup": "support_hold",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "FISV",
+      "company": "Fiserv",
+      "verdict": "DEFER",
+      "setup": "post_earnings_range_breakout",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "BKH",
+      "company": "Bright Horizon Energy",
+      "verdict": "DEFER",
+      "setup": "\u2014",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-16",
       "ticker": "MRNA",
@@ -408,6 +453,22 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "EPAM",
+      "company": "EPAM Systems",
+      "verdict": "APPROVE",
+      "direction": "LONG",
+      "size_pct": 1.56,
+      "stop": 148.92,
+      "target_1": 174.68,
+      "target_2": 187.56,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-17",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md7sj1qyeuflklrbpnf/mnt/tradingagents-cowork/reports/EPAM/2026-11/EPAM-decision-2026-11-17.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "EPAM",
@@ -4685,6 +4746,10 @@
     {
       "date": "2026-11-16",
       "nav": 988161.41
+    },
+    {
+      "date": "2026-11-17",
+      "nav": 978050.88
     }
   ],
   "spy_aligned": [
@@ -5235,12 +5300,16 @@
     {
       "date": "2026-11-16",
       "nav_equiv": 1030556.68
+    },
+    {
+      "date": "2026-11-17",
+      "nav_equiv": 1020097.2
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -1.18,
-    "sharpe": -0.56,
-    "max_dd_pct": -5.61,
+    "total_return_pct": -2.19,
+    "sharpe": -0.72,
+    "max_dd_pct": -5.69,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
     "trade_count": 106
