@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-17T21:38:27Z",
+  "rendered_at_utc": "2026-11-18T04:00:27Z",
   "as_of": "2026-11-17",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 138,
+      "days_held": 139,
       "entry_price": 371.3662,
       "last_price": 360.19000244140625,
       "position_value": 886064.7766188415,
@@ -44,20 +44,7 @@
       "sector": "_CORE_"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $978,051",
-      "detail": "daily return -1.02% \u00b7 positions value $886,065",
-      "ts": "2026-11-17"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "APP (DEFER) \u00b7 MRNA (REJECT) \u00b7 FISV (DEFER) \u00b7 BKH (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-17",
@@ -410,46 +397,6 @@
       "verdict": "DEFER",
       "setup": "pullback_to_support",
       "reason": "defer"
-    },
-    {
-      "date": "2026-11-03",
-      "ticker": "WING",
-      "company": "Wingstop",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-03",
-      "ticker": "RRC",
-      "company": "Range Resources",
-      "verdict": "REJECT",
-      "setup": "post_gap_consolidation",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-11-03",
-      "ticker": "PTC",
-      "company": "PTC",
-      "verdict": "REJECT",
-      "setup": "merger_arb_spread",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-11-03",
-      "ticker": "OPCH",
-      "company": "Option Care Health",
-      "verdict": "REJECT",
-      "setup": "merger_arb_no_directional_setup",
-      "reason": "reject"
-    },
-    {
-      "date": "2026-11-03",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "PRE_EARNINGS_WAIT",
-      "reason": "defer"
     }
   ],
   "watch_list": [
@@ -612,22 +559,6 @@
       "logged_date": "2026-11-10",
       "setup": "breakout_pullback",
       "decision_doc": "/sessions/rcw-01jb1md7yq8gpvkbikmctdlv/mnt/tradingagents-cowork/reports/IDXX/2026-11/IDXX-decision-2026-11-10.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "REGN",
-      "company": "Regeneron Pharmaceuticals",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 868.64,
-      "target_1": 971.28,
-      "target_2": 1022.6,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-11-10",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "decision_doc": "/sessions/rcw-01jb1md7yq8gpvkbikmctdlv/mnt/tradingagents-cowork/reports/REGN/2026-11/REGN-decision-2026-11-10.md"
     },
     {
       "kind": "QUEUED",
