@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-18T21:38:37Z",
+  "rendered_at_utc": "2026-11-19T03:57:22Z",
   "as_of": "2026-11-18",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 139,
+      "days_held": 140,
       "entry_price": 371.3662,
       "last_price": 359.4800109863281,
       "position_value": 884318.2028222869,
@@ -48,7 +48,7 @@
       "company": "EPAM Systems",
       "direction": "LONG",
       "entry_date": "2026-11-17",
-      "days_held": 1,
+      "days_held": 2,
       "entry_price": 160.06,
       "last_price": 154.16000366210938,
       "position_value": 7394.685391662597,
@@ -62,25 +62,12 @@
       "target_2": 187.56,
       "t2_dist_pct": 21.665798874199126,
       "max_hold": "2027-01-16",
-      "days_to_max": 59,
+      "days_to_max": 58,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $976,021",
-      "detail": "daily return -0.21% \u00b7 positions value $891,713",
-      "ts": "2026-11-18"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 4 ticker(s)",
-      "detail": "APP (DEFER) \u00b7 BKH (DEFER) \u00b7 CBOE (DEFER) \u00b7 EPAM (FILL)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-18",
@@ -412,46 +399,6 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "EXEL",
-      "company": "Exelixis",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "WING",
-      "company": "Wingstop",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "REGN",
-      "company": "Regeneron Pharmaceuticals",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "PRE_EARNINGS_WAIT",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "IDXX",
-      "company": "IDEXX Laboratories",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "POST_EARNINGS_GAP_PULLBACK_LIMIT",
-      "reason": "awm_complex_instrument_tier1"
-    },
-    {
-      "date": "2026-11-04",
       "ticker": "EXEL",
       "company": "Exelixis",
       "verdict": "DEFER",
