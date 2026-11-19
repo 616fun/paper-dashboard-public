@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-19T03:57:22Z",
-  "as_of": "2026-11-18",
+  "rendered_at_utc": "2026-11-19T21:35:43Z",
+  "as_of": "2026-11-19",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-18",
-    "current": 976021.29,
+    "as_of": "2026-11-19",
+    "current": 958450.68,
     "starting": 1000000.0,
     "cash": 84308.4,
-    "day_pnl": -2029.5899999999674,
-    "day_pct": -0.2075137440702438,
-    "incep_pnl": -23978.709999999963,
-    "incep_pct": -2.3978709999999963,
-    "deployed_pct": 91.36203268680747,
+    "day_pnl": -17570.609999999986,
+    "day_pct": -1.8002281487117955,
+    "incep_pnl": -41549.31999999995,
+    "incep_pct": -4.154931999999995,
+    "deployed_pct": 91.20367883718336,
     "open_count": 2,
-    "cash_interest": 6704.66,
+    "cash_interest": 6711.92,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 142.02,
-    "total_incl_cash": 982725.9500000001
+    "cash_interest_month": 149.28,
+    "total_incl_cash": 965162.6000000001
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 140,
       "entry_price": 371.3662,
-      "last_price": 359.4800109863281,
-      "position_value": 884318.2028222869,
+      "last_price": 352.4100036621094,
+      "position_value": 866926.0364157623,
       "cost_basis": 913558.14,
-      "unrealized": -29239.938204452978,
-      "unrealized_pct": -3.2006652769346977,
+      "unrealized": -46632.10461097758,
+      "unrealized_pct": -5.104448476433932,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,25 +50,62 @@
       "entry_date": "2026-11-17",
       "days_held": 2,
       "entry_price": 160.06,
-      "last_price": 154.16000366210938,
-      "position_value": 7394.685391662597,
+      "last_price": 150.44000244140625,
+      "position_value": 7216.2458611083985,
       "cost_basis": 7677.7,
-      "unrealized": -283.0086643374025,
-      "unrealized_pct": -3.6861154178999302,
+      "unrealized": -461.4481948916009,
+      "unrealized_pct": -6.010244632383942,
       "stop": 150.17,
-      "stop_dist_pct": -2.588222345177643,
+      "stop_dist_pct": -0.17947516420137238,
       "target_1": 174.68,
-      "t1_dist_pct": 13.310843182688762,
+      "t1_dist_pct": 16.112734090146542,
       "target_2": 187.56,
-      "t2_dist_pct": 21.665798874199126,
+      "t2_dist_pct": 24.674286729722265,
       "max_hold": "2027-01-16",
       "days_to_max": 58,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $958,451",
+      "detail": "daily return -1.80% \u00b7 positions value $874,142",
+      "ts": "2026-11-19"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 3 ticker(s)",
+      "detail": "APP (DEFER) \u00b7 BILL (DEFER) \u00b7 AES (REJECT)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-19",
+      "ticker": "BILL",
+      "company": "BILL Holdings",
+      "verdict": "DEFER",
+      "setup": "event_rumor_takeover",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "AES",
+      "company": "AES",
+      "verdict": "REJECT",
+      "setup": "merger_arbitrage_pin",
+      "reason": "reject"
+    },
     {
       "date": "2026-11-18",
       "ticker": "CBOE",
@@ -407,6 +444,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "CROX",
+      "company": "Crocs",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 2.0,
+      "stop": 148.92,
+      "target_1": 164.24,
+      "target_2": 172.49,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-19",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/rcw-01jb1md783785ekstew9rest/mnt/tradingagents-cowork/reports/CROX/2026-11/CROX-decision-2026-11-19.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "VFC",
+      "company": "V.F",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 19.42,
+      "target_1": 21.25,
+      "target_2": 22.27,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-19",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/rcw-01jb1md783785ekstew9rest/mnt/tradingagents-cowork/reports/VFC/2026-11/VFC-decision-2026-11-19.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "EW",
@@ -4708,6 +4777,10 @@
     {
       "date": "2026-11-18",
       "nav": 976021.29
+    },
+    {
+      "date": "2026-11-19",
+      "nav": 958450.68
     }
   ],
   "spy_aligned": [
@@ -5266,12 +5339,16 @@
     {
       "date": "2026-11-18",
       "nav_equiv": 1016977.48
+    },
+    {
+      "date": "2026-11-19",
+      "nav_equiv": 997019.52
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -2.4,
-    "sharpe": -0.76,
-    "max_dd_pct": -5.88,
+    "total_return_pct": -4.15,
+    "sharpe": -1.03,
+    "max_dd_pct": -7.58,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
     "trade_count": 106
