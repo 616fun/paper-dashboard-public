@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-20T03:51:14Z",
-  "as_of": "2026-11-19",
+  "rendered_at_utc": "2026-11-20T21:35:47Z",
+  "as_of": "2026-11-20",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-19",
-    "current": 958450.68,
+    "as_of": "2026-11-20",
+    "current": 928105.65,
     "starting": 1000000.0,
     "cash": 84308.4,
-    "day_pnl": -17570.609999999986,
-    "day_pct": -1.8002281487117955,
-    "incep_pnl": -41549.31999999995,
-    "incep_pct": -4.154931999999995,
-    "deployed_pct": 91.20367883718336,
+    "day_pnl": -30345.030000000028,
+    "day_pct": -3.166050234321919,
+    "incep_pnl": -71894.34999999998,
+    "incep_pct": -7.189434999999998,
+    "deployed_pct": 90.91607728064149,
     "open_count": 2,
-    "cash_interest": 6711.92,
+    "cash_interest": 6719.19,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 149.28,
-    "total_incl_cash": 965162.6000000001
+    "cash_interest_month": 156.55,
+    "total_incl_cash": 934824.84
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 141,
       "entry_price": 371.3662,
-      "last_price": 352.4100036621094,
-      "position_value": 866926.0364157623,
+      "last_price": 340.0199890136719,
+      "position_value": 836446.6908277129,
       "cost_basis": 913558.14,
-      "unrealized": -46632.10461097758,
-      "unrealized_pct": -5.104448476433932,
+      "unrealized": -77111.45019902696,
+      "unrealized_pct": -8.440781898387122,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,25 +50,70 @@
       "entry_date": "2026-11-17",
       "days_held": 3,
       "entry_price": 160.06,
-      "last_price": null,
-      "position_value": null,
+      "last_price": 153.24000549316406,
+      "position_value": 7350.555287493896,
       "cost_basis": 7677.7,
-      "unrealized": null,
-      "unrealized_pct": null,
+      "unrealized": -327.1387685061036,
+      "unrealized_pct": -4.260898729748806,
       "stop": 150.17,
-      "stop_dist_pct": null,
+      "stop_dist_pct": -2.0033968827422326,
       "target_1": 174.68,
-      "t1_dist_pct": null,
+      "t1_dist_pct": 13.991120946411325,
       "target_2": 187.56,
-      "t2_dist_pct": null,
+      "t2_dist_pct": 22.396236802775977,
       "max_hold": "2027-01-16",
       "days_to_max": 57,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $928,106",
+      "detail": "daily return -3.17% \u00b7 positions value $843,797",
+      "ts": "2026-11-20"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 3 ticker(s)",
+      "detail": "BILL (REJECT) \u00b7 VFC (DEFER) \u00b7 OKTA (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-20",
+      "ticker": "VFC",
+      "company": "V.F",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "OKTA",
+      "company": "Okta",
+      "verdict": "DEFER",
+      "setup": "trend_continuation",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "BILL",
+      "company": "BILL Holdings",
+      "verdict": "REJECT",
+      "setup": "merger_arb_cash_deal",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "SPCX",
+      "company": "Space Exploration Technologies",
+      "verdict": "DEFER",
+      "setup": "support_hold",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-19",
       "ticker": "BILL",
@@ -391,6 +436,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "CROX",
+      "company": "Crocs",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.5,
+      "stop": 148.92,
+      "target_1": 164.24,
+      "target_2": 172.49,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-20",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/rcw-01jb1md5qztzx7pypb553qg3/mnt/tradingagents-cowork/reports/CROX/2026-11/CROX-decision-2026-11-20.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "ACM",
+      "company": "AECOM",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 75.4,
+      "target_1": 84.29,
+      "target_2": 87.66,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-20",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md5qztzx7pypb553qg3/mnt/tradingagents-cowork/reports/ACM/2026-11/ACM-decision-2026-11-20.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "CROX",
@@ -4712,6 +4789,10 @@
     {
       "date": "2026-11-19",
       "nav": 958450.68
+    },
+    {
+      "date": "2026-11-20",
+      "nav": 928105.65
     }
   ],
   "spy_aligned": [
@@ -5274,12 +5355,16 @@
     {
       "date": "2026-11-19",
       "nav_equiv": 997019.52
+    },
+    {
+      "date": "2026-11-20",
+      "nav_equiv": 960724.76
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -4.15,
-    "sharpe": -1.03,
-    "max_dd_pct": -7.58,
+    "total_return_pct": -7.19,
+    "sharpe": -1.44,
+    "max_dd_pct": -10.5,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
     "trade_count": 106
