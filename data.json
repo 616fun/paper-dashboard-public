@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-20T21:38:19Z",
+  "rendered_at_utc": "2026-11-21T03:44:08Z",
   "as_of": "2026-11-20",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 141,
+      "days_held": 142,
       "entry_price": 371.3662,
       "last_price": 340.0199890136719,
       "position_value": 836446.6908277129,
@@ -48,7 +48,7 @@
       "company": "EPAM Systems",
       "direction": "LONG",
       "entry_date": "2026-11-17",
-      "days_held": 3,
+      "days_held": 4,
       "entry_price": 160.06,
       "last_price": 153.24000549316406,
       "position_value": 7350.555287493896,
@@ -62,25 +62,12 @@
       "target_2": 187.56,
       "t2_dist_pct": 22.396236802775977,
       "max_hold": "2027-01-16",
-      "days_to_max": 57,
+      "days_to_max": 56,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $928,106",
-      "detail": "daily return -3.17% \u00b7 positions value $843,797",
-      "ts": "2026-11-20"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 3 ticker(s)",
-      "detail": "BILL (REJECT) \u00b7 VFC (DEFER) \u00b7 OKTA (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-20",
@@ -385,54 +372,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "pullback_to_support",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "WING",
-      "company": "Wingstop",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "SOFI",
-      "company": "SoFi Technologies",
-      "verdict": "DEFER",
-      "setup": "mean_reversion",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "REGN",
-      "company": "Regeneron Pharmaceuticals",
-      "verdict": "DEFER",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "PRE_EARNINGS_WAIT",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "IDXX",
-      "company": "IDEXX Laboratories",
-      "verdict": "DEFER",
-      "setup": "POST_EARNINGS_RETEST_AFTER_REVERSAL",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "EXEL",
-      "company": "Exelixis",
-      "verdict": "DEFER",
-      "setup": "pullback_to_support",
-      "reason": "defer"
     }
   ],
   "watch_list": [
@@ -579,38 +518,6 @@
       "logged_date": "2026-11-16",
       "setup": "breakout_pullback",
       "decision_doc": "/sessions/rcw-01jb1md5xsun1geuznrcc46a/mnt/tradingagents-cowork/reports/HAS/2026-11/HAS-decision-2026-11-16.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "APP",
-      "company": "AppLovin",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 355.96,
-      "target_1": 431.4,
-      "target_2": 469.12,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-11-13",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "decision_doc": "/sessions/rcw-01jb1md713gunmswzzsx7fag/mnt/tradingagents-cowork/reports/APP/2026-11/APP-decision-2026-11-13.md"
-    },
-    {
-      "kind": "PM SUGGESTED",
-      "ticker": "EPAM",
-      "company": "EPAM Systems",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "direction": "LONG",
-      "size_pct": null,
-      "stop": 150.97,
-      "target_1": 176.69,
-      "target_2": 189.55,
-      "entry_zone": null,
-      "modifications": null,
-      "logged_date": "2026-11-13",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "decision_doc": "/sessions/rcw-01jb1md713gunmswzzsx7fag/mnt/tradingagents-cowork/reports/EPAM/2026-11/EPAM-decision-2026-11-13.md"
     },
     {
       "kind": "QUEUED",
