@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-21T03:44:08Z",
-  "as_of": "2026-11-20",
+  "rendered_at_utc": "2026-11-23T21:35:47Z",
+  "as_of": "2026-11-23",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-20",
-    "current": 928105.65,
+    "as_of": "2026-11-23",
+    "current": 965835.43,
     "starting": 1000000.0,
     "cash": 84308.4,
-    "day_pnl": -30345.030000000028,
-    "day_pct": -3.166050234321919,
-    "incep_pnl": -71894.34999999998,
-    "incep_pct": -7.189434999999998,
-    "deployed_pct": 90.91607728064149,
+    "day_pnl": 37729.78000000003,
+    "day_pct": 4.065246235706034,
+    "incep_pnl": -34164.56999999995,
+    "incep_pct": -3.416456999999995,
+    "deployed_pct": 91.27093525653744,
     "open_count": 2,
-    "cash_interest": 6719.19,
+    "cash_interest": 6740.98,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 156.55,
-    "total_incl_cash": 934824.84
+    "cash_interest_month": 178.34,
+    "total_incl_cash": 972576.41
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 142,
+      "days_held": 144,
       "entry_price": 371.3662,
-      "last_price": 340.0199890136719,
-      "position_value": 836446.6908277129,
+      "last_price": 355.2699890136719,
+      "position_value": 873961.5795027129,
       "cost_basis": 913558.14,
-      "unrealized": -77111.45019902696,
-      "unrealized_pct": -8.440781898387122,
+      "unrealized": -39596.56152402691,
+      "unrealized_pct": -4.3343230984209375,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,27 +48,64 @@
       "company": "EPAM Systems",
       "direction": "LONG",
       "entry_date": "2026-11-17",
-      "days_held": 4,
+      "days_held": 6,
       "entry_price": 160.06,
-      "last_price": 153.24000549316406,
-      "position_value": 7350.555287493896,
+      "last_price": 157.72000122070312,
+      "position_value": 7565.4499305541985,
       "cost_basis": 7677.7,
-      "unrealized": -327.1387685061036,
-      "unrealized_pct": -4.260898729748806,
+      "unrealized": -112.24412544580082,
+      "unrealized_pct": -1.4619510054335099,
       "stop": 150.17,
-      "stop_dist_pct": -2.0033968827422326,
+      "stop_dist_pct": -4.786964977344983,
       "target_1": 174.68,
-      "t1_dist_pct": 13.991120946411325,
+      "t1_dist_pct": 10.7532327212984,
       "target_2": 187.56,
-      "t2_dist_pct": 22.396236802775977,
+      "t2_dist_pct": 18.919603441760515,
       "max_hold": "2027-01-16",
-      "days_to_max": 56,
+      "days_to_max": 54,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $965,835",
+      "detail": "daily return +4.07% \u00b7 positions value $881,527",
+      "ts": "2026-11-23"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 3 ticker(s)",
+      "detail": "GME (DEFER) \u00b7 BILL (REJECT) \u00b7 BKH (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-23",
+      "ticker": "GME",
+      "company": "GameStop",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "BKH",
+      "company": "Black Hills",
+      "verdict": "DEFER",
+      "setup": "pullback_to_sma50",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "BILL",
+      "company": "BILL Holdings",
+      "verdict": "REJECT",
+      "setup": "merger_arb_cash_deal",
+      "reason": "reject"
+    },
     {
       "date": "2026-11-20",
       "ticker": "VFC",
@@ -136,7 +173,7 @@
     {
       "date": "2026-11-18",
       "ticker": "BKH",
-      "company": "Bright Horizon Energy",
+      "company": "Black Hills",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -168,7 +205,7 @@
     {
       "date": "2026-11-17",
       "ticker": "BKH",
-      "company": "Bright Horizon Energy",
+      "company": "Black Hills",
       "verdict": "DEFER",
       "setup": "\u2014",
       "reason": "defer"
@@ -375,6 +412,38 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "CROX",
+      "company": "Crocs",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.5,
+      "stop": 148.92,
+      "target_1": 164.24,
+      "target_2": 172.49,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-23",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/rcw-01jb1md8invhjqi537xfjukq/mnt/tradingagents-cowork/reports/CROX/2026-11/CROX-decision-2026-11-23.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "ACM",
+      "company": "AECOM",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 75.4,
+      "target_1": 84.29,
+      "target_2": 87.66,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-23",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md8invhjqi537xfjukq/mnt/tradingagents-cowork/reports/ACM/2026-11/ACM-decision-2026-11-23.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "CROX",
@@ -4700,6 +4769,10 @@
     {
       "date": "2026-11-20",
       "nav": 928105.65
+    },
+    {
+      "date": "2026-11-23",
+      "nav": 965835.43
     }
   ],
   "spy_aligned": [
@@ -5266,11 +5339,15 @@
     {
       "date": "2026-11-20",
       "nav_equiv": 960724.76
+    },
+    {
+      "date": "2026-11-23",
+      "nav_equiv": 1005960.88
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -7.19,
-    "sharpe": -1.44,
+    "total_return_pct": -3.42,
+    "sharpe": -0.75,
     "max_dd_pct": -10.5,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
