@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-24T21:38:25Z",
-  "as_of": "2026-11-24",
+  "rendered_at_utc": "2026-11-25T05:12:20Z",
+  "as_of": "2026-11-25",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-24",
+    "as_of": "2026-11-25",
     "current": 962498.02,
     "starting": 1000000.0,
     "cash": 84308.4,
-    "day_pnl": -3337.4100000000326,
-    "day_pct": -0.3455464457335172,
+    "day_pnl": 0.0,
+    "day_pct": 0.0,
     "incep_pnl": -37501.97999999998,
     "incep_pct": -3.7501979999999984,
     "deployed_pct": 91.24066769508784,
     "open_count": 2,
-    "cash_interest": 6748.25,
+    "cash_interest": 6755.51,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 185.61,
-    "total_incl_cash": 969246.27
+    "cash_interest_month": 192.87,
+    "total_incl_cash": 969253.53
   },
   "positions": [
     {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 145,
+      "days_held": 146,
       "entry_price": 371.3662,
       "last_price": 353.8399963378906,
       "position_value": 870443.8079592376,
@@ -48,7 +48,7 @@
       "company": "EPAM Systems",
       "direction": "LONG",
       "entry_date": "2026-11-17",
-      "days_held": 7,
+      "days_held": 8,
       "entry_price": 160.06,
       "last_price": 161.47999572753906,
       "position_value": 7745.807843060303,
@@ -62,7 +62,7 @@
       "target_2": 187.56,
       "t2_dist_pct": 16.15060995943116,
       "max_hold": "2027-01-16",
-      "days_to_max": 53,
+      "days_to_max": 52,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
@@ -71,14 +71,8 @@
     {
       "kind": "MTM",
       "label": "MTM mark: NAV $962,498",
-      "detail": "daily return -0.35% \u00b7 positions value $878,190",
-      "ts": "2026-11-24"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 2 ticker(s)",
-      "detail": "GME (DEFER) \u00b7 BILL (REJECT)",
-      "ts": ""
+      "detail": "daily return +0.00% \u00b7 positions value $878,190",
+      "ts": "2026-11-25"
     }
   ],
   "decisions": [
@@ -352,38 +346,6 @@
       "company": "IDEXX Laboratories",
       "verdict": "DEFER",
       "setup": "breakout_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-10",
-      "ticker": "WING",
-      "company": "Wingstop",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-10",
-      "ticker": "REGN",
-      "company": "Regeneron Pharmaceuticals",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-11-10",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "extended_breakout_buy",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-10",
-      "ticker": "EXEL",
-      "company": "Exelixis",
-      "verdict": "DEFER",
-      "setup": "none_extended_below_resistance",
       "reason": "defer"
     }
   ],
@@ -4800,6 +4762,10 @@
     },
     {
       "date": "2026-11-24",
+      "nav": 962498.02
+    },
+    {
+      "date": "2026-11-25",
       "nav": 962498.02
     }
   ],
