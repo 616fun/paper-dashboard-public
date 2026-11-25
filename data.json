@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-25T05:12:20Z",
+  "rendered_at_utc": "2026-11-25T21:35:54Z",
   "as_of": "2026-11-25",
   "starting_nav": 1000000.0,
   "hero": {
     "as_of": "2026-11-25",
-    "current": 962498.02,
+    "current": 961074.76,
     "starting": 1000000.0,
     "cash": 84308.4,
-    "day_pnl": 0.0,
-    "day_pct": 0.0,
-    "incep_pnl": -37501.97999999998,
-    "incep_pct": -3.7501979999999984,
-    "deployed_pct": 91.24066769508784,
+    "day_pnl": -1423.2600000000093,
+    "day_pct": -0.1478714730239143,
+    "incep_pnl": -38925.23999999999,
+    "incep_pct": -3.8925239999999994,
+    "deployed_pct": 91.22769595988557,
     "open_count": 2,
     "cash_interest": 6755.51,
     "cash_yield_annual": 0.031453,
     "cash_interest_month": 192.87,
-    "total_incl_cash": 969253.53
+    "total_incl_cash": 967830.27
   },
   "positions": [
     {
@@ -27,11 +27,11 @@
       "entry_date": "2026-07-02",
       "days_held": 146,
       "entry_price": 371.3662,
-      "last_price": 353.8399963378906,
-      "position_value": 870443.8079592376,
+      "last_price": 353.20001220703125,
+      "position_value": 868869.4516692077,
       "cost_basis": 913558.14,
-      "unrealized": -43114.333067502244,
-      "unrealized_pct": -4.719385787427435,
+      "unrealized": -44688.68935753219,
+      "unrealized_pct": -4.891718145854075,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -50,17 +50,17 @@
       "entry_date": "2026-11-17",
       "days_held": 8,
       "entry_price": 160.06,
-      "last_price": 161.47999572753906,
-      "position_value": 7745.807843060303,
+      "last_price": 164.6300048828125,
+      "position_value": 7896.906222216797,
       "cost_basis": 7677.7,
-      "unrealized": 68.11378706030337,
-      "unrealized_pct": 0.8871646429708083,
+      "unrealized": 219.2121662167974,
+      "unrealized_pct": 2.8551823583734297,
       "stop": 150.17,
-      "stop_dist_pct": -7.003960878610706,
+      "stop_dist_pct": -8.783335026385672,
       "target_1": 174.68,
-      "t1_dist_pct": 8.174389783074409,
+      "t1_dist_pct": 6.1045950428910745,
       "target_2": 187.56,
-      "t2_dist_pct": 16.15060995943116,
+      "t2_dist_pct": 13.92819925718256,
       "max_hold": "2027-01-16",
       "days_to_max": 52,
       "setup_type": "post_earnings_breakout_pullback_entry",
@@ -70,12 +70,34 @@
   "events": [
     {
       "kind": "MTM",
-      "label": "MTM mark: NAV $962,498",
-      "detail": "daily return +0.00% \u00b7 positions value $878,190",
+      "label": "MTM mark: NAV $961,075",
+      "detail": "daily return -0.15% \u00b7 positions value $876,766",
       "ts": "2026-11-25"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 2 ticker(s)",
+      "detail": "GME (DEFER) \u00b7 BILL (REJECT)",
+      "ts": ""
     }
   ],
   "decisions": [
+    {
+      "date": "2026-11-25",
+      "ticker": "GME",
+      "company": "GameStop",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-25",
+      "ticker": "BILL",
+      "company": "BILL Holdings",
+      "verdict": "REJECT",
+      "setup": "merger_arb_cash_deal",
+      "reason": "reject"
+    },
     {
       "date": "2026-11-24",
       "ticker": "GME",
@@ -350,6 +372,54 @@
     }
   ],
   "watch_list": [
+    {
+      "kind": "QUEUED",
+      "ticker": "ANF",
+      "company": "Abercrombie & Fitch Co",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 151.5,
+      "target_1": 178.38,
+      "target_2": 187.81,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-25",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md7vgh4faskhvme8kjq/mnt/tradingagents-cowork/reports/ANF/2026-11/ANF-decision-2026-11-25.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "FCN",
+      "company": "FTI Consulting",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 195.4,
+      "target_1": 217.01,
+      "target_2": 221.44,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-25",
+      "setup": "support_hold",
+      "decision_doc": "/sessions/rcw-01jb1md7vgh4faskhvme8kjq/mnt/tradingagents-cowork/reports/FCN/2026-11/FCN-decision-2026-11-25.md"
+    },
+    {
+      "kind": "QUEUED",
+      "ticker": "DLTR",
+      "company": "Dollar Tree",
+      "verdict": "APPROVE WITH MODIFICATIONS",
+      "direction": "LONG",
+      "size_pct": 1.0,
+      "stop": 143.9,
+      "target_1": 161.1,
+      "target_2": 169.05,
+      "entry_zone": null,
+      "modifications": null,
+      "logged_date": "2026-11-25",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "decision_doc": "/sessions/rcw-01jb1md7vgh4faskhvme8kjq/mnt/tradingagents-cowork/reports/DLTR/2026-11/DLTR-decision-2026-11-25.md"
+    },
     {
       "kind": "QUEUED",
       "ticker": "FCN",
@@ -4766,7 +4836,7 @@
     },
     {
       "date": "2026-11-25",
-      "nav": 962498.02
+      "nav": 961074.76
     }
   ],
   "spy_aligned": [
@@ -5341,11 +5411,15 @@
     {
       "date": "2026-11-24",
       "nav_equiv": 1001072.44
+    },
+    {
+      "date": "2026-11-25",
+      "nav_equiv": 998175.52
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -3.75,
-    "sharpe": -0.8,
+    "total_return_pct": -3.89,
+    "sharpe": -0.82,
     "max_dd_pct": -10.5,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
