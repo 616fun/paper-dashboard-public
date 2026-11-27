@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-26T04:41:22Z",
-  "as_of": "2026-11-25",
+  "rendered_at_utc": "2026-11-27T21:35:51Z",
+  "as_of": "2026-11-27",
   "starting_nav": 1000000.0,
   "hero": {
-    "as_of": "2026-11-25",
-    "current": 961074.76,
+    "as_of": "2026-11-27",
+    "current": 976288.29,
     "starting": 1000000.0,
     "cash": 84308.4,
-    "day_pnl": -1423.2600000000093,
-    "day_pct": -0.1478714730239143,
-    "incep_pnl": -38925.23999999999,
-    "incep_pct": -3.8925239999999994,
-    "deployed_pct": 91.22769595988557,
+    "day_pnl": 15213.530000000028,
+    "day_pct": 1.5829705068937643,
+    "incep_pnl": -23711.709999999963,
+    "incep_pct": -2.3711709999999964,
+    "deployed_pct": 91.36439503950211,
     "open_count": 2,
-    "cash_interest": 6755.51,
+    "cash_interest": 6770.04,
     "cash_yield_annual": 0.031453,
-    "cash_interest_month": 192.87,
-    "total_incl_cash": 967830.27
+    "cash_interest_month": 207.4,
+    "total_incl_cash": 983058.3300000001
   },
   "positions": [
     {
@@ -25,13 +25,13 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 147,
+      "days_held": 148,
       "entry_price": 371.3662,
-      "last_price": 353.20001220703125,
-      "position_value": 868869.4516692077,
+      "last_price": 359.3999938964844,
+      "position_value": 884121.3613653961,
       "cost_basis": 913558.14,
-      "unrealized": -44688.68935753219,
-      "unrealized_pct": -4.891718145854075,
+      "unrealized": -29436.779661343782,
+      "unrealized_pct": -3.2222119577698742,
       "stop": null,
       "stop_dist_pct": null,
       "target_1": null,
@@ -48,27 +48,80 @@
       "company": "EPAM Systems",
       "direction": "LONG",
       "entry_date": "2026-11-17",
-      "days_held": 9,
+      "days_held": 10,
       "entry_price": 160.06,
-      "last_price": 164.6300048828125,
-      "position_value": 7896.906222216797,
+      "last_price": 163.8300018310547,
+      "position_value": 7858.531995831298,
       "cost_basis": 7677.7,
-      "unrealized": 219.2121662167974,
-      "unrealized_pct": 2.8551823583734297,
+      "unrealized": 180.83793983129908,
+      "unrealized_pct": 2.3553678814536383,
       "stop": 150.17,
-      "stop_dist_pct": -8.783335026385672,
+      "stop_dist_pct": -8.337912273932105,
       "target_1": 174.68,
-      "t1_dist_pct": 6.1045950428910745,
+      "t1_dist_pct": 6.622717480119478,
       "target_2": 187.56,
-      "t2_dist_pct": 13.92819925718256,
+      "t2_dist_pct": 14.48452536392952,
       "max_hold": "2027-01-16",
-      "days_to_max": 51,
+      "days_to_max": 50,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "MTM",
+      "label": "MTM mark: NAV $976,288",
+      "detail": "daily return +1.58% \u00b7 positions value $891,980",
+      "ts": "2026-11-27"
+    },
+    {
+      "kind": "ANALYZE",
+      "label": "Autopilot analyzed 5 ticker(s)",
+      "detail": "GME (DEFER) \u00b7 FCN (DEFER) \u00b7 BILL (REJECT) \u00b7 VFC (DEFER) \u00b7 ACM (DEFER)",
+      "ts": ""
+    }
+  ],
   "decisions": [
+    {
+      "date": "2026-11-27",
+      "ticker": "VFC",
+      "company": "V.F",
+      "verdict": "DEFER",
+      "setup": "ma_cross",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "GME",
+      "company": "GameStop",
+      "verdict": "DEFER",
+      "setup": "pullback_to_support",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "FCN",
+      "company": "FTI Consulting",
+      "verdict": "DEFER",
+      "setup": "breakout_pullback",
+      "reason": "defer"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "BILL",
+      "company": "BILL Holdings",
+      "verdict": "REJECT",
+      "setup": "merger_arb_cash_deal",
+      "reason": "reject"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "ACM",
+      "company": "AECOM",
+      "verdict": "DEFER",
+      "setup": "post_earnings_breakout_pullback_entry",
+      "reason": "defer"
+    },
     {
       "date": "2026-11-25",
       "ticker": "GME",
@@ -292,46 +345,6 @@
       "verdict": "APPROVE WITH MODIFICATIONS",
       "setup": "post_earnings_breakout_pullback_entry",
       "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "none_awaiting_support_test",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "FOXA",
-      "company": "Fox",
-      "verdict": "DEFER",
-      "setup": "none_mid_range",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "EPAM",
-      "company": "EPAM Systems",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "awm_complex_instrument_tier1"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "DBX",
-      "company": "Dropbox",
-      "verdict": "DEFER",
-      "setup": "none_awaiting_reclaim_or_retest",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "CLX",
-      "company": "Clorox Company",
-      "verdict": "DEFER",
-      "setup": "none_awaiting_pullback",
-      "reason": "defer"
     }
   ],
   "watch_list": [
@@ -4800,6 +4813,10 @@
     {
       "date": "2026-11-25",
       "nav": 961074.76
+    },
+    {
+      "date": "2026-11-27",
+      "nav": 976288.29
     }
   ],
   "spy_aligned": [
@@ -5378,11 +5395,15 @@
     {
       "date": "2026-11-25",
       "nav_equiv": 998175.52
+    },
+    {
+      "date": "2026-11-27",
+      "nav_equiv": 1014359.13
     }
   ],
   "lifetime_stats": {
-    "total_return_pct": -3.89,
-    "sharpe": -0.82,
+    "total_return_pct": -2.37,
+    "sharpe": -0.6,
     "max_dd_pct": -10.5,
     "hit_rate": 0.4906,
     "profit_factor": 1.1,
