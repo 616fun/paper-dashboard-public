@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "rendered_at_utc": "2026-11-27T21:37:42Z",
+  "rendered_at_utc": "2026-11-28T04:29:07Z",
   "as_of": "2026-11-27",
   "starting_nav": 1000000.0,
   "hero": {
@@ -25,7 +25,7 @@
       "company": "Vanguard Morningstar Total Stock Market ETF",
       "direction": "LONG",
       "entry_date": "2026-07-02",
-      "days_held": 148,
+      "days_held": 149,
       "entry_price": 371.3662,
       "last_price": 359.3999938964844,
       "position_value": 884121.3613653961,
@@ -48,7 +48,7 @@
       "company": "EPAM Systems",
       "direction": "LONG",
       "entry_date": "2026-11-17",
-      "days_held": 10,
+      "days_held": 11,
       "entry_price": 160.06,
       "last_price": 163.8300018310547,
       "position_value": 7858.531995831298,
@@ -62,25 +62,12 @@
       "target_2": 187.56,
       "t2_dist_pct": 14.48452536392952,
       "max_hold": "2027-01-16",
-      "days_to_max": 50,
+      "days_to_max": 49,
       "setup_type": "post_earnings_breakout_pullback_entry",
       "sector": "Technology"
     }
   ],
-  "events": [
-    {
-      "kind": "MTM",
-      "label": "MTM mark: NAV $976,288",
-      "detail": "daily return +1.58% \u00b7 positions value $891,980",
-      "ts": "2026-11-27"
-    },
-    {
-      "kind": "ANALYZE",
-      "label": "Autopilot analyzed 5 ticker(s)",
-      "detail": "GME (DEFER) \u00b7 FCN (DEFER) \u00b7 BILL (REJECT) \u00b7 VFC (DEFER) \u00b7 ACM (DEFER)",
-      "ts": ""
-    }
-  ],
+  "events": [],
   "decisions": [
     {
       "date": "2026-11-27",
@@ -305,46 +292,6 @@
       "verdict": "DEFER",
       "setup": "support_hold",
       "reason": "defer"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "MRNA",
-      "company": "Moderna",
-      "verdict": "DEFER",
-      "setup": "none_testing_20d",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "IDXX",
-      "company": "IDEXX Laboratories",
-      "verdict": "DEFER",
-      "setup": "breakout_pullback",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "FISV",
-      "company": "Fiserv",
-      "verdict": "DEFER",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "defer"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "EPAM",
-      "company": "EPAM Systems",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "awm_no_executable_params"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "APP",
-      "company": "AppLovin",
-      "verdict": "APPROVE WITH MODIFICATIONS",
-      "setup": "post_earnings_breakout_pullback_entry",
-      "reason": "awm_no_executable_params"
     }
   ],
   "watch_list": [
